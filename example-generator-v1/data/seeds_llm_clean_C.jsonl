@@ -1,0 +1,4 @@
+{"template": "discount_then_vat_total_cost", "name": ["Ali", "Zeynep"], "item": ["defter", "kalem"], "unit_price": [60], "discount_pct": [25], "vat_pct": [20], "qty": [2, 3], "currency": "TL"}
+{"template": "two_items_then_bundle_discount_total_cost", "name": ["Deniz"], "item1": ["kitap"], "unit_price1": [30], "qty1": [3], "item2": ["silgi"], "unit_price2": [10], "qty2": [3, 4], "discount_pct": [10, 20], "currency": "TL"}
+{"template": "discounted_total_then_change", "name": ["Elif"], "item": ["defter"], "unit_price": [40], "qty": [2, 3], "discount_pct": [20, 25], "paid": [200, 300], "currency": "TL"}
+{"template": "transform_then_share", "name": ["Deniz"], "item": ["defter"], "unit_price": [40], "qty": [4, 5], "discount_pct": [50], "people": [2, 5], "currency": "TL"}

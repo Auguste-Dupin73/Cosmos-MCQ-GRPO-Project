@@ -1,0 +1,24 @@
+{"template":"sell_leftover","name":"Elif","item":"yumurta","produce":[20,22,24],"use1":[4,5],"use2":[6,7],"price":[3,4],"currency":"TL"}
+{"template":"remainder_after_loss","name":"John","item":"elma","start":[18,20,24],"lost":[3,5]}
+{"template":"remainder_after_loss","name":"Mehmet","item":"kalem","start":[30,35],"lost":[4,7]}
+{"template":"remainder_after_loss","name":"Zeynep","item":"bilye","start":[40,50,60],"lost":[10,12]}
+{"template":"equal_sharing","name":"Elif","item":"şeker","total":[24,36],"people":[3,6]}
+{"template":"equal_sharing","name":"Ahmet","item":"kitap","total":[20,40],"people":[4,5]}
+{"template":"equal_sharing","name":"Deniz","item":"top","total":[16,32,48],"people":[2,4,8]}
+{"template":"rate_time","name":"Zeynep","item":"soru","rate":[4,5,6],"time":[10,12,15]}
+{"template":"unit_price_quantity","name":"Mehmet","item":"simit","price":[8,10,12],"qty":[3,5,6],"currency":"TL"}
+{"template":"multi_step_add_sub","name":"Ayşe","item":"bilye","start":[20,30,40],"add":[5,10],"sub":[3,7]}
+{"template":"ratio_scaling","name":["Ali","Zeynep"],"item_a":"kırmızı top","item_b":"mavi top","ratio_a":[2,3],"ratio_b":[3,4],"total":[210,420],"ask_side":"a"}
+{"template":"sum_and_difference","name":["Ayşe","Mehmet"],"total":[30,40],"diff":[10,20]}
+{"template":"compare_difference","name":["Elif","Deniz"],"item":["kalem","bilye"],"a":[18,25],"b":[7,10]}
+{"template":"reverse_operation","name":["Ahmet","Can"],"item":["şeker","boncuk"],"end":[20,25],"add":[5,10]}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,64 @@
+{"template": "buy_two_items_total_cost", "name": ["Vedat"], "item1": ["şeftali", "üzüm"], "price1": [23, 15], "qty1": [5, 7], "item2": ["karpuz", "kavun"], "price2": [12, 15], "qty2": [10, 13], "currency": "TL"}
+{"template": "buy_two_items_total_cost", "name": ["İbrahim"], "item1": ["defter", "kitap"], "price1": [15, 17], "qty1": [4, 6], "item2": ["kalem", "silgi"], "price2": [6, 9], "qty2": [5, 8], "currency": "TL"}
+{"template": "buy_two_items_total_cost", "name": ["Onur"], "item1": ["süt", "yoğurt"], "price1": [36, 45, 23], "qty1": [2, 3, 4], "item2": ["peynir", "yumurta"], "price2": [31, 35, 37], "qty2": [21, 20], "currency": "TL"}
+{"template": "buy_two_items_total_cost", "name": ["Yusuf"], "item1": ["el feneri", "çakmak"], "price1": [50, 60], "qty1": [10, 14], "item2": ["suluk", "kibrit"], "price2": [25, 30, 35], "qty2": [6, 7, 8], "currency": "TL"}
+{"template": "buy_two_items_total_cost", "name": ["Metehan"], "item1": ["olta kamışı", "suniyem"], "price1": [120, 85], "qty1": [2, 12], "item2": ["misina", "çelikiğne"], "price2": [45, 15, 20], "qty2": [3, 10], "currency": "TL"}
+{"template": "buy_two_items_total_cost", "name": ["Esma"], "item1": ["akrilik boya", "tuval"], "price1": [42, 65, 70], "qty1": [8, 4], "item2": ["fırçaseti", "palet"], "price2": [55, 30], "qty2": [2, 5], "currency": "TL"}
+{"template": "buy_two_items_total_cost", "name": ["Baran"], "item1": ["çadır kazığı", "uykutulumu"], "price1": [18, 450], "qty1": [20, 2], "item2": ["termos", "kampsandalyesi"], "price2": [250, 320], "qty2": [1, 4], "currency": "TL"}
+{"template": "buy_two_items_total_cost", "name": ["Selçuk"], "item1": ["satranç takımı", "kum saati"], "price1": [85, 45], "qty1": [10, 6], "item2": ["madalya", "kupa"], "price2": [25, 110], "qty2": [15, 3], "currency": "TL"}
+{"template": "change_from_payment", "name": ["Osman"], "item1": ["kulaklık"], "price1": [250, 300], "qty1": [1, 2], "item2": ["şarjaleti"], "price2": [159, 209], "qty2": [2, 3], "paid": [1500], "currency": "TL"}
+{"template": "change_from_payment", "name": ["Furkan"], "item1": ["çay"], "price1": [15, 20, 25], "qty1": [3, 5], "item2": ["kahve"], "price2": [99, 119], "qty2": [2, 3], "paid": [500, 750, 600], "currency": "TL"}
+{"template": "change_from_payment", "name": ["Burak"], "item1": ["süt", "ekmek"], "price1": [10, 15], "qty1": [3, 5, 6], "item2": ["bira"], "price2": [26], "qty2": [2, 4], "paid": [300, 350], "currency": "TL"}
+{"template": "change_from_payment", "name": ["Kerem"], "item1": ["sinema bileti"], "price1": [120, 150], "qty1": [2, 4], "item2": ["çikolata"], "price2": [85, 110], "qty2": [1, 2], "paid": [1000, 1200], "currency": "TL"}
+{"template": "change_from_payment", "name": ["Aslı"], "item1": ["oje", "ruj"], "price1": [35, 75], "qty1": [3, 2], "item2": ["parfüm"], "price2": [450, 600], "qty2": [1], "paid": [1000, 1500], "currency": "TL"}
+{"template": "change_from_payment", "name": ["Mert"], "item1": ["hamburger"], "price1": [185, 210], "qty1": [2, 3], "item2": ["soğanhalkası"], "price2": [45, 60], "qty2": [2, 4], "paid": [1000], "currency": "TL"}
+{"template": "change_from_payment", "name": ["Selin"], "item1": ["pil", "ampul"], "price1": [24, 32], "qty1": [10, 5], "item2": ["tornavida"], "price2": [85, 115], "qty2": [1, 2], "paid": [750], "currency": "TL"}
+{"template": "change_from_payment", "name": ["Taylan"], "item1": ["tişört"], "price1": [250, 350], "qty1": [2, 3], "item2": ["çorap"], "price2": [40, 65], "qty2": [5, 10], "paid": [2000], "currency": "TL"}
+{"template": "add_then_share", "name": ["Komutan"], "item": ["askeri kamuflaj"], "start": [20, 30, 50], "add": [50, 80, 90], "people": [5, 10]}
+{"template": "add_then_share", "name": ["Anne"], "item": ["kurabiye,", "pasta dilimi"], "start": [6, 8], "add": [10, 12], "people": [2]}
+{"template": "add_then_share", "name": ["Öğretmen"], "item": ["rozet"], "start": [9, 12], "add": [6, 3], "people": [3]}
+{"template": "add_then_share", "name": ["Banka"], "item": ["para"], "start": [10000, 12000], "add": [5000, 6000], "people": [100]}
+{"template": "add_then_share", "name": ["Kaptan"], "item": ["balık"], "start": [45, 60], "add": [15, 30, 40], "people": [5]}
+{"template": "add_then_share", "name": ["Antrenör"], "item": ["basketbol topu"], "start": [12, 18], "add": [6, 12], "people": [6, 3]}
+{"template": "add_then_share", "name": ["Muhtar"], "item": ["fidan"], "start": [120, 150], "add": [80, 50], "people": [10]}
+{"template": "add_then_share", "name": ["işveren"], "item": ["maaş"], "start": [5000, 8000], "add": [3000, 7000], "people": [10, 5]}
+{"template": "percentage_discount_final_price", "name": ["Yusuf"], "item": ["Bilgisayar", "klavye"], "original_price": [46500, 38000], "discount_pct": [15, 25], "currency": "TL"}
+{"template": "percentage_discount_final_price", "name": ["Efe"], "item": ["kol saati", "bileklik"], "original_price": [1300, 2500], "discount_pct": [15, 30], "currency": "TL"}
+{"template": "percentage_discount_final_price", "name": ["Esma"], "item": ["parfüm"], "original_price": [450, 600], "discount_pct": [20, 30, 40], "currency": "TL"}
+{"template": "percentage_discount_final_price", "name": ["Baran"], "item": ["Küpe"], "original_price": [400, 600], "discount_pct": [30, 35], "currency": "TL"}
+{"template": "percentage_discount_final_price", "name": ["Ahmed"], "item": ["Tablet", "telefon"], "original_price": [11000, 12000], "discount_pct": [8, 19], "currency": "TL"}
+{"template": "percentage_discount_final_price", "name": ["Buse"], "item": ["Çanta", "Spor ayakkabı"], "original_price": [1200, 1500, 2000], "discount_pct": [10, 20, 25], "currency": "TL"}
+{"template": "percentage_discount_final_price", "name": ["Caner"], "item": ["oyunkonsolu"], "original_price": [18000, 24000], "discount_pct": [5, 15], "currency": "TL"}
+{"template": "percentage_discount_final_price", "name": ["Derya"], "item": ["güneş gözlüğü"], "original_price": [800, 1200], "discount_pct": [50], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Yavuz"], "item": ["oyun aboneliği"], "original_price": [196, 296], "increase_pct": [25, 50], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Selin"], "item": ["el yapımı kolye"], "original_price": [84, 124], "increase_pct": [25, 50], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Kerem"], "item": ["premium üyelik"], "original_price": [48, 88], "increase_pct": [25, 50], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Dilan"], "item": ["vintage tişört"], "original_price": [156, 236], "increase_pct": [25], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Mert"], "item": ["akıllı lamba"], "original_price": [396, 596], "increase_pct": [25], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Zeynep"], "item": ["şampuan"], "original_price": [76, 116], "increase_pct": [25, 50], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Hakan"], "item": ["stüdyo kirası"], "original_price": [1996, 2996], "increase_pct": [25], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Esra"], "item": ["kedi tırmalama tahtası"], "original_price": [316, 476], "increase_pct": [25], "currency": "TL"}
+{"template": "discounted_unit_total_cost", "name": ["Ömerhan"], "item": ["Çorap"], "unit_price": [40, 80], "discount_pct": [50], "qty": [5, 10], "currency": "TL"}
+{"template": "discounted_unit_total_cost", "name": ["Ege"], "item": ["kazak"], "unit_price": [496, 796], "discount_pct": [25], "qty": [2, 3], "currency": "TL"}
+{"template": "discounted_unit_total_cost", "name": ["Eren"], "item": ["laptop çantası"], "unit_price": [340, 480], "discount_pct": [15, 25], "qty": [2, 5], "currency": "TL"}
+{"template": "discounted_unit_total_cost", "name": ["Kuzey"], "item": ["Oyuncak"], "unit_price": [156, 236], "discount_pct": [50, 75], "qty": [4, 6], "currency": "TL"}
+{"template": "discounted_unit_total_cost", "name": ["Mustafa"], "item": ["Poster"], "unit_price": [88, 128], "discount_pct": [25, 50], "qty": [1, 2], "currency": "TL"}
+{"template": "discounted_unit_total_cost", "name": ["Fatih"], "item": ["Şapka"], "unit_price": [192, 256], "discount_pct": [25], "qty": [3, 5], "currency": "TL"}
+{"template": "discounted_unit_total_cost", "name": ["Arda"], "item": ["Kol saati"], "unit_price": [1200, 1600], "discount_pct": [15, 20], "qty": [1, 2], "currency": "TL"}
+{"template": "discounted_unit_total_cost", "name": ["Fatih"], "item": ["atkı"], "unit_price": [72, 96], "discount_pct": [25, 50], "qty": [5, 8], "currency": "TL"}
+{"template": "vat_total_cost", "name": ["Mert"], "item": ["Tereyağı"], "unit_price": [225, 375], "vat_pct": [8, 12], "qty": [4, 8], "currency": "TL"}
+{"template": "vat_total_cost", "name": ["Dilan"], "item": ["Çikolata", "dondurma"], "unit_price": [48, 96], "vat_pct": [25], "qty": [5, 10], "currency": "TL"}
+{"template": "vat_total_cost", "name": ["Esra"], "item": ["cips", "çekirdek"], "unit_price": [75, 125], "vat_pct": [12, 16], "qty": [4, 12], "currency": "TL"}
+{"template": "vat_total_cost", "name": ["Ahmed"], "item": ["bot", "mont"], "unit_price": [1250, 1850], "vat_pct": [18], "qty": [2, 4], "currency": "TL"}
+{"template": "vat_total_cost", "name": ["Buse"], "item": ["parfüm", "ruj"], "unit_price": [450, 750], "vat_pct": [22, 26], "qty": [2, 6], "currency": "TL"}
+{"template": "vat_total_cost", "name": ["Ebru"], "item": ["araba"], "unit_price": [640000, 960000], "vat_pct": [45, 80], "qty": [1], "currency": "TL"}
+{"template": "vat_total_cost", "name": ["Leyla"], "item": ["Ev", "Arsa"], "unit_price": [1850000, 2450000], "vat_pct": [4, 14], "qty": [1], "currency": "TL"}
+{"template": "vat_total_cost", "name": ["Songül"], "item": ["Tuval"], "unit_price": [132, 264], "vat_pct": [25, 50], "qty": [5, 8], "currency": "TL"}
+{"template": "bundle_discount_total_cost", "name": ["Oğuz"], "item": ["sinema paketi"], "unit_price": [125, 175], "qty": [4, 8], "discount_pct": [12, 16], "currency": "TL"}
+{"template": "bundle_discount_total_cost", "name": ["Meltem"], "item": ["kitap seti"], "unit_price": [84, 112], "qty": [5, 10], "discount_pct": [25], "currency": "TL"}
+{"template": "bundle_discount_total_cost", "name": ["Cihan"], "item": ["sporcu içeceği"], "unit_price": [35, 45], "qty": [12, 24], "discount_pct": [10, 20], "currency": "TL"}
+{"template": "bundle_discount_total_cost", "name": ["Selin"], "item": ["dekoratif çerçeve"], "unit_price": [64, 128], "qty": [5, 15], "discount_pct": [25, 50], "currency": "TL"}
+{"template": "bundle_discount_total_cost", "name": ["Taner"], "item": ["ofis sandalyesi"], "unit_price": [1250, 1500], "qty": [4, 6], "discount_pct": [15, 18], "currency": "TL"}
+{"template": "bundle_discount_total_cost", "name": ["Aylin"], "item": ["organik sabun"], "unit_price": [48, 72], "qty": [25, 50], "discount_pct": [15, 30], "currency": "TL"}
+{"template": "bundle_discount_total_cost", "name": ["Berkay"], "item": ["akıllı ampul"], "unit_price": [156, 224], "qty": [10, 20], "discount_pct": [25], "currency": "TL"}
+{"template": "bundle_discount_total_cost", "name": ["Naz"], "item": ["davetiye kartı"], "unit_price": [12, 18], "qty": [100, 250], "discount_pct": [12, 22], "currency": "TL"}

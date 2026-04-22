@@ -1,0 +1,701 @@
+{
+  "produce": [
+    "{name} her gün {produce} adet {item} elde eder.",
+    "{name} günde toplam {produce} tane {item} üretir.",
+    "{name} her gün {produce} tane {item} toplar.",
+    "{name} bir günde {produce} adet {item} biriktirir.",
+    "{name} günlük {produce} tane {item} çıkarır.",
+    "{name} her gün {produce} tane {item} hazırlar.",
+    "{name} her gün {produce} tane {item} bulur.",
+    "{name} her gün {produce} tane {item} sahibi olur.",
+    "{name} bir günde {produce} tane {item} elde eder.",
+    "{name} günde {produce} tane {item} kazanır."
+  ],
+  "consume_a": [
+    "{name} her sabah {use1} tanesini {breakfast_ctx} tüketir.",
+    "{name} sabah {use1} tanesini {breakfast_ctx} yer.",
+    "{name} her sabah {use1} tanesini {breakfast_ctx} yer.",
+    "{name} sabah {use1} tanesini {breakfast_ctx} ayırır.",
+    "{name} sabah {use1} tanesini {breakfast_ctx} kullanır.",
+    "{name} sabah {use1} tanesini {breakfast_ctx} bitirir.",
+    "{name} her sabah {use1} tanesini {breakfast_ctx} tüketir.",
+    "{name} her sabah {use1} tanesini {breakfast_ctx} yer."
+  ],
+  "consume_b": [
+    "{name} her gün {use2} tanesini {dish} yapmak için kullanır.",
+    "Ayrıca {use2} tanesini {dish} yapmak için ayırır.",
+    "Gün içinde {use2} tanesini {dish} yapmak için kullanır.",
+    "{name} gün içinde {use2} tanesini {dish} için ayırır.",
+    "{name} {use2} tanesini {dish} için kullanır.",
+    "{name} {use2} tanesini {dish} yapmak için kullanır.",
+    "{name} {use2} tanesini {dish} için ayırır.",
+    "{name} her gün {use2} tanesini {dish} için kullanır."
+  ],
+  "sell": [
+    "Kalanlarını pazarda tanesi {price} {currency} olacak şekilde satar.",
+    "Geriye kalanları pazarda tanesi {price} {currency} fiyatla satar.",
+    "Kalanlarını pazarda her biri {price} {currency} fiyatla satar.",
+    "Kalanlarını pazarda tanesi {price} {currency} olarak satar.",
+    "Kalanlarını pazarda tanesi {price} {currency} karşılığında satar.",
+    "Kalanlarını pazarda her biri {price} {currency} olacak şekilde satar.",
+    "Kalanlarını pazarda tanesi {price} {currency} fiyatla satar.",
+    "Kalanlarını pazarda {price} {currency} üzerinden satar."
+  ],
+  "question": [
+    "{name} pazarda o gün kaç {currency} kazanır?",
+    "{name} her gün satıştan kaç {currency} gelir elde eder?",
+    "{name} o gün toplam kaç {currency} kazanır?",
+    "{name} satıştan kaç {currency} alır?",
+    "{name} o gün kaç {currency} elde eder?",
+    "{name} satıştan toplam kaç {currency} kazanır?",
+    "{name} pazardaki gelir kaç {currency} olur?",
+    "{name} satış geliri kaç {currency} olur?"
+  ],
+  "reason_intro": [
+    "{name} her gün {produce} tane {item} elde eder.",
+    "{name} günde toplam {produce} tane {item} üretir.",
+    "{name} bir günde {produce} tane {item} biriktirir.",
+    "{name} günlük {produce} tane {item} toplar.",
+    "{name} her gün {produce} tane {item} hazırlar.",
+    "{name} her gün {produce} tane {item} çıkarır.",
+    "{name} günde {produce} tane {item} kazanır.",
+    "{name} her gün {produce} tane {item} bulur."
+  ],
+  "reason_use": [
+    "{use1} tanesini {breakfast_ctx} tüketir ve {use2} tanesini {dish} yapmak için kullanır.",
+    "Önce {use1} tanesini {breakfast_ctx} tüketir, sonra {use2} tanesini {dish} için ayırır.",
+    "{use1} tanesini {breakfast_ctx} yer, ayrıca {use2} tanesini {dish} için kullanır.",
+    "{use1} tanesini {breakfast_ctx} ayırır ve {use2} tanesini {dish} için kullanır.",
+    "{use1} tanesini {breakfast_ctx} bitirir, {use2} tanesini {dish} için ayırır.",
+    "{use1} tanesini {breakfast_ctx} tüketir, {use2} tanesini {dish} yapmak için ayırır.",
+    "{use1} tanesini {breakfast_ctx} yer ve {use2} tanesini {dish} için kullanır.",
+    "{use1} tanesini {breakfast_ctx} tüketir ve {use2} tanesini {dish} için ayırır."
+  ],
+  "reason_calc": [
+    "Bu durumda, {produce} - {use1} - {use2} = {remain} tane satmak için kalır.",
+    "Kalan miktar: {produce} - {use1} - {use2} = {remain} tane.",
+    "{produce} taneden {use1} ve {use2} çıkarılır: {remain} tane kalır.",
+    "Satılacak miktar: {produce} - {use1} - {use2} = {remain}.",
+    "{produce} - {use1} - {use2} hesabıyla {remain} tane kalır.",
+    "Kalan: {produce} - {use1} - {use2} = {remain}.",
+    "{remain} tane satış için kalır.",
+    "Kalan satış miktarı {remain} tane olur."
+  ],
+  "reason_final": [
+    "Tanesi {price} {currency} olduğuna göre, {remain} × {price} = {total} {currency} kazanır.",
+    "Her biri {price} {currency} ise, {remain} × {price} = {total} {currency} olur.",
+    "{remain} tane × {price} {currency} = {total} {currency}.",
+    "Toplam gelir: {remain} × {price} = {total} {currency}.",
+    "{remain} tane satarsa {total} {currency} kazanır.",
+    "{price} ile çarpınca {total} {currency} elde eder.",
+    "Satış geliri {total} {currency} olur.",
+    "Sonuç olarak {total} {currency} kazanır."
+  ],
+  "default_purposes": [
+    ["kahvaltıda", "börek"],
+    ["kahvaltıda", "kek"],
+    ["kahvaltıda", "yemek"]
+  ],
+
+  "loss_story_start": [
+    "{name} evde {start} tane {item} bulur.",
+    "{name} masada {start} tane {item} görür.",
+    "{name} kutuda {start} tane {item} sayar.",
+    "{name} çantada {start} tane {item} olduğunu fark eder.",
+    "{name} rafta {start} tane {item} olduğunu görür.",
+    "{name} yerde {start} tane {item} bulur.",
+    "{name} dolapta {start} tane {item} olduğunu görür.",
+    "{name} evde {start} tane {item} olduğunu bilir."
+  ],
+  "loss_story_event": [
+    "Sonra {lost} tanesi kaybolur.",
+    "Daha sonra {lost} tanesi kaybolur.",
+    "Bir süre sonra {lost} tanesi kaybolur.",
+    "Ardından {lost} tanesi kaybolur.",
+    "O gün {lost} tanesi kaybolur.",
+    "Gün içinde {lost} tanesi kaybolur.",
+    "Sonrasında {lost} tanesi kaybolur.",
+    "Bir anda {lost} tanesi kaybolur."
+  ],
+  "loss_question": [
+    "Geriye kaç tane {item} kalır?",
+    "Kaç tane {item} kalır?",
+    "{name} için kaç tane {item} kalır?",
+    "Kalan {item} sayısı kaçtır?",
+    "Gün sonunda kaç tane {item} kalır?",
+    "Son durumda kaç tane {item} kalır?",
+    "Kalan miktar kaç tane {item} olur?",
+    "Kalan toplam kaç tane {item} olur?"
+  ],
+  "loss_reason_intro": [
+    "{name} başta {start} tane {item} ile başlar.",
+    "Başlangıçta {start} tane {item} vardır.",
+    "{name} için başlangıç miktarı {start} tane {item} olur.",
+    "{start} tane {item} ile başlanır.",
+    "İlk durumda {start} tane {item} vardır.",
+    "Önce {start} tane {item} vardır.",
+    "Başlangıç miktarı {start} tane {item} olur.",
+    "{name} başta {start} tane {item} görür."
+  ],
+  "loss_reason_calc": [
+    "Kaybolan {lost} tanesi çıkarılır: {start} - {lost} = {remain}.",
+    "Hesap: {start} - {lost} = {remain}.",
+    "{start} taneden {lost} çıkarılır ve {remain} kalır.",
+    "Kalan miktar {start} - {lost} = {remain} olur.",
+    "{lost} tanesi gidince {remain} tane kalır.",
+    "Çıkarma işlemi: {start} - {lost} = {remain}.",
+    "{start} - {lost} işlemi {remain} verir.",
+    "Sonuç: {remain}."
+  ],
+  "loss_reason_final": [
+    "Sonuç olarak {remain} tane {item} kalır.",
+    "Geriye {remain} tane {item} kalır.",
+    "{name} için kalan miktar {remain} tane {item} olur.",
+    "Kalan toplam {remain} tane {item} olur.",
+    "Son durumda {remain} tane {item} vardır.",
+    "Gün sonunda {remain} tane {item} kalır.",
+    "Kalan {item} sayısı {remain} olur.",
+    "Cevap {remain} tane {item} olur."
+  ],
+
+  "share_story_start": [
+    "{name} elinde {total} tane {item} olduğunu söyler.",
+    "{name} masada {total} tane {item} olduğunu görür.",
+    "{name} kutuda {total} tane {item} sayar.",
+    "{name} toplam {total} tane {item} hazırlar.",
+    "{name} yanında {total} tane {item} taşır.",
+    "{name} evde {total} tane {item} olduğunu fark eder.",
+    "{name} {total} tane {item} biriktirir.",
+    "{name} toplam {total} tane {item} bulur."
+  ],
+  "share_story_event": [
+    "Bunları {people} kişi arasında eşit paylaşmak ister.",
+    "{people} kişi bunları eşit şekilde paylaşır.",
+    "{name} bunları {people} kişi arasında eşit böler.",
+    "Bu {total} tane {item}, {people} kişi arasında eşit paylaştırılır.",
+    "{people} kişi için eşit paylaşım yapılır.",
+    "{people} kişi bunu eşit paylaşır.",
+    "{name} eşit paylaşım için {people} kişi seçer.",
+    "Eşit paylaşım {people} kişi arasında yapılır."
+  ],
+  "share_question": [
+    "Kişi başına kaç tane {item} düşer?",
+    "Her kişiye kaç tane {item} düşer?",
+    "Bir kişi kaç tane {item} alır?",
+    "Kişi başına düşen {item} sayısı kaçtır?",
+    "Eşit paylaşımda kişi başına kaç tane {item} olur?",
+    "Her kişi için kaç tane {item} olur?",
+    "Paylaşınca kişi başına kaç tane {item} gelir?",
+    "Sonuçta kişi başına kaç tane {item} düşer?"
+  ],
+  "share_reason_intro": [
+    "Toplam {total} tane {item} vardır ve {people} kişi vardır.",
+    "{total} tane {item} {people} kişi arasında paylaşılır.",
+    "{people} kişi için toplam {total} tane {item} paylaşılır.",
+    "Eşit paylaşım için {total} ve {people} kullanılır.",
+    "{total} tane {item} eşit şekilde bölünür.",
+    "{people} kişi arasında eşit paylaşım yapılır.",
+    "Toplam {total} tane {item} vardır.",
+    "{people} kişi paylaşım yapar."
+  ],
+  "share_reason_calc": [
+    "Kişi başına miktar: {total} ÷ {people} = {each}.",
+    "Bölme işlemi: {total} / {people} = {each}.",
+    "{total} tane {item} {people} kişiye bölünür: {each}.",
+    "Eşit paylaşım için {total} ÷ {people} yapılır ve {each} bulunur.",
+    "{total} {item} sayısı {people} kişiye bölünür, sonuç {each} olur.",
+    "Hesap: {total} ÷ {people} = {each}.",
+    "Pay: {each}.",
+    "Sonuç {each}."
+  ],
+  "share_reason_final": [
+    "Bu yüzden kişi başına {each} tane {item} düşer.",
+    "Her kişiye {each} tane {item} düşer.",
+    "Bir kişi {each} tane {item} alır.",
+    "Kişi başına düşen miktar {each} tane {item} olur.",
+    "Eşit paylaşım sonucu {each} tane {item} olur.",
+    "Son durumda her kişi {each} tane {item} alır.",
+    "Cevap {each} tane {item} olur.",
+    "{each} tane {item} düşer."
+  ],
+
+  "multistep_story_start": [
+    "{name} başta {start} tane {item} sayar.",
+    "{name} elinde {start} tane {item} olduğunu görür.",
+    "{name} kutuda {start} tane {item} bulur.",
+    "{name} evde {start} tane {item} olduğunu söyler.",
+    "{name} masada {start} tane {item} olduğunu fark eder.",
+    "{name} çantada {start} tane {item} olduğunu görür.",
+    "{name} rafta {start} tane {item} sayar.",
+    "{name} yanında {start} tane {item} taşır."
+  ],
+  "multistep_story_event": [
+    "Sonra {add} tane {item} daha ekler ve {sub} tane {item} eksilir.",
+    "Daha sonra {add} tane {item} gelir ve {sub} tane {item} gider.",
+    "{add} tane {item} eklenir, ardından {sub} tane {item} azalır.",
+    "{name} {add} tane {item} ekler, sonra {sub} tane {item} çıkar.",
+    "{add} tane {item} ekler ve {sub} tane {item} kaybolur.",
+    "Önce {add} tane {item} artar, sonra {sub} tane {item} azalır.",
+    "{add} tane {item} ekledikten sonra {sub} tane {item} eksilir.",
+    "{add} tane {item} gelir, ardından {sub} tane {item} gider."
+  ],
+  "multistep_question": [
+    "Son durumda kaç tane {item} olur?",
+    "Geriye kaç tane {item} kalır?",
+    "Kalan {item} sayısı kaçtır?",
+    "Sonunda kaç tane {item} vardır?",
+    "{name} için kaç tane {item} kalır?",
+    "Kalan toplam kaç tane {item} olur?",
+    "Son miktar kaç tane {item} olur?",
+    "Kaç tane {item} kalır?"
+  ],
+  "multistep_reason_intro": [
+    "Başlangıç {start} tane {item} olur.",
+    "İlk miktar {start} tane {item} olur.",
+    "{name} için başlangıç {start} tane {item} olur.",
+    "Önce {start} tane {item} vardır.",
+    "{start} tane {item} ile başlanır.",
+    "Başlangıç miktarı {start} tane {item}.",
+    "İlk durumda {start} tane {item} vardır.",
+    "Başta {start} tane {item} olur."
+  ],
+  "multistep_reason_calc": [
+    "Önce ekleme: {start} + {add} = {start_plus}. Sonra çıkarma: {start_plus} - {sub} = {final}.",
+    "{start} + {add} - {sub} = {final}.",
+    "Hesap: ({start} + {add}) - {sub} = {final}.",
+    "{add} eklenir ve {sub} çıkarılır: {final}.",
+    "Önce {start} + {add} yapılır, sonra {sub} çıkarılır ve {final} bulunur.",
+    "Toplam: {start} + {add} = {start_plus}; kalan: {start_plus} - {sub} = {final}.",
+    "İşlem sonucu {final}.",
+    "Sonuç {final}."
+  ],
+  "multistep_reason_final": [
+    "Sonuç olarak {final} tane {item} olur.",
+    "Geriye {final} tane {item} kalır.",
+    "Son durumda {final} tane {item} vardır.",
+    "{name} için kalan {final} tane {item} olur.",
+    "Kalan toplam {final} tane {item} olur.",
+    "Cevap {final} tane {item}.",
+    "Son miktar {final} tane {item} olur.",
+    "{final} tane {item} kalır."
+  ],
+
+  "unit_story_start": [
+    "{name} pazardan {qty} tane {item} almak ister.",
+    "{name} {qty} tane {item} alır.",
+    "{name} {qty} adet {item} alır.",
+    "{name} toplam {qty} tane {item} seçer.",
+    "{name} marketten {qty} tane {item} alır.",
+    "{name} {qty} tane {item} satın alır.",
+    "{name} {qty} tane {item} almayı planlar.",
+    "{name} {qty} tane {item} alır."
+  ],
+  "unit_story_event": [
+    "Bir tane {item} fiyatı {price} {currency} olur.",
+    "Tanesi {price} {currency} olan {item} alır.",
+    "{item} tanesi {price} {currency} olur.",
+    "Bir {item} {price} {currency} eder.",
+    "{item} için birim fiyat {price} {currency} olur.",
+    "Tanesi {price} {currency} olarak belirlenir.",
+    "{item} birim fiyatı {price} {currency} olur.",
+    "Bir {item} fiyatı {price} {currency} olur."
+  ],
+  "unit_question": [
+    "Toplam kaç {currency} öder?",
+    "Kaç {currency} tutar?",
+    "Toplam ödeme kaç {currency} olur?",
+    "Toplam ücret kaç {currency} olur?",
+    "Ödeme toplamı kaç {currency} olur?",
+    "Toplam maliyet kaç {currency} olur?",
+    "{name} kaç {currency} verir?",
+    "Sonuçta kaç {currency} öder?"
+  ],
+  "unit_reason_intro": [
+    "{qty} tane {item} vardır ve birim fiyat {price} {currency} olur.",
+    "Toplam {qty} tane {item} alınır, tanesi {price} {currency} olur.",
+    "{qty} tane {item} için birim fiyat {price} {currency}.",
+    "{qty} tane ve {price} {currency} kullanılır.",
+    "{qty} tane {item} alınır.",
+    "Birim fiyat {price} {currency} olur.",
+    "Toplam {qty} tane {item} vardır.",
+    "Birim fiyat bilgisi {price} {currency} olur."
+  ],
+  "unit_reason_calc": [
+    "Toplam ödeme: {qty} × {price} = {total} {currency}.",
+    "Çarpma işlemi: {qty} * {price} = {total} {currency}.",
+    "{qty} tane {item} için {qty} × {price} = {total} {currency}.",
+    "Hesap: {price} {currency} × {qty} = {total} {currency}.",
+    "Toplam maliyet {qty} × {price} ile bulunur: {total} {currency}.",
+    "Çarpınca {total} {currency} elde edilir.",
+    "Sonuç {total} {currency}.",
+    "Toplam {total} {currency}."
+  ],
+  "unit_reason_final": [
+    "Bu yüzden {total} {currency} öder.",
+    "Sonuç olarak {total} {currency} olur.",
+    "Toplam ücret {total} {currency} olur.",
+    "{name} toplam {total} {currency} verir.",
+    "Ödeme {total} {currency} olur.",
+    "Cevap {total} {currency}.",
+    "Toplam maliyet {total} {currency}.",
+    "{total} {currency} öder."
+  ],
+
+  "rate_story_start": [
+    "{name} bir işte dakikada {rate} tane {item} yapar.",
+    "{name} her dakikada {rate} tane {item} çözer.",
+    "{name} bir dakikada {rate} tane {item} üretir.",
+    "{name} dakikada {rate} tane {item} tamamlar.",
+    "{name} her dakika {rate} tane {item} yapar.",
+    "{name} dakikada {rate} tane {item} bitirir.",
+    "{name} dakikada {rate} tane {item} hazırlar.",
+    "{name} dakikada {rate} tane {item} tamamlar."
+  ],
+  "rate_story_event": [
+    "Bu şekilde {time} dakika çalışır.",
+    "{time} dakika boyunca devam eder.",
+    "Toplam {time} dakika sürer.",
+    "{time} dakika çalışır.",
+    "Çalışma süresi {time} dakika olur.",
+    "{time} dakika boyunca yapar.",
+    "{time} dakika boyunca çalışır.",
+    "{time} dakika sürer."
+  ],
+  "rate_question": [
+    "Toplam kaç tane {item} yapar?",
+    "Kaç tane {item} tamamlar?",
+    "Toplam {item} sayısı kaç olur?",
+    "Sonuçta kaç tane {item} olur?",
+    "{time} dakikada kaç tane {item} olur?",
+    "Toplam üretim kaç tane {item} olur?",
+    "Kaç tane {item} elde eder?",
+    "Toplam kaç tane {item} çıkar?"
+  ],
+  "rate_reason_intro": [
+    "Hız {rate} tane/{time_unit} ve süre {time} olur.",
+    "Dakikada {rate} tane {item} ve {time} dakika vardır.",
+    "{rate} tane ve {time} dakika kullanılır.",
+    "Hız {rate}, süre {time}.",
+    "Dakikada {rate} tane yapılır.",
+    "Toplam süre {time} dakikadır.",
+    "Hız ve süre çarpılır.",
+    "Veriler {rate} ve {time} olur."
+  ],
+  "rate_reason_calc": [
+    "Toplam: {rate} × {time} = {total} tane {item}.",
+    "Çarpma: {rate} * {time} = {total}.",
+    "{time} dakika için {rate} × {time} = {total}.",
+    "Hesap: {rate} ile {time} çarpılır ve {total} bulunur.",
+    "{rate} × {time} işlemi {total} verir.",
+    "Sonuç {total}.",
+    "Toplam {total} tane.",
+    "{total} tane {item}."
+  ],
+  "rate_reason_final": [
+    "Bu yüzden {total} tane {item} yapar.",
+    "Sonuç olarak {total} tane {item} olur.",
+    "Toplam {total} tane {item} tamamlar.",
+    "{name} {total} tane {item} üretir.",
+    "Cevap {total} tane {item}.",
+    "{total} tane {item} elde eder.",
+    "Toplam {total} tane {item} çıkar.",
+    "{total} tane {item} yapar."
+  ],
+
+  "ratio_story_start": [
+    "{name} elindeki iki tür nesneyi sayar.",
+    "{name} iki grupta nesne olduğunu söyler.",
+    "{name} iki farklı tür nesne hazırlar.",
+    "{name} iki farklı tür nesne görür.",
+    "{name} iki grupta nesne bulur.",
+    "{name} iki tür nesne biriktirir.",
+    "{name} iki tür nesneyi ayırır.",
+    "{name} iki farklı tür nesne olduğunu fark eder.",
+    "{name} elinde iki tür nesne olduğunu söylüyor.",
+    "{name} iki farklı tür nesne ile ilgili bilgi veriyor."
+  ],
+  "ratio_story_event": [
+    "{item_a} ile {item_b} oranı {ratio_a}:{ratio_b} olur ve toplam {total} tane olur.",
+    "{item_a} ve {item_b} oranı {ratio_a}:{ratio_b} olur, toplam {total} tane vardır.",
+    "Oran {ratio_a}:{ratio_b} ve toplam {total} tane olur.",
+    "{ratio_a}:{ratio_b} oranı ile toplam {total} tane nesne vardır.",
+    "Toplam {total} tane nesne, oran {ratio_a}:{ratio_b} olur.",
+    "Oran {ratio_a}:{ratio_b} iken toplam {total} tane olur.",
+    "{item_a} ile {item_b} oranı {ratio_a}:{ratio_b}, toplam {total} tane olur.",
+    "{item_a} ve {item_b} oranı {ratio_a}:{ratio_b}, toplam {total} tane olur.",
+    "Toplam {total} tane vardır ve oran {ratio_a}:{ratio_b} olur.",
+    "Oran {ratio_a}:{ratio_b} iken toplam sayı {total} olur"
+  ],
+  "ratio_question": [
+    "{asked_item} sayısı kaç tane olur?",
+    "Kaç tane {asked_item} olur?",
+    "{name} için {asked_item} kaç tane olur?",
+    "Toplamda {asked_item} kaç tane çıkar?",
+    "{asked_item} miktarı kaç tane olur?",
+    "{asked_item} sayısı kaçtır?",
+    "Son durumda {asked_item} kaç tane olur?",
+    "Cevap olarak {asked_item} kaç tane olur?",
+    "{asked_item} toplamı kaç tane olur?",
+    "{asked_item} için kaç tane çıkar?"
+  ],
+  "ratio_reason_intro": [
+    "Önce oran toplamı bulunur: {ratio_a} + {ratio_b}.",
+    "Oranın toplam parçası {ratio_a} + {ratio_b} olur.",
+    "Toplam oran {ratio_a} + {ratio_b} ile bulunur.",
+    "{ratio_a} ve {ratio_b} toplanır.",
+    "Oran parçaları toplanır.",
+    "Oran toplamı hesaplanır.",
+    "Toplam parça sayısı bulunur.",
+    "İlk adım oran toplamıdır.",
+    "Oran parçaları toplanır ve toplam parça bulunur.",
+    "İlk adım toplam parça sayısını bulmaktır."
+  ],
+  "ratio_reason_calc": [
+    "Toplam parça {ratio_a}+{ratio_b} olur, bir parça {total} ÷ ({ratio_a}+{ratio_b}) = {unit}.",
+    "Birim: {total} / ({ratio_a}+{ratio_b}) = {unit}.",
+    "Önce birim bulunur: {unit}.",
+    "Bir parça {unit} olur.",
+    "Parça değeri {unit} olur.",
+    "Birim değer {unit} bulunur.",
+    "Birim {unit}.",
+    "Bölme sonucu {unit}.",
+    "Toplam parça {ratio_a}+{ratio_b} olur, birim değer {total} ÷ ({ratio_a}+{ratio_b}) = {unit}.",
+    "Bir parça değeri {unit} olur."
+  ],
+  "ratio_reason_final": [
+    "{asked_item} için parça sayısı ile birim çarpılır ve {asked_count} bulunur.",
+    "İstenen miktar: parça × {unit} = {asked_count}.",
+    "Sonuç {asked_count} tane {asked_item} olur.",
+    "Cevap {asked_count} tane {asked_item}.",
+    "{asked_count} tane {asked_item} çıkar.",
+    "{asked_item} sayısı {asked_count} olur.",
+    "İstenen sonuç {asked_count} olur.",
+    "{asked_count} bulunur.",
+    "İstenen miktar {asked_count} tane {asked_item} olur.",
+    "Cevap {asked_count} tane {asked_item} çıkar."
+  ],
+
+  "sumdiff_story_start": [
+    "{name} iki sayı düşünür.",
+    "{name} iki sayıyla ilgili bilgi verir.",
+    "{name} iki sayının özelliklerini söyler.",
+    "{name} iki sayıyı karşılaştırır.",
+    "{name} iki sayı hakkında konuşur.",
+    "{name} iki sayıyı anlatır.",
+    "{name} iki sayının değerlerini arar.",
+    "{name} iki sayı üzerine soru sorar.",
+    "{name} iki sayıyı tanımlar.",
+    "{name} iki sayı için toplam ve fark bilgisini verir."
+  ],
+  "sumdiff_story_event": [
+    "Bu iki sayının toplamı {total} olur ve farkı {diff} olur.",
+    "Toplam {total} ve fark {diff} olarak verilir.",
+    "Toplam {total}, fark {diff} olur.",
+    "İki sayının toplamı {total}, farkı {diff} olur.",
+    "Toplam {total} ve fark {diff} bilgisi vardır.",
+    "Toplam {total} ile fark {diff} verilir.",
+    "Toplam {total} ve fark {diff} bilinir.",
+    "Toplam {total}, fark {diff} olur.",
+    "Toplam {total} olur ve büyük ile küçük arasındaki fark {diff} olur.",
+    "İki sayı için toplam {total}, fark {diff} olarak bilinir."
+  ],
+  "sumdiff_question": [
+    "Büyük sayı kaç olur?",
+    "Büyük sayı kaçtır?",
+    "Büyük olan sayı kaç olur?",
+    "Büyük sayı değeri kaç olur?",
+    "Büyük sayıyı bulun.",
+    "Büyük sayı kaç çıkar?",
+    "Sonuç olarak büyük sayı kaç olur?",
+    "Büyük sayı kaçtır?",
+    "Büyük sayıyı bulunuz.",
+    "Büyük sayı değeri nedir?"
+  ],
+  "sumdiff_reason_intro": [
+    "Büyük sayı x, küçük sayı y olsun.",
+    "İki sayı x ve y olsun.",
+    "Büyük sayı ve küçük sayı tanımlanır.",
+    "Büyük ve küçük sayı olarak düşünülür.",
+    "İki sayı için toplam ve fark kullanılır.",
+    "Toplam ve fark bilgisiyle hesap yapılır.",
+    "Toplam {total} ve fark {diff} verilir.",
+    "Hesap için toplam ve fark kullanılır.",
+    "Büyük sayı ve küçük sayı için toplam ve fark kullanılır.",
+    "Büyük sayı toplam ve farkın yarısı ile bulunur."
+  ],
+  "sumdiff_reason_calc": [
+    "Büyük sayı (toplam + fark) ÷ 2 = ({total}+{diff}) ÷ 2 = {big}.",
+    "Hesap: ({total} + {diff}) / 2 = {big}.",
+    "Büyük sayı {big} olur.",
+    "({total}+{diff}) ÷ 2 işlemi {big} verir.",
+    "Büyük değer {big} bulunur.",
+    "Sonuç {big}.",
+    "Büyük sayı {big}.",
+    "{big} elde edilir.",
+    "Büyük sayı (toplam + fark) ÷ 2 ile bulunur: ({total}+{diff}) ÷ 2 = {big}.",
+    "Hesap sonucu {big} olur."
+  ],
+  "sumdiff_reason_final": [
+    "Bu yüzden büyük sayı {big} olur.",
+    "Sonuç olarak büyük sayı {big} çıkar.",
+    "Cevap {big} olur.",
+    "{name} için büyük sayı {big} olur.",
+    "Büyük sayı {big} bulunur.",
+    "{big} sonucu elde edilir.",
+    "Büyük değer {big} olur.",
+    "Dolayısıyla sonuç {big} olur.",
+    "Bu yüzden büyük sayı {big} çıkar.",
+    "Sonuç {big} olur."
+  ],
+
+  "compare_story_start": [
+    "{name} iki kişideki miktarı karşılaştırır.",
+    "{name} iki miktarı kıyaslar.",
+    "{name} iki farklı miktarı yan yana koyar.",
+    "{name} iki miktar arasındaki farkı merak eder.",
+    "{name} iki değer hakkında bilgi verir.",
+    "{name} iki farklı miktarı söyler.",
+    "{name} iki miktarı yan yana koyar.",
+    "{name} iki sayı arasında fark arar.",
+    "{name} iki miktarı inceler.",
+    "{name} iki durum arasında karşılaştırma yapar."
+  ],
+  "compare_story_event": [
+    "Birinde {a} tane {item} vardır, diğerinde {b} tane {item} vardır.",
+    "A tarafında {a} tane {item} vardır, B tarafında {b} tane {item} vardır.",
+    "{a} tane {item} ve {b} tane {item} bilgisi verilir.",
+    "İki miktar {a} ve {b} olarak verilir.",
+    "Bir tarafta {a} tane {item}, diğer tarafta {b} tane {item} bulunur.",
+    "İki miktar {a} ve {b} olarak verilir.",
+    "{a} tane {item} ile {b} tane {item} karşılaştırılır.",
+    "Bir miktar {a}, diğer miktar {b} olur.",
+    "{a} tane {item} olan ile {b} tane {item} olan kıyaslanır.",
+    "Miktarlar {a} ve {b} olur."
+  ],
+  "compare_question": [
+    "Aradaki fark kaç tane {item} olur?",
+    "Kaç tane {item} fark vardır?",
+    "Fark kaç tane {item} olur?",
+    "Büyük olan küçük olandan kaç tane {item} fazladır?",
+    "Kaç tane {item} daha fazladır?",
+    "Fark miktarı kaç tane {item} olur?",
+    "Sonuçta fark kaç tane {item} olur?",
+    "İki miktar arasındaki fark kaç tane {item} olur?",
+    "Bu iki miktar arasında kaç tane {item} fark vardır?",
+    "Cevap kaç tane {item} olur?"
+  ],
+  "compare_reason_intro": [
+    "Fark için büyükten küçüğü çıkarırız.",
+    "Farkı bulmak için çıkarma yapılır.",
+    "{a} ile {b} arasında çıkarma yapılır.",
+    "Fark hesaplanır.",
+    "Çıkarma işlemi kullanılır.",
+    "Farkı bulmak için büyük miktardan küçük miktar çıkarılır.",
+    "İki miktar arasındaki fark çıkarma ile bulunur.",
+    "Fark için {a} - {b} yapılır.",
+    "Büyük miktardan küçük miktar çıkarılır.",
+    "Çıkarma ile fark bulunur."
+  ],
+  "compare_reason_calc": [
+    "Hesap: {a} - {b} = {diff}.",
+    "{a} taneden {b} çıkarılır: {diff}.",
+    "Çıkarma sonucu {diff} olur.",
+    "{a} - {b} işlemi {diff} verir.",
+    "Sonuç {diff}.",
+    "Fark {diff}.",
+    "Çıkarma yapılır: {a} - {b} = {diff}.",
+    "İşlem sonucu fark {diff} olur.",
+    "{diff} bulunur.",
+    "{diff} elde edilir."
+  ],
+  "compare_reason_final": [
+    "Bu yüzden fark {diff} tane {item} olur.",
+    "Sonuç olarak {diff} tane {item} fark vardır.",
+    "Cevap {diff} tane {item}.",
+    "{diff} tane {item} daha fazladır.",
+    "Fark {diff} tane {item} çıkar.",
+    "{diff} tane {item} olur.",
+    "Toplam fark {diff} tane {item}.",
+    "Bu nedenle fark {diff} tane {item} olur.",
+    "Sonuç olarak {diff} tane {item} fark vardır.",
+    "{diff}."
+  ],
+
+  "reverse_story_start": [
+    "{name} son durumu bilir.",
+    "{name} bir son miktar verir.",
+    "{name} sonunda bir miktar olduğunu söyler.",
+    "{name} son durumda bir miktar görür.",
+    "{name} gün sonunda bir miktar sayar.",
+    "{name} son miktarı kontrol eder.",
+    "{name} son durumda elindeki miktarı açıklar.",
+    "{name} gün sonunda kalan miktarı söyler.",
+    "{name} son durumu inceler.",
+    "{name} son miktarı not eder."
+  ],
+  "reverse_story_event": [
+    "Son durumda {end} tane {item} vardır ve bundan önce {add} tane {item} eklenmiştir.",
+    "{end} tane {item} vardır, daha önce {add} tane {item} eklenmiştir.",
+    "Önce {add} tane {item} eklenmiş, son durumda {end} tane {item} olmuştur.",
+    "{add} tane {item} eklenince {end} tane {item} olmuştur.",
+    "Sonuç {end} tane {item} ve ekleme {add} tane {item} olur.",
+    "Bu miktara gelmeden önce {add} tane {item} eklenmiştir.",
+"Son durumdan önce {add} tane {item} ekleme yapılmıştır.",
+
+    "{end} tane {item} son miktardır, eklenen {add} tane {item} olur.",
+    "Ekleme {add} tane {item} sonrası {end} tane {item} olur.",
+    "{add} tane {item} eklendikten sonra {end} tane {item} olur."
+  ],
+  "reverse_question": [
+    "Başta kaç tane {item} vardı?",
+    "İlk başta kaç tane {item} olur?",
+    "Başlangıç miktarı kaç tane {item} olur?",
+    "Başta kaç tane {item} bulunur?",
+    "Başlangıçta kaç tane {item} vardır?",
+    "Eklenmeden önce kaç tane {item} vardı?",
+"Başlangıçta bulunan {item} sayısı kaçtır?",
+
+    "İlk miktar kaç tane {item} olur?",
+    "Başlangıç sayısı kaç tane {item} olur?",
+    "Cevap olarak başta kaç tane {item} olur?"
+  ],
+  "reverse_reason_intro": [
+    "Başlangıç için eklemeyi geri alırız.",
+    "Başlangıcı bulmak için çıkarma yaparız.",
+    "Son miktardan eklenen çıkarılır.",
+    "Başlangıcı bulmak için ters işlem yapılır.",
+"Son durumdan eklenen miktar çıkarılır.",
+
+    "Ters işlem uygulanır.",
+    "Başlangıç değeri bulunur.",
+    "Ekleme geri çevrilir.",
+    "Tersine hesap yapılır.",
+    "Geriye doğru hesaplanır."
+  ],
+  "reverse_reason_calc": [
+    "Hesap: {end} - {add} = {start}.",
+    "{end} taneden {add} çıkarılır: {start}.",
+    "Çıkarma sonucu {start} olur.",
+    "{end} - {add} işlemi {start} verir.",
+    "Son - ekleme = başlangıç: {start}.",
+    "Ters hesap: {end} - {add} = {start}.",
+"Çıkarma işlemi ile başlangıç {start} bulunur.",
+
+    "Ters işlem sonucu {start}.",
+    "{start} bulunur.",
+    "Sonuç {start}."
+  ],
+  "reverse_reason_final": [
+    "Bu yüzden başta {start} tane {item} vardı.",
+    "Sonuç olarak başlangıç {start} tane {item} olur.",
+    "Cevap {start} tane {item}.",
+    "{name} için başlangıç {start} tane {item} olur.",
+    "Başlangıç miktarı {start} tane {item}.",
+    "{start} tane {item} ile başlanmıştır.",
+    "Bu durumda başlangıç {start} tane {item} olur.",
+"Başta {start} tane {item} vardı.",
+
+    "Başta {start} tane {item} olur.",
+    "{start}."
+  ]
+}

@@ -1,0 +1,143 @@
+Mağazada Ali tanesi 10 TL olan 2 tane simit alır. Buna ek olarak tanesi 5 TL olan 4 tane çay de alır. Ödeme toplamı kaç TL çıkar?
+Cevap: İlk ürün simit için 2 × 10 hesaplanır. Toplam: 20 + 20 = 40 TL. Bu yüzden toplam 40 TL öder.
+
+Markette Ali tanesi 10 TL olan 3 tane simit alır. Buna ek olarak tanesi 6 TL olan 2 tane çay de alır. Bu alışveriş kaç TL tutar?
+Cevap: İki ürünün maliyeti ayrı ayrı bulunur. Toplam maliyet, iki maliyetin toplamıdır: 42 = 30 + 12 = 42 TL. Ali toplam 42 TL verir.
+
+Dükkanda Zeynep 3 tane poğaça alır ve tanesi 8 TL olur. Ek olarak tanesi 5 TL olan 1 tane çay alır. Bu alışveriş kaç TL tutar?
+Cevap: çay için birim fiyat 5 TL ve miktar 1 olur. Toplam: 24 + 5 = 29 TL. Alışveriş toplamı 29 TL eder.
+
+Online siparişte Ali 2 tane simit alır ve tanesi 10 TL olur. Ali yanında tanesi 6 TL olan 1 tane çay de alır. Ödeme toplamı kaç TL çıkar?
+Cevap: İki ürünün maliyeti ayrı ayrı bulunur. Toplam: 20 + 6 = 26 TL. Toplam ödeme 26 TL olur.
+
+Pazarda Ali tanesi 8 TL olan 2 adet poğaça satın alır. Ali ayrıca tanesi 6 TL olan 1 tane su satın alır. Ali toplam ödeme olarak kaç TL verir?
+Cevap: Önce her ürün için toplam maliyet hesaplanır. İki maliyet toplanır: 16 + 6 = 22. Cevap 22 TL.
+
+Bir uygulamada Zeynep tanesi 10 TL olan 3 tane poğaça alır. Bir de tanesi 5 TL olan 1 tane çay alır. Toplam tutar kaç TL olur?
+Cevap: poğaça için 3 ve 10 kullanılır. İki maliyet toplanır: 30 + 5 = 35. Alışveriş toplamı 35 TL eder.
+
+Online siparişte Elif önce tanesi 8 TL olan 3 tane silgi alır. Bir de tanesi 15 TL olan 2 tane defter alır ve 200 TL ile öder. Ödemeden sonra kaç TL geri gelir?
+Cevap: defter için 2 tane ve tanesi 15 TL olur. 24 ve 30 toplanır: 54. Sonra 200 - 54 = 146. Para üstü toplamı 146 TL çıkar.
+
+Pazarda Elif tanesi 6 TL olan 4 adet kalem alır. Tanesi 20 TL olan 2 tane kitap alır, toplam ödeme için 200 TL verir. Para üstü kaç TL olur?
+Cevap: Toplam maliyet iki ürünün maliyetlerinin toplamıdır. Önce toplam maliyet 64 = 24 + 40 bulunur, sonra para üstü 136 = 200 - 64 hesaplanır. Bu yüzden 136 TL para üstü alır.
+
+Kırtasiyede Mert 4 tane silgi alır, birim fiyat 8 TL olur. Ayrıca tanesi 20 TL olan 1 tane kitap alır ve kasada 200 TL verir. Mert kaç TL para üstü alır?
+Cevap: Para üstü için ödenen miktardan toplam maliyet çıkarılır. Para üstü çıkarma ile bulunur: 200 - 52 = 148 TL. Bu yüzden 148 TL para üstü alır.
+
+Bir sitede Elif tanesi 6 TL olan 2 adet silgi alır. Buna ek olarak tanesi 20 TL olan 2 tane defter de alır ve 200 TL ile ödeme yapar. Para üstü kaç TL olur?
+Cevap: silgi için 2 × 6 hesaplanır. Para üstü çıkarma ile bulunur: 200 - 52 = 148 TL. Sonuç 148 TL olur.
+
+Online siparişte Mert tanesi 6 TL olan 4 adet silgi alır. Bir de tanesi 20 TL olan 2 tane defter alır ve 200 TL ile öder. Para üstü toplamı kaç TL çıkar?
+Cevap: defter için 2 tane ve tanesi 20 TL olur. silgi maliyeti: 4 × 6 = 24 TL. defter maliyeti: 2 × 20 = 40 TL. Para üstü 136 TL olur.
+
+Bir sitede Mert tanesi 6 TL olan 3 adet kalem alır. Ayrıca tanesi 15 TL olan 1 tane kitap alır ve kasada 200 TL verir. Ödemeden sonra kaç TL geri gelir?
+Cevap: Toplam maliyet iki ürünün maliyetlerinin toplamıdır. 18 ve 15 toplanır: 33. Sonra 200 - 33 = 167. Para üstü 167 TL olur.
+
+Ev içinde Deniz kutuda 12 tane bilye sayar. 12 tane bilye eklenir ve toplam 24 tane olur. Eşit paylaşım 6 kişi arasında yapılır. Kişi başına düşen bilye sayısı kaçtır?
+Cevap: Toplam 24 tane bilye olduğu bilinir. Bölme işlemi: 24 / 6 = 4. Eşit paylaşım sonucu 4 tane bilye olur.
+
+Evde Deniz masada 24 tane bilye olduğunu fark eder. Daha sonra 24 tane bilye gelir ve toplam 48 tane olur. 3 kişi eşit paylaşım yapar. Bir kişi kaç tane bilye alır?
+Cevap: Önce toplam bulunur: başlangıç 24 ve eklenen 24. 24 + 24 = 48. Sonra 48 ÷ 3 = 16. Deniz için kişi başına 16 tane bilye olur.
+
+Evde Deniz 36 tane şeker olduğunu bilir. 12 tane şeker eklenir ve toplam 48 tane olur. Eşit paylaşım 6 kişi arasında yapılır. Kişi başına kaç tane şeker düşer?
+Cevap: Veriler 48 ve 6 olur. 36 + 12 = 48. Sonra 48 ÷ 6 = 8. Deniz için kişi başına 8 tane şeker olur.
+
+Evde Deniz 36 tane bilye ile başlar. Eklenen 24 tane ile toplam 60 tane bilye olur. 3 kişi eşit paylaşır. Cevap olarak kişi başına kaç tane bilye düşer?
+Cevap: Toplam bilye sayısı 36 + 24 ile hesaplanır. 20 bulunur: 60 ÷ 3 = 20. 20 tane bilye düşer.
+
+Evde Deniz başta 36 tane şeker olduğunu görür. Daha sonra 12 tane şeker gelir ve toplam 48 tane olur. 3 kişi eşit paylaşım yapar. Kişi başına kaç tane şeker düşer?
+Cevap: Toplam şeker sayısı 36 + 12 ile hesaplanır. Toplam: 36 + 12 = 48. Eşit paylaşım: 48 ÷ 3 = 16. Eşit paylaşım sonucu 16 tane şeker olur.
+
+Okulda Deniz kutuda 12 tane bilye sayar. Sonra 12 tane bilye daha ekler ve toplam 24 tane olur. Bunu 6 kişi arasında eşit paylaşır. Paylaşınca kişi başına kaç tane bilye gelir?
+Cevap: 12 tane ile 12 tane birleştirilir. 4 bulunur: 24 ÷ 6 = 4. Bu yüzden kişi başına 4 tane bilye düşer.
+
+Zeynep bir ayakkabı görür. 500 TL olan ayakkabı için indirim % 50 olur. Sonuçta kaç TL öder?
+Cevap: İndirim oranı % 50 olduğuna göre kalan oran % 50 olur. İndirimli fiyat: 500 × 50 ÷ 100 = 250 TL. Bu yüzden indirimli fiyat 250 TL olur.
+
+Ali vitrine bakarken bir ayakkabı görür. 500 TL olan ayakkabı için % 50 indirim uygulanır. İndirimli fiyat kaç TL olur?
+Cevap: Toplam fiyatın % 50 kadarı ödenir. Sonuç: 500 × 50 ÷ 100 = 250 TL. Bu yüzden indirimli fiyat 250 TL olur.
+
+Ali bir ayakkabı görür. ayakkabı fiyatı 500 TL olur ve % 20 indirim vardır. İndirimli tutar kaç TL olur?
+Cevap: Ödenecek oran % 80 olur çünkü 100 - 20 = 80. Hesap: 500 * 80 / 100 = 400. Cevap 400 TL.
+
+Ali ayakkabı satın almayı planlar. ayakkabı için fiyat 800 TL olur, % 50 indirim yapılır. İndirim uygulanınca fiyat kaç TL olur?
+Cevap: İlk adım net oranı bulmaktır: 100 - 50 = 50. Çarpıp böleriz: 800 × 50 / 100 = 400. Bu yüzden indirimli fiyat 400 TL olur.
+
+Ali mont satın almayı planlar. mont için etiket fiyatı 500 TL olur ve % 20 indirim yapılır. Ödenecek tutar kaç TL olur?
+Cevap: İndirim oranı % 20 olduğuna göre kalan oran % 80 olur. Net oran % 80 olur (100 - 20). İndirimli tutar: 500 × 80 ÷ 100 = 400 TL bulunur. Ali indirimden sonra 400 TL öder.
+
+Ali bir ayakkabı seçer. 200 TL olan ayakkabı için % 50 indirim uygulanır. İndirimli tutar kaç TL olur?
+Cevap: Toplam fiyatın % 50 kadarı ödenir. Son fiyat: 200 × 50 ÷ 100 = 100 TL olur. Cevap 100 TL.
+
+Zeynep çanta satın almayı planlar. çanta etiket fiyatı 800 TL olur, zam oranı % 50 olur. Zam sonrası fiyat kaç TL olur?
+Cevap: İlk adım yeni oranı bulmaktır: 100 + 50 = 150. Zamlı fiyat: 800 × 150 ÷ 100 = 1200 TL. Bu yüzden zamlı fiyat 1200 TL olur.
+
+Ali bir ürün olarak çanta almak ister. çanta için etiket fiyatı 500 TL olur ve % 20 zam yapılır. Sonuçta kaç TL öder?
+Cevap: Yeni oran % 120 olur. Hesap: 500 * 120 / 100 = 600. Sonuç olarak 600 TL olur.
+
+Ali telefon kılıfı satın almayı planlar. telefon kılıfı için etiket fiyatı 200 TL olur ve % 50 zam yapılır. Zamlı fiyat kaç TL olur?
+Cevap: Toplam fiyatın % 150 kadarı olur. Çarpıp böleriz: 200 × 150 / 100 = 300. Sonuç olarak 300 TL olur.
+
+Zeynep telefon kılıfı satın almayı planlar. telefon kılıfı için etiket fiyatı 800 TL olur ve % 20 zam yapılır. Zeynep zamdan sonra kaç TL öder?
+Cevap: Zam sonrası yüzde 120 olur. Çarpıp böleriz: 800 × 120 / 100 = 960. Zeynep zamdan sonra 960 TL öder.
+
+Zeynep bir telefon kılıfı beğenir. 500 TL olan telefon kılıfı için zam % 25 olur. Zam sonrası fiyat kaç TL olur?
+Cevap: Zamdan sonra fiyatın % 125 kadarı alınır. Brüt oran % 125 olur (100 + 25). Zamlı tutar: 500 × 125 ÷ 100 = 625 TL bulunur. Son fiyat 625 TL çıkar.
+
+Ali telefon kılıfı satın almayı planlar. telefon kılıfı için fiyat 200 TL olur, % 50 zam yapılır. Son fiyat kaç TL çıkar?
+Cevap: Toplam fiyatın % 150 kadarı olur. Çarpıp böleriz: 200 × 150 / 100 = 300. Sonuç olarak 300 TL olur.
+
+Bir uygulamada Zeynep bir ürün seçer: defter. % 20 indirim vardır. Birim fiyat 40 TL olur. 2 adet alınır. Toplam ödeme kaç TL eder?
+Cevap: İndirim oranı % 20 olduğuna göre net oran % 80 olur. Sonuç hesabı: 64 = 32 × 2. 64 TL öder.
+
+Dükkanda Ali alışveriş için defter seçer. 3 adet alınır. Birim fiyat 20 TL olur ve % 20 indirim uygulanır. Toplam ödeme kaç TL eder?
+Cevap: Ödeme için indirimli birim fiyat ve adet sayısı kullanılır. İndirimli birim fiyat: 20 × 80 ÷ 100 = 16 TL. Toplam: 16 × 3 = 48 TL. Sonuç 48 TL çıkar.
+
+Mağazada Zeynep kalem satın almayı planlar. Birim fiyat 20 TL olur. % 10 indirim ile 2 adet alınır. Sonuçta kaç TL öder?
+Cevap: İndirimden sonra birim fiyat düşer. İşlem sonucu: 36 = 18 × 2 olur. Zeynep toplam 36 TL verir.
+
+Mağazada Zeynep defter görür. 4 adet alınır ve birim fiyat 20 TL olur. İndirim % 20 olur. Bu alışveriş kaç TL tutar?
+Cevap: İlk adım birim fiyatı indirimle hesaplamaktır. İndirimli birim fiyat: 20 × 80 ÷ 100 = 16 TL. Toplam: 16 × 4 = 64 TL. Toplam ödeme 64 TL olur.
+
+İnternetten Zeynep bir ürün olarak defter seçer. Birim fiyat 40 TL olur, indirim oranı % 10 olur, miktar 3 adet olur. Toplam kaç TL öder?
+Cevap: Toplam tutar için önce indirimli birim fiyat hesaplanır. İndirimli birim fiyat 36 olur. 3 adet için 36 × 3 = 108 olur. 108 TL öder.
+
+Bir sitede Zeynep defter görür. % 20 indirim vardır. Birim fiyat 40 TL olur. 3 adet alınır. Ödenecek toplam kaç TL olur?
+Cevap: İndirimden sonra birim fiyat düşer. İşlem sonucu: 96 = 32 × 3 olur. Toplam ödeme 96 TL olur.
+
+Online siparişte Ali alışveriş için kalem seçer. Ali 3 adet alır. Birim fiyat 10 TL olur ve KDV % 10 olur. Toplam maliyet kaç TL olur?
+Cevap: Toplam tutar için KDV dahil birim fiyat ve adet sayısı kullanılır. KDV dahil birim: 10 × 110 ÷ 100 = 11. Toplam: 11 × 3 = 33. Cevap 33 TL.
+
+İnternetten Zeynep kalem almak ister. Birim fiyat 40 TL olur, KDV % 20 olur, 4 adet alınır. Bu alışveriş kaç TL tutar?
+Cevap: Yeni oran 100 + 20 = 120 olur. KDV dahil birim: 40 × 120 ÷ 100 = 48. Toplam: 48 × 4 = 192. Cevap 192 TL.
+
+Bir uygulamada Ali alışveriş için kalem seçer. Ali 4 adet alır. Birim fiyat 20 TL olur ve KDV % 20 olur. Bu alışveriş kaç TL tutar?
+Cevap: Yeni oran 100 + 20 = 120 olur. Hesap sırası: 24 = 20×120/100, sonra 96 = 24×4. Cevap 96 TL.
+
+Kırtasiyede Zeynep alışveriş için defter seçer. KDV oranı % 20 olur. Birim fiyat 30 TL olur. 4 adet alınır. Toplam maliyet kaç TL olur?
+Cevap: Önce KDV dahil birim fiyat bulunur. Önce 30 × 120 / 100 = 36 bulunur, sonra 36 × 4 = 144 olur. Cevap 144 TL.
+
+Mağazada Ali bir ürün seçer: kalem. Birim fiyat 10 TL olur, KDV % 20 olur, 2 adet alınır. Toplam tutar kaç TL çıkar?
+Cevap: Önce KDV dahil birim fiyat bulunur. KDV dahil birim fiyat: 10 × 120 ÷ 100 = 12 TL. Toplam: 12 × 2 = 24 TL. Cevap 24 TL.
+
+Bir uygulamada Ali defter satın almayı planlar. 2 adet alınır. Birim fiyat 20 TL olur ve KDV % 20 olur. KDV dahil toplam ödeme kaç TL olur?
+Cevap: KDV oranı % 20 olduğuna göre yeni oran % 120 olur. KDV dahil birim: 20 × 120 ÷ 100 = 24. Toplam: 24 × 2 = 48. Toplam ödeme 48 TL olur.
+
+Bir uygulamada Zeynep defter görür. Zeynep 4 adet alır. Birim fiyat 10 TL olur. Toplam tutar için % 10 indirim uygulanır. İndirimden sonra toplam kaç TL öder?
+Cevap: Toplam tutara % 10 indirim uygulanır. Toplam: 10 × 4 = 40 TL. İndirimli toplam: 40 × 90 ÷ 100 = 36 TL. Toplam ödeme 36 TL olur.
+
+Online siparişte Zeynep defter satın almayı planlar. Birim fiyat 10 TL olur ve 2 adet alınır. Kasada toplam tutara % 10 indirim uygulanır. İndirimden sonra toplam kaç TL öder?
+Cevap: Toplam tutara % 10 indirim uygulanır. Toplam: 10 × 2 = 20. Net yüzde 90 ile indirimli toplam: 20 × 90 ÷ 100 = 18. Zeynep toplam 18 TL verir.
+
+Bir sitede Zeynep bir ürün seçer: defter. Birim fiyat 20 TL olur ve 4 adet alınır. Kasada toplam tutara % 10 indirim uygulanır. İndirimli toplam tutar kaç TL çıkar?
+Cevap: Ödenecek tutar toplamın % 90 kadarı olur. Önce 20 × 4 = 80 bulunur, sonra 80 × 90 / 100 = 72 bulunur. Toplam ödeme 72 TL olur.
+
+İnternetten Ali kalem görür. 4 adet alınır. Birim fiyat 30 TL olur. Toplam tutara % 25 indirim vardır. Son ödeme kaç TL olur?
+Cevap: Ödenecek tutar toplamın % 75 kadarı olur. Hesap sırası: toplam 120, indirimli toplam 90. Ali toplam 90 TL verir.
+
+İnternetten Ali bir ürün seçer: kalem. Birim fiyat 20 TL olur, 4 adet alınır, toplam fiyata % 25 indirim yapılır. Son ödeme kaç TL olur?
+Cevap: Net oran 100 - 25 = 75 olur. Toplam: 20 × 4 = 80. Net yüzde 75 ile indirimli toplam: 80 × 75 ÷ 100 = 60. Cevap 60 TL.
+
+Mağazada Zeynep bir ürün seçer: defter. Birim fiyat 30 TL olur, 4 adet alınır, toplam fiyata % 10 indirim yapılır. Toplam ödeme kaç TL olur?
+Cevap: Net oran 100 - 10 = 90 olur. Toplam: 30 × 4 = 120 TL. İndirimli toplam: 120 × 90 ÷ 100 = 108 TL. Zeynep toplam 108 TL verir.

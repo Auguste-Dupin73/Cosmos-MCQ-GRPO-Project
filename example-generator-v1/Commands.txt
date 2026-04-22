@@ -1,0 +1,128 @@
+//Always run these from the root directory of the project
+
+//Tier A commands
+
+
+python example-generator-v1\generate_raw.py `
+  --seeds example-generator-v1/data/team_seeds/tierA/codexA_shuffled.jsonl `
+  --phrase_bank example-generator-v1\data\phrase_bank_tierA_all.json `
+  --out example-generator-v1\data\out\shuffle_A.txt `
+  --variants_per_seed 3 `
+  --seed 42 --dump_stats
+
+  
+python raw-to-sft-grpo-dpo-formatter\convert.py `
+     --input example-generator-v1\data\out\shuffle_A.txt `
+     --input_type txt `
+     --out_dir raw-to-sft-grpo-dpo-formatter\data\shuffleA `
+     --seed 42 `
+     --id_prefix gen_A
+
+	 
+//Tier B commands
+	 
+python example-generator-v1\generate_raw.py   --seeds example-generator-v1/data/team_seeds/tierB/codexB_shuffled.jsonl   --phrase_bank example-generator-v1\data\phrase_bank_tierB_all.json  --out example-generator-v1\data\out\shuffle_B.txt ` --variants_per_seed 8   --seed 42  --intent_axis  --intent_prob 0.25
+  
+python raw-to-sft-grpo-dpo-formatter\convert.py `
+     --input example-generator-v1\data\out\raw_B.txt `
+     --input_type txt `
+     --out_dir raw-to-sft-grpo-dpo-formatter\data\gen_out_B `
+     --seed 42 `
+     --id_prefix gen_B
+	 
+//Tier C commands
+
+python example-generator-v1\generate_raw.py `
+  --seeds example-generator-v1\data\seeds_llm_clean_C.jsonl `
+  --phrase_bank example-generator-v1\data\phrase_bank_tierC_all.json `
+  --out example-generator-v1\data\out\raw_C.txt `
+  --variants_per_seed 2 `
+  --seed 42
+  
+python raw-to-sft-grpo-dpo-formatter\convert.py     --input example-generator-v1/data/out/shuffleC_p2.txt     --input_type txt      --out_dir raw-to-sft-grpo-dpo-formatter\data\C_shuffle2     --seed 42      --id_prefix gen_C
+	 
+//Unknown-axis included generation(has unknown_axis distro ratio at the end)
+python example-generator-v1\generate_raw.py  --seeds example-generator-v1\data\seeds_llm_clean_C.jsonl   --phrase_bank example-generator-v1\data\phrase_bank_tierC_all.json   --out example-generator-v1\data\out\raw_C_UA.txt   --variants_per_seed 3   --seed 42   --unknown_axis --unknown_prob 0.25
+
+//with stats dump
+python example-generator-v1\generate_raw.py --seeds example-generator-v1/data/team_seeds/tierC/codexCshuffle_p1.jsonl   --phrase_bank example-generator-v1\data\phrase_bank_tierC_all.json   --out example-generator-v1\data\out\shuffleC_p1.txt   --variants_per_seed 12   --seed 42   --unknown_axis --unknown_prob 0.5 --intent_axis --intent_prob 0.35 --distractor_axis --distractor_prob 0.10 --dump_stats
+
+//Distractor axis option-axis --distractor_prob 0.10 --dump_stats
+python example-generator-v1\generate_raw.py --seeds example-generator-v1/data/team_seeds/tierC/codexCshuffle_p2.jsonl   --phrase_bank example-generator-v1\data\phrase_bank_tierC_all.json   --out example-generator-v1\data\out\shuffleC_p2.txt   --variants_per_seed 12   --seed 42   --unknown_axis --unknown_prob 1.0 --intent_axis --intent_prob 0.35 --distractor_axis --distractor_prob 0.10 --dump_stats
+//Phrase Bank location cleanup script
+
+//dry-run
+python example-generator-v1\cleanup_phrase_bank_places.py `
+  --in example-generator-v1\data\phrase_bank_tierB_all.json `
+  --out example-generator-v1\data\phrase_bank_tierB_all.cleaned.json `
+  --dry_run
+ 
+//normal 
+python example-generator-v1\cleanup_phrase_bank_places.py `
+  --in example-generator-v1\data\phrase_bank_tierB_all.json `
+  --out example-generator-v1\data\phrase_bank_tierB_all.cleaned.json
+  
+//Seed Doctor usages
+
+//lint, fix and create a new file as the output
+python example-generator-v1\seed_doctor.py --in_seeds example-generator-v1\data\team_seeds\tierA\yigitayturkseed_tierA.jsonl --fix --out_seeds example-generator-v1\data\team_seeds\tierA\yigitayturkseed_tierA.seeds.fixed.jsonl
+
+//Just lint, no fixes
+python example-generator-v1\seed_doctor.py --in_seeds example-generator-v1\data\team_seeds\tierA\yigitayturkseed_tierA.jsonl 
+
+//lint and fix but in place:
+python example-generator-v1\seed_doctor.py --in_seeds example-generator-v1\data\team_seeds\tierA\yigitayturkseed_tierA.jsonl --fix --in_place
+//amputator
+python example-generator-v1\seed_doctor.py --in_seeds example-generator-v1\data\team_seeds\tierA\yigitayturkseed_tierA.jsonl --fix --in_place --amputate --quarantine amputated.jsonl
+
+//Invalid Seed Pruning script
+
+python example-generator-v1\prune_seed_domains.py `
+  --in example-generator-v1\data\seeds_llm_clean_C.jsonl `
+  --out example-generator-v1\data\seeds_llm_clean_C.pruned.jsonl `
+  --report example-generator-v1\data\out\prune_report_C.json
+
+//Generate using the new pruned file
+python example-generator-v1\generate_raw.py `
+  --seeds example-generator-v1\data\seeds_llm_clean_C.pruned.jsonl `
+  --phrase_bank example-generator-v1\data\phrase_bank_tierC_all.json `
+  --out example-generator-v1\data\out\raw_C.txt `
+  --variants_per_seed 2 `
+  --seed 42
+
+Template: equal_sharing
+Names: 120 Turkish names
+Items: 200 household/food items
+People: 2–12
+Each: 2–80
+Rule: total = people * each
+Target: 700 seeds
+
+//Template counter
+python example-generator-v1/count_templates.py --input C:\Users\Acer\PycharmProjects\Cosmos-Proje\example-generator-v1\data\team_seeds\tierA\codexA_shuffled.jsonl --field template
+python example-generator-v1/count_templates.py --input example-generator-v1/data/team_seeds/tierC/codexCshuffle_p1.jsonl --field template
+python example-generator-v1\seed_doctor.py --in_seeds example-generator-v1\data\team_seeds\tierA\test-codex.jsonl
+
+//detect_duplicates.py
+How to use it
+1) Just detect duplicates (and treat lists as unordered)
+python detect_duplicates.py --in_seeds example-generator-v1/data/team_seeds/tierB/codex_B.jsonl --ignore_list_order
+
+2) Detect duplicates within each template only
+python detect_duplicates.py --in_seeds seeds.jsonl --ignore_list_order --template_scoped
+
+3) Write duplicates to quarantine file
+python detect_duplicates.py --in_seeds seeds.jsonl --ignore_list_order --quarantine dups.jsonl
+
+4) Produce a de-duplicated file (keep first occurrence)
+python detect_duplicates.py --in_seeds seeds.jsonl --ignore_list_order --dedupe --out_seeds seeds.deduped.jsonl
+
+5) De-duplicate but keep the last occurrence
+python detect_duplicates.py --in_seeds seeds.jsonl --ignore_list_order --dedupe --keep last --out_seeds seeds.deduped.jsonl
+
+All the ultimate datasets are made of the same question prompts. And the mixture is the same still.
+A: 18,561 / 49,777 = %37.29
+
+B: 17,656 / 49,777 = %35.47
+
+C: 13,560 / 49,777 = %27.24

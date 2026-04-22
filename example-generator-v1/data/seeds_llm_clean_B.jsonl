@@ -1,0 +1,9 @@
+{"template":"buy_two_items_total_cost","name":["Ali","Zeynep"],"item1":["simit","poğaça"],"price1":[8,10],"qty1":[2,3,5],"item2":["çay","su"],"price2":[5,6],"qty2":[1,2,4],"currency":"TL"}
+{"template":"change_from_payment","name":["Elif","Mert"],"item1":["kalem","silgi"],"price1":[6,8],"qty1":[2,3,4],"item2":["defter","kitap"],"price2":[15,20],"qty2":[1,2],"paid":[200],"currency":"TL"}
+{"template":"add_then_share","name":["Ayşe","Deniz"],"item":["bilye","şeker"],"start":[12,24,36],"add":[12,24],"people":[3,6]}
+{"template":"percentage_discount_final_price","name":["Ali","Zeynep"],"item":["mont","ayakkabı"],"original_price":[200,300,500,800],"discount_pct":[10,20,25,50],"currency":"TL"}
+{"template":"percentage_increase_final_price","name":["Ali","Zeynep"],"item":["telefon kılıfı","çanta"],"original_price":[200,300,500,800],"increase_pct":[10,20,25,50],"currency":"TL"}
+{"template":"discounted_unit_total_cost","name":["Ali","Zeynep"],"item":["defter","kalem"],"unit_price":[20,40],"discount_pct":[10,20,25],"qty":[2,3,4],"currency":"TL"}
+{"template":"vat_total_cost","name":["Ali","Zeynep"],"item":["defter","kalem"],"unit_price":[10,20,30,40],"vat_pct":[10,20],"qty":[2,3,4],"currency":"TL"}
+{"template":"bundle_discount_total_cost","name":["Ali","Zeynep"],"item":["defter","kalem"],"unit_price":[10,20,30,40],"qty":[2,4],"discount_pct":[10,20,25],"currency":"TL"}
+

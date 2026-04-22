@@ -1,0 +1,531 @@
+{
+  "skins": {
+    "retail": {
+      "prefix": [
+        "Mağazada ",
+        "Markette ",
+        "Kırtasiyede ",
+        "Pazarda ",
+        "Dükkanda "
+      ],
+      "suffix": [
+        ""
+      ]
+    },
+    "online": {
+      "prefix": [
+        "İnternetten ",
+        "Online siparişte ",
+        "Bir uygulamada ",
+        "Bir sitede "
+      ],
+      "suffix": [
+        ""
+      ]
+    },
+    "cafe": {
+      "prefix": [
+        "Kafede ",
+        "Büfede ",
+        "Kantinde "
+      ],
+      "suffix": [
+        ""
+      ]
+    },
+    "school": {
+      "prefix": [
+        "Okulda ",
+        "Sınıfta ",
+        "Kütüphanede "
+      ],
+      "suffix": [
+        ""
+      ]
+    },
+    "home": {
+      "prefix": [
+        "Evde ",
+        "Ev içinde "
+      ],
+      "suffix": [
+        ""
+      ]
+    }
+  },
+  "template_skins": {
+    "buy_two_items_total_cost": [
+      "retail",
+      "online"
+    ],
+    "change_from_payment": [
+      "retail",
+      "online"
+    ],
+    "vat_total_cost": [
+      "retail",
+      "online"
+    ],
+    "discounted_unit_total_cost": [
+      "retail",
+      "online"
+    ],
+    "bundle_discount_total_cost": [
+      "retail",
+      "online"
+    ],
+    "add_then_share": [
+      "school",
+      "home"
+    ],
+    "equal_sharing": [
+      "school",
+      "home"
+    ]
+  },
+  "buy2_story_start": [
+    "{name} tanesi {price1} {currency} olan {qty1} tane {item1} alır.",
+    "{name} tanesi {price1} {currency} olan {qty1} adet {item1} satın alır.",
+    "{name} önce tanesi {price1} {currency} olan {qty1} tane {item1} alır.",
+    "{name} {qty1} tane {item1} alır, birim fiyat {price1} {currency} olur.",
+    "{name} tanesi {price1} {currency} olan {qty1} tane {item1} seçer.",
+    "{name} {qty1} tane {item1} alır ve tanesi {price1} {currency} olur."
+  ],
+  "buy2_story_event": [
+    "Ayrıca tanesi {price2} {currency} olan {qty2} tane {item2} alır.",
+    "Buna ek olarak tanesi {price2} {currency} olan {qty2} tane {item2} de alır.",
+    "Sonra tanesi {price2} {currency} olan {qty2} tane {item2} seçer.",
+    "Tanesi {price2} {currency} olan {qty2} tane {item2} daha alır.",
+    "{name} ayrıca tanesi {price2} {currency} olan {qty2} tane {item2} satın alır.",
+    "{name} yanında tanesi {price2} {currency} olan {qty2} tane {item2} de alır.",
+    "Ek olarak tanesi {price2} {currency} olan {qty2} tane {item2} alır.",
+    "Bir de tanesi {price2} {currency} olan {qty2} tane {item2} alır."
+  ],
+  "buy2_question": [
+    "Toplam kaç {currency} öder?",
+    "{name} toplam ödeme olarak kaç {currency} verir?",
+    "Toplam tutar kaç {currency} olur?",
+    "Alışveriş toplamı kaç {currency} eder?",
+    "Toplam maliyet kaç {currency} olur?",
+    "Sonuçta kaç {currency} öder?",
+    "Ödeme toplamı kaç {currency} çıkar?",
+    "Bu alışveriş kaç {currency} tutar?"
+  ],
+  "buy2_reason_intro": [
+    "{item1} için birim fiyat {price1} {currency} ve miktar {qty1} olur. {item2} için birim fiyat {price2} {currency} ve miktar {qty2} olur.",
+    "{qty1} tane {item1} ve tanesi {price1} {currency} olarak verilmiştir. {qty2} tane {item2} ve tanesi {price2} {currency} olarak verilmiştir.",
+    "{item1} için {qty1} ve {price1} kullanılır. Aynısı {item2} için de geçerlidir.",
+    "İlk ürün {item1} için {qty1} × {price1} hesaplanır. İki ürün için de bu yapılmalıdır.",
+    "{item2} için birim fiyat {price2} {currency} ve miktar {qty2} olur. {item1} için birim fiyat {price1} {currency} ve miktar {qty1} olur.",
+    "İkinci ürün {item2} için {qty2} ve {price2} kullanılır. Birinci ürün için ise {item1} için {qty1} ve {price1} verileri kullanılır.",
+    "İki ürünün maliyeti ayrı ayrı bulunur.",
+    "Önce her ürün için toplam maliyet hesaplanır."
+  ],
+  "buy2_reason_calc": [
+    "{item1} maliyeti: {qty1} × {price1} = {cost1} {currency}. {item2} maliyeti: {qty2} × {price2} = {cost2} {currency}. Son olarak bu ikisi toplanır: {cost1} + {cost2} = {total} olarak çıkar.",
+    "İlk maliyet {qty1} × {price1} = {cost1} {currency}, ikinci maliyet {qty2} × {price2} = {cost2} {currency} olur. Toplam maliyet ise bunların toplamıdır: {cost1} + {cost2} = {total}",
+    "Birinci alışverişin maliyeti adet sayısı ve birim fiyat çarpılarak bulunur: {qty1} × {price1} = {cost1}, aynısı ikinci alışveriş için de yapılır: {qty2} × {price2} = {cost2}. Daha sonra bu iki maliyet birbirine eklenerek son(total) maliyet bulunur: {cost1} + {cost2} = {total}.",
+    "Toplam maliyet şu şekilde hesaplanır: {item1} maliyeti bulunur: {qty1} × {price1} = {cost1} ve {item2} maliyeti bulunur: {qty2} × {price2} = {cost2} {currency}. İki maliyetin toplamı ise {cost1} + {cost2} = {total} olarak elde edilir.",
+    "İki maliyetin toplanması gerekmektedir, bu yüzden iki nesnenin maliyetleri ayrı ayrı bulunmalıdır: {item1} için {qty1} × {price1} = {cost1}, aynısı {item2} için de yapılır: {qty2} × {price2} = {cost2}. Bu iki maliyet toplanınca ise {cost1} + {cost2} = {total} olarak tüm maliyet bulunur.",
+    "{item1} ile {item2} için maliyetler hesaplanır: {item1} için {qty1} × {price1} = {cost1}, aynısı {item2} için de yapılır: {qty2} × {price2} = {cost2} olarak bu veriler elde edilir. Daha sonra bu veri toplanır: {cost1} + {cost2} = {total} {currency} olur.",
+    "Toplam maliyet, iki maliyetin toplamıdır. {item1} maliyeti elde edilir: {qty1} × {price1} = {cost1} ve {item2} maliyeti elde edilir: {qty2} × {price2}{total} = {cost1} + {cost2} = {total} {currency}.",
+    "Sonuç hesabı için iki işlemin toplam fiyatı bulunmalıdır: {item1} için {qty1} × {price1} = {cost1}, aynı mantık {item2} için de uygulanır: {qty2} × {price2} = {cost2}. {total} = {cost1} + {cost2} = {total} olarak son fiyat bulunur."
+  ],
+  "buy2_reason_final": [
+    "Bu yüzden toplam {total} {currency} öder.",
+    "Toplam ödeme {total} {currency} olur.",
+    "Sonuç {total} {currency} olur.",
+    "{name} toplam {total} {currency} verir.",
+    "Alışveriş toplamı {total} {currency} eder.",
+    "Cevap {total} {currency}.",
+    "Toplam maliyet {total} {currency} çıkar.",
+    "{total} {currency} öder."
+  ],
+  "change_story_start": [
+    "{name} tanesi {price1} {currency} olan {qty1} tane {item1} alır.",
+    "{name} tanesi {price1} {currency} olan {qty1} tane {item1} satın alır.",
+    "{name} tanesi {price1} {currency} olan {qty1} adet {item1} alır.",
+    "{name} önce tanesi {price1} {currency} olan {qty1} tane {item1} alır.",
+    "{name} {qty1} tane {item1} alır ve tanesi {price1} {currency} olur.",
+    "{name} tanesi {price1} {currency} olan {qty1} tane {item1} seçer.",
+    "{name} {qty1} tane {item1} alır, birim fiyat {price1} {currency} olur."
+  ],
+  "change_story_event": [
+    "Ayrıca tanesi {price2} {currency} olan {qty2} tane {item2} alır ve kasada {paid} {currency} verir.",
+    "Buna ek olarak tanesi {price2} {currency} olan {qty2} tane {item2} de alır ve {paid} {currency} ile ödeme yapar.",
+    "Tanesi {price2} {currency} olan {qty2} tane {item2} daha alır ve {paid} {currency} verir.",
+    "Sonra tanesi {price2} {currency} olan {qty2} tane {item2} alır, ödeme olarak {paid} {currency} uzatır.",
+    "{name} ayrıca tanesi {price2} {currency} olan {qty2} tane {item2} alır ve {paid} {currency} öder.",
+    "Tanesi {price2} {currency} olan {qty2} tane {item2} alır ve kasada {paid} {currency} verir.",
+    "Bir de tanesi {price2} {currency} olan {qty2} tane {item2} alır ve {paid} {currency} ile öder.",
+    "Tanesi {price2} {currency} olan {qty2} tane {item2} alır, toplam ödeme için {paid} {currency} verir."
+  ],
+  "change_question": [
+    "Para üstü kaç {currency} olur?",
+    "{name} kaç {currency} para üstü alır?",
+    "Kasadan kaç {currency} geri alır?",
+    "Para üstü toplamı kaç {currency} çıkar?",
+    "Geriye kaç {currency} kalır?",
+    "Ödemeden sonra kaç {currency} geri gelir?",
+    "Para üstü kaç {currency} olur?",
+    "Sonuçta para üstü kaç {currency} çıkar?"
+  ],
+  "change_reason_intro": [
+    "Önce {item1} maliyeti bulunur: {qty1} tane ve tanesi {price1} {currency}. Sonra {item2} maliyeti bulunur: {qty2} tane ve tanesi {price2} {currency}",
+    "{item1} için {qty1} × {price1} hesaplanır. {item2} için {qty2} tane ve tanesi {price2} {currency} olarak verilir.",
+    "{item2} için {qty2} tane ve tanesi {price2} {currency} olur. {item1} için {qty1} tane ve tanesi {price1} {currency} olarak verilir.",
+    "İkinci ürün {item2} için {qty2} × {price2} hesaplanır. Birinci ürün ise {item1} için {qty1} × {price1} hesaplanır.",
+    "Toplam maliyet iki ürünün maliyetlerinin toplamıdır. Para üstü için de ödenen miktar ile toplam maliyet arasındaki fark bulunmalıdır.",
+    "Para üstü için ödenen miktardan toplam maliyet çıkarılır.",
+    "Önce toplam tutar, sonra para üstü hesaplanır."
+  ],
+  "change_reason_calc": [
+    "{item1} maliyeti: {qty1} × {price1} = {cost1} {currency}. {item2} maliyeti: {qty2} × {price2} = {cost2} {currency}. Toplam maliyet: {cost1} + {cost2} = {total_cost} {currency}. Para üstü ise ödenen miktardan toplam maliyetin çıkarılması yoluyla elde edilir: {paid} - {total_cost} = {change} {currency}.",
+    "{item1} için maliyet: {qty1} × {price1} = {cost1} {currency}. {item2} için maliyet: {qty2} × {price2} = {cost2} {currency}. Toplam maliyet: {cost1} + {cost2} = {total_cost} {currency} olarak bulunur. Para üstü ise ödenen miktardan toplam maliyetin çıkarılması sayesinde bulunur: {paid} - {total_cost} = {change} {currency}.",
+    "{item1} adına maliyet: {qty1} × {price1} = {cost1} {currency}. {item2} adına maliyet: {qty2} × {price2} = {cost2} {currency}. Toplam maliyet: {cost1} + {cost2} = {total_cost} {currency} olarak çıkar. Para üstü: {paid} - {total_cost} = {change} {currency}.",
+    "Toplam maliyet: {cost1} + {cost2} = {total_cost} {currency} olarak elde edilir. Sonra ödenen miktardan toplam maliyet çıkarılır: {paid} - {total_cost} = {change}.",
+    "{item1} ile {item2} için toplam maliyeti bulmalıyız. {item1} maliyeti: {qty1} × {price1} = {cost1} {currency}, {item2} maliyeti: {qty2} × {price2} = {cost2} {currency}. Toplam maliyet elde edilir: {total_cost} = {cost1} + {cost2}, ardından {paid} - {total_cost} ile {change} bulunur.",
+    "{item1} maliyeti şuşekilde bulunur: {qty1} × {price1} = {cost1} {currency}. {item2} maliyeti de şu şekilde bulunur: {qty2} × {price2} = {cost2} {currency}. Önce toplam maliyet bulunur: {total_cost} = {cost1} + {cost2}, daha sonra para üstü {change} = {paid} - {total_cost} olarak hesaplanır.",
+    "{item1} için maliyet hesabı: {qty1} × {price1} = {cost1} {currency}. {item2} için maliyet hesabı: {qty2} × {price2} = {cost2} {currency}. Toplam maliyet bulunmalıdır: {total_cost} = {cost1} + {cost2}Para üstü çıkarma ile bulunur: {paid} - {total_cost} = {change} {currency}.",
+    "Sonuç hesabı için şu adımlar izlenir: {item1} maliyeti bulunur: {qty1} × {price1} = {cost1} {currency}. {item2} maliyeti bulunur: {qty2} × {price2} = {cost2} {currency}. Sonra bu maliyetler toplanarak toplam maliyet bulunur: {total_cost} = {cost1} + {cost2}. Para üstü de ödenen miktar ile toplam maliyetin farkı oldupuna göre: {paid} - {total_cost} = {paid} olarak çıkar."
+  ],
+  "change_reason_final": [
+    "Bu yüzden {change} {currency} para üstü alır.",
+    "Para üstü {change} {currency} olur.",
+    "Sonuç {change} {currency} olur.",
+    "{name} kasadan {change} {currency} geri alır.",
+    "Cevap {change} {currency}.",
+    "Geri alınan para {change} {currency} olur.",
+    "Para üstü toplamı {change} {currency} çıkar.",
+    "{change} {currency} para üstü olur."
+  ],
+  "addshare_story_start": [
+    "{name} elinde {start} tane {item} olduğunu söyler.",
+    "{name} başta {start} tane {item} olduğunu görür.",
+    "{name} {start} tane {item} ile başlar.",
+    "{name} başlangıçta {start} tane {item} bulur.",
+    "{name} yanında {start} tane {item} taşır.",
+    "{name} kutuda {start} tane {item} sayar.",
+    "{name} masada {start} tane {item} olduğunu fark eder.",
+    "{name} {start} tane {item} olduğunu bilir."
+  ],
+  "addshare_story_event": [
+    "Sonra {add} tane {item} daha ekler ve toplam {total} tane olur. Bunu {people} kişi arasında eşit paylaşır.",
+    "Daha sonra {add} tane {item} gelir ve toplam {total} tane olur. {people} kişi eşit paylaşım yapar.",
+    "{add} tane {item} eklenir ve toplam {total} tane olur. Eşit paylaşım {people} kişi arasında yapılır.",
+    "{name} {add} tane {item} ekler, toplam {total} tane olur. Sonra {people} kişi arasında eşit böler.",
+    "{add} tane {item} daha alınır ve toplam {total} tane olur. {people} kişi için eşit paylaşım yapılır.",
+    "Toplam {total} tane {item} olur. {people} kişi bunları eşit paylaşır.",
+    "{name} {add} tane {item} daha ekler ve toplam {total} tane olur. {people} kişi paylaşır.",
+    "Eklenen {add} tane ile toplam {total} tane {item} olur. {people} kişi eşit paylaşır."
+  ],
+  "addshare_question": [
+    "Kişi başına kaç tane {item} düşer?",
+    "Her kişiye kaç tane {item} düşer?",
+    "Bir kişi kaç tane {item} alır?",
+    "Eşit paylaşımda kişi başına kaç tane {item} olur?",
+    "Paylaşınca kişi başına kaç tane {item} gelir?",
+    "Kişi başına düşen {item} sayısı kaçtır?",
+    "Sonuçta her kişi kaç tane {item} alır?",
+    "Cevap olarak kişi başına kaç tane {item} düşer?"
+  ],
+  "addshare_reason_intro": [
+    "Önce toplam bulunur: başlangıç {start} ve eklenen {add}.",
+    "Toplam {item} sayısı {start} + {add} ile hesaplanır.",
+    "İlk adım toplamı bulmaktır.",
+    "{start} tane ile {add} tane birleştirilir.",
+    "Toplam {total} tane {item} olduğu bilinir.",
+    "Toplam {total} tane {item} {people} kişi arasında paylaşılır.",
+    "Eşit paylaşım için toplam ve kişi sayısı kullanılır.",
+    "Veriler {total} ve {people} olur."
+  ],
+  "addshare_reason_calc": [
+    "Toplam: {start} + {add} = {total}. Eşit paylaşım sonucu: {total} ÷ {people} = {each}.",
+    "Önce {start} + {add} = {total} şeklinde toplam adet bulunur. Sonra toplam adet kişi adedine bölünür: {total}/{people} = {each} bulunur.",
+    "{start} + {add} = {total} olarak toplam adet sayısı bulunur. Sonra eşit paylaşım yapılır: {total} ÷ {people} = {each}.",
+    "Hesap sırası: toplam {total} = {start} + {add}, kişi başına {each} = {total} ÷ {people}.",
+    "Toplam adet: {start} + {add} = {total} olarak elde edilir. Bölme işlemi sonucu ise: {total} / {people} = {each} olarak elde edilir.",
+    "Son durumda toplam: {start} + {add} = {total} olarak çıkar. Kişi başına miktar bölme ile bulunur: {total} ÷ {people} = {each}.",
+    "En sonda toplam adet: {start} + {add} = {total} olarak bulunur. Kişi başına düşen miktar için bölme işlemi yapılmalıdır. Sonuç: {total} ÷ {people} = {each}.",
+    "Son durumdaki toplam adet verisi bulunmalıdır:  {start} + {add} = {total} şeklinde bulunur. Daha sonra bölme işlemi yapılarak kişi başına düşen adet bulunur: {total} ÷ {people} = {each}."
+  ],
+  "addshare_reason_final": [
+    "Bu yüzden kişi başına {each} tane {item} düşer.",
+    "Her kişiye {each} tane {item} düşer.",
+    "Bir kişi {each} tane {item} alır.",
+    "Eşit paylaşım sonucu {each} tane {item} olur.",
+    "Cevap {each} tane {item}.",
+    "{name} için kişi başına {each} tane {item} olur.",
+    "Son durumda her kişi {each} tane {item} alır.",
+    "{each} tane {item} düşer."
+  ],
+  "discount_story_start": [
+    "{name} bir ürün olarak {item} almak ister.",
+    "{name} bir {item} görür.",
+    "{name} bir {item} beğenir.",
+    "{name} {item} satın almayı planlar.",
+    "{name} bir {item} seçer.",
+    "{name} vitrine bakarken bir {item} görür.",
+    "{name} bir {item} bulur.",
+    "{name} bir {item} almak ister."
+  ],
+  "discount_story_event": [
+    "{item} için etiket fiyatı {original_price} {currency} olur ve % {discount_pct} indirim yapılır.",
+    "{item} etiket fiyatı {original_price} {currency} olur, indirim oranı % {discount_pct} olur.",
+    "{original_price} {currency} olan {item} için % {discount_pct} indirim uygulanır.",
+    "{item} fiyatı {original_price} {currency} olur ve % {discount_pct} indirim vardır.",
+    "{name} {original_price} {currency} etiketli {item} bulur, % {discount_pct} indirim görülür.",
+    "{item} için fiyat {original_price} {currency} olur, % {discount_pct} indirim yapılır.",
+    "{original_price} {currency} olan {item} için indirim % {discount_pct} olur.",
+    "{item} etiket fiyatı {original_price} {currency} olur ve % {discount_pct} indirim uygulanır."
+  ],
+  "discount_question": [
+    "İndirimli fiyat kaç {currency} olur?",
+    "{name} indirimden sonra kaç {currency} öder?",
+    "Son fiyat kaç {currency} çıkar?",
+    "İndirim uygulanınca fiyat kaç {currency} olur?",
+    "Ödenecek tutar kaç {currency} olur?",
+    "İndirimli tutar kaç {currency} olur?",
+    "Sonuçta kaç {currency} öder?",
+    "İndirim sonrası fiyat kaç {currency} olur?"
+  ],
+  "discount_reason_intro": [
+    "İndirim oranı % {discount_pct} olduğuna göre kalan oran %100 - % {discount_pct} = % {net_pct} olur.",
+    "Ödenecek oran % {net_pct} olur çünkü 100 - {discount_pct} = {net_pct}.",
+    "İlk adım net oranı bulmaktır: %100 - % {discount_pct} = % {net_pct}.",
+    "İndirim sonrası kalan yüzde %100 - % {discount_pct} = % {net_pct} olur.",
+    "Toplam fiyatın %100 - % {discount_pct} = % {net_pct} kadarı ödenir.",
+    "İndirimden sonra fiyatın%100 - % {discount_pct} = % {net_pct} kadarı kalır.",
+    "Kalan oran %100 - % {discount_pct} = % {net_pct} olur.",
+    "Net yüzde %100 - % {discount_pct} = % {net_pct} bulunur."
+  ],
+  "discount_reason_calc": [
+    "İndirimli fiyat: {original_price} × {net_pct} ÷ 100 = {final_price} {currency}.",
+    "Hesap: {original_price} * {net_pct} / 100 = {final_price}.",
+    "{original_price} fiyatın % {net_pct} kadarı {original_price} * {net_pct} / 100 = {final_price} {currency} eder.",
+    "Çarpıp böleriz: {original_price} × {net_pct} / 100 = {final_price}.",
+    "Son fiyat: {original_price} × {net_pct} ÷ 100 = {final_price} {currency} olur.",
+    "Sonuç: {original_price} × {net_pct} ÷ 100 = {final_price} {currency}.",
+    "Net oran % {net_pct} olur. (100 - {discount_pct} = {net_pct}). İndirimli tutar: {original_price} × {net_pct} ÷ 100 = {final_price} {currency} bulunur.",
+    "İndirim uygulayınca: {final_price} = {original_price} × {net_pct} ÷ 100 = {final_price} {currency} elde edilir."
+  ],
+  "discount_reason_final": [
+    "Bu yüzden indirimli fiyat {final_price} {currency} olur.",
+    "{name} indirimden sonra {final_price} {currency} öder.",
+    "Son fiyat {final_price} {currency} çıkar.",
+    "Cevap {final_price} {currency}.",
+    "Ödenecek tutar {final_price} {currency} olur.",
+    "İndirim sonrası fiyat {final_price} {currency} olur.",
+    "{final_price} {currency} öder.",
+    "Sonuç olarak {final_price} {currency} olur."
+  ],
+  "increase_story_start": [
+    "{name} bir ürün olarak {item} almak ister.",
+    "{name} bir {item} görür.",
+    "{name} bir {item} beğenir.",
+    "{name} {item} satın almayı planlar.",
+    "{name} bir {item} seçer.",
+    "{name} vitrine bakarken bir {item} görür.",
+    "{name} bir {item} bulur.",
+    "{name} bir {item} almak ister."
+  ],
+  "increase_story_event": [
+    "{item} için etiket fiyatı {original_price} {currency} olur ve % {increase_pct} zam yapılır.",
+    "{item} etiket fiyatı {original_price} {currency} olur, zam oranı % {increase_pct} olur.",
+    "{original_price} {currency} olan {item} için % {increase_pct} zam uygulanır.",
+    "{item} fiyatı {original_price} {currency} olur ve % {increase_pct} zam vardır.",
+    "{name} {original_price} {currency} etiketli {item} bulur, % {increase_pct} zam görülür.",
+    "{item} için fiyat {original_price} {currency} olur, % {increase_pct} zam yapılır.",
+    "{original_price} {currency} olan {item} için zam % {increase_pct} olur.",
+    "{item} etiket fiyatı {original_price} {currency} olur ve % {increase_pct} zam uygulanır."
+  ],
+  "increase_question": [
+    "Zamlı fiyat kaç {currency} olur?",
+    "{name} zamdan sonra kaç {currency} öder?",
+    "Son fiyat kaç {currency} çıkar?",
+    "Zam uygulanınca fiyat kaç {currency} olur?",
+    "Ödenecek tutar kaç {currency} olur?",
+    "Zamlı tutar kaç {currency} olur?",
+    "Sonuçta kaç {currency} öder?",
+    "Zam sonrası fiyat kaç {currency} olur?"
+  ],
+  "increase_reason_intro": [
+    "Zam oranı % {increase_pct} olduğuna göre yeni oran % 100 + % {increase_pct} = % {gross_pct} olur.",
+    "Ödenecek oran % {gross_pct} olur çünkü 100 + {increase_pct} = {gross_pct}.",
+    "İlk adım yeni oranı bulmaktır: 100 + {increase_pct} = {gross_pct}.",
+    "Zam sonrası yüzde 100 + {increase_pct} = {gross_pct} olur.",
+    "Toplam fiyatın % 100 + % {increase_pct} = % {gross_pct} kadarı olur.",
+    "Zamdan sonra fiyatın % 100 + % {increase_pct} = % {gross_pct} kadarı alınır.",
+    "Yeni oran % 100 + % {increase_pct} = % {gross_pct} olur.",
+    "Brüt yüzde % 100 + % {increase_pct} = % {gross_pct} bulunur."
+  ],
+  "increase_reason_calc": [
+    "Zamlı fiyat: {original_price} × {gross_pct} ÷ 100 = {final_price} {currency}.",
+    "Hesap: {original_price} * {gross_pct} / 100 = {final_price}.",
+    "{original_price} fiyatın % {gross_pct} kadarı {original_price} × {gross_pct} = {final_price} {currency} eder.",
+    "Çarpıp böleriz: {original_price} × {gross_pct} / 100 = {final_price}.",
+    "Son fiyat: {original_price} × {gross_pct} ÷ 100 = {final_price} {currency} olur.",
+    "Sonuç: {original_price} × {gross_pct} ÷ 100 = {final_price} {currency}.",
+    "Brüt oran % {gross_pct} olur (100 + {increase_pct}). Zamlı tutar: {original_price} × {gross_pct} ÷ 100 = {final_price} {currency} bulunur.",
+    "Zam sonrası: {final_price} = {original_price} × {gross_pct} ÷ 100 = {final_price} {currency} elde edilir."
+  ],
+  "increase_reason_final": [
+    "Bu yüzden zamlı fiyat {final_price} {currency} olur.",
+    "{name} zamdan sonra {final_price} {currency} öder.",
+    "Son fiyat {final_price} {currency} çıkar.",
+    "Cevap {final_price} {currency}.",
+    "Ödenecek tutar {final_price} {currency} olur.",
+    "Zam sonrası fiyat {final_price} {currency} olur.",
+    "{final_price} {currency} öder.",
+    "Sonuç olarak {final_price} {currency} olur."
+  ],
+  "discunit_story_start": [
+    "{name} bir ürün seçer: {item}.",
+    "{name} {item} almak ister.",
+    "{name} {item} görür.",
+    "{name} bir ürün olarak {item} seçer.",
+    "{name} alışveriş için {item} seçer.",
+    "{name} {item} satın almayı planlar.",
+    "{name} {item} bulur.",
+    "{name} bir ürün olarak {item} alır."
+  ],
+  "discunit_story_event": [
+    "Birim fiyat {unit_price} {currency} olur, % {discount_pct} indirim vardır, {qty} adet alınır.",
+    "{qty} adet alınır. Birim fiyat {unit_price} {currency} olur ve % {discount_pct} indirim uygulanır.",
+    "Birim fiyat {unit_price} {currency} olur. % {discount_pct} indirim ile {qty} adet alınır.",
+    "% {discount_pct} indirim vardır. Birim fiyat {unit_price} {currency} olur. {qty} adet alınır.",
+    "{qty} adet alınır ve birim fiyat {unit_price} {currency} olur. İndirim % {discount_pct} olur.",
+    "Birim fiyat {unit_price} {currency} olur, indirim oranı % {discount_pct} olur, miktar {qty} adet olur.",
+    "Etiket birim fiyat {unit_price} {currency} olur. % {discount_pct} indirim sonrası {qty} adet alınır.",
+    "{name} {qty} adet alır. Birim fiyat {unit_price} {currency} olur ve % {discount_pct} indirim vardır."
+  ],
+  "discunit_question": [
+    "Toplam kaç {currency} öder?",
+    "İndirimden sonra toplam ödeme kaç {currency} olur?",
+    "Toplam tutar kaç {currency} çıkar?",
+    "Bu alışveriş kaç {currency} tutar?",
+    "Toplam maliyet kaç {currency} olur?",
+    "Sonuçta kaç {currency} öder?",
+    "Ödenecek toplam kaç {currency} olur?",
+    "Toplam ödeme kaç {currency} eder?"
+  ],
+  "discunit_reason_intro": [
+    "Önce indirim sonrası birim fiyat bulunur. Net ödenecek oran % 100 - % {discount_pct} = % {net_pct} olur.",
+    "İlk adım birim fiyatı indirimle hesaplamaktır. Net ödenecek oran % 100 - % {discount_pct} = % {net_pct} olur.",
+    "İndirim oranı % {discount_pct} olduğuna göre net oran % 100 - % {discount_pct} = % {net_pct} olur.",
+    "Birim fiyat {unit_price} {currency} ve indirim % {discount_pct} olur. Net ödenecek oran % 100 - % {discount_pct} = % {net_pct} olur.",
+    "Net ödenecek oran % 100 - % {discount_pct} = % {net_pct} olur.",
+    "İndirimden sonra birim fiyat düşer. Net ödenecek oran % 100 - % {discount_pct} = % {net_pct} olur.",
+    "Ödeme için indirimli birim fiyat ve adet sayısı kullanılır. Net ödenecek oran % 100 - % {discount_pct} = % {net_pct} olur.",
+    "Toplam tutar için önce indirimli birim fiyat hesaplanır. Net ödenecek oran % 100 - % {discount_pct} = % {net_pct} olur."
+  ],
+  "discunit_reason_calc": [
+    "İndirimli birim fiyat: {unit_price} × {net_pct} ÷ 100 = {discounted_unit_price} {currency}. Toplam: {discounted_unit_price} × {qty} = {total} {currency}.",
+    "Önce {unit_price} × {net_pct} / 100 = {discounted_unit_price} bulunur, sonra {discounted_unit_price} × {qty} = {total} olur.",
+    "Net yüzde % 100 - % {discount_pct} = % {net_pct}. Birim: {unit_price} × {net_pct} / 100 = {discounted_unit_price}. Toplam: {discounted_unit_price} × {qty} = {total}.",
+    "İndirimli birim fiyat {discounted_unit_price} olur. {qty} adet için {discounted_unit_price} × {qty} = {total} olur.",
+    "İndirimli birim: {unit_price} × {net_pct} ÷ 100 = {discounted_unit_price}. Toplam: {discounted_unit_price} × {qty} = {total}.",
+    "Hesap sırası: 1)İndirimli fiyatın bulunması: {discounted_unit_price} = {unit_price}×{net_pct}/100, 2)Toplamın bulunması: {total} = {discounted_unit_price}×{qty}."
+  ],
+  "discunit_reason_final": [
+    "Bu yüzden toplam {total} {currency} öder.",
+    "Toplam ödeme {total} {currency} olur.",
+    "Sonuç {total} {currency} çıkar.",
+    "Cevap {total} {currency}.",
+    "Ödenecek toplam {total} {currency} olur.",
+    "{name} toplam {total} {currency} verir.",
+    "Toplam maliyet {total} {currency} olur.",
+    "{total} {currency} öder."
+  ],
+  "vat_story_start": [
+    "{name} bir ürün seçer: {item}.",
+    "{name} {item} almak ister.",
+    "{name} {item} görür.",
+    "{name} alışveriş için {item} seçer.",
+    "{name} bir ürün olarak {item} bulur.",
+    "{name} {item} satın almayı planlar."
+  ],
+  "vat_story_event": [
+    "Birim fiyat {unit_price} {currency} olur, KDV % {vat_pct} olur, {qty} adet alınır.",
+    "{qty} adet alınır. Birim fiyat {unit_price} {currency} olur ve KDV % {vat_pct} olur.",
+    "Birim fiyat {unit_price} {currency} olur. KDV % {vat_pct} ile {qty} adet alınır.",
+    "KDV oranı % {vat_pct} olur. Birim fiyat {unit_price} {currency} olur. {qty} adet alınır.",
+    "{name} {qty} adet alır. Birim fiyat {unit_price} {currency} olur ve KDV % {vat_pct} olur."
+  ],
+  "vat_question": [
+    "Toplam kaç {currency} öder?",
+    "KDV dahil toplam ödeme kaç {currency} olur?",
+    "Toplam tutar kaç {currency} çıkar?",
+    "Bu alışveriş kaç {currency} tutar?",
+    "Toplam maliyet kaç {currency} olur?"
+  ],
+  "vat_reason_intro": [
+    "Önce KDV dahil birim fiyat bulunur. Yeni ödenecek oran % 100 + % {vat_pct} = % {gross_pct} olur.",
+    "İlk adım birim fiyatı KDV ile hesaplamaktır. Yeni ödenecek oran % 100 + % {vat_pct} = % {gross_pct} olur.",
+    "KDV oranı % {vat_pct} olduğuna göre yeni oran % 100 + % {vat_pct} = % {gross_pct} olur.",
+    "Yeni oran 100 + {vat_pct} = {gross_pct} olur.",
+    "Toplam tutar için KDV dahil birim fiyat ve adet sayısı kullanılır. Yeni ödenecek oran % 100 + % {vat_pct} = % {gross_pct} olur."
+  ],
+  "vat_reason_calc": [
+    "KDV dahil birim fiyat: {unit_price} × {gross_pct} ÷ 100 = {vat_unit_price} {currency}. Toplam: {vat_unit_price} × {qty} = {total} {currency}.",
+    "Önce {unit_price} × {gross_pct} / 100 = {vat_unit_price} bulunur, sonra {vat_unit_price} × {qty} = {total} olur.",
+    "KDV dahil birim: {unit_price} × {gross_pct} ÷ 100 = {vat_unit_price}. Toplam: {vat_unit_price} × {qty} = {total}.",
+    "Hesap sırası: {vat_unit_price} = {unit_price}×{gross_pct}/100, sonra {total} = {vat_unit_price}×{qty}."
+  ],
+  "vat_reason_final": [
+    "Bu yüzden toplam {total} {currency} öder.",
+    "Toplam ödeme {total} {currency} olur.",
+    "Cevap {total} {currency}.",
+    "{name} toplam {total} {currency} verir."
+  ],
+  "bundisc_story_start": [
+    "{name} bir ürün seçer: {item}.",
+    "{name} {item} almak ister.",
+    "{name} {item} görür.",
+    "{name} alışveriş için {item} seçer.",
+    "{name} bir ürün olarak {item} bulur.",
+    "{name} {item} satın almayı planlar."
+  ],
+  "bundisc_story_event": [
+    "Birim fiyat {unit_price} {currency} olur ve {qty} adet alınır. Kasada toplam tutara % {discount_pct} indirim uygulanır.",
+    "{qty} adet alınır. Birim fiyat {unit_price} {currency} olur. Toplam tutara % {discount_pct} indirim vardır.",
+    "Birim fiyat {unit_price} {currency} olur, {qty} adet alınır, toplam fiyata % {discount_pct} indirim yapılır.",
+    "{name} {qty} adet alır. Birim fiyat {unit_price} {currency} olur. Toplam tutar için % {discount_pct} indirim uygulanır."
+  ],
+  "bundisc_question": [
+    "İndirimden sonra toplam kaç {currency} öder?",
+    "Son ödeme kaç {currency} olur?",
+    "İndirimli toplam tutar kaç {currency} çıkar?",
+    "Toplam ödeme kaç {currency} olur?",
+    "Bu alışveriş indirimden sonra kaç {currency} tutar?"
+  ],
+  "bundisc_reason_intro": [
+    "Önce toplam tutar bulunur, sonra indirim uygulanır. Ödenecek tutar toplamın % 100 - % {discount_pct} = % {net_pct} kadarı olur.",
+    "İlk adım toplam maliyeti hesaplamaktır. Ödenecek tutar toplamın % 100 - % {discount_pct} = % {net_pct} kadarı olur.",
+    "Toplam tutara % {discount_pct} indirim uygulanır. Ödenecek tutar toplamın % 100 - % {discount_pct} = % {net_pct} kadarı olur.",
+    "Net oran % 100 - % {discount_pct} = % {net_pct} olur.",
+    "Ödenecek tutar toplamın % 100 - % {discount_pct} = % {net_pct} kadarı olur."
+  ],
+  "bundisc_reason_calc": [
+    "Toplam: {unit_price} × {qty} = {gross_total} {currency}. İndirimli toplam: {gross_total} × {net_pct} ÷ 100 = {final_total} {currency}.",
+    "Önce {unit_price} × {qty} = {gross_total} bulunur, sonra {gross_total} × {net_pct} / 100 = {final_total} bulunur.",
+    "Toplam: {unit_price} × {qty} = {gross_total}. Net yüzde {net_pct} ile indirimli toplam: {gross_total} × {net_pct} ÷ 100 = {final_total}.",
+    "Hesap sırası: toplam {unit_price} × {qty} = {gross_total}, indirimli toplam {gross_total} × {net_pct} ÷ 100 = {final_total}."
+  ],
+  "bundisc_reason_final": [
+    "Bu yüzden indirimden sonra {final_total} {currency} öder.",
+    "Toplam ödeme {final_total} {currency} olur.",
+    "Cevap {final_total} {currency}.",
+    "{name} toplam {final_total} {currency} verir."
+  ],
+  "intent_story_line": [
+    "Bu alışveriş bir kampanya kapsamında yapılır.",
+    "Etikette yazan fiyat üzerinden işlem yapılır.",
+    "Kasada uygulanan indirim dikkate alınır.",
+    "Fişte görünen tutarlara göre hesap yapılır.",
+    "İndirim, kasada geçerli olan kurala göre uygulanır.",
+    "Etiket fiyatı üzerinden indirim hesaplanır.",
+    "Kampanya şartlarına göre ödeme tutarı bulunur.",
+    "Fiyat etikette yazdığı şekilde alınır, indirim kasada uygulanır."
+  ]
+}

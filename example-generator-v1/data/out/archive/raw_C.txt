@@ -1,0 +1,287 @@
+Online siparişte Gökçe turşu alımı için karar verir. Birim fiyat 150 TL olur ve 3 adet alınır. Toplam tutara % 20 indirim uygulanır. Son tutar 4 kişi arasında eşit paylaşılır. Bir kişi kaç TL öder?
+Cevap: Önce indirimli toplam bulunur, sonra kişi sayısına bölünür. Brüt toplam: 150 × 3 = 450 olur. Net oran % 80 olur (100 - 20). İndirimli toplam: 450 × 80 ÷ 100 = 360 olur. Eşit paylaşım: 360 ÷ 4 = 90. Gökçe için kişi başına 90 TL çıkar.
+
+Online siparişte Gökçe turşu alır. 7 tane alınır. Birim 150 TL olur. % 20 indirim yapılır. Sonra 5 kişi eşit paylaşır. Bir kişi kaç TL öder?
+Cevap: İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Önce brüt toplam 150×7=1050 bulunur. Net oran % 80 (100 - 20) olduğundan indirimli toplam 1050×80/100=840. 5 kişi eşit paylaşırsa kişi başına 840 ÷ 5 = 168 düşer. Son durumda her kişi 168 TL öder.
+
+Online siparişte Gökçe turşu alımı için karar verir. Birim fiyat 150 TL olur ve 7 adet alınır. Toplam tutara % 20 indirim uygulanır. Son tutar 4 kişi arasında eşit paylaşılır. Kişi başına düşen tutar kaç TL çıkar?
+Cevap: İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Brüt toplam: 150 × 7 = 1050 olur. Net oran % 80 olur (100 - 20). İndirimli toplam: 1050 × 80 ÷ 100 = 840 olur. Eşit paylaşım: 840 ÷ 4 = 210. Eşit paylaşım sonucunda kişi başına 210 TL düşer.
+
+İnternetten Gökçe turşu alımı için karar verir. Birim fiyat 150 TL olur ve 3 adet alınır. Toplam tutara % 20 indirim uygulanır. Son tutar 5 kişi arasında eşit paylaşılır. Her bir kişi kaç TL ödemelidir?
+Cevap: İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Önce brüt toplam 150×3=450 bulunur. Net oran % 80 (100 - 20) olduğundan indirimli toplam 450×80/100=360. 5 kişi eşit paylaşırsa kişi başına 360 ÷ 5 = 72 düşer. Gökçe için kişi başına 72 TL çıkar.
+
+Okulda Gökçe turşu satın alır. Birim fiyat 150 TL olur ve 3 adet alınır. Toplam tutara % 20 indirim uygulanır. Son tutar 5 kişi arasında eşit paylaşılır. Eşit paylaşımda kişi başı kaç TL düşer?
+Cevap: İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Önce brüt toplam 150×3=450 bulunur. Net oran % 80 (100 - 20) olduğundan indirimli toplam 450×80/100=360. 5 kişi eşit paylaşırsa kişi başına 360 ÷ 5 = 72 düşer. Eşit paylaşım sonucunda kişi başına 72 TL düşer.
+
+Gökçe turşu alır. Birim fiyat 150 TL olur ve 7 adet alınır. Toplam tutara % 20 indirim uygulanır. Son tutar 4 kişi arasında eşit paylaşılır. Son ödeme eşit bölünürse bir kişi kaç TL öder?
+Cevap: Önce indirimli toplam bulunur, sonra kişi sayısına bölünür. Brüt toplam: 150 × 7 = 1050 olur. Net oran % 80 olur (100 - 20). İndirimli toplam: 1050 × 80 ÷ 100 = 840 olur. Eşit paylaşım: 840 ÷ 4 = 210. Eşit paylaşım sonucunda kişi başına 210 TL düşer.
+
+Markette Gökçe bir ürünü birlikte almak ister. 7 tane alınır. Birim 150 TL olur. % 20 indirim yapılır. Sonra 4 kişi eşit paylaşır. Kişi başına düşen ödeme kaç TL olur?
+Cevap: Önce indirimli toplam bulunur, sonra kişi sayısına bölünür. Brüt toplam: 150 × 7 = 1050 olur. Net oran % 80 olur (100 - 20). İndirimli toplam: 1050 × 80 ÷ 100 = 840 olur. Eşit paylaşım: 840 ÷ 4 = 210. Eşit paylaşım sonucunda kişi başına 210 TL düşer.
+
+Okulda Gökçe bir alışveriş yapar. Birim fiyat 150 TL olur ve 7 adet alınır. Toplam tutara % 20 indirim uygulanır. Son tutar 5 kişi arasında eşit paylaşılır. Kişi başına düşen ödeme kaç TL olur?
+Cevap: İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Brüt toplam: 150 × 7 = 1050 olur. Net oran % 80 olur (100 - 20). İndirimli toplam: 1050 × 80 ÷ 100 = 840 olur. Eşit paylaşım: 840 ÷ 5 = 168. Gökçe için kişi başına 168 TL çıkar.
+
+İnternetten Deniz bir ürünü birlikte almak ister. 8 tane alınır. Birim 188 TL olur. % 25 indirim yapılır. Sonra 3 kişi eşit paylaşır. Kişi başına düşen tutar kaç TL çıkar?
+Cevap: Önce indirimli toplam bulunur, sonra kişi sayısına bölünür. Brüt toplam: 188 × 8 = 1504 olur. Net oran % 75 olur (100 - 25). İndirimli toplam: 1504 × 75 ÷ 100 = 1128 olur. Eşit paylaşım: 1128 ÷ 3 = 376. Deniz için kişi başına 376 TL çıkar.
+
+Okulda Deniz bir alışveriş yapar. Birim fiyat 188 TL olur ve 8 adet alınır. Toplam tutara % 25 indirim uygulanır. Son tutar 4 kişi arasında eşit paylaşılır. Son ödeme eşit bölünürse bir kişi kaç TL öder?
+Cevap: İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Önce brüt toplam 188×8=1504 bulunur. Net oran % 75 (100 - 25) olduğundan indirimli toplam 1504×75/100=1128. 4 kişi eşit paylaşırsa kişi başına 1128 ÷ 4 = 282 düşer. Eşit paylaşım sonucunda kişi başına 282 TL düşer.
+
+Sınıfta Deniz oje alır. 8 tane alınır. Birim 188 TL olur. % 25 indirim yapılır. Sonra 3 kişi eşit paylaşır. Bir kişi kaç TL öder?
+Cevap: İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Önce brüt toplam 188×8=1504 bulunur. Net oran % 75 (100 - 25) olduğundan indirimli toplam 1504×75/100=1128. 3 kişi eşit paylaşırsa kişi başına 1128 ÷ 3 = 376 düşer. Sonuç kişi başına 376 TL olur.
+
+Sınıfta Deniz oje alır. 4 tane alınır. Birim 188 TL olur. % 25 indirim yapılır. Sonra 4 kişi eşit paylaşır. Eşit paylaşımda kişi başı kaç TL düşer?
+Cevap: İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Brüt toplam: 188 × 4 = 752 olur. Net oran % 75 olur (100 - 25). İndirimli toplam: 752 × 75 ÷ 100 = 564 olur. Eşit paylaşım: 564 ÷ 4 = 141. Sonuç kişi başına 141 TL olur.
+
+Deniz bir alışveriş yapar. 4 tane alınır. Birim 188 TL olur. % 25 indirim yapılır. Sonra 4 kişi eşit paylaşır. Kişi başına düşen tutar kaç TL çıkar?
+Cevap: Önce indirimli toplam bulunur, sonra kişi sayısına bölünür. Brüt toplam: 188 × 4 = 752 olur. Net oran % 75 olur (100 - 25). İndirimli toplam: 752 × 75 ÷ 100 = 564 olur. Eşit paylaşım: 564 ÷ 4 = 141. Sonuç kişi başına 141 TL olur.
+
+Sınıfta Deniz bir alışveriş yapar. Birim fiyat 188 TL olur ve 8 adet alınır. Toplam tutara % 25 indirim uygulanır. Son tutar 3 kişi arasında eşit paylaşılır. Eşit paylaşımda kişi başı kaç TL düşer?
+Cevap: İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Önce brüt toplam 188×8=1504 bulunur. Net oran % 75 (100 - 25) olduğundan indirimli toplam 1504×75/100=1128. 3 kişi eşit paylaşırsa kişi başına 1128 ÷ 3 = 376 düşer. Eşit paylaşım sonucunda kişi başına 376 TL düşer.
+
+Deniz oje satın alır. 8 tane alınır. Birim 188 TL olur. % 25 indirim yapılır. Sonra 4 kişi eşit paylaşır. İndirimden sonra kişi başına ödeme kaç TL olur?
+Cevap: Önce indirimli toplam bulunur, sonra kişi sayısına bölünür. Önce brüt toplam 188×8=1504 bulunur. Net oran % 75 (100 - 25) olduğundan indirimli toplam 1504×75/100=1128. 4 kişi eşit paylaşırsa kişi başına 1128 ÷ 4 = 282 düşer. Deniz için kişi başına 282 TL çıkar.
+
+Okulda Deniz oje alımı için karar verir. Birim fiyat 188 TL olur ve 8 adet alınır. Toplam tutara % 25 indirim uygulanır. Son tutar 3 kişi arasında eşit paylaşılır. Bir kişi kaç TL öder?
+Cevap: İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Önce brüt toplam 188×8=1504 bulunur. Net oran % 75 (100 - 25) olduğundan indirimli toplam 1504×75/100=1128. 3 kişi eşit paylaşırsa kişi başına 1128 ÷ 3 = 376 düşer. Eşit paylaşım sonucunda kişi başına 376 TL düşer.
+
+Online siparişte Caner bir alışveriş yapar. Birim fiyat 170 TL olur ve 4 adet alınır. Toplam tutara % 50 indirim uygulanır. Son tutar 5 kişi arasında eşit paylaşılır. Kişi başına düşen tutar kaç TL çıkar?
+Cevap: İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Brüt toplam: 170 × 4 = 680 olur. Net oran % 50 olur (100 - 50). İndirimli toplam: 680 × 50 ÷ 100 = 340 olur. Eşit paylaşım: 340 ÷ 5 = 68. Son durumda her kişi 68 TL öder.
+
+Evde Caner fırça satın alır. Birim fiyat 170 TL olur ve 8 adet alınır. Toplam tutara % 50 indirim uygulanır. Son tutar 5 kişi arasında eşit paylaşılır. Kişi başına düşen tutar kaç TL çıkar?
+Cevap: Önce indirimli toplam bulunur, sonra kişi sayısına bölünür. Önce brüt toplam 170×8=1360 bulunur. Net oran % 50 (100 - 50) olduğundan indirimli toplam 1360×50/100=680. 5 kişi eşit paylaşırsa kişi başına 680 ÷ 5 = 136 düşer. Son durumda her kişi 136 TL öder.
+
+İnternetten Caner bir ürünü birlikte almak ister. Birim fiyat 170 TL olur ve 8 adet alınır. Toplam tutara % 50 indirim uygulanır. Son tutar 4 kişi arasında eşit paylaşılır. İndirimden sonra kişi başına ödeme kaç TL olur?
+Cevap: İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Önce brüt toplam 170×8=1360 bulunur. Net oran % 50 (100 - 50) olduğundan indirimli toplam 1360×50/100=680. 4 kişi eşit paylaşırsa kişi başına 680 ÷ 4 = 170 düşer. Eşit paylaşım sonucunda kişi başına 170 TL düşer.
+
+Mağazada Caner bir alışveriş yapar. 4 tane alınır. Birim 170 TL olur. % 50 indirim yapılır. Sonra 5 kişi eşit paylaşır. Bir kişi kaç TL öder?
+Cevap: İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Brüt toplam: 170 × 4 = 680 olur. Net oran % 50 olur (100 - 50). İndirimli toplam: 680 × 50 ÷ 100 = 340 olur. Eşit paylaşım: 340 ÷ 5 = 68. Caner için kişi başına 68 TL çıkar.
+
+Online siparişte Caner bir alışveriş yapar. Birim fiyat 170 TL olur ve 4 adet alınır. Toplam tutara % 50 indirim uygulanır. Son tutar 4 kişi arasında eşit paylaşılır. Toplam indirimli tutar bölünürse her kişi kaç TL verir?
+Cevap: Önce indirimli toplam bulunur, sonra kişi sayısına bölünür. Önce brüt toplam 170×4=680 bulunur. Net oran % 50 (100 - 50) olduğundan indirimli toplam 680×50/100=340. 4 kişi eşit paylaşırsa kişi başına 340 ÷ 4 = 85 düşer. Son durumda her kişi 85 TL öder.
+
+Evde Caner alışverişte bir fırça seçer. Birim fiyat 170 TL olur ve 4 adet alınır. Toplam tutara % 50 indirim uygulanır. Son tutar 5 kişi arasında eşit paylaşılır. Eşit paylaşımda kişi başı kaç TL düşer?
+Cevap: Önce indirimli toplam bulunur, sonra kişi sayısına bölünür. Önce brüt toplam 170×4=680 bulunur. Net oran % 50 (100 - 50) olduğundan indirimli toplam 680×50/100=340. 5 kişi eşit paylaşırsa kişi başına 340 ÷ 5 = 68 düşer. Sonuç kişi başına 68 TL olur.
+
+Markette Caner bir ürünü birlikte almak ister. Birim fiyat 170 TL olur ve 4 adet alınır. Toplam tutara % 50 indirim uygulanır. Son tutar 4 kişi arasında eşit paylaşılır. Toplam indirimli tutar bölünürse her kişi kaç TL verir?
+Cevap: Önce indirimli toplam bulunur, sonra kişi sayısına bölünür. Önce brüt toplam 170×4=680 bulunur. Net oran % 50 (100 - 50) olduğundan indirimli toplam 680×50/100=340. 4 kişi eşit paylaşırsa kişi başına 340 ÷ 4 = 85 düşer. Eşit paylaşım sonucunda kişi başına 85 TL düşer.
+
+İnternetten Caner bir alışveriş yapar. 4 tane alınır. Birim 170 TL olur. % 50 indirim yapılır. Sonra 5 kişi eşit paylaşır. Kişi başına düşen tutar kaç TL çıkar?
+Cevap: Önce indirimli toplam bulunur, sonra kişi sayısına bölünür. Brüt toplam: 170 × 4 = 680 olur. Net oran % 50 olur (100 - 50). İndirimli toplam: 680 × 50 ÷ 100 = 340 olur. Eşit paylaşım: 340 ÷ 5 = 68. Sonuç kişi başına 68 TL olur.
+
+Mağazada Selinay iki ürün seçerek alışveriş yapar. köpek maması tanesi 150 TL olur, 2 tane alınır. kedi maması tanesi 200 TL olur, 1 tane alınır. Kasada toplam tutara % 10 indirim uygulanır. İndirimden sonra toplam ödeme kaç TL olur?
+Cevap: Önce ara toplam hesaplanır, ardından yüzde indirim yapılır. Ara toplam 500 olur ( 300+200 ). İndirim tutarı: 500 × 10 ÷ 100 = 50. Son ödeme: 500 - 50 = 450 olur. Sonuç 450 TL olur.
+
+Mağazada Selinay iki ayrı ürünü birlikte almayı planlar. İlk ürün köpek maması: 2 × 150. İkinci ürün kedi maması: 1 × 200. Toplam tutara % 10 indirim yapılır. İndirimden sonra toplam ödeme kaç TL olur?
+Cevap: Önce ara toplam hesaplanır, ardından yüzde indirim yapılır. Ara toplam 500 olur ( 300+200 ). İndirim tutarı: 500 × 10 ÷ 100 = 50. Son ödeme: 500 - 50 = 450 olur. Son durumda kasada 450 TL öder.
+
+İnternetten Selinay alışverişte köpek maması ve kedi maması seçer. köpek maması tanesi 150 TL olur, 2 tane alınır. kedi maması tanesi 200 TL olur, 1 tane alınır. Kasada toplam tutara % 10 indirim uygulanır. Kasada indirim uygulanınca kaç TL öder?
+Cevap: Önce iki ürünün toplamı bulunur, sonra indirim uygulanır. Ara toplam 500 olur ( 300+200 ). İndirim tutarı: 500 × 10 ÷ 100 = 50. Son ödeme: 500 - 50 = 450 olur. Sonuç 450 TL olur.
+
+Mağazada Selinay iki ürün alır: köpek maması ve kedi maması. köpek maması tanesi 150 TL olur, 2 tane alınır. kedi maması tanesi 200 TL olur, 1 tane alınır. Kasada toplam tutara % 10 indirim uygulanır. Sonuç olarak toplam ödeme kaç TL olur?
+Cevap: Önce iki ürünün toplamı bulunur, sonra indirim uygulanır. Birinci maliyet: 150 × 2 = 300 olur. İkinci maliyet: 200 × 1 = 200 olur. Ara toplam: 300 + 200 = 500. Net oran % 90 (100 - 10) olur. İndirimli toplam: 500 × 90 ÷ 100 = 450. Sonuç 450 TL olur.
+
+Markette Selinay iki ürün alır: köpek maması ve kedi maması. İlk ürün köpek maması: 2 × 150. İkinci ürün kedi maması: 1 × 200. Toplam tutara % 10 indirim yapılır. İndirim uygulandıktan sonra kasada kaç TL öder?
+Cevap: Önce iki ürünün toplamı bulunur, sonra indirim uygulanır. Ara toplam 500 olur ( 300+200 ). İndirim tutarı: 500 × 10 ÷ 100 = 50. Son ödeme: 500 - 50 = 450 olur. Sonuç 450 TL olur.
+
+Markette Selinay iki ürün seçerek alışveriş yapar. İlk ürün köpek maması: 2 × 150. İkinci ürün kedi maması: 1 × 200. Toplam tutara % 10 indirim yapılır. Toplam tutara indirim gelince son ödeme kaç TL olur?
+Cevap: Önce iki ürünün toplamı bulunur, sonra indirim uygulanır. Ara toplam 500 olur ( 300+200 ). İndirim tutarı: 500 × 10 ÷ 100 = 50. Son ödeme: 500 - 50 = 450 olur. Son durumda kasada 450 TL öder.
+
+Mağazada Selinay alışveriş için iki ürün belirler. İlk ürün köpek maması: 2 × 150. İkinci ürün kedi maması: 1 × 200. Toplam tutara % 10 indirim yapılır. Toplam tutara indirim gelince son ödeme kaç TL olur?
+Cevap: Önce ara toplam hesaplanır, ardından yüzde indirim yapılır. Birinci maliyet: 150 × 2 = 300 olur. İkinci maliyet: 200 × 1 = 200 olur. Ara toplam: 300 + 200 = 500. Net oran % 90 (100 - 10) olur. İndirimli toplam: 500 × 90 ÷ 100 = 450. Son durumda kasada 450 TL öder.
+
+Online siparişte Selinay iki ayrı ürünü birlikte almayı planlar. İlk ürün köpek maması: 2 × 150. İkinci ürün kedi maması: 1 × 200. Toplam tutara % 10 indirim yapılır. İndirim sonrası ödenecek toplam kaç TL eder?
+Cevap: Önce iki ürünün toplamı bulunur, sonra indirim uygulanır. Birinci maliyet: 150 × 2 = 300 olur. İkinci maliyet: 200 × 1 = 200 olur. Ara toplam: 300 + 200 = 500. Net oran % 90 (100 - 10) olur. İndirimli toplam: 500 × 90 ÷ 100 = 450. İndirim sonrası ödenecek tutar 450 TL olur.
+
+Mağazada Tunç çadır alarak kasaya gelir. 1 tane çadır alınır. Birim 1200 TL olur. % 25 indirimden sonra 1000 TL verir. İndirimden sonra para üstü kaç TL gelir?
+Cevap: Önce indirimli toplam bulunur, sonra çıkarma yapılır. Brüt toplam: 1200 × 1 = 1200 olur. Net oran % 75 olur (100 - 25). İndirimli toplam: 1200 × 75 ÷ 100 = 900 olur. Para üstü: 1000 - 900 = 100. Sonuç 100 TL olur.
+
+İnternetten Tunç kasada ödeme yapmaya hazırlanır. 1 tane çadır alınır. Birim 1200 TL olur. % 25 indirimden sonra 1000 TL verir. Para üstü kaç TL olur?
+Cevap: İndirimli ödeme hesaplanır, ardından para üstü bulunur. Önce brüt toplam 1200×1=1200 bulunur. Net oran % 75 (100 - 25) ile indirimli toplam 1200×75/100=900. 1000 verildiğine göre para üstü 1000 - 900 = 100 olur. Kasadan alınan para üstü 100 TL olur.
+
+Online siparişte Tunç indirimli bir çadır almayı düşünür. Birim fiyat 1200 TL olur, 1 adet alınır. Toplam tutara % 25 indirim uygulanır. 1000 TL ile öder. Kasadan kaç TL geri alır?
+Cevap: İndirimli ödeme hesaplanır, ardından para üstü bulunur. Önce brüt toplam 1200×1=1200 bulunur. Net oran % 75 (100 - 25) ile indirimli toplam 1200×75/100=900. 1000 verildiğine göre para üstü 1000 - 900 = 100 olur. Bu işlemden sonra 100 TL geri alır.
+
+Mağazada Tunç alışverişini tamamlamak ister. Birim fiyat 1200 TL olur, 1 adet alınır. Toplam tutara % 25 indirim uygulanır. 1000 TL ile öder. Kasadan kaç TL geri alır?
+Cevap: İndirimli ödeme hesaplanır, ardından para üstü bulunur. Brüt toplam: 1200 × 1 = 1200 olur. Net oran % 75 olur (100 - 25). İndirimli toplam: 1200 × 75 ÷ 100 = 900 olur. Para üstü: 1000 - 900 = 100. Kasadan alınan para üstü 100 TL olur.
+
+Online siparişte Tunç alışverişini tamamlamak ister. 1 tane çadır alınır. Birim 1200 TL olur. % 25 indirimden sonra 1000 TL verir. Para üstü miktarı kaç TL çıkar?
+Cevap: İndirimli ödeme hesaplanır, ardından para üstü bulunur. Brüt toplam: 1200 × 1 = 1200 olur. Net oran % 75 olur (100 - 25). İndirimli toplam: 1200 × 75 ÷ 100 = 900 olur. Para üstü: 1000 - 900 = 100. Kasadan alınan para üstü 100 TL olur.
+
+İnternetten Tunç indirimli bir çadır almayı düşünür. Birim fiyat 1200 TL olur, 1 adet alınır. Toplam tutara % 25 indirim uygulanır. 1000 TL ile öder. Kasadan kaç TL geri alır?
+Cevap: İndirimli ödeme hesaplanır, ardından para üstü bulunur. Brüt toplam: 1200 × 1 = 1200 olur. Net oran % 75 olur (100 - 25). İndirimli toplam: 1200 × 75 ÷ 100 = 900 olur. Para üstü: 1000 - 900 = 100. Sonuç 100 TL olur.
+
+Markette Tunç kasada ödeme yapmaya hazırlanır. 1 tane çadır alınır. Birim 1200 TL olur. % 25 indirimden sonra 1000 TL verir. Son durumda kaç TL para üstü alır?
+Cevap: İndirimli ödeme hesaplanır, ardından para üstü bulunur. Önce brüt toplam 1200×1=1200 bulunur. Net oran % 75 (100 - 25) ile indirimli toplam 1200×75/100=900. 1000 verildiğine göre para üstü 1000 - 900 = 100 olur. Bu işlemden sonra 100 TL geri alır.
+
+İnternetten Tunç çadır alarak kasaya gelir. Birim fiyat 1200 TL olur, 1 adet alınır. Toplam tutara % 25 indirim uygulanır. 1000 TL ile öder. Ödeme yaptıktan sonra geri kalan kaç TL olur?
+Cevap: İndirimli ödeme hesaplanır, ardından para üstü bulunur. Önce brüt toplam 1200×1=1200 bulunur. Net oran % 75 (100 - 25) ile indirimli toplam 1200×75/100=900. 1000 verildiğine göre para üstü 1000 - 900 = 100 olur. Sonuç 100 TL olur.
+
+Mağazada Bahar bir ürünü birlikte almak ister. Birim fiyat 300 TL olur ve 4 adet alınır. Toplam tutara % 25 indirim uygulanır. Son tutar 2 kişi arasında eşit paylaşılır. Eşit paylaşımda kişi başı kaç TL düşer?
+Cevap: İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Önce brüt toplam 300×4=1200 bulunur. Net oran % 75 (100 - 25) olduğundan indirimli toplam 1200×75/100=900. 2 kişi eşit paylaşırsa kişi başına 900 ÷ 2 = 450 düşer. Son durumda her kişi 450 TL öder.
+
+Bahar bir ürünü birlikte almak ister. Birim fiyat 300 TL olur ve 4 adet alınır. Toplam tutara % 25 indirim uygulanır. Son tutar 3 kişi arasında eşit paylaşılır. Toplam indirimli tutar bölünürse her kişi kaç TL verir?
+Cevap: Önce indirimli toplam bulunur, sonra kişi sayısına bölünür. Önce brüt toplam 300×4=1200 bulunur. Net oran % 75 (100 - 25) olduğundan indirimli toplam 1200×75/100=900. 3 kişi eşit paylaşırsa kişi başına 900 ÷ 3 = 300 düşer. Sonuç kişi başına 300 TL olur.
+
+Sınıfta Bahar bir alışveriş yapar. Birim fiyat 300 TL olur ve 4 adet alınır. Toplam tutara % 25 indirim uygulanır. Son tutar 3 kişi arasında eşit paylaşılır. Bir kişi kaç TL öder?
+Cevap: İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Önce brüt toplam 300×4=1200 bulunur. Net oran % 75 (100 - 25) olduğundan indirimli toplam 1200×75/100=900. 3 kişi eşit paylaşırsa kişi başına 900 ÷ 3 = 300 düşer. Bahar için kişi başına 300 TL çıkar.
+
+Okulda Bahar tren bileti alır. Birim fiyat 300 TL olur ve 4 adet alınır. Toplam tutara % 25 indirim uygulanır. Son tutar 3 kişi arasında eşit paylaşılır. Kişi başına düşen ödeme kaç TL olur?
+Cevap: Önce indirimli toplam bulunur, sonra kişi sayısına bölünür. Brüt toplam: 300 × 4 = 1200 olur. Net oran % 75 olur (100 - 25). İndirimli toplam: 1200 × 75 ÷ 100 = 900 olur. Eşit paylaşım: 900 ÷ 3 = 300. Sonuç kişi başına 300 TL olur.
+
+Online siparişte Bahar alışverişte bir tren bileti seçer. 4 tane alınır. Birim 300 TL olur. % 25 indirim yapılır. Sonra 2 kişi eşit paylaşır. Kişi başına düşen ödeme kaç TL olur?
+Cevap: İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Brüt toplam: 300 × 4 = 1200 olur. Net oran % 75 olur (100 - 25). İndirimli toplam: 1200 × 75 ÷ 100 = 900 olur. Eşit paylaşım: 900 ÷ 2 = 450. Son durumda her kişi 450 TL öder.
+
+İnternetten Bahar bir ürünü birlikte almak ister. Birim fiyat 300 TL olur ve 4 adet alınır. Toplam tutara % 25 indirim uygulanır. Son tutar 2 kişi arasında eşit paylaşılır. Son ödeme eşit bölünürse bir kişi kaç TL öder?
+Cevap: İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Brüt toplam: 300 × 4 = 1200 olur. Net oran % 75 olur (100 - 25). İndirimli toplam: 1200 × 75 ÷ 100 = 900 olur. Eşit paylaşım: 900 ÷ 2 = 450. Eşit paylaşım sonucunda kişi başına 450 TL düşer.
+
+Sınıfta Bahar tren bileti alır. Birim fiyat 300 TL olur ve 4 adet alınır. Toplam tutara % 25 indirim uygulanır. Son tutar 3 kişi arasında eşit paylaşılır. Toplam indirimli tutar bölünürse her kişi kaç TL verir?
+Cevap: Önce indirimli toplam bulunur, sonra kişi sayısına bölünür. Önce brüt toplam 300×4=1200 bulunur. Net oran % 75 (100 - 25) olduğundan indirimli toplam 1200×75/100=900. 3 kişi eşit paylaşırsa kişi başına 900 ÷ 3 = 300 düşer. Sonuç kişi başına 300 TL olur.
+
+Markette Bahar alışverişte bir tren bileti seçer. 4 tane alınır. Birim 300 TL olur. % 25 indirim yapılır. Sonra 2 kişi eşit paylaşır. Eşit paylaşımda kişi başı kaç TL düşer?
+Cevap: İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Brüt toplam: 300 × 4 = 1200 olur. Net oran % 75 olur (100 - 25). İndirimli toplam: 1200 × 75 ÷ 100 = 900 olur. Eşit paylaşım: 900 ÷ 2 = 450. Sonuç kişi başına 450 TL olur.
+
+Markette Levent alışveriş sırasında bir mikrodalga fırın seçer. 2000 TL olan ürün için önce % 10 indirim, ardından % 18 KDV uygulanır ve 1 adet alınır. KDV dahil indirimli toplam kaç TL eder?
+Cevap: Önce indirimli birim fiyat bulunur, sonra KDV eklenir. Net oran % 90 olur. İndirimli birim: 2000 × 90 ÷ 100 = 1800. KDV oranı % 118 olur. KDV dahil birim: 1800 × 118 ÷ 100 = 2124. Toplam: 2124 × 1 = 2124. Sonuç olarak ödenecek toplam 2124 TL olur.
+
+Markette Levent indirimli bir mikrodalga fırın almak ister. Etiket 2000 TL olur. İndirim % 10 olur. Sonra KDV % 18 eklenir. 1 tane alınır. Toplam ödeme kaç TL eder?
+Cevap: Önce indirimli birim fiyat bulunur, sonra KDV eklenir. İndirimli birim: 2000×90/100=1800 olur. KDV dahil birim: 1800×118/100=2124 olur. Son adım 2124 × 1 = 2124 olur. Bu yüzden toplam 2124 TL öder.
+
+Markette Levent mikrodalga fırın için fiyatları inceler. 2000 TL olan ürün için önce % 10 indirim, ardından % 18 KDV uygulanır ve 1 adet alınır. KDV dahil indirimli toplam kaç TL eder?
+Cevap: Önce indirimli birim fiyat bulunur, sonra KDV eklenir. İndirimli birim: 2000×90/100=1800 olur. KDV dahil birim: 1800×118/100=2124 olur. Son adım 2124 × 1 = 2124 olur. Bu yüzden toplam 2124 TL öder.
+
+İnternetten Levent alışveriş sırasında bir mikrodalga fırın seçer. 2000 TL olan ürün için önce % 10 indirim, ardından % 18 KDV uygulanır ve 1 adet alınır. Son ödenecek miktar kaç TL çıkar?
+Cevap: İşlem sırası indirim sonra KDV olur. İndirimli birim: 2000×90/100=1800 olur. KDV dahil birim: 1800×118/100=2124 olur. Son adım 2124 × 1 = 2124 olur. Sonuç 2124 TL olur.
+
+Mağazada Levent vitrinde bir mikrodalga fırın görür. Birim fiyat 2000 TL olur. % 10 indirim vardır. İndirimden sonra KDV % 18 uygulanır. 1 adet alınır. Kasada toplam kaç TL öder?
+Cevap: İşlem sırası indirim sonra KDV olur. Net oran % 90 olur. İndirimli birim: 2000 × 90 ÷ 100 = 1800. KDV oranı % 118 olur. KDV dahil birim: 1800 × 118 ÷ 100 = 2124. Toplam: 2124 × 1 = 2124. Sonuç olarak ödenecek toplam 2124 TL olur.
+
+Online siparişte Levent alışveriş sırasında bir mikrodalga fırın seçer. Birim fiyat 2000 TL olur. % 10 indirim vardır. İndirimden sonra KDV % 18 uygulanır. 1 adet alınır. İndirim ve KDV sonrası toplam ödeme kaç TL olur?
+Cevap: Önce indirimli birim fiyat bulunur, sonra KDV eklenir. Net oran % 90 olur. İndirimli birim: 2000 × 90 ÷ 100 = 1800. KDV oranı % 118 olur. KDV dahil birim: 1800 × 118 ÷ 100 = 2124. Toplam: 2124 × 1 = 2124. İndirim ve KDV sonrası toplam ödeme 2124 TL çıkar.
+
+Mağazada Levent mikrodalga fırın almak ister. Birim fiyat 2000 TL olur. % 10 indirim vardır. İndirimden sonra KDV % 18 uygulanır. 1 adet alınır. Kasada toplam kaç TL öder?
+Cevap: İşlem sırası indirim sonra KDV olur. İndirimli birim: 2000×90/100=1800 olur. KDV dahil birim: 1800×118/100=2124 olur. Son adım 2124 × 1 = 2124 olur. Sonuç olarak ödenecek toplam 2124 TL olur.
+
+İnternetten Levent mikrodalga fırın almak ister. 2000 TL olan ürün için önce % 10 indirim, ardından % 18 KDV uygulanır ve 1 adet alınır. Ödeme tutarı kaç TL olur?
+Cevap: Önce indirimli birim fiyat bulunur, sonra KDV eklenir. Net oran % 90 olur. İndirimli birim: 2000 × 90 ÷ 100 = 1800. KDV oranı % 118 olur. KDV dahil birim: 1800 × 118 ÷ 100 = 2124. Toplam: 2124 × 1 = 2124. Sonuç 2124 TL olur.
+
+Online siparişte Dilan alışveriş için iki ürün belirler. İlk ürün gazoz: 6 × 10. İkinci ürün cips: 2 × 20. Toplam tutara % 10 indirim yapılır. Sonuç olarak toplam ödeme kaç TL olur?
+Cevap: Önce ara toplam hesaplanır, ardından yüzde indirim yapılır. Ara toplam 100 olur ( 60+40 ). İndirim tutarı: 100 × 10 ÷ 100 = 10. Son ödeme: 100 - 10 = 90 olur. Son durumda kasada 90 TL öder.
+
+İnternetten Dilan sepete iki farklı ürün ekler. gazoz tanesi 10 TL olur, 6 tane alınır. cips tanesi 20 TL olur, 2 tane alınır. Kasada toplam tutara % 10 indirim uygulanır. Kasadaki son tutar kaç TL olur?
+Cevap: Önce iki ürünün toplamı bulunur, sonra indirim uygulanır. Ara toplam 100 olur ( 60+40 ). İndirim tutarı: 100 × 10 ÷ 100 = 10. Son ödeme: 100 - 10 = 90 olur. Dilan toplam 90 TL öder.
+
+Mağazada Dilan sepete iki farklı ürün ekler. İlk ürün gazoz: 6 × 10. İkinci ürün cips: 2 × 20. Toplam tutara % 10 indirim yapılır. İndirimden sonra toplam ödeme kaç TL olur?
+Cevap: Önce iki ürünün toplamı bulunur, sonra indirim uygulanır. Ara toplam 100 olur ( 60+40 ). İndirim tutarı: 100 × 10 ÷ 100 = 10. Son ödeme: 100 - 10 = 90 olur. İndirim sonrası ödenecek tutar 90 TL olur.
+
+İnternetten Dilan iki ayrı ürünü birlikte almayı planlar. gazoz tanesi 10 TL olur, 6 tane alınır. cips tanesi 20 TL olur, 2 tane alınır. Kasada toplam tutara % 10 indirim uygulanır. İndirim uygulandıktan sonra kasada kaç TL öder?
+Cevap: Önce iki ürünün toplamı bulunur, sonra indirim uygulanır. Birinci maliyet: 10 × 6 = 60 olur. İkinci maliyet: 20 × 2 = 40 olur. Ara toplam: 60 + 40 = 100. Net oran % 90 (100 - 10) olur. İndirimli toplam: 100 × 90 ÷ 100 = 90. Son durumda kasada 90 TL öder.
+
+İnternetten Dilan iki ürün seçerek alışveriş yapar. gazoz tanesi 10 TL olur, 6 tane alınır. cips tanesi 20 TL olur, 2 tane alınır. Kasada toplam tutara % 10 indirim uygulanır. İndirimden sonra toplam ödeme kaç TL olur?
+Cevap: Önce ara toplam hesaplanır, ardından yüzde indirim yapılır. Birinci maliyet: 10 × 6 = 60 olur. İkinci maliyet: 20 × 2 = 40 olur. Ara toplam: 60 + 40 = 100. Net oran % 90 (100 - 10) olur. İndirimli toplam: 100 × 90 ÷ 100 = 90. Sonuç 90 TL olur.
+
+Online siparişte Dilan iki ürün alır: gazoz ve cips. gazoz tanesi 10 TL olur, 6 tane alınır. cips tanesi 20 TL olur, 2 tane alınır. Kasada toplam tutara % 10 indirim uygulanır. İndirimden sonra toplam ödeme kaç TL olur?
+Cevap: Önce ara toplam hesaplanır, ardından yüzde indirim yapılır. Ara toplam 100 olur ( 60+40 ). İndirim tutarı: 100 × 10 ÷ 100 = 10. Son ödeme: 100 - 10 = 90 olur. Sonuç 90 TL olur.
+
+Online siparişte Dilan alışveriş için iki ürün belirler. İlk ürün gazoz: 6 × 10. İkinci ürün cips: 2 × 20. Toplam tutara % 10 indirim yapılır. Sonuç olarak toplam ödeme kaç TL olur?
+Cevap: Önce iki ürünün toplamı bulunur, sonra indirim uygulanır. Birinci maliyet: 10 × 6 = 60 olur. İkinci maliyet: 20 × 2 = 40 olur. Ara toplam: 60 + 40 = 100. Net oran % 90 (100 - 10) olur. İndirimli toplam: 100 × 90 ÷ 100 = 90. İndirim sonrası ödenecek tutar 90 TL olur.
+
+Mağazada Dilan iki ürün seçerek alışveriş yapar. gazoz tanesi 10 TL olur, 6 tane alınır. cips tanesi 20 TL olur, 2 tane alınır. Kasada toplam tutara % 10 indirim uygulanır. İndirimden sonra toplam ödeme kaç TL olur?
+Cevap: Önce iki ürünün toplamı bulunur, sonra indirim uygulanır. Ara toplam 100 olur ( 60+40 ). İndirim tutarı: 100 × 10 ÷ 100 = 10. Son ödeme: 100 - 10 = 90 olur. Dilan toplam 90 TL öder.
+
+Mağazada Taner ütü alarak kasaya gelir. 1 tane ütü alınır. Birim 1500 TL olur. % 20 indirimden sonra 1500 TL verir. Kasadan kaç TL geri alır?
+Cevap: İndirimli ödeme hesaplanır, ardından para üstü bulunur. Önce brüt toplam 1500×1=1500 bulunur. Net oran % 80 (100 - 20) ile indirimli toplam 1500×80/100=1200. 1500 verildiğine göre para üstü 1500 - 1200 = 300 olur. Bu yüzden 300 TL para üstü alır.
+
+Markette Taner ütü satın alır. Birim fiyat 1500 TL olur, 1 adet alınır. Toplam tutara % 20 indirim uygulanır. 1500 TL ile öder. Kasadan kaç TL geri alır?
+Cevap: Önce indirimli toplam bulunur, sonra çıkarma yapılır. Önce brüt toplam 1500×1=1500 bulunur. Net oran % 80 (100 - 20) ile indirimli toplam 1500×80/100=1200. 1500 verildiğine göre para üstü 1500 - 1200 = 300 olur. Sonuç 300 TL olur.
+
+Mağazada Taner alışverişini tamamlamak ister. Birim fiyat 1500 TL olur, 1 adet alınır. Toplam tutara % 20 indirim uygulanır. 1500 TL ile öder. İndirimden sonra para üstü kaç TL gelir?
+Cevap: Önce indirimli toplam bulunur, sonra çıkarma yapılır. Brüt toplam: 1500 × 1 = 1500 olur. Net oran % 80 olur (100 - 20). İndirimli toplam: 1500 × 80 ÷ 100 = 1200 olur. Para üstü: 1500 - 1200 = 300. Sonuç 300 TL olur.
+
+Online siparişte Taner alışverişini tamamlamak ister. 1 tane ütü alınır. Birim 1500 TL olur. % 20 indirimden sonra 1500 TL verir. Son durumda kaç TL para üstü alır?
+Cevap: İndirimli ödeme hesaplanır, ardından para üstü bulunur. Önce brüt toplam 1500×1=1500 bulunur. Net oran % 80 (100 - 20) ile indirimli toplam 1500×80/100=1200. 1500 verildiğine göre para üstü 1500 - 1200 = 300 olur. Bu yüzden 300 TL para üstü alır.
+
+Mağazada Taner ütü satın alır. 1 tane ütü alınır. Birim 1500 TL olur. % 20 indirimden sonra 1500 TL verir. Para üstü kaç TL olur?
+Cevap: Önce indirimli toplam bulunur, sonra çıkarma yapılır. Brüt toplam: 1500 × 1 = 1500 olur. Net oran % 80 olur (100 - 20). İndirimli toplam: 1500 × 80 ÷ 100 = 1200 olur. Para üstü: 1500 - 1200 = 300. Bu işlemden sonra 300 TL geri alır.
+
+Mağazada Taner indirimli bir ütü almayı düşünür. 1 tane ütü alınır. Birim 1500 TL olur. % 20 indirimden sonra 1500 TL verir. Kasadan kaç TL geri alır?
+Cevap: Önce indirimli toplam bulunur, sonra çıkarma yapılır. Önce brüt toplam 1500×1=1500 bulunur. Net oran % 80 (100 - 20) ile indirimli toplam 1500×80/100=1200. 1500 verildiğine göre para üstü 1500 - 1200 = 300 olur. Bu yüzden 300 TL para üstü alır.
+
+İnternetten Taner ütü almak ister. 1 tane ütü alınır. Birim 1500 TL olur. % 20 indirimden sonra 1500 TL verir. Ödeme yaptıktan sonra geri kalan kaç TL olur?
+Cevap: Önce indirimli toplam bulunur, sonra çıkarma yapılır. Önce brüt toplam 1500×1=1500 bulunur. Net oran % 80 (100 - 20) ile indirimli toplam 1500×80/100=1200. 1500 verildiğine göre para üstü 1500 - 1200 = 300 olur. Bu işlemden sonra 300 TL geri alır.
+
+Online siparişte Taner ütü almak ister. Birim fiyat 1500 TL olur, 1 adet alınır. Toplam tutara % 20 indirim uygulanır. 1500 TL ile öder. İndirimden sonra para üstü kaç TL gelir?
+Cevap: Önce indirimli toplam bulunur, sonra çıkarma yapılır. Önce brüt toplam 1500×1=1500 bulunur. Net oran % 80 (100 - 20) ile indirimli toplam 1500×80/100=1200. 1500 verildiğine göre para üstü 1500 - 1200 = 300 olur. Sonuç 300 TL olur.
+
+Markette Taylan takım elbise almak ister. 1 tane takım elbise alınır. Birim 3000 TL olur. % 30 indirimden sonra 2500 TL verir. Para üstü miktarı kaç TL çıkar?
+Cevap: Önce indirimli toplam bulunur, sonra çıkarma yapılır. Brüt toplam: 3000 × 1 = 3000 olur. Net oran % 70 olur (100 - 30). İndirimli toplam: 3000 × 70 ÷ 100 = 2100 olur. Para üstü: 2500 - 2100 = 400. Kasadan alınan para üstü 400 TL olur.
+
+İnternetten Taylan takım elbise alarak kasaya gelir. Birim fiyat 3000 TL olur, 1 adet alınır. Toplam tutara % 30 indirim uygulanır. 2500 TL ile öder. Ödenen paradan sonra kaç TL iade edilir?
+Cevap: Önce indirimli toplam bulunur, sonra çıkarma yapılır. Önce brüt toplam 3000×1=3000 bulunur. Net oran % 70 (100 - 30) ile indirimli toplam 3000×70/100=2100. 2500 verildiğine göre para üstü 2500 - 2100 = 400 olur. Sonuç 400 TL olur.
+
+İnternetten Taylan indirimli bir takım elbise almayı düşünür. 1 tane takım elbise alınır. Birim 3000 TL olur. % 30 indirimden sonra 2500 TL verir. Son durumda kaç TL para üstü alır?
+Cevap: İndirimli ödeme hesaplanır, ardından para üstü bulunur. Önce brüt toplam 3000×1=3000 bulunur. Net oran % 70 (100 - 30) ile indirimli toplam 3000×70/100=2100. 2500 verildiğine göre para üstü 2500 - 2100 = 400 olur. Bu yüzden 400 TL para üstü alır.
+
+Mağazada Taylan alışverişini tamamlamak ister. 1 tane takım elbise alınır. Birim 3000 TL olur. % 30 indirimden sonra 2500 TL verir. Para üstü miktarı kaç TL çıkar?
+Cevap: Önce indirimli toplam bulunur, sonra çıkarma yapılır. Önce brüt toplam 3000×1=3000 bulunur. Net oran % 70 (100 - 30) ile indirimli toplam 3000×70/100=2100. 2500 verildiğine göre para üstü 2500 - 2100 = 400 olur. Sonuç 400 TL olur.
+
+Online siparişte Taylan alışverişini tamamlamak ister. 1 tane takım elbise alınır. Birim 3000 TL olur. % 30 indirimden sonra 2500 TL verir. Ödeme yaptıktan sonra geri kalan kaç TL olur?
+Cevap: İndirimli ödeme hesaplanır, ardından para üstü bulunur. Brüt toplam: 3000 × 1 = 3000 olur. Net oran % 70 olur (100 - 30). İndirimli toplam: 3000 × 70 ÷ 100 = 2100 olur. Para üstü: 2500 - 2100 = 400. Bu yüzden 400 TL para üstü alır.
+
+Mağazada Taylan takım elbise almak ister. Birim fiyat 3000 TL olur, 1 adet alınır. Toplam tutara % 30 indirim uygulanır. 2500 TL ile öder. Para üstü miktarı kaç TL çıkar?
+Cevap: Önce indirimli toplam bulunur, sonra çıkarma yapılır. Brüt toplam: 3000 × 1 = 3000 olur. Net oran % 70 olur (100 - 30). İndirimli toplam: 3000 × 70 ÷ 100 = 2100 olur. Para üstü: 2500 - 2100 = 400. Bu yüzden 400 TL para üstü alır.
+
+Markette Taylan indirimli bir takım elbise almayı düşünür. 1 tane takım elbise alınır. Birim 3000 TL olur. % 30 indirimden sonra 2500 TL verir. Kasadan kaç TL geri alır?
+Cevap: İndirimli ödeme hesaplanır, ardından para üstü bulunur. Brüt toplam: 3000 × 1 = 3000 olur. Net oran % 70 olur (100 - 30). İndirimli toplam: 3000 × 70 ÷ 100 = 2100 olur. Para üstü: 2500 - 2100 = 400. Bu yüzden 400 TL para üstü alır.
+
+Markette Taylan kasada ödeme yapmaya hazırlanır. 1 tane takım elbise alınır. Birim 3000 TL olur. % 30 indirimden sonra 2500 TL verir. Ödenen paradan sonra kaç TL iade edilir?
+Cevap: Önce indirimli toplam bulunur, sonra çıkarma yapılır. Brüt toplam: 3000 × 1 = 3000 olur. Net oran % 70 olur (100 - 30). İndirimli toplam: 3000 × 70 ÷ 100 = 2100 olur. Para üstü: 2500 - 2100 = 400. Sonuç 400 TL olur.
+
+Okulda Simge muz alır. 5 tane alınır. Birim 40 TL olur. % 10 indirim yapılır. Sonra 3 kişi eşit paylaşır. Eşit paylaşımda kişi başı kaç TL düşer?
+Cevap: Önce indirimli toplam bulunur, sonra kişi sayısına bölünür. Önce brüt toplam 40×5=200 bulunur. Net oran % 90 (100 - 10) olduğundan indirimli toplam 200×90/100=180. 3 kişi eşit paylaşırsa kişi başına 180 ÷ 3 = 60 düşer. Simge için kişi başına 60 TL çıkar.
+
+Okulda Simge bir alışveriş yapar. Birim fiyat 40 TL olur ve 5 adet alınır. Toplam tutara % 10 indirim uygulanır. Son tutar 2 kişi arasında eşit paylaşılır. İndirimden sonra kişi başına ödeme kaç TL olur?
+Cevap: Önce indirimli toplam bulunur, sonra kişi sayısına bölünür. Brüt toplam: 40 × 5 = 200 olur. Net oran % 90 olur (100 - 10). İndirimli toplam: 200 × 90 ÷ 100 = 180 olur. Eşit paylaşım: 180 ÷ 2 = 90. Son durumda her kişi 90 TL öder.
+
+Simge bir alışveriş yapar. 5 tane alınır. Birim 40 TL olur. % 10 indirim yapılır. Sonra 2 kişi eşit paylaşır. Bir kişi kaç TL öder?
+Cevap: Önce indirimli toplam bulunur, sonra kişi sayısına bölünür. Brüt toplam: 40 × 5 = 200 olur. Net oran % 90 olur (100 - 10). İndirimli toplam: 200 × 90 ÷ 100 = 180 olur. Eşit paylaşım: 180 ÷ 2 = 90. Eşit paylaşım sonucunda kişi başına 90 TL düşer.
+
+Mağazada Simge bir alışveriş yapar. Birim fiyat 40 TL olur ve 5 adet alınır. Toplam tutara % 10 indirim uygulanır. Son tutar 3 kişi arasında eşit paylaşılır. Bir kişi kaç TL öder?
+Cevap: Önce indirimli toplam bulunur, sonra kişi sayısına bölünür. Brüt toplam: 40 × 5 = 200 olur. Net oran % 90 olur (100 - 10). İndirimli toplam: 200 × 90 ÷ 100 = 180 olur. Eşit paylaşım: 180 ÷ 3 = 60. Simge için kişi başına 60 TL çıkar.
+
+İnternetten Simge bir alışveriş yapar. Birim fiyat 40 TL olur ve 5 adet alınır. Toplam tutara % 10 indirim uygulanır. Son tutar 2 kişi arasında eşit paylaşılır. Bir kişi kaç TL öder?
+Cevap: İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Önce brüt toplam 40×5=200 bulunur. Net oran % 90 (100 - 10) olduğundan indirimli toplam 200×90/100=180. 2 kişi eşit paylaşırsa kişi başına 180 ÷ 2 = 90 düşer. Simge için kişi başına 90 TL çıkar.
+
+Mağazada Simge bir ürünü birlikte almak ister. 5 tane alınır. Birim 40 TL olur. % 10 indirim yapılır. Sonra 3 kişi eşit paylaşır. Bir kişi kaç TL öder?
+Cevap: İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Brüt toplam: 40 × 5 = 200 olur. Net oran % 90 olur (100 - 10). İndirimli toplam: 200 × 90 ÷ 100 = 180 olur. Eşit paylaşım: 180 ÷ 3 = 60. Sonuç kişi başına 60 TL olur.
+
+İnternetten Simge muz alır. 5 tane alınır. Birim 40 TL olur. % 10 indirim yapılır. Sonra 2 kişi eşit paylaşır. Eşit paylaşımda kişi başı kaç TL düşer?
+Cevap: Önce indirimli toplam bulunur, sonra kişi sayısına bölünür. Önce brüt toplam 40×5=200 bulunur. Net oran % 90 (100 - 10) olduğundan indirimli toplam 200×90/100=180. 2 kişi eşit paylaşırsa kişi başına 180 ÷ 2 = 90 düşer. Son durumda her kişi 90 TL öder.
+
+Okulda Simge alışverişte bir muz seçer. Birim fiyat 40 TL olur ve 5 adet alınır. Toplam tutara % 10 indirim uygulanır. Son tutar 3 kişi arasında eşit paylaşılır. İndirimden sonra kişi başına ödeme kaç TL olur?
+Cevap: İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Önce brüt toplam 40×5=200 bulunur. Net oran % 90 (100 - 10) olduğundan indirimli toplam 200×90/100=180. 3 kişi eşit paylaşırsa kişi başına 180 ÷ 3 = 60 düşer. Simge için kişi başına 60 TL çıkar.
+
+İnternetten Fırat oto lastiği almak ister. Birim fiyat 1500 TL olur. % 20 indirim vardır. İndirimden sonra KDV % 18 uygulanır. 4 adet alınır. Kasada toplam kaç TL öder?
+Cevap: İşlem sırası indirim sonra KDV olur. Net oran % 80 olur. İndirimli birim: 1500 × 80 ÷ 100 = 1200. KDV oranı % 118 olur. KDV dahil birim: 1200 × 118 ÷ 100 = 1416. Toplam: 1416 × 4 = 5664. Sonuç 5664 TL olur.
+
+Online siparişte Fırat alışveriş sırasında bir oto lastiği seçer. 1500 TL olan ürün için önce % 20 indirim, ardından % 18 KDV uygulanır ve 4 adet alınır. İndirim ve KDV sonrası toplam ödeme kaç TL olur?
+Cevap: İşlem sırası indirim sonra KDV olur. İndirimli birim: 1500×80/100=1200 olur. KDV dahil birim: 1200×118/100=1416 olur. Son adım 1416 × 4 = 5664 olur. İndirim ve KDV sonrası toplam ödeme 5664 TL çıkar.
+
+İnternetten Fırat oto lastiği satın almayı planlar. Birim fiyat 1500 TL olur. % 20 indirim vardır. İndirimden sonra KDV % 18 uygulanır. 4 adet alınır. Toplam ödeme kaç TL eder?
+Cevap: İşlem sırası indirim sonra KDV olur. Net oran % 80 olur. İndirimli birim: 1500 × 80 ÷ 100 = 1200. KDV oranı % 118 olur. KDV dahil birim: 1200 × 118 ÷ 100 = 1416. Toplam: 1416 × 4 = 5664. Bu yüzden toplam 5664 TL öder.
+
+Online siparişte Fırat oto lastiği için fiyatları inceler. 1500 TL olan ürün için önce % 20 indirim, ardından % 18 KDV uygulanır ve 4 adet alınır. Bu alışveriş kaç TL tutar?
+Cevap: Önce indirimli birim fiyat bulunur, sonra KDV eklenir. İndirimli birim: 1500×80/100=1200 olur. KDV dahil birim: 1200×118/100=1416 olur. Son adım 1416 × 4 = 5664 olur. Bu yüzden toplam 5664 TL öder.
+
+İnternetten Fırat alışveriş sırasında bir oto lastiği seçer. Birim fiyat 1500 TL olur. % 20 indirim vardır. İndirimden sonra KDV % 18 uygulanır. 4 adet alınır. Toplam ödeme kaç TL eder?
+Cevap: Önce indirimli birim fiyat bulunur, sonra KDV eklenir. İndirimli birim: 1500×80/100=1200 olur. KDV dahil birim: 1200×118/100=1416 olur. Son adım 1416 × 4 = 5664 olur. Sonuç 5664 TL olur.
+
+Online siparişte Fırat oto lastiği almak ister. Etiket 1500 TL olur. İndirim % 20 olur. Sonra KDV % 18 eklenir. 4 tane alınır. Bu alışveriş kaç TL tutar?
+Cevap: İşlem sırası indirim sonra KDV olur. Net oran % 80 olur. İndirimli birim: 1500 × 80 ÷ 100 = 1200. KDV oranı % 118 olur. KDV dahil birim: 1200 × 118 ÷ 100 = 1416. Toplam: 1416 × 4 = 5664. Sonuç olarak ödenecek toplam 5664 TL olur.
+
+Mağazada Fırat alışveriş sırasında bir oto lastiği seçer. Etiket 1500 TL olur. İndirim % 20 olur. Sonra KDV % 18 eklenir. 4 tane alınır. Son ödenecek miktar kaç TL çıkar?
+Cevap: İşlem sırası indirim sonra KDV olur. İndirimli birim: 1500×80/100=1200 olur. KDV dahil birim: 1200×118/100=1416 olur. Son adım 1416 × 4 = 5664 olur. İndirim ve KDV sonrası toplam ödeme 5664 TL çıkar.
+
+Mağazada Fırat alışveriş sırasında bir oto lastiği seçer. Birim fiyat 1500 TL olur. % 20 indirim vardır. İndirimden sonra KDV % 18 uygulanır. 4 adet alınır. KDV dahil indirimli toplam kaç TL eder?
+Cevap: İşlem sırası indirim sonra KDV olur. İndirimli birim: 1500×80/100=1200 olur. KDV dahil birim: 1200×118/100=1416 olur. Son adım 1416 × 4 = 5664 olur. İndirim ve KDV sonrası toplam ödeme 5664 TL çıkar.

@@ -1,0 +1,51 @@
+{"template": "sell_leftover", "name": "Serkan", "item": "pide", "produce": [150, 180], "use1": [40, 50], "use2": [20], "price": [6, 8], "currency": "TL"}
+{"template": "sell_leftover", "name": "Burak", "item": "açma", "produce": [60, 80], "use1": [15], "use2": [10, 12], "price": [5], "currency": "TL"}
+{"template": "sell_leftover", "name": "Banu", "item": "fide", "produce": [90, 100], "use1": [25, 30], "use2": [10], "price": [3, 4], "currency": "TL"}
+{"template": "remainder_after_loss", "name": "Yiğit", "item": "etiket", "start": [40, 50, 60], "lost": [8, 12]}
+{"template": "remainder_after_loss", "name": "Selin", "item": "rozet", "start": [25, 30], "lost": [5, 7]}
+{"template": "remainder_after_loss", "name": "Cem", "item": "jeton", "start": [80, 120], "lost": [15, 25]}
+{"template": "remainder_after_loss", "name": "Gizem", "item": "davetiye", "start": [150, 200], "lost": [30, 40]}
+{"template": "equal_sharing", "name": "Atölye", "item": "fırça", "total": [48, 72], "people": [4, 6, 8]}
+{"template": "equal_sharing", "name": "Antrenör", "item": "top", "total": [30, 60, 90], "people": [3, 5, 6, 10]}
+{"template": "equal_sharing", "name": "Teyze", "item": "fındık", "total": [40, 80], "people": [4, 5, 8]}
+{"template": "equal_sharing", "name": "Amca", "item": "bayramlık", "total": [200, 400], "people": [2, 4, 5]}
+{"template": "multi_step_add_sub", "name": "Tren", "item": "yolcu", "start": [100, 120], "add": [30, 40], "sub": [20, 25]}
+{"template": "multi_step_add_sub", "name": "Cüzdan", "item": "kartvizit", "start": [15, 20], "add": [5, 10], "sub": [3, 8]}
+{"template": "multi_step_add_sub", "name": "Silo", "item": "buğday", "start": [500, 600], "add": [100, 150], "sub": [50, 200]}
+{"template": "multi_step_add_sub", "name": "Fırın", "item": "simit", "start": [80, 100], "add": [40], "sub": [30, 50]}
+{"template": "unit_price_quantity", "name": "Eczane", "item": "maske", "price": [5, 10], "qty": [10, 20, 50], "currency": "TL"}
+{"template": "unit_price_quantity", "name": "Pazar", "item": "kavun", "price": [30, 40], "qty": [2, 3], "currency": "TL"}
+{"template": "unit_price_quantity", "name": "Kafe", "item": "çay", "price": [15, 20], "qty": [4, 5, 6], "currency": "TL"}
+{"template": "unit_price_quantity", "name": "Butik", "item": "şapka", "price": [100, 150], "qty": [2, 3], "currency": "TL"}
+{"template": "rate_time", "name": "Ozan", "item": "sayfa", "rate": [20, 25], "time": [4, 5]}
+{"template": "rate_time", "name": "Bisiklet", "item": "mesafe", "rate": [15, 20], "time": [2, 3]}
+{"template": "rate_time", "name": "Makine", "item": "parça", "rate": [50, 100], "time": [5, 10]}
+{"template": "rate_time", "name": "Usta", "item": "fayans", "rate": [10, 12], "time": [6, 8]}
+{"template": "ratio_scaling", "name": ["Pelin", "Ece"], "item_a": "sarı düğme", "item_b": "yeşil düğme", "ratio_a": [3], "ratio_b": [4], "total": [21, 49, 70], "ask_side": "a"}
+{"template": "ratio_scaling", "name": ["Caner", "Taner"], "item_a": "doğru", "item_b": "yanlış", "ratio_a": [7], "ratio_b": [3], "total": [50, 100], "ask_side": "a"}
+{"template": "ratio_scaling", "name": ["Grup 1", "Grup 2"], "item_a": "öğrenci", "item_b": "öğrenci", "ratio_a": [2], "ratio_b": [5], "total": [35, 70], "ask_side": "b"}
+{"template": "ratio_scaling", "name": ["Portakal", "Mandalina"], "item_a": "portakal", "item_b": "mandalina", "ratio_a": [3], "ratio_b": [2], "total": [25, 50], "ask_side": "b"}
+{"template": "sum_and_difference", "name": ["İki Sayı"], "total": [80, 100], "diff": [20, 40]}
+{"template": "sum_and_difference", "name": ["Sinan", "Kenan"], "total": [50, 70], "diff": [10, 30]}
+{"template": "sum_and_difference", "name": ["Uzunluk"], "total": [150, 200], "diff": [50]}
+{"template": "sum_and_difference", "name": ["Ağırlık"], "total": [60, 90], "diff": [20, 30]}
+{"template": "compare_difference", "name": ["Derya", "Mert"], "item": ["kitap", "dergi"], "a": [30, 40], "b": [15, 25]}
+{"template": "compare_difference", "name": ["Bina A", "Bina B"], "item": "yükseklik", "a": [50, 80], "b": [30, 40]}
+{"template": "compare_difference", "name": ["Sarı Torba", "Yeşil Torba"], "item": "ağırlık", "a": [12, 18], "b": [5, 8]}
+{"template": "compare_difference", "name": ["Birinci", "İkinci"], "item": "puan", "a": [95, 100], "b": [75, 80]}
+{"template": "reverse_operation", "name": "Termometre", "item": "derece", "end": [25, 30, 35], "add": [5, 10]}
+{"template": "reverse_operation", "name": "Nur", "item": "puan", "end": [300, 400], "add": [100]}
+{"template": "reverse_operation", "name": "Kasa", "item": "altın", "end": [50, 60], "add": [15, 20]}
+{"template": "sell_leftover", "name": "Balıkçı", "item": "hamsi", "produce": [40, 50, 60], "use1": [5, 10], "use2": [2, 3], "price": [50, 60], "currency": "TL"}
+{"template": "sell_leftover", "name": "Çiçekçi", "item": "gül", "produce": [80, 90], "use1": [10, 15], "use2": [5], "price": [20, 25], "currency": "TL"}
+{"template": "remainder_after_loss", "name": "Terzi", "item": "makara", "start": [25, 30, 40], "lost": [4, 8]}
+{"template": "remainder_after_loss", "name": "Kasiyer", "item": "fiş", "start": [100, 150], "lost": [10, 20]}
+{"template": "equal_sharing", "name": "Kaptan", "item": "can yeleği", "total": [36, 72], "people": [4, 6, 9]}
+{"template": "equal_sharing", "name": "Garson", "item": "peçete", "total": [50, 100, 200], "people": [5, 10]}
+{"template": "multi_step_add_sub", "name": "Asansör", "item": "kişi", "start": [5, 8], "add": [3, 4], "sub": [2, 5]}
+{"template": "unit_price_quantity", "name": "Kasap", "item": "kıyma", "price": [300, 350], "qty": [2, 3], "currency": "TL"}
+{"template": "rate_time", "name": "Çiftçi", "item": "fidan", "rate": [10, 20], "time": [5, 6, 8]}
+{"template": "rate_time", "name": "Yüzücü", "item": "metre", "rate": [40, 50], "time": [10, 15]}
+{"template": "ratio_scaling", "name": ["Un", "Şeker"], "item_a": "bardak un", "item_b": "bardak şeker", "ratio_a": [3], "ratio_b": [1], "total": [16, 24, 32], "ask_side": "a"}
+{"template": "sum_and_difference", "name": ["Uzun Kenar", "Kısa Kenar"], "total": [30, 50], "diff": [6, 10]}
+{"template": "reverse_operation", "name": "Galeri", "item": "fotoğraf", "end": [500, 1000], "add": [100, 200]}

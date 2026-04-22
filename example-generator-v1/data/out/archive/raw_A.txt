@@ -1,0 +1,167 @@
+Elif günde toplam 20 tane yumurta üretir. Elif sabah 5 tanesini kahvaltıda yer. Elif 6 tanesini börek için ayırır. Kalanlarını pazarda tanesi 3 TL olacak şekilde satar. Elif pazarda o gün kaç TL kazanır?
+Cevap: Elif günde toplam 20 tane yumurta üretir. 5 tanesini kahvaltıda ayırır ve 6 tanesini börek için kullanır. Satılacak miktar: 20 - 5 - 6 = 9. Tanesi 3 TL olduğuna göre, 9 × 3 = 27 TL kazanır.
+
+Elif her gün 24 tane yumurta toplar. Elif sabah 4 tanesini kahvaltıda kullanır. Elif her gün 7 tanesini yemek için kullanır. Kalanlarını pazarda tanesi 4 TL olacak şekilde satar. Elif her gün satıştan kaç TL gelir elde eder?
+Cevap: Elif her gün 24 tane yumurta bulur. 4 tanesini kahvaltıda ayırır ve 7 tanesini yemek için kullanır. 24 taneden 4 ve 7 çıkarılır: 13 tane kalır. Sonuç olarak 52 TL kazanır.
+
+Elif her gün 22 adet yumurta elde eder. Elif her sabah 4 tanesini kahvaltıda tüketir. Elif 7 tanesini yemek için ayırır. Kalanlarını pazarda 3 TL üzerinden satar. Elif her gün satıştan kaç TL gelir elde eder?
+Cevap: Elif günde 22 tane yumurta kazanır. 4 tanesini kahvaltıda bitirir, 7 tanesini yemek için ayırır. Satılacak miktar: 22 - 4 - 7 = 11. 11 tane satarsa 33 TL kazanır.
+
+Elif günde toplam 20 tane yumurta üretir. Elif sabah 5 tanesini kahvaltıda bitirir. Elif 6 tanesini kek için ayırır. Kalanlarını pazarda her biri 3 TL olacak şekilde satar. Elif satıştan kaç TL alır?
+Cevap: Elif her gün 20 tane yumurta bulur. 5 tanesini kahvaltıda yer ve 6 tanesini kek için kullanır. Satılacak miktar: 20 - 5 - 6 = 9. Her biri 3 TL ise, 9 × 3 = 27 TL olur.
+
+John evde 20 tane elma olduğunu bilir. Bir süre sonra 5 tanesi kaybolur. Kaç tane elma kalır?
+Cevap: Başlangıç miktarı 20 tane elma olur. 20 - 5 işlemi 15 verir. Kalan elma sayısı 15 olur.
+
+John rafta 18 tane elma olduğunu görür. O gün 3 tanesi kaybolur. Son durumda kaç tane elma kalır?
+Cevap: John için başlangıç miktarı 18 tane elma olur. Çıkarma işlemi: 18 - 3 = 15. Cevap 15 tane elma olur.
+
+John evde 20 tane elma olduğunu bilir. Bir anda 5 tanesi kaybolur. John için kaç tane elma kalır?
+Cevap: Önce 20 tane elma vardır. Kaybolan 5 tanesi çıkarılır: 20 - 5 = 15. Geriye 15 tane elma kalır.
+
+John masada 20 tane elma görür. Daha sonra 3 tanesi kaybolur. Son durumda kaç tane elma kalır?
+Cevap: Önce 20 tane elma vardır. Kaybolan 3 tanesi çıkarılır: 20 - 3 = 17. Son durumda 17 tane elma vardır.
+
+Mehmet evde 30 tane kalem bulur. O gün 4 tanesi kaybolur. Son durumda kaç tane kalem kalır?
+Cevap: Mehmet için başlangıç miktarı 30 tane kalem olur. Çıkarma işlemi: 30 - 4 = 26. Kalan kalem sayısı 26 olur.
+
+Mehmet evde 30 tane kalem olduğunu bilir. Bir süre sonra 7 tanesi kaybolur. Kalan miktar kaç tane kalem olur?
+Cevap: Başlangıçta 30 tane kalem vardır. 30 taneden 7 çıkarılır ve 23 kalır. Kalan kalem sayısı 23 olur.
+
+Mehmet rafta 35 tane kalem olduğunu görür. Bir anda 4 tanesi kaybolur. Mehmet için kaç tane kalem kalır?
+Cevap: Mehmet başta 35 tane kalem ile başlar. Sonuç: 31. Mehmet için kalan miktar 31 tane kalem olur.
+
+Mehmet kutuda 30 tane kalem sayar. Bir süre sonra 7 tanesi kaybolur. Kalan toplam kaç tane kalem olur?
+Cevap: Mehmet başta 30 tane kalem görür. Çıkarma işlemi: 30 - 7 = 23. Geriye 23 tane kalem kalır.
+
+Zeynep dolapta 50 tane bilye olduğunu görür. Daha sonra 12 tanesi kaybolur. Kalan miktar kaç tane bilye olur?
+Cevap: Başlangıç miktarı 50 tane bilye olur. Kaybolan 12 tanesi çıkarılır: 50 - 12 = 38. Sonuç olarak 38 tane bilye kalır.
+
+Zeynep yerde 60 tane bilye bulur. Sonrasında 12 tanesi kaybolur. Son durumda kaç tane bilye kalır?
+Cevap: Zeynep için başlangıç miktarı 60 tane bilye olur. Kaybolan 12 tanesi çıkarılır: 60 - 12 = 48. Son durumda 48 tane bilye vardır.
+
+Zeynep çantada 50 tane bilye olduğunu fark eder. Daha sonra 12 tanesi kaybolur. Kalan bilye sayısı kaçtır?
+Cevap: Önce 50 tane bilye vardır. Hesap: 50 - 12 = 38. Geriye 38 tane bilye kalır.
+
+Zeynep evde 60 tane bilye olduğunu bilir. Bir anda 12 tanesi kaybolur. Kalan bilye sayısı kaçtır?
+Cevap: Önce 60 tane bilye vardır. Kalan miktar 60 - 12 = 48 olur. Zeynep için kalan miktar 48 tane bilye olur.
+
+Elif 36 tane şeker biriktirir. Bu 36 tane şeker, 6 kişi arasında eşit paylaştırılır. Her kişiye kaç tane şeker düşer?
+Cevap: 6 kişi paylaşım yapar. 36 tane şeker 6 kişiye bölünür: 6. Bu yüzden kişi başına 6 tane şeker düşer.
+
+Elif toplam 36 tane şeker hazırlar. Bunları 6 kişi arasında eşit paylaşmak ister. Kişi başına kaç tane şeker düşer?
+Cevap: Toplam 36 tane şeker vardır. Pay, 36 ÷ 6 = 6 olarak bulunur. Her kişiye 6 tane şeker düşer.
+
+Elif 24 tane şeker biriktirir. Bu 24 tane şeker, 3 kişi arasında eşit paylaştırılır. Kişi başına kaç tane şeker düşer?
+Cevap: Toplam 24 tane şeker vardır ve 3 kişi vardır. 24 şeker sayısı 3 kişiye bölünür, sonuç 8 olur. Kişi başına düşen miktar 8 tane şeker olur.
+
+Elif kutuda 24 tane şeker sayar. Bu 24 tane şeker, 6 kişi arasında eşit paylaştırılır. Kişi başına kaç tane şeker düşer?
+Cevap: 24 tane şeker 6 kişi arasında paylaşılır. Eşit paylaşım için 24 ÷ 6 yapılır ve 4 bulunur. Kişi başına düşen miktar 4 tane şeker olur.
+
+Ahmet yanında 20 tane kitap taşır. Bunları 5 kişi arasında eşit paylaşmak ister. Kişi başına kaç tane kitap düşer?
+Cevap: Eşit paylaşım için 20 ve 5 kullanılır. Sonuç: 20 ÷ 5 = 4. Eşit paylaşım sonucu 4 tane kitap olur.
+
+Ahmet 20 tane kitap biriktirir. Ahmet eşit paylaşım için 4 kişi seçer. Eşit paylaşımda kişi başına kaç tane kitap olur?
+Cevap: 20 tane kitap 4 kişi arasında paylaşılır. Sonuç: 20 ÷ 4 = 5. Kişi başına düşen miktar 5 tane kitap olur.
+
+Ahmet toplam 40 tane kitap hazırlar. Ahmet bunları 4 kişi arasında eşit böler. Her kişi için kaç tane kitap olur?
+Cevap: 4 kişi için toplam 40 tane kitap paylaşılır. Hesap: 40 ÷ 4 = 10. Her kişiye 10 tane kitap düşer.
+
+Ahmet evde 20 tane kitap olduğunu fark eder. Ahmet bunları 4 kişi arasında eşit böler. Eşit paylaşımda kişi başına kaç tane kitap olur?
+Cevap: Eşit paylaşım için 20 ve 4 kullanılır. Bölme işlemi: 20 / 4 = 5. Bu yüzden kişi başına 5 tane kitap düşer.
+
+Deniz elinde 32 tane top olduğunu söyler. Deniz bunları 8 kişi arasında eşit böler. Paylaşınca kişi başına kaç tane top gelir?
+Cevap: 8 kişi paylaşım yapar. 32 top sayısı 8 kişiye bölünür, sonuç 4 olur. Kişi başına düşen miktar 4 tane top olur.
+
+Deniz yanında 32 tane top taşır. Deniz bunları 4 kişi arasında eşit böler. Her kişiye kaç tane top düşer?
+Cevap: Toplam 32 tane top vardır. Hesap: 32 ÷ 4 = 8. Bu yüzden kişi başına 8 tane top düşer.
+
+Deniz toplam 48 tane top hazırlar. 4 kişi için eşit paylaşım yapılır. Sonuçta kişi başına kaç tane top düşer?
+Cevap: Toplam 48 tane top vardır. Sonuç: 48 ÷ 4 = 12. Eşit paylaşım sonucu 12 tane top olur.
+
+Deniz evde 16 tane top olduğunu fark eder. Eşit paylaşım 4 kişi arasında yapılır. Paylaşınca kişi başına kaç tane top gelir?
+Cevap: Eşit paylaşım için 16 ve 4 kullanılır. Hesap: 16 ÷ 4 = 4. Eşit paylaşım sonucu 4 tane top olur.
+
+Zeynep dakikada 4 tane soru tamamlar. Toplam 10 dakika sürer. Toplam üretim kaç tane soru olur?
+Cevap: Hız ve süre çarpılır. Çarpma: 4 * 10 = 40. Cevap 40 tane soru.
+
+Zeynep dakikada 4 tane soru tamamlar. Bu şekilde 10 dakika çalışır. Toplam kaç tane soru yapar?
+Cevap: Dakikada 4 tane soru ve 10 dakika vardır. Toplam: 4 × 10 = 40 tane. Zeynep 40 tane soru üretir.
+
+Zeynep dakikada 6 tane soru tamamlar. 10 dakika boyunca çalışır. Toplam kaç tane soru yapar?
+Cevap: Hız 6 tane/dakika ve süre 10 olur. Toplam: 6 × 10 = 60 tane soru. 60 tane soru elde eder.
+
+Zeynep dakikada 6 tane soru bitirir. 12 dakika boyunca çalışır. Toplam üretim kaç tane soru olur?
+Cevap: 6 tane ve 12 dakika kullanılır. 12 dakika için 6 × 12 = 72. Cevap 72 tane soru.
+
+Mehmet pazardan 3 tane simit almak ister. simit için birim fiyat 8 TL olur. Ödeme toplamı kaç TL olur?
+Cevap: Birim fiyat 8 TL olur. Hesap: 8 TL × 3 = 24 TL. Sonuç olarak 24 TL olur.
+
+Mehmet pazardan 3 tane simit almak ister. simit için birim fiyat 10 TL olur. Ödeme toplamı kaç TL olur?
+Cevap: 3 tane simit vardır ve birim fiyat 10 TL olur. 3 tane simit için 3 × 10 = 30 TL. Mehmet toplam 30 TL verir.
+
+Mehmet 3 tane simit satın alır. simit birim fiyatı 10 TL olur. Toplam ücret kaç TL olur?
+Cevap: Toplam 3 tane simit alınır, tanesi 10 TL olur. 3 tane simit için 3 × 10 = 30 TL. Mehmet toplam 30 TL verir.
+
+Mehmet 3 adet simit alır. Bir simit fiyatı 8 TL olur. Toplam maliyet kaç TL olur?
+Cevap: Toplam 3 tane simit vardır. Sonuç: 3 × 8 = 24 TL. Toplam maliyet 24 TL.
+
+Ayşe masada 30 tane bilye olduğunu fark eder. 10 tane bilye ekler ve 3 tane bilye kaybolur. Kaç tane bilye kalır?
+Cevap: Başlangıç 30 tane bilye olur. Toplam: 30 + 10 = 40; kalan: 40 - 3 = 37. Sonuç olarak 37 tane bilye olur.
+
+Ayşe çantada 30 tane bilye olduğunu görür. 5 tane bilye ekledikten sonra 3 tane bilye eksilir. Son durumda kaç tane bilye olur?
+Cevap: Başta 30 tane bilye olur. Toplam: 30 + 5 = 35; kalan: 35 - 3 = 32. Kalan toplam 32 tane bilye olur.
+
+Ayşe başta 40 tane bilye sayar. Daha sonra 5 tane bilye gelir ve 3 tane bilye gider. Sonunda kaç tane bilye vardır?
+Cevap: Başlangıç miktarı 40 tane bilye. Önce 40 + 5 yapılır, sonra 3 çıkarılır ve 42 bulunur. Son miktar 42 tane bilye olur.
+
+Ayşe rafta 30 tane bilye sayar. 10 tane bilye ekler ve 3 tane bilye kaybolur. Kalan toplam kaç tane bilye olur?
+Cevap: Başlangıç miktarı 30 tane bilye. 30 + 10 - 3 = 37. Geriye 37 tane bilye kalır.
+
+Zeynep iki grupta nesne olduğunu söyler. Toplam 210 tane nesne, oran 2:4 olur. kırmızı top için kaç tane çıkar?
+Cevap: İlk adım toplam parça sayısını bulmaktır. Birim değer 210 ÷ (2+4) = 35 bulunur. kırmızı top için parça sayısı ile birim çarpılır ve 70 bulunur.
+
+Zeynep elindeki iki tür nesneyi sayar. Oran 3:3 iken toplam sayı 420 olur kırmızı top için kaç tane çıkar?
+Cevap: 3 ve 3 toplanır. Bir parça, 420 ÷ (3+3) = 70 olur. kırmızı top sayısı 210 olur.
+
+Ali iki farklı tür nesne olduğunu fark eder. Toplam 420 tane vardır ve oran 3:4 olur. kırmızı top sayısı kaç tane olur?
+Cevap: Toplam parça sayısı bulunur. Birim değer 420 ÷ (3+4) = 60 bulunur. İstenen miktar 180 tane kırmızı top olur.
+
+Zeynep elindeki iki tür nesneyi sayar. Oran 2:4 iken toplam 210 tane olur. kırmızı top için kaç tane çıkar?
+Cevap: Oranın toplam parçası 2 + 4 olur. Parça değeri 210 ÷ (2+4) = 35 olur. İstenen miktar: parça × 35 = 70.
+
+Mehmet iki sayı düşünür. Toplam 40, fark 10 olur. Büyük sayıyı bulun.
+Cevap: İki sayı x ve y olsun. Hesap: (40 + 10) / 2 = 25. 25 sonucu elde edilir.
+
+Ayşe iki sayıyı karşılaştırır. Toplam 40, fark 20 olur. Büyük sayı kaçtır?
+Cevap: Büyük sayı ve küçük sayı için toplam ve fark kullanılır. Büyük sayı (toplam + fark) ÷ 2 ile bulunur: (40+20) ÷ 2 = 30. Dolayısıyla sonuç 30 olur.
+
+Mehmet iki sayıyı karşılaştırır. Toplam 40 ve fark 20 bilinir. Büyük sayı kaç olur?
+Cevap: Büyük ve küçük sayı olarak düşünülür. (40+20) ÷ 2 işlemi 30 verir. Bu yüzden büyük sayı 30 olur.
+
+Mehmet iki sayı için toplam ve fark bilgisini verir. İki sayının toplamı 40, farkı 10 olur. Büyük sayı değeri kaç olur?
+Cevap: Toplam 40 ve fark 10 verilir. Hesap sonucu (40+10) ÷ 2 = 25 olur. Dolayısıyla sonuç 25 olur.
+
+Deniz iki kişideki miktarı karşılaştırır. İki miktar 25 ve 10 olarak verilir. Aradaki fark kaç tane kalem olur?
+Cevap: Farkı bulmak için çıkarma yapılır. 15 elde edilir. 15 tane kalem daha fazladır.
+
+Elif iki farklı miktarı söyler. Bir tarafta 18 tane bilye, diğer tarafta 10 tane bilye bulunur. İki miktar arasındaki fark kaç tane bilye olur?
+Cevap: Fark hesaplanır. Çıkarma sonucu 8 olur. Cevap 8 tane bilye.
+
+Deniz iki sayı arasında fark arar. A tarafında 25 tane kalem vardır, B tarafında 7 tane kalem vardır. Kaç tane kalem fark vardır?
+Cevap: Fark için 25 - 7 yapılır. İşlem sonucu fark 18 olur. Fark 18 tane kalem çıkar.
+
+Elif iki miktarı kıyaslar. Miktarlar 25 ve 10 olur. Sonuçta fark kaç tane kalem olur?
+Cevap: İki miktar arasındaki fark çıkarma ile bulunur. 25 - 10 işlemi 15 verir. Bu yüzden fark 15 tane kalem olur.
+
+Ahmet son miktarı kontrol eder. 10 tane boncuk eklenince 20 tane boncuk olmuştur. Başlangıçta bulunan boncuk sayısı kaçtır?
+Cevap: Ekleme geri çevrilir. Sonuç 10. Başta 10 tane boncuk vardı.
+
+Can bir son miktar verir. 10 tane şeker eklendikten sonra 20 tane şeker olur. Başlangıçta kaç tane şeker vardır?
+Cevap: Ekleme geri çevrilir. 20 - 10 işlemi 10 verir. Cevap 10 tane şeker.
+
+Ahmet son durumu inceler. 5 tane boncuk eklendikten sonra 25 tane boncuk olur. Başlangıç sayısı kaç tane boncuk olur?
+Cevap: Tersine hesap yapılır. Ters işlem sonucu 20. Bu durumda başlangıç 20 tane boncuk olur.
+
+Can gün sonunda bir miktar sayar. 25 tane boncuk son miktardır, eklenen 10 tane boncuk olur. Başta kaç tane boncuk vardı?
+Cevap: Başlangıcı bulmak için çıkarma yaparız. Çıkarma işlemi ile başlangıç 15 bulunur. 15 tane boncuk ile başlanmıştır.

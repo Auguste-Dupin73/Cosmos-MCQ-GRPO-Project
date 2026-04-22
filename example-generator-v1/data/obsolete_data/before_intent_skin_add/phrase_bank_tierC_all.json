@@ -1,0 +1,308 @@
+{
+  "skins": {
+    "retail": {
+      "prefix": [
+        "Mağazada ",
+        "Markette "
+      ],
+      "suffix": [
+        ""
+      ]
+    },
+    "online": {
+      "prefix": [
+        "Online siparişte ",
+        "İnternetten "
+      ],
+      "suffix": [
+        ""
+      ]
+    },
+    "school": {
+      "prefix": [
+        "Okulda ",
+        "Sınıfta "
+      ],
+      "suffix": [
+        ""
+      ]
+    },
+    "home": {
+      "prefix": [
+        "Evde ",
+        ""
+      ],
+      "suffix": [
+        ""
+      ]
+    }
+  },
+  "template_skins": {
+    "discount_then_vat_total_cost": [
+      "retail",
+      "online"
+    ],
+    "two_items_then_bundle_discount_total_cost": [
+      "retail",
+      "online"
+    ],
+    "discounted_total_then_change": [
+      "retail",
+      "online"
+    ],
+    "transform_then_share": [
+      "school",
+      "home",
+      "retail",
+      "online"
+    ]
+  },
+  "discvat_story_start": [
+    "{name} {item} almak ister.",
+    "{name} {item} satın almayı planlar.",
+    "{name} indirimli bir {item} almak ister.",
+    "{name} {item} için fiyatları inceler.",
+    "{name} alışveriş sırasında bir {item} seçer.",
+    "{name} vitrinde bir {item} görür."
+  ],
+  "discvat_story_event": [
+    "Birim fiyat {unit_price} {currency} olur. % {discount_pct} indirim vardır. İndirimden sonra KDV % {vat_pct} uygulanır. {qty} adet alınır.",
+    "Etiket {unit_price} {currency} olur. İndirim % {discount_pct} olur. Sonra KDV % {vat_pct} eklenir. {qty} tane alınır.",
+    "{unit_price} {currency} olan ürün için önce % {discount_pct} indirim, ardından % {vat_pct} KDV uygulanır ve {qty} adet alınır.",
+    "{qty} adet ürün alınır; fiyat üzerinden % {discount_pct} indirim ve % {vat_pct} KDV hesaplanır."
+  ],
+  "discvat_question": [
+    "Toplam ödeme kaç {currency} eder?",
+    "Bu alışveriş kaç {currency} tutar?",
+    "İndirim ve KDV uygulandıktan sonra toplam tutar kaç {currency} olur?",
+    "Son ödenecek miktar kaç {currency} çıkar?",
+    "KDV dahil indirimli toplam kaç {currency} eder?",
+    "Kasada toplam kaç {currency} öder?",
+    "Ödeme tutarı kaç {currency} olur?",
+    "İndirim ve KDV sonrası toplam ödeme kaç {currency} olur?"
+  ],
+  "discvat_reason_intro": [
+    "İşlem sırası indirim sonra KDV olur.",
+    "Önce indirimli birim fiyat bulunur, sonra KDV eklenir."
+  ],
+  "discvat_reason_calc": [
+    "Net oran % {net_pct} olur. İndirimli birim: {unit_price} × {net_pct} ÷ 100 = {discounted_unit}. KDV oranı % {gross_pct} olur. KDV dahil birim: {discounted_unit} × {gross_pct} ÷ 100 = {vat_unit}. Toplam: {vat_unit} × {qty} = {total}.",
+    "İndirimli birim {discounted_unit} olur. KDV dahil birim {vat_unit} olur. Son adım {vat_unit} × {qty} = {total} olur."
+  ],
+  "discvat_reason_final": [
+    "Bu yüzden toplam {total} {currency} öder.",
+    "Sonuç {total} {currency} olur.",
+    "Sonuç olarak ödenecek toplam {total} {currency} olur.",
+    "İndirim ve KDV sonrası toplam ödeme {total} {currency} çıkar."
+  ],
+  "buy2bund_story_start": [
+    "{name} iki ürün alır: {item1} ve {item2}.",
+    "{name} alışverişte {item1} ve {item2} seçer.",
+    "{name} alışveriş için iki ürün belirler.",
+    "{name} sepete iki farklı ürün ekler.",
+    "{name} iki ayrı ürünü birlikte almayı planlar.",
+    "{name} iki ürün seçerek alışveriş yapar."
+  ],
+  "buy2bund_story_event": [
+    "{item1} tanesi {unit_price1} {currency} olur, {qty1} tane alınır. {item2} tanesi {unit_price2} {currency} olur, {qty2} tane alınır. Kasada toplam tutara % {discount_pct} indirim uygulanır.",
+    "İlk ürün {item1}: {qty1} × {unit_price1}. İkinci ürün {item2}: {qty2} × {unit_price2}. Toplam tutara % {discount_pct} indirim yapılır.",
+    "İki ürünün toplamına % {discount_pct} indirim yapılır.",
+    "{qty1} ve {qty2} adet ürün alınır, toplam tutara indirim uygulanır."
+  ],
+  "buy2bund_question": [
+    "İndirimden sonra toplam ödeme kaç {currency} olur?",
+    "Kasada indirim uygulanınca kaç {currency} öder?",
+    "İndirim uygulandıktan sonra kasada kaç {currency} öder?",
+    "Toplam tutara indirim gelince son ödeme kaç {currency} olur?",
+    "İndirimli alışveriş toplamı kaç {currency} çıkar?",
+    "Kasadaki son tutar kaç {currency} olur?",
+    "İndirim sonrası ödenecek toplam kaç {currency} eder?",
+    "Sonuç olarak toplam ödeme kaç {currency} olur?"
+  ],
+  "buy2bund_reason_intro": [
+    "Önce iki ürünün toplamı bulunur, sonra indirim uygulanır.",
+    "Önce ara toplam hesaplanır, ardından yüzde indirim yapılır."
+  ],
+  "buy2bund_reason_calc": [
+    "Birinci maliyet {cost1}, ikinci maliyet {cost2} olur. Ara toplam {subtotal} olur. Net oran % {net_pct} olur. İndirimli toplam: {subtotal} × {net_pct} ÷ 100 = {final_total}.",
+    "Ara toplam {subtotal} olur. İndirim tutarı {discount_amount} olur. Son ödeme {final_total} olur."
+  ],
+  "buy2bund_reason_final": [
+    "Sonuç {final_total} {currency} olur.",
+    "{name} toplam {final_total} {currency} öder.",
+    "İndirim sonrası ödenecek tutar {final_total} {currency} olur.",
+    "Son durumda kasada {final_total} {currency} öder."
+  ],
+  "discpay_story_start": [
+    "{name} {item} almak ister.",
+    "{name} {item} satın alır.",
+    "{name} indirimli bir {item} almayı düşünür.",
+    "{name} kasada ödeme yapmaya hazırlanır.",
+    "{name} alışverişini tamamlamak ister.",
+    "{name} {item} alarak kasaya gelir."
+  ],
+  "discpay_story_event": [
+    "Birim fiyat {unit_price} {currency} olur, {qty} adet alınır. Toplam tutara % {discount_pct} indirim uygulanır. {paid} {currency} ile öder.",
+    "{qty} tane {item} alınır. Birim {unit_price} {currency} olur. % {discount_pct} indirimden sonra {paid} {currency} verir.",
+    "Toplam tutara % {discount_pct} indirim yapılır ve {paid} {currency} ile ödeme yapılır.",
+    "İndirimden sonra {paid} {currency} vererek ödeme yapar."
+  ],
+  "discpay_question": [
+    "Ödemeden sonra kaç {currency} para üstü alır?",
+    "Para üstü kaç {currency} olur?",
+    "İndirimden sonra para üstü kaç {currency} gelir?",
+    "Kasadan kaç {currency} geri alır?",
+    "Ödeme yaptıktan sonra geri kalan kaç {currency} olur?",
+    "Para üstü miktarı kaç {currency} çıkar?",
+    "Son durumda kaç {currency} para üstü alır?",
+    "Ödenen paradan sonra kaç {currency} iade edilir?"
+  ],
+  "discpay_reason_intro": [
+    "Önce indirimli toplam bulunur, sonra çıkarma yapılır.",
+    "İndirimli ödeme hesaplanır, ardından para üstü bulunur."
+  ],
+  "discpay_reason_calc": [
+    "Brüt toplam {gross_total} olur. Net oran % {net_pct} olur. İndirimli toplam {discounted_total} olur. Para üstü: {paid} - {discounted_total} = {change}.",
+    "İndirimli toplam {discounted_total} olur. {paid} ile ödendiğine göre para üstü {change} olur."
+  ],
+  "discpay_reason_final": [
+    "Bu yüzden {change} {currency} para üstü alır.",
+    "Sonuç {change} {currency} olur.",
+    "Bu işlemden sonra {change} {currency} geri alır.",
+    "Kasadan alınan para üstü {change} {currency} olur."
+  ],
+  "discsplit_story_start": [
+    "{name} {item} alır.",
+    "{name} {item} satın alır.",
+    "{name} bir alışveriş yapar.",
+    "{name} bir ürünü birlikte almak ister.",
+    "{name} alışverişte bir {item} seçer.",
+    "{name} {item} alımı için karar verir."
+  ],
+  "discsplit_story_event": [
+    "Birim fiyat {unit_price} {currency} olur ve {qty} adet alınır. Toplam tutara % {discount_pct} indirim uygulanır. Son tutar {people} kişi arasında eşit paylaşılır.",
+    "{qty} tane alınır. Birim {unit_price} {currency} olur. % {discount_pct} indirim yapılır. Sonra {people} kişi eşit paylaşır.",
+    "Toplam tutara % {discount_pct} indirim uygulanır ve ödeme {people} kişi arasında paylaşılır.",
+    "İndirim sonrası tutar {people} kişi için eşit bölünür."
+  ],
+  "discsplit_question": [
+    "Kişi başına düşen ödeme kaç {currency} olur?",
+    "Bir kişi kaç {currency} öder?",
+    "İndirimden sonra kişi başına ödeme kaç {currency} olur?",
+    "Toplam indirimli tutar bölünürse her kişi kaç {currency} verir?",
+    "Eşit paylaşımda kişi başı kaç {currency} düşer?",
+    "Her bir kişi kaç {currency} ödemelidir?",
+    "Kişi başına düşen tutar kaç {currency} çıkar?",
+    "Son ödeme eşit bölünürse bir kişi kaç {currency} öder?"
+  ],
+  "discsplit_reason_intro": [
+    "Önce indirimli toplam bulunur, sonra kişi sayısına bölünür.",
+    "İndirimli tutar hesaplanır ve eşit paylaşım yapılır."
+  ],
+  "discsplit_reason_calc": [
+    "Brüt toplam {gross_total} olur. Net oran % {net_pct} olur. İndirimli toplam {discounted_total} olur. Eşit paylaşım: {discounted_total} ÷ {people} = {each}.",
+    "İndirimli toplam {discounted_total} olur. {people} kişi eşit paylaşırsa kişi başına {each} düşer."
+  ],
+  "discsplit_reason_final": [
+    "Sonuç kişi başına {each} {currency} olur.",
+    "{name} için kişi başına {each} {currency} çıkar.",
+    "Eşit paylaşım sonucunda kişi başına {each} {currency} düşer.",
+    "Son durumda her kişi {each} {currency} öder."
+  ],
+  "discvat_story_event_qty": [
+    "{unit_price} {currency} olan ürün için önce % {discount_pct} indirim, ardından % {vat_pct} KDV uygulanıyor. Son toplam {total} {currency} olduğuna göre kaç adet alınmıştır?",
+    "Fiyatı {unit_price} {currency} olan ürüne % {discount_pct} indirim ve % {vat_pct} KDV uygulanınca toplam {total} {currency} tutuyor. Kaç adet alınmıştır?",
+    "% {discount_pct} indirim ve % {vat_pct} KDV sonrası toplam ödeme {total} {currency} oluyor. Ürünün birim fiyatı {unit_price} {currency} ise kaç adet alınmıştır?",
+    "{unit_price} {currency} birim fiyatlı üründe % {discount_pct} indirim ve % {vat_pct} KDV sonrası toplam {total} {currency} çıkıyor. Alınan miktar kaçtır?"
+  ],
+  "discvat_question_qty": [
+    "Kaç adet {item} alınmıştır?",
+    "Alınan {item} sayısı kaçtır?",
+    "Toplam {total} {currency} olduğuna göre kaç tane {item} alınmış olur?",
+    "Kaç tane {item} alınmıştır?"
+  ],
+  "discvat_reason_calc_qty": [
+    "Önce indirimli birim fiyatı, sonra KDV'li birim fiyatı buluruz: {unit_price}×{net_pct}/100={discounted_unit}, ardından {discounted_unit}×{gross_pct}/100={vat_unit}. Toplam {total} olduğuna göre {total}/{vat_unit}={asked_qty}.",
+    "İndirim sonrası birim fiyat {discounted_unit} {currency}, KDV sonrası birim fiyat {vat_unit} {currency} olur. Toplam {total} {currency} ise adet = {total} / {vat_unit} = {asked_qty}.",
+    "KDV dahil indirimli birim fiyat {vat_unit} {currency} bulunur. Toplam {total} {currency} bu birim fiyata bölünür: {total}/{vat_unit}={asked_qty}.",
+    "Birim fiyat dönüşümlerinden sonra {vat_unit} {currency} elde edilir. Toplam {total} {currency} olduğundan alınan adet {asked_qty} olur."
+  ],
+  "discvat_reason_final_qty": [
+    "Sonuç: {asked_qty} adet {item} alınmıştır.",
+    "{asked_qty} adet {item} alınmış olur.",
+    "Alınan {item} sayısı {asked_qty} adettir.",
+    "Cevap: {asked_qty} adet {item}."
+  ],
+  "buy2bund_story_event_discount_pct": [
+    "{qty1} adet {item1} ({unit_price1} {currency}) ve {qty2} adet {item2} ({unit_price2} {currency}) alınır. Toplam {subtotal} {currency} iken indirimli tutar {final_total} {currency} olur. İndirim oranı yüzde kaçtır?",
+    "{item1} ve {item2} birlikte alınır. Toplam {subtotal} {currency} tutan sepet, indirim sonrası {final_total} {currency} oluyor. İndirim yüzdesi kaçtır?",
+    "{qty1}×{unit_price1} + {qty2}×{unit_price2} = {subtotal} {currency}. İndirim sonrası ödeme {final_total} {currency}. İndirim oranı yüzde kaçtır?",
+    "İki ürünün toplamı {subtotal} {currency} iken kasada {final_total} {currency} ödeniyor. Bu indirim yüzde kaçtır?"
+  ],
+  "buy2bund_question_discount_pct": [
+    "İndirim oranı yüzde kaçtır?",
+    "Bu indirim % kaçtır?",
+    "Uygulanan indirim yüzdesi kaçtır?",
+    "İndirim oranını yüzde olarak bulun."
+  ],
+  "buy2bund_reason_calc_discount_pct": [
+    "İndirim oranı = ( {subtotal} - {final_total} ) / {subtotal} × 100 = {discount_amount}/{subtotal}×100 = {asked_discount_pct}.",
+    "{subtotal} {currency} tutardan {final_total} {currency}'ye düşmüş. İndirim yüzdesi = ({discount_amount} / {subtotal})×100 = {asked_discount_pct}.",
+    "İndirim miktarı {discount_amount} {currency}. Yüzde indirim = {discount_amount}×100/{subtotal} = {asked_discount_pct}.",
+    "Başlangıç {subtotal}, son {final_total}. Oran = (1 - {final_total}/{subtotal})×100 = {asked_discount_pct}."
+  ],
+  "buy2bund_reason_final_discount_pct": [
+    "Sonuç olarak indirim oranı % {asked_discount_pct} olur.",
+    "Uygulanan indirim % {asked_discount_pct}'tir.",
+    "İndirim yüzdesi % {asked_discount_pct} bulunur.",
+    "Cevap: % {asked_discount_pct} indirim."
+  ],
+  "discpay_story_event_paid": [
+    "{unit_price} {currency} olan {item}den {qty} adet alınır ve % {discount_pct} indirim uygulanır. İndirimli toplam {discounted_total} {currency} olur. Para üstü {change} {currency} ise kaç {currency} ödenmiştir?",
+    "{qty} adet {item} için % {discount_pct} indirim sonrası tutar {discounted_total} {currency}. Kasadan {change} {currency} para üstü alındığına göre ödeme kaç {currency}dır?",
+    "{unit_price}×{qty} üzerinden % {discount_pct} indirimle {discounted_total} {currency} tutar çıkıyor. Para üstü {change} {currency}. Ödenen miktar kaç {currency}?",
+    "İndirim sonrası toplam {discounted_total} {currency}. Para üstü {change} {currency} olduğuna göre kaç {currency} verilmiştir?"
+  ],
+  "discpay_question_paid": [
+    "Kaç {currency} ödemiştir?",
+    "Ödenen para kaç {currency}dır?",
+    "Kasaya kaç {currency} vermiştir?",
+    "Ödeme miktarı kaç {currency} olur?"
+  ],
+  "discpay_reason_calc_paid": [
+    "Ödenen para = indirimli toplam + para üstü = {discounted_total} + {change} = {asked_paid} {currency}.",
+    "{discounted_total} {currency} tutar ve {change} {currency} para üstü varsa ödeme {discounted_total}+{change}={asked_paid} {currency} olur.",
+    "Toplam tutar {discounted_total}, kalan {change}. Ödenen = {discounted_total}+{change} = {asked_paid}.",
+    "Kasaya verilen para {asked_paid} {currency} çünkü {asked_paid}-{discounted_total}={change}."
+  ],
+  "discpay_reason_final_paid": [
+    "Sonuç: {asked_paid} {currency} ödemiştir.",
+    "Cevap: {asked_paid} {currency}.",
+    "Ödenen miktar {asked_paid} {currency} bulunur.",
+    "{asked_paid} {currency} verilmiştir."
+  ],
+  "discsplit_story_event_people": [
+    "{unit_price} {currency} olan {item}den {qty} adet alınır ve % {discount_pct} indirim uygulanır. İndirimli toplam {discounted_total} {currency} olur. Kişi başına {each} {currency} düştüğüne göre kaç kişi paylaşmıştır?",
+    "% {discount_pct} indirim sonrası toplam {discounted_total} {currency}. Kişi başı {each} {currency} ise kaç kişi vardır?",
+    "İndirimli tutar {discounted_total} {currency} ve kişi başına ödeme {each} {currency}. Bu ödeme kaç kişi arasında bölünmüştür?",
+    "Toplam {discounted_total} {currency} eşit paylaşılıyor ve herkes {each} {currency} ödüyor. Kaç kişi var?"
+  ],
+  "discsplit_question_people": [
+    "Kaç kişi paylaşmıştır?",
+    "Kişi sayısı kaçtır?",
+    "Bu ödeme kaç kişi arasında bölünmüştür?",
+    "Toplamı kaç kişi eşit paylaşmıştır?"
+  ],
+  "discsplit_reason_calc_people": [
+    "Kişi sayısı = indirimli toplam / kişi başı = {discounted_total}/{each} = {asked_people}.",
+    "{discounted_total} {currency} toplam, kişi başı {each} {currency}. Bölme yaparsak {discounted_total}/{each}={asked_people}.",
+    "Her kişi {each} ödediğine göre kişi sayısı {discounted_total} / {each} = {asked_people} olur.",
+    "Toplam {discounted_total} eşit bölünmüş. Kişi sayısı {asked_people} bulunur."
+  ],
+  "discsplit_reason_final_people": [
+    "Sonuç: {asked_people} kişi paylaşmıştır.",
+    "{asked_people} kişi arasında paylaşılmıştır.",
+    "Kişi sayısı {asked_people} bulunur.",
+    "Cevap: {asked_people} kişi."
+  ]
+}

@@ -1,0 +1,12 @@
+{"template": "transform_then_share", "name": ["Gökçe"], "item": ["turşu"], "unit_price": [150], "qty": [3, 7], "discount_pct": [20], "people": [4, 5], "currency": "TL"}
+{"template": "transform_then_share", "name": ["Deniz"], "item": ["oje"], "unit_price": [188], "qty": [4, 8], "discount_pct": [25], "people": [3, 4], "currency": "TL"}
+{"template": "transform_then_share", "name": ["Caner"], "item": ["fırça"], "unit_price": [170], "qty": [4, 8], "discount_pct": [50], "people": [4, 5], "currency": "TL"}
+{"template": "two_items_then_bundle_discount_total_cost", "name": ["Selinay"], "item1": ["köpek maması"], "unit_price1": [150], "qty1": [2], "item2": ["kedi maması"], "unit_price2": [200], "qty2": [1], "discount_pct": [10], "currency": "TL"}
+{"template": "discounted_total_then_change", "name": ["Tunç"], "item": ["çadır"], "unit_price": [1200], "qty": [1], "discount_pct": [25], "paid": [1000], "currency": "TL"}
+{"template": "transform_then_share", "name": ["Bahar"], "item": ["tren bileti"], "unit_price": [300], "qty": [4], "discount_pct": [25], "people": [2, 3], "currency": "TL"}
+{"template": "discount_then_vat_total_cost", "name": ["Levent"], "item": ["mikrodalga fırın"], "unit_price": [2000], "discount_pct": [10], "vat_pct": [18], "qty": [1], "currency": "TL"}
+{"template": "two_items_then_bundle_discount_total_cost", "name": ["Dilan"], "item1": ["gazoz"], "unit_price1": [10], "qty1": [6], "item2": ["cips"], "unit_price2": [20], "qty2": [2], "discount_pct": [10], "currency": "TL"}
+{"template": "discounted_total_then_change", "name": ["Taner"], "item": ["ütü"], "unit_price": [1500], "qty": [1], "discount_pct": [20], "paid": [1500], "currency": "TL"}
+{"template": "discounted_total_then_change", "name": ["Taylan"], "item": ["takım elbise"], "unit_price": [3000], "qty": [1], "discount_pct": [30], "paid": [2500], "currency": "TL"}
+{"template": "transform_then_share", "name": ["Simge"], "item": ["muz"], "unit_price": [40], "qty": [5], "discount_pct": [10], "people": [2, 3], "currency": "TL"}
+{"template": "discount_then_vat_total_cost", "name": ["Fırat"], "item": ["oto lastiği"], "unit_price": [1500], "discount_pct": [20], "vat_pct": [18], "qty": [4], "currency": "TL"}

@@ -1,0 +1,250 @@
+{"template": "percentage_increase_final_price", "name": ["Carlos"], "item": ["elma kasası"], "original_price": [200, 600], "increase_pct": [32, 43], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Maria", "Juan"], "item": ["armut kasası", "muz demeti"], "original_price": [900, 1700], "increase_pct": [18, 34, 53], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Luis"], "item": ["portakal kasası", "mandalina kasası"], "original_price": [1700, 1800], "increase_pct": [12, 37], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Ana", "Lucia"], "item": ["limon kasası", "nar kasası"], "original_price": [800, 1600], "increase_pct": [42, 73], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Pedro"], "item": ["kivi kutusu", "ananas"], "original_price": [800, 1050], "increase_pct": [16, 62], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Sofia"], "item": ["mango"], "original_price": [400, 600], "increase_pct": [28, 61], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Diego"], "item": ["avokado", "üzüm salkımı"], "original_price": [1100, 1400], "increase_pct": [43, 65], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Andres"], "item": ["karpuz"], "original_price": [800, 1700], "increase_pct": [6, 15, 63], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Sara"], "item": ["kavun"], "original_price": [1300, 1900], "increase_pct": [40, 62], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Fernando", "Isabel"], "item": ["kestane paketi"], "original_price": [1100, 1700], "increase_pct": [33, 69], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Raul"], "item": ["patates çuvalı", "soğan çuvalı"], "original_price": [300, 700], "increase_pct": [7, 29, 52], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Camila", "Ricardo"], "item": ["sarımsak filesi", "domates kasası"], "original_price": [900, 1300], "increase_pct": [65, 66], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Roberto"], "item": ["patlıcan kasası"], "original_price": [1200, 1800], "increase_pct": [19, 35], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Patricia", "Sergio"], "item": ["kırmızı biber kasası", "yeşil biber kasası"], "original_price": [100, 600], "increase_pct": [17, 68], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Natalia", "Hector"], "item": ["mantar kutusu"], "original_price": [700, 1100], "increase_pct": [14, 57], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Adriana", "Victor"], "item": ["brokoli demeti"], "original_price": [700, 900], "increase_pct": [6, 29], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Beatriz"], "item": ["karnabahar", "marul"], "original_price": [600, 1400], "increase_pct": [7, 49], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Oscar"], "item": ["ıspanak demeti"], "original_price": [1700, 1900], "increase_pct": [9, 27, 62], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Rosa", "Manuel"], "item": ["maydanoz demeti"], "original_price": [200, 600, 1100], "increase_pct": [12, 23], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Veronica", "Gabriel"], "item": ["dereotu demeti"], "original_price": [400, 1200], "increase_pct": [16, 25], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Julia"], "item": ["nane demeti"], "original_price": [100, 1100], "increase_pct": [28, 70, 73], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Alejandro"], "item": ["roka demeti", "pırasa demeti"], "original_price": [800, 950], "increase_pct": [48, 74], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Carolina"], "item": ["kereviz"], "original_price": [400, 600], "increase_pct": [52, 59], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Emilio", "Gabriela"], "item": ["turp demeti"], "original_price": [300, 600, 1200], "increase_pct": [29, 53, 70], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Felipe"], "item": ["enginar"], "original_price": [600, 1800], "increase_pct": [17, 29], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Alicia"], "item": ["bamya paketi"], "original_price": [800, 950, 1150], "increase_pct": [52, 70], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Enrique"], "item": ["taze fasulye paketi", "bezelye paketi"], "original_price": [150, 700, 850], "increase_pct": [34, 36], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Monica", "Ruben"], "item": ["şeker paketi"], "original_price": [700, 1200, 1300], "increase_pct": [23, 33], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Teresa", "Ramon"], "item": ["tuz paketi"], "original_price": [100, 800], "increase_pct": [58, 70], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Claudia"], "item": ["baharat kavanozu"], "original_price": [850, 1550], "increase_pct": [22, 68], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Salvador"], "item": ["çay paketi", "kahve paketi"], "original_price": [1100, 1650], "increase_pct": [10, 22], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Noelia"], "item": ["kraker paketi", "bisküvi paketi"], "original_price": [600, 700, 1100], "increase_pct": [31, 32], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Joaquin", "Leticia"], "item": ["cips paketi"], "original_price": [1100, 1400, 1700], "increase_pct": [67, 75], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Hans", "Anna"], "item": ["susam paketi"], "original_price": [200, 600, 1400], "increase_pct": [37, 52], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Peter", "Johanna"], "item": ["kakao paketi"], "original_price": [1100, 1300, 1400], "increase_pct": [14, 37], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Klaus"], "item": ["puding paketi"], "original_price": [850, 1900], "increase_pct": [38, 58], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Thomas"], "item": ["gofret"], "original_price": [800, 1700], "increase_pct": [27, 28], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Lena"], "item": ["kek dilimi", "yumurta kolisi"], "original_price": [1275, 1600], "increase_pct": [24, 44], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Markus", "Lukas"], "item": ["ekmek somunu", "tabak seti"], "original_price": [1300, 1400, 1700], "increase_pct": [21, 69], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Stefan", "Katrin"], "item": ["kase seti"], "original_price": [1100, 1400], "increase_pct": [35, 56], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Andreas"], "item": ["çatal seti"], "original_price": [200, 400, 900], "increase_pct": [27, 78], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Uwe", "Heike"], "item": ["bıçak seti", "kaşık seti"], "original_price": [900, 1100], "increase_pct": [66, 111], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Frank"], "item": ["fırın tepsisi"], "original_price": [600, 900], "increase_pct": [42, 48], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Petra"], "item": ["yüzey temizleyici şişesi"], "original_price": [700, 1200], "increase_pct": [7, 32, 49], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Jens", "Birgit"], "item": ["süpürge"], "original_price": [1100, 1200], "increase_pct": [24, 73], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Dirk", "Timo"], "item": ["havlu seti", "tükenmez kalem"], "original_price": [600, 1300, 1600], "increase_pct": [53, 57], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Sophie"], "item": ["post-it bloğu"], "original_price": [100, 600], "increase_pct": [9, 21, 41], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Joerg"], "item": ["delgeç"], "original_price": [200, 400], "increase_pct": [38, 45, 63], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Gunter"], "item": ["ajanda"], "original_price": [200, 400], "increase_pct": [67, 73], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Holger", "Tobias"], "item": ["yapıştırıcı"], "original_price": [300, 1200], "increase_pct": [6, 17], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Saskia", "Nico"], "item": ["perde bağı", "çekmece kulpu"], "original_price": [950, 1525], "increase_pct": [76, 104], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Britta"], "item": ["kalemlik"], "original_price": [700, 1300, 1900], "increase_pct": [51, 75], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Pascal", "Dieter"], "item": ["sulu boya kutusu"], "original_price": [1050, 1700], "increase_pct": [54, 58], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Noah"], "item": ["karakalem seti"], "original_price": [400, 1400], "increase_pct": [15, 66], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Sophia", "Ethan"], "item": ["lastik bant paketi"], "original_price": [550, 575, 1350], "increase_pct": [28, 80], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Mason", "Logan"], "item": ["dikiş iğnesi", "düğme"], "original_price": [700, 1400], "increase_pct": [71, 93], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Chloe", "Zoe"], "item": ["piknik sepeti"], "original_price": [900, 1900], "increase_pct": [35, 59], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Maya"], "item": ["plastik tabak paketi"], "original_price": [100, 900], "increase_pct": [29, 37], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Grace"], "item": ["tek kullanımlık kaşık paketi"], "original_price": [900, 1200], "increase_pct": [6, 17], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Hannah"], "item": ["tek kullanımlık bıçak paketi", "çöp kovası"], "original_price": [400, 800], "increase_pct": [43, 45], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Felix"], "item": ["banyo paspası"], "original_price": [1700, 1900], "increase_pct": [15, 19, 28], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Mila"], "item": ["banyo kovası"], "original_price": [50, 850], "increase_pct": [18, 42], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Carlos", "Maria"], "item": ["sabunluk", "diş fırçalık"], "original_price": [600, 700], "increase_pct": [18, 60], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Ana"], "item": ["duş başlığı"], "original_price": [1100, 1800], "increase_pct": [73, 80], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Lucia", "Pedro"], "item": ["musluk"], "original_price": [950, 1850], "increase_pct": [38, 58], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Sofia"], "item": ["batarya", "lavabo tıpası"], "original_price": [220, 320], "increase_pct": [45, 75], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Diego"], "item": ["kapı paspası"], "original_price": [1200, 1300, 1600], "increase_pct": [54, 70], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Elena"], "item": ["kapı zili"], "original_price": [700, 850], "increase_pct": [22, 26], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Marta"], "item": ["kapı stoperi"], "original_price": [550, 700, 1450], "increase_pct": [36, 70], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Jorge"], "item": ["duvar saati"], "original_price": [700, 1400, 1600], "increase_pct": [33, 42], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Fernando"], "item": ["sarkıt lamba"], "original_price": [400, 1600], "increase_pct": [30, 64], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Isabel"], "item": ["ampul duyu"], "original_price": [900, 950], "increase_pct": [30, 38, 66], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Raul", "Camila"], "item": ["priz kapağı"], "original_price": [400, 800], "increase_pct": [5, 36, 64], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Ricardo", "Daniela"], "item": ["anahtar askılığı"], "original_price": [1100, 1350], "increase_pct": [36, 54], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Cesar"], "item": ["ayakkabı fırçası"], "original_price": [300, 600, 1200], "increase_pct": [37, 54], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Valeria"], "item": ["ayakkabı çekeceği", "ayakkabı kutusu"], "original_price": [700, 900], "increase_pct": [34, 72], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Roberto", "Patricia"], "item": ["giysi askısı"], "original_price": [400, 1200], "increase_pct": [50, 71], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Sergio"], "item": ["elbise askısı", "çamaşır mandalı"], "original_price": [950, 1050], "increase_pct": [26, 68], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Natalia"], "item": ["çamaşır ipi"], "original_price": [800, 1600], "increase_pct": [44, 70], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Beatriz"], "item": ["örgü şişi", "yün yumak"], "original_price": [1100, 1200, 1300], "increase_pct": [43, 65], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Oscar"], "item": ["tığ"], "original_price": [1475, 1850], "increase_pct": [28, 36], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Rosa"], "item": ["nakış kasnağı"], "original_price": [1450, 1850], "increase_pct": [38, 54], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Manuel"], "item": ["fotoğraf albümü"], "original_price": [100, 600], "increase_pct": [43, 73], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Veronica"], "item": ["poster", "tablo"], "original_price": [300, 400, 700], "increase_pct": [53, 67], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Gabriel", "Julia"], "item": ["duvar rafı"], "original_price": [75, 800], "increase_pct": [56, 60], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Alejandro"], "item": ["raf kutusu", "kilitli kutu"], "original_price": [300, 700, 1300], "increase_pct": [52, 99], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Carolina"], "item": ["mürekkep kartuşu"], "original_price": [1050, 1150], "increase_pct": [68, 72], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Emilio"], "item": ["yazıcı"], "original_price": [300, 600, 700], "increase_pct": [36, 79], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Gabriela", "Felipe"], "item": ["tarayıcı", "yazıcı kağıdı paketi"], "original_price": [400, 1300], "increase_pct": [54, 71], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Enrique"], "item": ["boya rulosu"], "original_price": [900, 1350], "increase_pct": [22, 76], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Monica"], "item": ["boya tepsisi"], "original_price": [700, 1400, 1600], "increase_pct": [13, 53], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Ruben"], "item": ["eldiven kutusu", "maskeler paketi"], "original_price": [1300, 1400], "increase_pct": [11, 34, 43], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Teresa"], "item": ["ilk yardım çantası"], "original_price": [800, 1100], "increase_pct": [36, 41], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Ramon"], "item": ["bandaj"], "original_price": [100, 800], "increase_pct": [33, 40, 49], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Claudia"], "item": ["gazlı bez"], "original_price": [900, 1600], "increase_pct": [7, 32, 42], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Salvador"], "item": ["dikiş seti", "çivi paketi"], "original_price": [200, 600], "increase_pct": [54, 59], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Noelia"], "item": ["vida kutusu"], "original_price": [1620, 1760, 1820], "increase_pct": [45, 70], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Joaquin"], "item": ["kapı anahtarı"], "original_price": [100, 900, 1300], "increase_pct": [1, 42], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Rocio"], "item": ["kapı kilidi"], "original_price": [800, 1300], "increase_pct": [25, 33], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Anna"], "item": ["sineklik teli", "vantilatör"], "original_price": [1100, 1400], "increase_pct": [43, 80], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Peter", "Johanna"], "item": ["radyatör"], "original_price": [800, 1300], "increase_pct": [4, 33], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Klaus"], "item": ["kalorifer peteği"], "original_price": [600, 1800], "increase_pct": [10, 31], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Sabine"], "item": ["ısıtıcı", "buz kalıbı"], "original_price": [1100, 1800], "increase_pct": [26, 31], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Thomas"], "item": ["buzdolabı mıknatısı"], "original_price": [100, 1300], "increase_pct": [46, 49], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Markus"], "item": ["perde rayı"], "original_price": [1450, 1950], "increase_pct": [110, 138], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Lukas"], "item": ["stor perde"], "original_price": [200, 1400], "increase_pct": [22, 57], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Stefan"], "item": ["jaluzi", "rulo perde"], "original_price": [900, 1900], "increase_pct": [20, 29, 78], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Andreas", "Uwe"], "item": ["panjur ipi"], "original_price": [550, 800], "increase_pct": [6, 54], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Heike"], "item": ["panjur kolu"], "original_price": [900, 1100], "increase_pct": [20, 49], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Frank"], "item": ["sinek kovucu cihazı"], "original_price": [300, 600], "increase_pct": [13, 38], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Petra", "Jens"], "item": ["buhar makinesi"], "original_price": [400, 1600], "increase_pct": [19, 22, 31], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Birgit"], "item": ["nemlendirici"], "original_price": [1100, 1900], "increase_pct": [37, 40, 73], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Ralf"], "item": ["hava temizleyici"], "original_price": [1100, 1200], "increase_pct": [9, 19], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Kerstin"], "item": ["elma kasası"], "original_price": [1140, 1220, 1620], "increase_pct": [15, 60], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Dirk"], "item": ["armut kasası", "muz demeti"], "original_price": [900, 1900], "increase_pct": [69, 70], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Timo"], "item": ["portakal kasası"], "original_price": [900, 1200], "increase_pct": [51, 66], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Anja"], "item": ["mandalina kasası", "limon kasası"], "original_price": [700, 1200, 1600], "increase_pct": [25, 61], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Matthias", "Sophie"], "item": ["nar kasası"], "original_price": [1200, 1900], "increase_pct": [42, 69], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Joerg", "Gunter"], "item": ["kivi kutusu", "ananas"], "original_price": [800, 1800], "increase_pct": [41, 73], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Ulrike", "Holger"], "item": ["mango"], "original_price": [1300, 1700], "increase_pct": [64, 71], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Tobias"], "item": ["avokado", "üzüm salkımı"], "original_price": [780, 1640], "increase_pct": [15, 45], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Werner", "Saskia"], "item": ["incir"], "original_price": [1300, 1900], "increase_pct": [27, 46], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Nico", "Maren"], "item": ["hurma"], "original_price": [600, 700], "increase_pct": [31, 62], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Silke"], "item": ["vişne"], "original_price": [200, 600, 700], "increase_pct": [15, 71], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Heiko"], "item": ["kiraz sepeti"], "original_price": [200, 400], "increase_pct": [23, 34, 38], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Britta", "Pascal"], "item": ["çilek sepeti", "karpuz dilimi"], "original_price": [800, 1800], "increase_pct": [25, 36, 56], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Liam"], "item": ["kavun", "kestane paketi"], "original_price": [100, 600], "increase_pct": [14, 31, 40], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Noah"], "item": ["patates çuvalı"], "original_price": [1600, 1800, 1900], "increase_pct": [57, 82], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Emma"], "item": ["soğan çuvalı"], "original_price": [1600, 1700], "increase_pct": [3, 39, 60], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Olivia"], "item": ["sarımsak filesi"], "original_price": [550, 950], "increase_pct": [70, 76], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Ava"], "item": ["domates kasası"], "original_price": [400, 600], "increase_pct": [76, 129], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Sophia", "Ethan"], "item": ["salatalık kasası"], "original_price": [100, 400], "increase_pct": [26, 46, 78], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Mason", "Logan"], "item": ["havuç paketi"], "original_price": [900, 1400], "increase_pct": [18, 65], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Lucas"], "item": ["kabak kasası", "patlıcan kasası"], "original_price": [400, 1400], "increase_pct": [27, 30], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Chloe"], "item": ["kırmızı biber kasası"], "original_price": [1190, 1910], "increase_pct": [20, 60], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Zoe"], "item": ["yeşil biber kasası"], "original_price": [400, 1400], "increase_pct": [9, 37], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Maya"], "item": ["mantar kutusu", "brokoli demeti"], "original_price": [900, 1900], "increase_pct": [33, 45], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Aria", "Grace"], "item": ["karnabahar"], "original_price": [1200, 1300], "increase_pct": [27, 30, 49], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Hannah", "Nora"], "item": ["marul"], "original_price": [1700, 1900], "increase_pct": [23, 50], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Leo"], "item": ["ıspanak demeti"], "original_price": [100, 1100], "increase_pct": [72, 75], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Felix"], "item": ["maydanoz demeti"], "original_price": [800, 1800], "increase_pct": [21, 42, 53], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Mila"], "item": ["dereotu demeti"], "original_price": [600, 1700], "increase_pct": [11, 53, 54], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Carlos"], "item": ["nane demeti"], "original_price": [470, 840, 1210], "increase_pct": [50, 70], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Maria"], "item": ["roka demeti"], "original_price": [300, 400], "increase_pct": [7, 61], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Juan", "Luis"], "item": ["pırasa demeti"], "original_price": [200, 300, 900], "increase_pct": [37, 72], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Ana"], "item": ["kereviz"], "original_price": [300, 1100], "increase_pct": [2, 27], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Lucia"], "item": ["turp demeti", "enginar"], "original_price": [1300, 1800], "increase_pct": [41, 43, 46], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Pedro"], "item": ["bamya paketi"], "original_price": [100, 1200], "increase_pct": [41, 69], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Diego"], "item": ["bezelye paketi"], "original_price": [800, 1300], "increase_pct": [51, 58], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Elena"], "item": ["şeker paketi"], "original_price": [600, 1300], "increase_pct": [32, 42, 59], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Javier", "Marta"], "item": ["tuz paketi"], "original_price": [400, 800, 1300], "increase_pct": [11, 42, 55], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Miguel", "Laura"], "item": ["baharat kavanozu"], "original_price": [620, 1360], "increase_pct": [30, 35], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Jorge"], "item": ["çay paketi"], "original_price": [300, 1200], "increase_pct": [21, 49, 58], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Sara"], "item": ["kraker paketi"], "original_price": [1150, 1475], "increase_pct": [44, 100], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Fernando"], "item": ["bisküvi paketi"], "original_price": [100, 900], "increase_pct": [44, 49], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Isabel"], "item": ["cips paketi", "fındık paketi"], "original_price": [600, 900], "increase_pct": [10, 12], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Raul"], "item": ["badem paketi"], "original_price": [1200, 1300, 1900], "increase_pct": [46, 75], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Camila", "Ricardo"], "item": ["ceviz paketi", "fıstık paketi"], "original_price": [300, 1200], "increase_pct": [30, 32], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Daniela"], "item": ["susam paketi"], "original_price": [300, 1200], "increase_pct": [50, 69, 75], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Irene"], "item": ["puding paketi"], "original_price": [100, 200, 1200], "increase_pct": [16, 75], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Cesar"], "item": ["jelibon paketi"], "original_price": [1050, 1550], "increase_pct": [48, 62], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Roberto"], "item": ["gofret"], "original_price": [1200, 1450], "increase_pct": [10, 58], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Patricia", "Sergio"], "item": ["kek dilimi"], "original_price": [1200, 1350], "increase_pct": [10, 36, 70], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Hector"], "item": ["ekmek somunu"], "original_price": [200, 700, 1200], "increase_pct": [6, 31], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Adriana"], "item": ["tabak seti"], "original_price": [1100, 1300], "increase_pct": [2, 57], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Victor"], "item": ["kase seti"], "original_price": [100, 925], "increase_pct": [32, 68], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Manuel"], "item": ["fırın tepsisi"], "original_price": [725, 950, 1725], "increase_pct": [20, 32], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Gabriel", "Julia"], "item": ["süpürge"], "original_price": [1300, 1900], "increase_pct": [11, 54], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Alejandro"], "item": ["elektrik süpürgesi"], "original_price": [600, 800], "increase_pct": [11, 61], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Emilio"], "item": ["kova"], "original_price": [1100, 1700], "increase_pct": [20, 69], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Gabriela"], "item": ["havlu seti", "tükenmez kalem"], "original_price": [1300, 1400], "increase_pct": [10, 59], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Felipe"], "item": ["kurşun kalem"], "original_price": [800, 1700], "increase_pct": [70, 104], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Enrique"], "item": ["post-it bloğu", "delgeç"], "original_price": [1080, 1380], "increase_pct": [25, 80], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Monica", "Ruben"], "item": ["ajanda"], "original_price": [700, 800, 1400], "increase_pct": [37, 43, 63], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Teresa"], "item": ["not defteri"], "original_price": [1050, 1200], "increase_pct": [48, 50], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Ramon"], "item": ["boya kalemi", "yapıştırıcı"], "original_price": [1600, 1850], "increase_pct": [8, 66], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Noelia"], "item": ["lavanta kesesi"], "original_price": [700, 900], "increase_pct": [7, 29], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Joaquin"], "item": ["perde bağı"], "original_price": [400, 1300], "increase_pct": [34, 50, 62], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Leticia"], "item": ["çekmece kulpu", "raf"], "original_price": [1050, 1850], "increase_pct": [12, 72], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Tomas"], "item": ["raf ayağı"], "original_price": [200, 300, 400], "increase_pct": [22, 41, 53], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Rocio"], "item": ["kitap ayracı"], "original_price": [1400, 1550], "increase_pct": [24, 30], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Anna"], "item": ["kalemlik"], "original_price": [200, 700], "increase_pct": [29, 43], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Peter"], "item": ["sulu boya kutusu", "pastel boya kutusu"], "original_price": [900, 1600], "increase_pct": [17, 44], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Johanna"], "item": ["resim defteri"], "original_price": [400, 1300], "increase_pct": [41, 48], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Klaus"], "item": ["karakalem seti"], "original_price": [200, 1100], "increase_pct": [45, 69], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Sabine"], "item": ["yapışkanlı bant rulosu", "bant kesici"], "original_price": [1700, 1900], "increase_pct": [28, 59], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Thomas"], "item": ["lastik bant paketi"], "original_price": [600, 1800], "increase_pct": [11, 64], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Markus"], "item": ["düğme", "fermuar"], "original_price": [200, 1400], "increase_pct": [34, 43, 60], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Lukas"], "item": ["piknik sepeti"], "original_price": [700, 800], "increase_pct": [31, 43], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Stefan", "Katrin"], "item": ["plastik tabak paketi"], "original_price": [100, 600], "increase_pct": [9, 48], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Andreas"], "item": ["karton bardak paketi", "tek kullanımlık çatal paketi"], "original_price": [600, 1200], "increase_pct": [41, 78], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Heike"], "item": ["tek kullanımlık bıçak paketi", "çöp kovası"], "original_price": [1600, 1800], "increase_pct": [75, 79], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Jens", "Birgit"], "item": ["banyo paspası"], "original_price": [850, 1800], "increase_pct": [52, 70], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Ralf"], "item": ["banyo kovası"], "original_price": [800, 1600], "increase_pct": [34, 64, 79], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Kerstin"], "item": ["sabunluk"], "original_price": [700, 1200, 1800], "increase_pct": [6, 19], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Dirk", "Timo"], "item": ["diş fırçalık"], "original_price": [100, 1300], "increase_pct": [67, 90], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Matthias", "Sophie"], "item": ["musluk"], "original_price": [100, 700], "increase_pct": [23, 42], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Joerg"], "item": ["batarya", "lavabo tıpası"], "original_price": [800, 900, 1800], "increase_pct": [41, 75], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Gunter"], "item": ["kapı paspası"], "original_price": [1800, 1900], "increase_pct": [11, 58], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Ulrike"], "item": ["kapı zili"], "original_price": [900, 1200, 1600], "increase_pct": [60, 77], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Holger"], "item": ["kapı dürbünü"], "original_price": [300, 800], "increase_pct": [29, 75], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Tobias"], "item": ["kapı stoperi"], "original_price": [700, 800, 1900], "increase_pct": [25, 30, 31], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Werner"], "item": ["pencere kolu"], "original_price": [300, 400], "increase_pct": [59, 79], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Saskia"], "item": ["duvar saati"], "original_price": [800, 1400], "increase_pct": [13, 23], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Maren"], "item": ["masa saati"], "original_price": [1600, 1800], "increase_pct": [41, 45, 51], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Silke"], "item": ["sarkıt lamba"], "original_price": [800, 900, 1200], "increase_pct": [7, 39], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Heiko", "Britta"], "item": ["ampul duyu", "priz kapağı"], "original_price": [1600, 1900], "increase_pct": [7, 45], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Liam", "Noah"], "item": ["ayakkabılık"], "original_price": [1200, 1400], "increase_pct": [45, 53], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Emma"], "item": ["ayakkabı fırçası"], "original_price": [100, 1050], "increase_pct": [42, 64], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Olivia", "Ava"], "item": ["ayakkabı çekeceği"], "original_price": [600, 800], "increase_pct": [37, 48], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Sophia"], "item": ["ayakkabı kutusu", "giysi askısı"], "original_price": [200, 400, 800], "increase_pct": [21, 28], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Ethan", "Mason"], "item": ["elbise askısı"], "original_price": [300, 900], "increase_pct": [21, 56], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Logan"], "item": ["çamaşır mandalı", "çamaşır ipi"], "original_price": [700, 1700, 1900], "increase_pct": [16, 26, 43], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Lucas", "Chloe"], "item": ["ütü bezi"], "original_price": [700, 1100], "increase_pct": [11, 61], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Zoe"], "item": ["dikiş makinesi"], "original_price": [1600, 1700], "increase_pct": [65, 66, 72], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Maya"], "item": ["örgü şişi"], "original_price": [1400, 1800], "increase_pct": [32, 45], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Grace", "Hannah"], "item": ["tığ"], "original_price": [800, 1700], "increase_pct": [8, 43], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Nora"], "item": ["nakış kasnağı"], "original_price": [400, 800], "increase_pct": [9, 18, 65], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Leo", "Felix"], "item": ["fotoğraf albümü"], "original_price": [1800, 1900], "increase_pct": [29, 72], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Mila"], "item": ["poster"], "original_price": [700, 1900], "increase_pct": [64, 69], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Carlos"], "item": ["tablo", "duvar rafı"], "original_price": [600, 1200], "increase_pct": [29, 41, 49], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Maria"], "item": ["raf kutusu", "kilitli kutu"], "original_price": [950, 1100], "increase_pct": [54, 68], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Luis", "Ana"], "item": ["tarayıcı"], "original_price": [1100, 1400], "increase_pct": [38, 59], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Pedro"], "item": ["zımpara kağıdı"], "original_price": [1100, 1200], "increase_pct": [12, 39], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Sofia"], "item": ["boya rulosu"], "original_price": [200, 300], "increase_pct": [11, 57], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Diego", "Elena"], "item": ["boya tepsisi"], "original_price": [100, 700], "increase_pct": [71, 73, 125], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Javier", "Marta"], "item": ["eldiven kutusu", "maskeler paketi"], "original_price": [200, 400, 1300], "increase_pct": [25, 56], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Miguel", "Laura"], "item": ["ilk yardım çantası", "bandaj"], "original_price": [690, 820, 1210], "increase_pct": [10, 50], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Jorge"], "item": ["gazlı bez"], "original_price": [1600, 1700], "increase_pct": [64, 73], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Paula"], "item": ["dikiş seti"], "original_price": [400, 700], "increase_pct": [55, 69], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Andres"], "item": ["çivi paketi"], "original_price": [1400, 1600, 1800], "increase_pct": [47, 49], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Sara", "Fernando"], "item": ["vida kutusu"], "original_price": [800, 1100, 1300], "increase_pct": [51, 55], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Raul", "Camila"], "item": ["kapı kolu", "kapı numarası"], "original_price": [700, 900], "increase_pct": [34, 66], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Ricardo"], "item": ["kapı kilidi"], "original_price": [950, 1950], "increase_pct": [36, 38], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Daniela"], "item": ["kapı zinciri"], "original_price": [100, 900], "increase_pct": [25, 44], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Cesar", "Valeria"], "item": ["sineklik teli", "vantilatör"], "original_price": [1225, 1600], "increase_pct": [12, 52], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Patricia"], "item": ["ısıtıcı", "buz kalıbı"], "original_price": [200, 1400], "increase_pct": [29, 54], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Sergio"], "item": ["buzdolabı mıknatısı"], "original_price": [150, 725], "increase_pct": [44, 52, 80], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Natalia"], "item": ["raf aparatı"], "original_price": [200, 300], "increase_pct": [23, 40], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Victor"], "item": ["stor perde"], "original_price": [200, 1200], "increase_pct": [29, 76], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Beatriz"], "item": ["jaluzi"], "original_price": [300, 700], "increase_pct": [18, 22, 57], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Rosa"], "item": ["panjur ipi", "panjur kolu"], "original_price": [150, 850], "increase_pct": [34, 48, 70], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Manuel"], "item": ["sinek kovucu cihazı"], "original_price": [100, 700], "increase_pct": [5, 8, 19], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Veronica"], "item": ["buhar makinesi"], "original_price": [200, 900], "increase_pct": [31, 39, 50], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Gabriel"], "item": ["nemlendirici"], "original_price": [1400, 1700, 1900], "increase_pct": [55, 73], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Alejandro", "Carolina"], "item": ["elma kasası"], "original_price": [700, 1225], "increase_pct": [8, 52], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Emilio", "Gabriela"], "item": ["armut kasası", "muz demeti"], "original_price": [600, 700], "increase_pct": [58, 63], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Felipe"], "item": ["portakal kasası"], "original_price": [540, 880], "increase_pct": [5, 20], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Enrique"], "item": ["limon kasası"], "original_price": [1300, 1600], "increase_pct": [54, 77], "currency": "TL"}
+{"template": "percentage_increase_final_price", "name": ["Monica", "Ruben"], "item": ["nar kasası"], "original_price": [100, 900], "increase_pct": [42, 80], "currency": "TL"}

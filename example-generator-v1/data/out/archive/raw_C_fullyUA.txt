@@ -1,0 +1,35 @@
+Mağazada Ali defter almak ister. 60 TL birim fiyatlı üründe % 25 indirim ve % 20 KDV sonrası toplam 108 TL çıkıyor. Alınan miktar kaçtır? Kaç adet defter alınmıştır?
+Cevap: İşlem sırası indirim sonra KDV olur. İndirim sonrası birim fiyat 45 TL, KDV sonrası birim fiyat 54 TL olur. Toplam 108 TL ise adet = 108 / 54 = 2. Cevap: 2 adet defter.
+
+Mağazada Ali vitrinde bir defter görür. 60 TL olan ürün için önce % 25 indirim, ardından % 20 KDV uygulanıyor. Son toplam 162 TL olduğuna göre kaç adet alınmıştır? Kaç tane defter alınmıştır?
+Cevap: Önce indirimli birim fiyat bulunur, sonra KDV eklenir. Birim fiyat dönüşümlerinden sonra 54 TL elde edilir. Toplam 162 TL olduğundan alınan adet 3 olur. 3 adet defter alınmış olur.
+
+Online siparişte Zeynep kalem almak ister. 60 TL birim fiyatlı üründe % 25 indirim ve % 20 KDV sonrası toplam 108 TL çıkıyor. Alınan miktar kaçtır? Kaç tane kalem alınmıştır?
+Cevap: İşlem sırası indirim sonra KDV olur. KDV dahil indirimli birim fiyat 54 TL bulunur. Toplam 108 TL bu birim fiyata bölünür: 108/54=2. Alınan kalem sayısı 2 adettir.
+
+Mağazada Deniz iki ayrı ürünü birlikte almayı planlar. 3×30 + 4×10 = 130 TL. İndirim sonrası ödeme 104 TL. İndirim oranı yüzde kaçtır? İndirim oranını yüzde olarak bulun.
+Cevap: Önce iki ürünün toplamı bulunur, sonra indirim uygulanır. Başlangıç 130, son 104. Oran = (1 - 104/130)×100 = 20. İndirim yüzdesi % 20 bulunur.
+
+İnternetten Deniz sepete iki farklı ürün ekler. 3 adet kitap (30 TL) ve 3 adet silgi (10 TL) alınır. Toplam 120 TL iken indirimli tutar 96 TL olur. İndirim oranı yüzde kaçtır? Uygulanan indirim yüzdesi kaçtır?
+Cevap: Önce iki ürünün toplamı bulunur, sonra indirim uygulanır. 120 TL tutardan 96 TL'ye düşmüş. İndirim yüzdesi = (24 / 120)×100 = 20. Uygulanan indirim % 20'tir.
+
+Online siparişte Deniz alışverişte kitap ve silgi seçer. 3×30 + 4×10 = 130 TL. İndirim sonrası ödeme 117 TL. İndirim oranı yüzde kaçtır? İndirim oranını yüzde olarak bulun.
+Cevap: Önce ara toplam hesaplanır, ardından yüzde indirim yapılır. İndirim miktarı 13 TL. Yüzde indirim = 13×100/130 = 10. Cevap: % 10 indirim.
+
+Online siparişte Elif defter almak ister. İndirim sonrası toplam 60 TL. Para üstü 240 TL olduğuna göre kaç TL verilmiştir? Kasaya kaç TL vermiştir?
+Cevap: Önce indirimli toplam bulunur, sonra çıkarma yapılır. Toplam tutar 60, kalan 240. Ödenen = 60+240 = 300. Sonuç: 300 TL ödemiştir.
+
+Mağazada Elif defter alarak kasaya gelir. 3 adet defter için % 20 indirim sonrası tutar 96 TL. Kasadan 204 TL para üstü alındığına göre ödeme kaç TLdır? Kaç TL ödemiştir?
+Cevap: İndirimli ödeme hesaplanır, ardından para üstü bulunur. Toplam tutar 96, kalan 204. Ödenen = 96+204 = 300. Sonuç: 300 TL ödemiştir.
+
+İnternetten Elif kasada ödeme yapmaya hazırlanır. İndirim sonrası toplam 90 TL. Para üstü 110 TL olduğuna göre kaç TL verilmiştir? Ödenen para kaç TLdır?
+Cevap: İndirimli ödeme hesaplanır, ardından para üstü bulunur. Ödenen para = indirimli toplam + para üstü = 90 + 110 = 200 TL. Cevap: 200 TL.
+
+Okulda Deniz defter alır. 40 TL olan defterden 5 adet alınır ve % 50 indirim uygulanır. İndirimli toplam 100 TL olur. Kişi başına 20 TL düştüğüne göre kaç kişi paylaşmıştır? Kaç kişi paylaşmıştır?
+Cevap: İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Toplam 100 eşit bölünmüş. Kişi sayısı 5 bulunur. Sonuç: 5 kişi paylaşmıştır.
+
+Okulda Deniz alışverişte bir defter seçer. İndirimli tutar 100 TL ve kişi başına ödeme 50 TL. Bu ödeme kaç kişi arasında bölünmüştür? Bu ödeme kaç kişi arasında bölünmüştür?
+Cevap: Önce indirimli toplam bulunur, sonra kişi sayısına bölünür. Her kişi 50 ödediğine göre kişi sayısı 100 / 50 = 2 olur. Kişi sayısı 2 bulunur.
+
+Mağazada Deniz defter alır. % 50 indirim sonrası toplam 80 TL. Kişi başı 40 TL ise kaç kişi vardır? Bu ödeme kaç kişi arasında bölünmüştür?
+Cevap: İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Kişi sayısı = indirimli toplam / kişi başı = 80/40 = 2. Kişi sayısı 2 bulunur.

@@ -1,0 +1,340 @@
+[
+  {
+    "template": "discount_then_vat_total_cost",
+    "arc_pruned": true,
+    "domains_before": {
+      "name": [
+        "Ali",
+        "Zeynep"
+      ],
+      "item": [
+        "defter",
+        "kalem"
+      ],
+      "unit_price": [
+        60
+      ],
+      "discount_pct": [
+        20,
+        25
+      ],
+      "vat_pct": [
+        10,
+        20
+      ],
+      "qty": [
+        2,
+        3
+      ]
+    },
+    "domains_after_arc": {
+      "name": [
+        "Ali",
+        "Zeynep"
+      ],
+      "item": [
+        "defter",
+        "kalem"
+      ],
+      "unit_price": [
+        60
+      ],
+      "discount_pct": [
+        25
+      ],
+      "vat_pct": [
+        20
+      ],
+      "qty": [
+        2,
+        3
+      ]
+    },
+    "greedy_used": false,
+    "success": true,
+    "domains_final": {
+      "name": [
+        "Ali",
+        "Zeynep"
+      ],
+      "item": [
+        "defter",
+        "kalem"
+      ],
+      "unit_price": [
+        60
+      ],
+      "discount_pct": [
+        25
+      ],
+      "vat_pct": [
+        20
+      ],
+      "qty": [
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "template": "two_items_then_bundle_discount_total_cost",
+    "arc_pruned": false,
+    "domains_before": {
+      "name": [
+        "Elif",
+        "Deniz"
+      ],
+      "item1": [
+        "defter",
+        "kitap"
+      ],
+      "unit_price1": [
+        20,
+        30
+      ],
+      "qty1": [
+        2,
+        3
+      ],
+      "item2": [
+        "kalem",
+        "silgi"
+      ],
+      "unit_price2": [
+        10,
+        15
+      ],
+      "qty2": [
+        3,
+        4
+      ],
+      "discount_pct": [
+        10,
+        20
+      ]
+    },
+    "domains_after_arc": {
+      "name": [
+        "Elif",
+        "Deniz"
+      ],
+      "item1": [
+        "defter",
+        "kitap"
+      ],
+      "unit_price1": [
+        20,
+        30
+      ],
+      "qty1": [
+        2,
+        3
+      ],
+      "item2": [
+        "kalem",
+        "silgi"
+      ],
+      "unit_price2": [
+        10,
+        15
+      ],
+      "qty2": [
+        3,
+        4
+      ],
+      "discount_pct": [
+        10,
+        20
+      ]
+    },
+    "greedy_used": true,
+    "success": true,
+    "domains_final": {
+      "name": [
+        "Deniz"
+      ],
+      "item1": [
+        "kitap"
+      ],
+      "unit_price1": [
+        30
+      ],
+      "qty1": [
+        3
+      ],
+      "item2": [
+        "silgi"
+      ],
+      "unit_price2": [
+        10
+      ],
+      "qty2": [
+        3,
+        4
+      ],
+      "discount_pct": [
+        10,
+        20
+      ]
+    }
+  },
+  {
+    "template": "discounted_total_then_change",
+    "arc_pruned": false,
+    "domains_before": {
+      "name": [
+        "Ali",
+        "Elif"
+      ],
+      "item": [
+        "kitap",
+        "defter"
+      ],
+      "unit_price": [
+        40,
+        50
+      ],
+      "qty": [
+        2,
+        3
+      ],
+      "discount_pct": [
+        20,
+        25
+      ],
+      "paid": [
+        200,
+        300
+      ]
+    },
+    "domains_after_arc": {
+      "name": [
+        "Ali",
+        "Elif"
+      ],
+      "item": [
+        "kitap",
+        "defter"
+      ],
+      "unit_price": [
+        40,
+        50
+      ],
+      "qty": [
+        2,
+        3
+      ],
+      "discount_pct": [
+        20,
+        25
+      ],
+      "paid": [
+        200,
+        300
+      ]
+    },
+    "greedy_used": true,
+    "success": true,
+    "domains_final": {
+      "name": [
+        "Elif"
+      ],
+      "item": [
+        "defter"
+      ],
+      "unit_price": [
+        40
+      ],
+      "qty": [
+        2,
+        3
+      ],
+      "discount_pct": [
+        20,
+        25
+      ],
+      "paid": [
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "template": "transform_then_share",
+    "arc_pruned": false,
+    "domains_before": {
+      "name": [
+        "Zeynep",
+        "Deniz"
+      ],
+      "item": [
+        "bilet",
+        "defter"
+      ],
+      "unit_price": [
+        30,
+        40
+      ],
+      "qty": [
+        4,
+        5
+      ],
+      "discount_pct": [
+        50
+      ],
+      "people": [
+        2,
+        5
+      ]
+    },
+    "domains_after_arc": {
+      "name": [
+        "Zeynep",
+        "Deniz"
+      ],
+      "item": [
+        "bilet",
+        "defter"
+      ],
+      "unit_price": [
+        30,
+        40
+      ],
+      "qty": [
+        4,
+        5
+      ],
+      "discount_pct": [
+        50
+      ],
+      "people": [
+        2,
+        5
+      ]
+    },
+    "greedy_used": true,
+    "success": true,
+    "domains_final": {
+      "name": [
+        "Deniz"
+      ],
+      "item": [
+        "defter"
+      ],
+      "unit_price": [
+        40
+      ],
+      "qty": [
+        4,
+        5
+      ],
+      "discount_pct": [
+        50
+      ],
+      "people": [
+        2,
+        5
+      ]
+    }
+  }
+]
