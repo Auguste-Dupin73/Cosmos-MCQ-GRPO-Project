@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import inspect
 import json
 import sys
 from pathlib import Path
@@ -194,7 +195,35 @@ def build_grpo_config(
     config_kwargs["output_dir"] = str(output_dir)
     config_kwargs["remove_unused_columns"] = False
     config_kwargs["reward_weights"] = reward_weights
+    config_kwargs = filter_grpo_config_kwargs(config_kwargs)
     return GRPOConfig(**config_kwargs)
+
+
+def filter_grpo_config_kwargs(config_kwargs: dict[str, Any]) -> dict[str, Any]:
+    """Keep config files portable across nearby TRL/Transformers versions."""
+    signature = inspect.signature(GRPOConfig.__init__)
+    allowed = {name for name in signature.parameters if name != "self"}
+    filtered = dict(config_kwargs)
+
+    if "eval_strategy" in filtered and "eval_strategy" not in allowed and "evaluation_strategy" in allowed:
+        filtered["evaluation_strategy"] = filtered.pop("eval_strategy")
+
+    unsupported = sorted(key for key in filtered if key not in allowed)
+    if unsupported:
+        print(
+            json.dumps(
+                {
+                    "warning": "Ignoring GRPOConfig keys unsupported by the installed TRL/Transformers version.",
+                    "unsupported_keys": unsupported,
+                },
+                ensure_ascii=False,
+                indent=2,
+            ),
+            file=sys.stderr,
+        )
+        for key in unsupported:
+            filtered.pop(key, None)
+    return filtered
 
 
 def apply_overrides(config: dict[str, Any], args: argparse.Namespace) -> dict[str, Any]:

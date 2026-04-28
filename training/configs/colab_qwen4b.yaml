@@ -1,0 +1,62 @@
+seed: 42
+
+model:
+  name_or_path: Qwen/Qwen3-4B-Base
+  tokenizer_name_or_path: Qwen/Qwen3-4B-Base
+  trust_remote_code: true
+  local_files_only: false
+  torch_dtype: bfloat16
+  model_init_kwargs: {}
+
+data:
+  dataset_format: source_episode
+  train_paths:
+    - outputs/episodes_A.jsonl
+  include_support_pack: true
+  append_response_format: false
+  shuffle_train: true
+  eval_split: 0.25
+  max_train_samples: 8
+  max_eval_samples: 4
+
+training:
+  output_dir: /content/drive/MyDrive/cosmos-grpo/qwen4b-pilot
+  per_device_train_batch_size: 1
+  per_device_eval_batch_size: 1
+  gradient_accumulation_steps: 1
+  learning_rate: 5.0e-6
+  warmup_steps: 2
+  max_steps: 20
+  logging_steps: 1
+  eval_strategy: steps
+  eval_steps: 5
+  save_strategy: steps
+  save_steps: 5
+  save_total_limit: 2
+  report_to: []
+  max_prompt_length: 768
+  max_completion_length: 192
+  num_generations: 4
+  num_generations_eval: 1
+  steps_per_generation: 4
+  temperature: 0.8
+  top_p: 1.0
+  fp16: false
+  bf16: true
+  gradient_checkpointing: true
+  use_vllm: false
+  log_completions: false
+  auto_resume: false
+
+reward:
+  full_credit: 1.0
+  main_and_probe_credit: 0.7
+  main_only_credit: 0.4
+  correct_option_wrong_reasoning_credit: 0.25
+  failure_credit: 0.0
+
+eval:
+  batch_size: 1
+  max_new_tokens: 192
+  do_sample: false
+  force_cpu: false
