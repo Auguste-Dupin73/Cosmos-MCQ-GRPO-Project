@@ -31,7 +31,7 @@ python -m pip install wandb peft bitsandbytes
 
 Best training input:
 
-- source episode JSONL such as `outputs/episodes_A.jsonl`
+- source episode JSONL such as `outputs/200_sample/episodes.jsonl`
 - this keeps full `main`, `probe`, `support_pack`, and reasoning targets available to the reward function
 
 Also supported:
@@ -42,6 +42,7 @@ Also supported:
 Notes:
 
 - source episode files give the strongest reasoning-aware reward shaping
+- `train_grpo.py` should normally point to `episodes.jsonl`, not `episode_grpo_online.jsonl`
 - offline files are still useful because the loader can recover gold targets from the best candidate response
 - online files work, but reasoning checks are necessarily weaker because they do not store the full intermediate-step structure
 
