@@ -8,36 +8,61 @@ from mcq_consistency import compose_episode_candidate_text, normalize_mcq_value
 
 OPTION_LINE_RE = re.compile(r"(?m)^\s*([A-Z])\)\s*(.+?)\s*$")
 MARKDOWN_LABEL_PREFIX = r"(?:#{1,6}\s*)?(?:\*\*)?\s*"
-MARKDOWN_LABEL_SUFFIX = r"\s*(?:\*\*)?\s*:"
-MAIN_OPTION_LABEL = r"Ana\s+soru\s+se(?:\u00e7|c)imi"
-MAIN_REASONING_LABEL = r"Ana\s+(?:\u00e7\u00f6z\u00fcm|cozum)"
-MAIN_FINAL_LABEL = r"Ana\s+nihai\s+cevap"
-PROBE_REASONING_LABEL = r"Probe\s+(?:\u00e7\u00f6z\u00fcm|cozum)"
-PROBE_FINAL_LABEL = r"Probe\s+nihai\s+cevap"
+MARKDOWN_LABEL_SUFFIX = r"\s*(?:\*\*)?\s*:\s*(?:\*\*)?"
+MARKDOWN_LABEL_END = rf"(?:{MARKDOWN_LABEL_SUFFIX}|\s*(?:\*\*)?\s*$)"
+MAIN_OPTION_LABEL = (
+    r"(?:Ana\s+soru\s+se(?:\u00e7|c)imi|"
+    r"Do(?:\u011f|g)ru\s+se(?:\u00e7|c)ene(?:\u011f|g)(?:i|i\s+ilet|i\s+belirt)?|"
+    r"Do(?:\u011f|g)ru\s+cevap)"
+)
+MAIN_REASONING_LABEL = r"(?:Ana\s+(?:\u00e7\u00f6z\u00fcm|cozum)|Ana\s+cevap)"
+MAIN_FINAL_LABEL = r"(?:Ana\s+nihai\s+cevap|Nihai\s+cevap|Son\s+cevap)"
+PROBE_REASONING_LABEL = r"(?:Probe\s+(?:\u00e7\u00f6z\u00fcm|cozum)|Probe\s+cevap)"
+PROBE_FINAL_LABEL = r"(?:Probe\s+nihai\s+cevap|Probe\s+son\s+cevap)"
 ANY_RESPONSE_LABEL_RE = re.compile(
     rf"(?im)^\s*{MARKDOWN_LABEL_PREFIX}"
     rf"(?:{MAIN_OPTION_LABEL}|{MAIN_REASONING_LABEL}|{MAIN_FINAL_LABEL}|"
     rf"{PROBE_REASONING_LABEL}|{PROBE_FINAL_LABEL}|Probe\s+soru(?:\s+se(?:\u00e7|c)imi)?)"
-    rf"(?:{MARKDOWN_LABEL_SUFFIX}|\s*$)"
+    rf"{MARKDOWN_LABEL_END}"
 )
 OPTION_PLACEHOLDER_RE = re.compile(r"<?\s*A\s*/\s*B\s*/\s*C\s*/\s*D\s*>?", re.IGNORECASE)
 OPTION_VALUE_RE = re.compile(r"(?im)(?:^|[\s*_`])([A-D])\s*[\).]")
 STANDALONE_OPTION_RE = re.compile(r"(?i)^[*_`\s]*([A-D])[*_`\s]*$")
+FINAL_WITH_UNIT_RE = re.compile(r"(?i)^(-?\d+(?:[.,]\d+)?)\s*(?:tl|lira|₺)?$")
 NUMBER_RE = re.compile(r"-?\d+(?:[.,]\d+)?")
 EQUATION_RESULT_RE = re.compile(r"=\s*(-?\d+(?:[.,]\d+)?)")
 OPERATOR_RE = re.compile(r"[+\-*/xX]")
+COPIED_INSTRUCTION_CUES = (
+    "sadece a/b/c/d",
+    "a/b/c/d harfi",
+    "sadece sayisal deger",
+    "sadece sayısal değer",
+    "tek kisa islem",
+    "tek kısa işlem",
+    "tek kisa",
+    "tek kısa",
+    "veya gerekce",
+    "veya gerekçe",
+    "sablon metni",
+    "etiketlerden sonra",
+    "kendi cevabinla doldur",
+    "kendi cevabınla doldur",
+    "<a/b/c/d>",
+    "<deger>",
+    "<değer>",
+)
 
 
 RESPONSE_FORMAT_BLOCK = "\n".join(
     [
         "",
-        "Cikti tam 5 satir olmali. Markdown, ###, kalin yazi, secenek listesi veya yeni soru metni yazma.",
-        "Her ':' sonrasini kendi cevabinla doldur; <A/B/C/D> gibi sablon metni kopyalama.",
-        "Ana soru secimi: sadece A/B/C/D harfi",
-        "Ana cozum: tek kisa islem veya gerekce",
-        "Ana nihai cevap: sadece sayisal deger",
-        "Probe cozum: tek kisa islem veya gerekce; Probe soru secimi yazma",
-        "Probe nihai cevap: sadece sayisal deger",
+        "Asagidaki bos etiketleri aynen kopyala ve her etiketten sonra kendi cevabini yaz.",
+        "Soru metni, secenek listesi, Markdown, ###, kalin yazi veya sablon aciklamasi yazma.",
+        "Ana soru secimi:",
+        "Ana cozum:",
+        "Ana nihai cevap:",
+        "Probe cozum:",
+        "Probe nihai cevap:",
     ]
 )
 
@@ -114,6 +139,13 @@ def _strip_inline_markup(value: str) -> str:
     return cleaned.strip().strip("*_`").strip()
 
 
+def _looks_like_copied_instruction(value: str | None) -> bool:
+    if not value:
+        return False
+    lowered = _strip_inline_markup(value).casefold()
+    return any(cue in lowered for cue in COPIED_INSTRUCTION_CUES)
+
+
 def _first_nonempty_line(value: str | None) -> str | None:
     if value is None:
         return None
@@ -125,18 +157,25 @@ def _first_nonempty_line(value: str | None) -> str | None:
 
 
 def _extract_labeled_section(text: str, label_pattern: str) -> str | None:
-    label_re = re.compile(rf"(?im)^\s*{MARKDOWN_LABEL_PREFIX}{label_pattern}{MARKDOWN_LABEL_SUFFIX}\s*")
+    label_re = re.compile(rf"(?im)^\s*{MARKDOWN_LABEL_PREFIX}{label_pattern}{MARKDOWN_LABEL_END}\s*")
     match = label_re.search(text)
+    if not match:
+        # Some base-model completions prepend short junk before a bold label.
+        label_re = re.compile(rf"(?im)^\s*[^:\n]{{0,40}}{MARKDOWN_LABEL_PREFIX}{label_pattern}{MARKDOWN_LABEL_END}\s*")
+        match = label_re.search(text)
     if not match:
         return None
     next_match = ANY_RESPONSE_LABEL_RE.search(text, match.end())
     end = next_match.start() if next_match else len(text)
-    return _clean_scalar(text[match.end() : end])
+    section = _clean_scalar(text[match.end() : end])
+    if _looks_like_copied_instruction(section):
+        return None
+    return section
 
 
 def _extract_option_value(value: str | None) -> str | None:
     cleaned = _clean_scalar(value)
-    if not cleaned:
+    if not cleaned or _looks_like_copied_instruction(cleaned):
         return None
     cleaned = OPTION_PLACEHOLDER_RE.sub("", cleaned).strip()
     if not cleaned:
@@ -154,10 +193,15 @@ def _extract_option_value(value: str | None) -> str | None:
 
 def _clean_final_answer(value: str | None) -> str | None:
     cleaned = _first_nonempty_line(value)
-    if not cleaned:
+    if not cleaned or _looks_like_copied_instruction(cleaned):
         return None
     cleaned = re.sub(r"(?i)^[A-D]\s*[\).:-]\s*", "", cleaned).strip()
     cleaned = _strip_inline_markup(cleaned).rstrip(".")
+    if _looks_like_copied_instruction(cleaned):
+        return None
+    unit_match = FINAL_WITH_UNIT_RE.fullmatch(cleaned)
+    if unit_match:
+        return normalize_mcq_value(unit_match.group(1).replace(",", "."))
     return cleaned or None
 
 
