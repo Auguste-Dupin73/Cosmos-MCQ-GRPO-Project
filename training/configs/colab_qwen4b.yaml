@@ -6,7 +6,29 @@ model:
   trust_remote_code: true
   local_files_only: false
   torch_dtype: bfloat16
-  model_init_kwargs: {}
+  model_init_kwargs:
+    attn_implementation: sdpa
+  quantization:
+    load_in_4bit: true
+    bnb_4bit_quant_type: nf4
+    bnb_4bit_compute_dtype: bfloat16
+    bnb_4bit_use_double_quant: true
+
+peft:
+  enabled: true
+  r: 8
+  lora_alpha: 16
+  lora_dropout: 0.05
+  bias: none
+  task_type: CAUSAL_LM
+  target_modules:
+    - q_proj
+    - k_proj
+    - v_proj
+    - o_proj
+    - gate_proj
+    - up_proj
+    - down_proj
 
 data:
   dataset_format: source_episode
@@ -15,9 +37,9 @@ data:
   include_support_pack: true
   append_response_format: true
   shuffle_train: true
-  eval_split: 0.1
-  max_train_samples: 16
-  max_eval_samples: 4
+  eval_split: 0
+  max_train_samples: 8
+  max_eval_samples: 0
 
 training:
   output_dir: /content/drive/MyDrive/cosmos-grpo/qwen4b-pilot
@@ -25,17 +47,17 @@ training:
   per_device_eval_batch_size: 1
   gradient_accumulation_steps: 1
   learning_rate: 2.0e-6
-  warmup_steps: 2
-  max_steps: 10
+  warmup_steps: 1
+  max_steps: 5
   logging_steps: 1
-  eval_strategy: steps
-  eval_steps: 5
+  eval_strategy: no
   save_strategy: steps
   save_steps: 5
   save_total_limit: 2
+  optim: paged_adamw_8bit
   report_to: []
-  max_prompt_length: 768
-  max_completion_length: 128
+  max_prompt_length: 512
+  max_completion_length: 64
   num_generations: 2
   num_generations_eval: 1
   steps_per_generation: 2
@@ -44,9 +66,12 @@ training:
   fp16: false
   bf16: true
   gradient_checkpointing: true
+  gradient_checkpointing_kwargs:
+    use_reentrant: false
   use_vllm: false
   log_completions: false
   auto_resume: false
+  run_final_eval: false
 
 reward:
   full_credit: 1.0
@@ -57,6 +82,6 @@ reward:
 
 eval:
   batch_size: 1
-  max_new_tokens: 128
+  max_new_tokens: 64
   do_sample: false
   force_cpu: false

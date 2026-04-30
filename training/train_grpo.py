@@ -7,7 +7,7 @@ import sys
 from pathlib import Path
 from typing import Any
 
-from transformers import AutoTokenizer
+from transformers import AutoTokenizer, BitsAndBytesConfig
 from trl import GRPOConfig, GRPOTrainer
 
 if __package__ in (None, ""):
@@ -50,6 +50,7 @@ def main() -> None:
     model_cfg = dict(config.get("model", {}))
     data_cfg = dict(config.get("data", {}))
     training_cfg = dict(config.get("training", {}))
+    peft_config = build_peft_config(config.get("peft"))
 
     model_name_or_path = model_cfg["name_or_path"]
     tokenizer = load_tokenizer(model_cfg)
@@ -86,6 +87,7 @@ def main() -> None:
         eval_dataset=to_hf_dataset(eval_records) if eval_records else None,
         processing_class=tokenizer,
         callbacks=callbacks,
+        peft_config=peft_config,
     )
 
     resume_checkpoint = args.resume_from_checkpoint
@@ -100,7 +102,7 @@ def main() -> None:
     trainer.log_metrics("train", train_result.metrics)
     trainer.save_metrics("train", train_result.metrics)
 
-    if eval_records:
+    if eval_records and bool(training_cfg.get("run_final_eval", True)):
         eval_metrics = trainer.evaluate()
         trainer.log_metrics("eval", eval_metrics)
         trainer.save_metrics("eval", eval_metrics)
@@ -181,6 +183,8 @@ def build_grpo_config(
         model_init_kwargs["trust_remote_code"] = bool(model_cfg["trust_remote_code"])
     if "local_files_only" in model_cfg:
         model_init_kwargs["local_files_only"] = bool(model_cfg["local_files_only"])
+    if "quantization" in model_cfg:
+        model_init_kwargs["quantization_config"] = build_quantization_config(model_cfg["quantization"])
 
     config_kwargs = {
         "output_dir": str(output_dir),
@@ -192,11 +196,36 @@ def build_grpo_config(
     }
     config_kwargs.update(training_cfg)
     config_kwargs.pop("auto_resume", None)
+    config_kwargs.pop("run_final_eval", None)
     config_kwargs["output_dir"] = str(output_dir)
     config_kwargs["remove_unused_columns"] = False
     config_kwargs["reward_weights"] = reward_weights
     config_kwargs = filter_grpo_config_kwargs(config_kwargs)
     return GRPOConfig(**config_kwargs)
+
+
+def build_quantization_config(raw_config: dict[str, Any]) -> BitsAndBytesConfig:
+    quant_config = dict(raw_config or {})
+    for key in ("bnb_4bit_compute_dtype", "bnb_4bit_quant_storage"):
+        if key in quant_config:
+            quant_config[key] = coerce_torch_dtype(quant_config[key])
+    try:
+        return BitsAndBytesConfig(**quant_config)
+    except Exception as exc:  # pragma: no cover
+        raise RuntimeError(
+            "bitsandbytes is required for model.quantization. Install with: pip install bitsandbytes"
+        ) from exc
+
+
+def build_peft_config(raw_config: dict[str, Any] | None):
+    raw_config = dict(raw_config or {})
+    if not raw_config or not bool(raw_config.pop("enabled", False)):
+        return None
+    try:
+        from peft import LoraConfig
+    except ImportError as exc:  # pragma: no cover
+        raise RuntimeError("PEFT is required for peft.enabled=true. Install with: pip install peft") from exc
+    return LoraConfig(**raw_config)
 
 
 def filter_grpo_config_kwargs(config_kwargs: dict[str, Any]) -> dict[str, Any]:

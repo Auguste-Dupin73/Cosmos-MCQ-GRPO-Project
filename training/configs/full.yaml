@@ -6,7 +6,29 @@ model:
   trust_remote_code: true
   local_files_only: false
   torch_dtype: bfloat16
-  model_init_kwargs: {}
+  model_init_kwargs:
+    attn_implementation: sdpa
+  quantization:
+    load_in_4bit: true
+    bnb_4bit_quant_type: nf4
+    bnb_4bit_compute_dtype: bfloat16
+    bnb_4bit_use_double_quant: true
+
+peft:
+  enabled: true
+  r: 8
+  lora_alpha: 16
+  lora_dropout: 0.05
+  bias: none
+  task_type: CAUSAL_LM
+  target_modules:
+    - q_proj
+    - k_proj
+    - v_proj
+    - o_proj
+    - gate_proj
+    - up_proj
+    - down_proj
 
 data:
   dataset_format: source_episode
@@ -15,9 +37,9 @@ data:
   include_support_pack: true
   append_response_format: true
   shuffle_train: true
-  eval_split: 0.1
+  eval_split: 0
   max_train_samples: null
-  max_eval_samples: 20
+  max_eval_samples: 0
 
 training:
   output_dir: outputs/training/qwen4b_l4_full
@@ -26,20 +48,20 @@ training:
   gradient_accumulation_steps: 2
   learning_rate: 2.0e-6
   warmup_steps: 5
-  max_steps: 60
+  max_steps: 40
   num_train_epochs: 3
   logging_strategy: steps
   logging_steps: 2
   logging_first_step: true
-  eval_strategy: steps
-  eval_steps: 10
+  eval_strategy: no
   save_strategy: steps
   save_steps: 10
   save_total_limit: 5
   lr_scheduler_type: cosine
+  optim: paged_adamw_8bit
   report_to: []
-  max_prompt_length: 768
-  max_completion_length: 128
+  max_prompt_length: 512
+  max_completion_length: 96
   num_generations: 2
   num_generations_eval: 1
   steps_per_generation: 2
@@ -49,11 +71,14 @@ training:
   bf16: true
   fp16: false
   gradient_checkpointing: true
+  gradient_checkpointing_kwargs:
+    use_reentrant: false
   remove_unused_columns: false
   use_vllm: false
   log_completions: false
   save_safetensors: true
   auto_resume: true
+  run_final_eval: false
 
 reward:
   full_credit: 1.0
@@ -64,7 +89,7 @@ reward:
 
 eval:
   batch_size: 1
-  max_new_tokens: 128
+  max_new_tokens: 96
   do_sample: false
   temperature: 0.8
   top_p: 1.0

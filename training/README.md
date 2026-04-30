@@ -18,13 +18,13 @@ This folder contains the GRPO-first training layer for the episode-style math da
 The existing repo README only mentions `pytest`, but the training layer expects the Hugging Face stack that is already referenced by `cli/SFT.py`:
 
 ```powershell
-python -m pip install torch transformers datasets trl pyyaml accelerate
+python -m pip install torch transformers datasets trl pyyaml accelerate peft bitsandbytes
 ```
 
 Optional:
 
 ```powershell
-python -m pip install wandb peft bitsandbytes
+python -m pip install wandb
 ```
 
 ## Recommended Input Files
@@ -98,3 +98,5 @@ python training/eval_grpo.py `
 - this repo snapshot does not include a local model checkpoint, so you need either a cached Hugging Face model or network access when loading `model.name_or_path`
 - the current environment where this stack was added does not expose CUDA, so end-to-end runtime validation with a real model was limited to static and module-level checks
 - live per-skill and per-tier breakdowns are provided by `eval_grpo.py`; they are not added to every in-training log event
+- the Colab/L4 Qwen config uses 4-bit QLoRA; install `peft` and `bitsandbytes` before running it
+- if an L4 run still OOMs, lower `max_prompt_length`, `max_completion_length`, or use the pilot config before the full config
