@@ -60,7 +60,7 @@ training:
   num_generations: 2
   num_generations_eval: 1
   steps_per_generation: 2
-  temperature: 0.6
+  temperature: 0.8
   top_p: 1.0
   fp16: false
   bf16: true
