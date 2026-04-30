@@ -78,6 +78,15 @@ reward:
   main_only_credit: 0.4
   correct_option_wrong_reasoning_credit: 0.25
   failure_credit: 0.0
+  format_credit: 0.10
+  option_present_credit: 0.03
+  main_final_present_credit: 0.03
+  probe_final_present_credit: 0.03
+  reasoning_present_credit: 0.03
+  numeric_work_credit: 0.02
+  gold_answer_mentioned_credit: 0.04
+  max_shaping_credit: 0.25
+  non_joint_reward_cap: 0.95
 
 eval:
   batch_size: 1

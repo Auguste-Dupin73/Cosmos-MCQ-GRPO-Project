@@ -85,6 +85,8 @@ python training/eval_grpo.py `
 - reward logic stays in `reward_fn.py`
 - the trainer registers one real optimization reward and several zero-weight diagnostic rewards so training logs still expose:
   - reward mean/std
+  - shaping reward
+  - format compliance
   - main accuracy
   - option accuracy
   - probe accuracy
@@ -93,10 +95,16 @@ python training/eval_grpo.py `
   - correct-option-wrong-reasoning rate
 - checkpoints and metrics are saved under the configured `output_dir`
 
+## Interpreting Zero Loss
+
+GRPO can show `loss=0` when every completion in a sampled group receives the same reward. With a base model this usually means the model is not yet producing parseable fields such as `Ana soru secimi` or `Probe nihai cevap`, so all completions score zero and there is no advantage signal.
+
+The reward module includes small capped shaping rewards for format compliance, answer-field presence, numeric work, and mentioning the gold answer. The correctness gates still dominate: full credit requires correct main answer, correct option, consistent reasoning, and correct probe answer.
+
 ## Known Limitations
 
 - this repo snapshot does not include a local model checkpoint, so you need either a cached Hugging Face model or network access when loading `model.name_or_path`
 - the current environment where this stack was added does not expose CUDA, so end-to-end runtime validation with a real model was limited to static and module-level checks
 - live per-skill and per-tier breakdowns are provided by `eval_grpo.py`; they are not added to every in-training log event
 - the Colab/L4 Qwen config uses 4-bit QLoRA; install `peft` and `bitsandbytes` before running it
-- if an L4 run still OOMs, lower `max_prompt_length`, `max_completion_length`, or use the pilot config before the full config
+- if an L4 run still OOMs, lower `max_completion_length`, keep `include_support_pack: false`, reduce `num_generations`, or use the pilot config before the full config
