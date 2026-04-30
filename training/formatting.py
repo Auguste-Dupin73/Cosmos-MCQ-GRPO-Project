@@ -7,15 +7,22 @@ from mcq_consistency import compose_episode_candidate_text, normalize_mcq_value
 
 
 OPTION_LINE_RE = re.compile(r"(?m)^\s*([A-Z])\)\s*(.+?)\s*$")
-MAIN_OPTION_RE = re.compile("(?im)^\\s*Ana\\s+soru\\s+se(?:\u00e7|c)imi\\s*:\\s*([A-Z])\\s*$")
-MAIN_REASONING_RE = re.compile(
-    "(?ims)^\\s*Ana\\s+(?:\u00e7\u00f6z\u00fcm|cozum)\\s*:\\s*(.*?)\\s*(?=^\\s*Ana\\s+nihai\\s+cevap\\s*:|\\Z)"
+MARKDOWN_LABEL_PREFIX = r"(?:#{1,6}\s*)?(?:\*\*)?\s*"
+MARKDOWN_LABEL_SUFFIX = r"\s*(?:\*\*)?\s*:"
+MAIN_OPTION_LABEL = r"Ana\s+soru\s+se(?:\u00e7|c)imi"
+MAIN_REASONING_LABEL = r"Ana\s+(?:\u00e7\u00f6z\u00fcm|cozum)"
+MAIN_FINAL_LABEL = r"Ana\s+nihai\s+cevap"
+PROBE_REASONING_LABEL = r"Probe\s+(?:\u00e7\u00f6z\u00fcm|cozum)"
+PROBE_FINAL_LABEL = r"Probe\s+nihai\s+cevap"
+ANY_RESPONSE_LABEL_RE = re.compile(
+    rf"(?im)^\s*{MARKDOWN_LABEL_PREFIX}"
+    rf"(?:{MAIN_OPTION_LABEL}|{MAIN_REASONING_LABEL}|{MAIN_FINAL_LABEL}|"
+    rf"{PROBE_REASONING_LABEL}|{PROBE_FINAL_LABEL}|Probe\s+soru(?:\s+se(?:\u00e7|c)imi)?)"
+    rf"(?:{MARKDOWN_LABEL_SUFFIX}|\s*$)"
 )
-MAIN_FINAL_RE = re.compile("(?im)^\\s*Ana\\s+nihai\\s+cevap\\s*:\\s*(.+?)\\s*$")
-PROBE_REASONING_RE = re.compile(
-    "(?ims)^\\s*Probe\\s+(?:\u00e7\u00f6z\u00fcm|cozum)\\s*:\\s*(.*?)\\s*(?=^\\s*Probe\\s+nihai\\s+cevap\\s*:|\\Z)"
-)
-PROBE_FINAL_RE = re.compile("(?im)^\\s*Probe\\s+nihai\\s+cevap\\s*:\\s*(.+?)\\s*$")
+OPTION_PLACEHOLDER_RE = re.compile(r"<?\s*A\s*/\s*B\s*/\s*C\s*/\s*D\s*>?", re.IGNORECASE)
+OPTION_VALUE_RE = re.compile(r"(?im)(?:^|[\s*_`])([A-D])\s*[\).]")
+STANDALONE_OPTION_RE = re.compile(r"(?i)^[*_`\s]*([A-D])[*_`\s]*$")
 NUMBER_RE = re.compile(r"-?\d+(?:[.,]\d+)?")
 EQUATION_RESULT_RE = re.compile(r"=\s*(-?\d+(?:[.,]\d+)?)")
 OPERATOR_RE = re.compile(r"[+\-*/xX]")
@@ -24,13 +31,13 @@ OPERATOR_RE = re.compile(r"[+\-*/xX]")
 RESPONSE_FORMAT_BLOCK = "\n".join(
     [
         "",
-        "Cevabi tam 5 satir olarak ver. Basliklari aynen kullan ve her basligi yalniz bir kez yaz.",
-        "Her cozum tek kisa cumle olsun; uzun aciklama veya ekstra metin ekleme.",
-        "Ana soru secimi: <A/B/C/D>",
-        "Ana cozum: <tek kisa islem veya gerekce>",
-        "Ana nihai cevap: <deger>",
-        "Probe cozum: <tek kisa islem veya gerekce>",
-        "Probe nihai cevap: <deger>",
+        "Cikti tam 5 satir olmali. Markdown, ###, kalin yazi, secenek listesi veya yeni soru metni yazma.",
+        "Her ':' sonrasini kendi cevabinla doldur; <A/B/C/D> gibi sablon metni kopyalama.",
+        "Ana soru secimi: sadece A/B/C/D harfi",
+        "Ana cozum: tek kisa islem veya gerekce",
+        "Ana nihai cevap: sadece sayisal deger",
+        "Probe cozum: tek kisa islem veya gerekce; Probe soru secimi yazma",
+        "Probe nihai cevap: sadece sayisal deger",
     ]
 )
 
@@ -96,7 +103,61 @@ def extract_prompt_options(prompt: str) -> list[dict[str, str]]:
 def _clean_scalar(value: str | None) -> str | None:
     if value is None:
         return None
-    cleaned = value.strip().rstrip(".")
+    cleaned = _strip_inline_markup(value.strip()).rstrip(".")
+    return cleaned or None
+
+
+def _strip_inline_markup(value: str) -> str:
+    cleaned = value.strip()
+    cleaned = re.sub(r"(?m)^\s*#{1,6}\s*", "", cleaned)
+    cleaned = re.sub(r"^\*\*(.*?)\*\*$", r"\1", cleaned, flags=re.DOTALL)
+    return cleaned.strip().strip("*_`").strip()
+
+
+def _first_nonempty_line(value: str | None) -> str | None:
+    if value is None:
+        return None
+    for line in value.splitlines():
+        cleaned = _clean_scalar(line)
+        if cleaned:
+            return cleaned
+    return None
+
+
+def _extract_labeled_section(text: str, label_pattern: str) -> str | None:
+    label_re = re.compile(rf"(?im)^\s*{MARKDOWN_LABEL_PREFIX}{label_pattern}{MARKDOWN_LABEL_SUFFIX}\s*")
+    match = label_re.search(text)
+    if not match:
+        return None
+    next_match = ANY_RESPONSE_LABEL_RE.search(text, match.end())
+    end = next_match.start() if next_match else len(text)
+    return _clean_scalar(text[match.end() : end])
+
+
+def _extract_option_value(value: str | None) -> str | None:
+    cleaned = _clean_scalar(value)
+    if not cleaned:
+        return None
+    cleaned = OPTION_PLACEHOLDER_RE.sub("", cleaned).strip()
+    if not cleaned:
+        return None
+
+    standalone = STANDALONE_OPTION_RE.fullmatch(cleaned)
+    if standalone:
+        return standalone.group(1).upper()
+
+    labels = [match.group(1).upper() for match in OPTION_VALUE_RE.finditer(cleaned)]
+    if len(set(labels)) == 1:
+        return labels[0]
+    return None
+
+
+def _clean_final_answer(value: str | None) -> str | None:
+    cleaned = _first_nonempty_line(value)
+    if not cleaned:
+        return None
+    cleaned = re.sub(r"(?i)^[A-D]\s*[\).:-]\s*", "", cleaned).strip()
+    cleaned = _strip_inline_markup(cleaned).rstrip(".")
     return cleaned or None
 
 
@@ -122,21 +183,24 @@ def _infer_operation_chain(text: str) -> list[str]:
 
 def parse_episode_completion(text: str) -> dict[str, Any]:
     raw_text = text.strip()
-    main_reasoning = _clean_scalar(_match_text(MAIN_REASONING_RE, raw_text)) or ""
-    probe_reasoning = _clean_scalar(_match_text(PROBE_REASONING_RE, raw_text)) or ""
+    main_option = _extract_option_value(_extract_labeled_section(raw_text, MAIN_OPTION_LABEL))
+    main_reasoning = _extract_labeled_section(raw_text, MAIN_REASONING_LABEL) or ""
+    main_final = _clean_final_answer(_extract_labeled_section(raw_text, MAIN_FINAL_LABEL))
+    probe_reasoning = _extract_labeled_section(raw_text, PROBE_REASONING_LABEL) or ""
+    probe_final = _clean_final_answer(_extract_labeled_section(raw_text, PROBE_FINAL_LABEL))
     main_results = _extract_equation_results(main_reasoning)
     probe_results = _extract_equation_results(probe_reasoning)
 
     return {
         "raw_text": raw_text,
-        "main_selected_option": _clean_scalar(_match_text(MAIN_OPTION_RE, raw_text)),
+        "main_selected_option": main_option,
         "main_reasoning_text": main_reasoning,
-        "main_final_answer": _clean_scalar(_match_text(MAIN_FINAL_RE, raw_text)),
+        "main_final_answer": main_final,
         "main_numbers": _extract_numbers(main_reasoning),
         "main_equation_results": main_results,
         "main_operation_chain": _infer_operation_chain(main_reasoning),
         "probe_reasoning_text": probe_reasoning,
-        "probe_final_answer": _clean_scalar(_match_text(PROBE_FINAL_RE, raw_text)),
+        "probe_final_answer": probe_final,
         "probe_numbers": _extract_numbers(probe_reasoning),
         "probe_equation_results": probe_results,
         "probe_operation_chain": _infer_operation_chain(probe_reasoning),
