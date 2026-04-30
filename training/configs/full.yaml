@@ -34,7 +34,7 @@ data:
   dataset_format: source_episode
   train_paths:
     - outputs/200_sample/episodes.jsonl
-  include_support_pack: true
+  include_support_pack: false
   append_response_format: true
   shuffle_train: true
   eval_split: 0
@@ -53,14 +53,13 @@ training:
   logging_strategy: steps
   logging_steps: 2
   logging_first_step: true
-  eval_strategy: no
+  eval_strategy: "no"
   save_strategy: steps
   save_steps: 10
   save_total_limit: 5
   lr_scheduler_type: cosine
   optim: paged_adamw_8bit
   report_to: []
-  max_prompt_length: 512
   max_completion_length: 96
   num_generations: 2
   num_generations_eval: 1

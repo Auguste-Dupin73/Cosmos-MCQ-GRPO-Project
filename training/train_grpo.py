@@ -236,6 +236,9 @@ def filter_grpo_config_kwargs(config_kwargs: dict[str, Any]) -> dict[str, Any]:
 
     if "eval_strategy" in filtered and "eval_strategy" not in allowed and "evaluation_strategy" in allowed:
         filtered["evaluation_strategy"] = filtered.pop("eval_strategy")
+    for strategy_key in ("eval_strategy", "evaluation_strategy", "logging_strategy", "save_strategy"):
+        if strategy_key in filtered and filtered[strategy_key] is False:
+            filtered[strategy_key] = "no"
 
     unsupported = sorted(key for key in filtered if key not in allowed)
     if unsupported:
