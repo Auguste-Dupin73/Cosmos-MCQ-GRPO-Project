@@ -24,13 +24,13 @@ OPERATOR_RE = re.compile(r"[+\-*/xX]")
 RESPONSE_FORMAT_BLOCK = "\n".join(
     [
         "",
-        "Cevabi sadece asagidaki 5 satir basligiyla ver. Basliklari aynen kullan:",
+        "Cevabi tam 5 satir olarak ver. Basliklari aynen kullan ve her basligi yalniz bir kez yaz.",
+        "Her cozum tek kisa cumle olsun; uzun aciklama veya ekstra metin ekleme.",
         "Ana soru secimi: <A/B/C/D>",
-        "Ana cozum: <kisa ve tutarli cozum>",
+        "Ana cozum: <tek kisa islem veya gerekce>",
         "Ana nihai cevap: <deger>",
-        "Probe cozum: <kisa ve tutarli cozum>",
+        "Probe cozum: <tek kisa islem veya gerekce>",
         "Probe nihai cevap: <deger>",
-        "Baska baslik veya serbest metin ekleme.",
     ]
 )
 
