@@ -52,6 +52,26 @@ Notes:
 python training/train_grpo.py --config training/configs/pilot.yaml
 ```
 
+## Debug Raw Completions
+
+Before a GRPO run, inspect raw generations with the same config:
+
+```powershell
+python training/debug_completions.py --config training/configs/colab_qwen4b.yaml --num-prompts 2 --num-generations 2
+```
+
+Useful Colab variant that saves JSONL diagnostics:
+
+```powershell
+python training/debug_completions.py `
+  --config training/configs/colab_qwen4b.yaml `
+  --num-prompts 4 `
+  --num-generations 2 `
+  --output outputs/training/debug_completions.jsonl
+```
+
+Look for `token_count`, `terminated`, `clipped`, the raw completion text, and parsed fields such as `main_selected_option`, `main_final_answer`, and `probe_final_answer`. If completions are empty after special-token stripping or terminate after one token, the model is emitting EOS immediately. If completions are clipped, the model is rambling past the configured generation cap.
+
 ## Fuller Training
 
 ```powershell

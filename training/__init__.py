@@ -2,6 +2,7 @@
 
 __all__ = [
     "dataset",
+    "debug_completions",
     "formatting",
     "reward_fn",
     "utils",

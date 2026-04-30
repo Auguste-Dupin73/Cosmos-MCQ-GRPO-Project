@@ -56,7 +56,7 @@ training:
   save_total_limit: 2
   optim: paged_adamw_8bit
   report_to: []
-  max_completion_length: 160
+  max_completion_length: 128
   num_generations: 2
   num_generations_eval: 1
   steps_per_generation: 2
@@ -90,6 +90,6 @@ reward:
 
 eval:
   batch_size: 1
-  max_new_tokens: 160
+  max_new_tokens: 128
   do_sample: false
   force_cpu: false
