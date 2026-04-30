@@ -1,0 +1,118 @@
+{
+  "target_total_episodes": 200,
+  "variants_per_seed": 2,
+  "tier_plan": {
+    "A": {
+      "seed_count": 50,
+      "episode_count": 100
+    },
+    "B": {
+      "seed_count": 30,
+      "episode_count": 60
+    },
+    "C": {
+      "seed_count": 20,
+      "episode_count": 40
+    }
+  },
+  "sampling_seed": 20260430,
+  "build_seeds": {
+    "A": 5201,
+    "B": 5202,
+    "C": 5203
+  },
+  "source_seed_dirs": {
+    "A": {
+      "path": "C:\\Users\\Acer\\Desktop\\Metin\\Cosmos\\Cosmos-Proje-Grpo\\example-generator-v1\\data\\team_seeds\\tierA",
+      "unique_rows": 6187,
+      "unique_rows_by_file_first_seen": {
+        "codexA_shuffled.jsonl": 6187
+      }
+    },
+    "B": {
+      "path": "C:\\Users\\Acer\\Desktop\\Metin\\Cosmos\\Cosmos-Proje-Grpo\\example-generator-v1\\data\\team_seeds\\tierB",
+      "unique_rows": 2207,
+      "unique_rows_by_file_first_seen": {
+        "codex_B.jsonl": 2207
+      }
+    },
+    "C": {
+      "path": "C:\\Users\\Acer\\Desktop\\Metin\\Cosmos\\Cosmos-Proje-Grpo\\example-generator-v1\\data\\team_seeds\\tierC",
+      "unique_rows": 1130,
+      "unique_rows_by_file_first_seen": {
+        "codex_C.jsonl": 1130
+      }
+    }
+  },
+  "selected_seed_files": {
+    "A": {
+      "path": "outputs\\200_sample\\selected_seeds\\tierA_selected_50.jsonl",
+      "count": 50,
+      "template_counts": {
+        "compare_difference": 6,
+        "multi_step_add_sub": 6,
+        "produce_consume_sell": 4,
+        "rate_time": 6,
+        "ratio_scaling": 3,
+        "remainder_after_loss": 6,
+        "reverse_operation": 6,
+        "sell_leftover": 6,
+        "sum_and_difference": 1,
+        "unit_price_quantity": 6
+      }
+    },
+    "B": {
+      "path": "outputs\\200_sample\\selected_seeds\\tierB_selected_30.jsonl",
+      "count": 30,
+      "template_counts": {
+        "add_then_share": 4,
+        "bundle_discount_total_cost": 4,
+        "buy_two_items_total_cost": 3,
+        "change_from_payment": 4,
+        "discounted_unit_total_cost": 4,
+        "percentage_discount_final_price": 3,
+        "percentage_increase_final_price": 4,
+        "vat_total_cost": 4
+      }
+    },
+    "C": {
+      "path": "outputs\\200_sample\\selected_seeds\\tierC_selected_20.jsonl",
+      "count": 20,
+      "template_counts": {
+        "discount_then_vat_total_cost": 6,
+        "discounted_total_then_change": 6,
+        "transform_then_share": 6,
+        "two_items_then_bundle_discount_total_cost": 2
+      }
+    }
+  },
+  "episode_files": {
+    "A": {
+      "path": "outputs\\200_sample\\tierA_episodes.jsonl",
+      "count": 100
+    },
+    "B": {
+      "path": "outputs\\200_sample\\tierB_episodes.jsonl",
+      "count": 60
+    },
+    "C": {
+      "path": "outputs\\200_sample\\tierC_episodes.jsonl",
+      "count": 40
+    }
+  },
+  "skipped_candidate_counts": {
+    "A": {
+      "equal_sharing": 6,
+      "ratio_scaling": 3,
+      "sum_and_difference": 5
+    },
+    "B": {},
+    "C": {
+      "two_items_then_bundle_discount_total_cost": 3
+    }
+  },
+  "combined_episode_file": {
+    "path": "outputs\\200_sample\\episodes.jsonl",
+    "count": 200
+  }
+}

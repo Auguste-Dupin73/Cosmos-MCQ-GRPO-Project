@@ -1,0 +1,2502 @@
+[
+    {
+        "id":  "gen_A_002841",
+        "prompt":  "Soru:\nAndrew 14 tane masa lambası alır. Tanesi 143 TL olarak belirlenir. Toplam ödeme kaç TL olur?\n",
+        "responses":  [
+                          {
+                              "text":  "Toplam 14 tane masa lambası vardır. 14 tane masa lambası için 14 × 143 = 2002 TL. Ödeme 2002 TL olur.\n\n### 2002",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Toplam 14 tane masa lambası vardır. 14 tane masa lambası için 14 × 143 = 2002 TL. Ödeme 2000 TL olur.\n\n### 2000",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Toplam 14 tane masa lambası vardır. 14 tane masa lambası için 14 × 143 = 2002 TL. Ödeme 2003 TL olur.\n\n### 2003",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Toplam 14 tane masa lambası vardır. 14 tane masa lambası için 14 × 143 = 2002 TL. Ödeme 14 TL olur.\n\n### 14",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_B_004391",
+        "prompt":  "Soru:\nDükkanda Zeynep 9 tane ataş kutusu alır, birim fiyat 46 TL olur. Tanesi 138 TL olan 13 tane klasör daha alır. Toplam tutar kaç TL olur?\n",
+        "responses":  [
+                          {
+                              "text":  "Önce her ürün için toplam maliyet hesaplanır. İki maliyetin toplanması gerekmektedir, bu yüzden iki nesnenin maliyetleri ayrı ayrı bulunmalıdır: ataş kutusu için 9 × 46 = 414, aynısı klasör için de yapılır: 13 × 138 = 1794. Bu iki maliyet toplanınca ise 414 + 1794 = 2208 olarak tüm maliyet bulunur. Zeynep toplam 2208 TL verir.\n\n### 2208",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Önce her ürün için toplam maliyet hesaplanır. İki maliyetin toplanması gerekmektedir, bu yüzden iki nesnenin maliyetleri ayrı ayrı bulunmalıdır: ataş kutusu için 9 × 46 = 414, aynısı klasör için de yapılır: 13 × 138 = 1794. Bu iki maliyet toplanınca ise 414 + 1794 = 2208 olarak tüm maliyet bulunur. Zeynep toplam 2207 TL verir.\n\n### 2207",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce her ürün için toplam maliyet hesaplanır. İki maliyetin toplanması gerekmektedir, bu yüzden iki nesnenin maliyetleri ayrı ayrı bulunmalıdır: ataş kutusu için 9 × 46 = 414, aynısı klasör için de yapılır: 13 × 138 = 1794. Bu iki maliyet toplanınca ise 414 + 1794 = 2208 olarak tüm maliyet bulunur. Zeynep toplam 2206 TL verir.\n\n### 2206",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce her ürün için toplam maliyet hesaplanır. İki maliyetin toplanması gerekmektedir, bu yüzden iki nesnenin maliyetleri ayrı ayrı bulunmalıdır: ataş kutusu için 9 × 46 = 414, aynısı klasör için de yapılır: 13 × 138 = 1794. Bu iki maliyet toplanınca ise 414 + 1794 = 2208 olarak tüm maliyet bulunur. Zeynep toplam 9 TL verir.\n\n### 9",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_C_002382",
+        "prompt":  "Soru:\nKampanya şartlarına göre ödeme tutarı bulunur. Markette Mustafa muz için fiyatları inceler. 2500 TL birim fiyatlı üründe % 92 indirim ve % 18 KDV sonrası toplam tutar 2596 TL çıkıyor. Alınan ürün adedi kaçtır? Kaç adet muz alınmıştır?\n",
+        "responses":  [
+                          {
+                              "text":  "Önce indirimli birim fiyat bulunur, sonra KDV eklenir. Önce kullanacağımız indirimli ve KDV\u0027li birim fiyatlarının önceki fiyata göre yüzdelik oranlarını belirlemeliyiz. İndirim yüzdesi % 92 olduğuna göre net yüzde % 100 − % 92 = % 8 olur, sonrasında KDV oranı % 18 olduğuna göre KDV\u0027li birim fiyatının önceki birim fiyatına yüzdelik oranı % 100 + % 18 = % 118 olarak bulunur. Birim fiyat dönüşümlerinden sonra indirimli birim fiyat: 2500×8/100=200. KDV sonrası birim fiyat: 200×118/100=236 TL elde edilir. Toplam 2596 TL olduğundan alınan adet 2596 / 236 = 11 olur. Alınan muz sayısı 11 adettir.\n\n### 11",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Önce indirimli birim fiyat bulunur, sonra KDV eklenir. Önce kullanacağımız indirimli ve KDV\u0027li birim fiyatlarının önceki fiyata göre yüzdelik oranlarını belirlemeliyiz. İndirim yüzdesi % 92 olduğuna göre net yüzde % 100 − % 92 = % 8 olur, sonrasında KDV oranı % 18 olduğuna göre KDV\u0027li birim fiyatının önceki birim fiyatına yüzdelik oranı % 100 + % 18 = % 118 olarak bulunur. Birim fiyat dönüşümlerinden sonra indirimli birim fiyat: 2500×8/100=200. KDV sonrası birim fiyat: 200×118/100=236 TL elde edilir. Toplam 2596 TL olduğundan alınan adet 2596 / 236 = 11 olur. Alınan muz sayısı 9 adettir.\n\n### 9",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce indirimli birim fiyat bulunur, sonra KDV eklenir. Önce kullanacağımız indirimli ve KDV\u0027li birim fiyatlarının önceki fiyata göre yüzdelik oranlarını belirlemeliyiz. İndirim yüzdesi % 92 olduğuna göre net yüzde % 100 − % 92 = % 8 olur, sonrasında KDV oranı % 18 olduğuna göre KDV\u0027li birim fiyatının önceki birim fiyatına yüzdelik oranı % 100 + % 18 = % 118 olarak bulunur. Birim fiyat dönüşümlerinden sonra indirimli birim fiyat: 2500×8/100=200. KDV sonrası birim fiyat: 200×118/100=236 TL elde edilir. Toplam 2596 TL olduğundan alınan adet 2596 / 236 = 11 olur. Alınan muz sayısı 13 adettir.\n\n### 13",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce indirimli birim fiyat bulunur, sonra KDV eklenir. Önce kullanacağımız indirimli ve KDV\u0027li birim fiyatlarının önceki fiyata göre yüzdelik oranlarını belirlemeliyiz. İndirim yüzdesi % 92 olduğuna göre net yüzde % 100 − % 92 = % 8 olur, sonrasında KDV oranı % 18 olduğuna göre KDV\u0027li birim fiyatının önceki birim fiyatına yüzdelik oranı % 100 + % 18 = % 118 olarak bulunur. Birim fiyat dönüşümlerinden sonra indirimli birim fiyat: 2500×8/100=200. KDV sonrası birim fiyat: 200×118/100=236 TL elde edilir. Toplam 2596 TL olduğundan alınan adet 2596 / 236 = 11 olur. Alınan muz sayısı 2500 adettir.\n\n### 2500",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_B_012561",
+        "prompt":  "Soru:\nOnline siparişte Ronald alışveriş için maşa seçer. % 9 indirim vardır. Birim fiyat 900 TL olur. 21 adet alınır. Toplam maliyet kaç TL olur?\n",
+        "responses":  [
+                          {
+                              "text":  "Ödeme için indirimli birim fiyat ve adet sayısı kullanılır. Net ödenecek oran % 100 - % 9 = % 91 olur. Önce 900 × 91 / 100 = 819 bulunur, sonra 819 × 21 = 17199 olur. Ronald toplam 17199 TL verir.\n\n### 17199",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Ödeme için indirimli birim fiyat ve adet sayısı kullanılır. Net ödenecek oran % 100 - % 9 = % 91 olur. Önce 900 × 91 / 100 = 819 bulunur, sonra 819 × 21 = 17199 olur. Ronald toplam 17200 TL verir.\n\n### 17200",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Ödeme için indirimli birim fiyat ve adet sayısı kullanılır. Net ödenecek oran % 100 - % 9 = % 91 olur. Önce 900 × 91 / 100 = 819 bulunur, sonra 819 × 21 = 17199 olur. Ronald toplam 17197 TL verir.\n\n### 17197",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Ödeme için indirimli birim fiyat ve adet sayısı kullanılır. Net ödenecek oran % 100 - % 9 = % 91 olur. Önce 900 × 91 / 100 = 819 bulunur, sonra 819 × 21 = 17199 olur. Ronald toplam 9 TL verir.\n\n### 9",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_C_001606",
+        "prompt":  "Soru:\nMarkette Joseph zeytinyağı şişesi alışverişini tamamlamak ister. 29 tane zeytinyağı şişesi satın alınır. Birim fiyatı 1800 TL üzerinden alışveriş yapılır. Toplam tutara % 33 indirim yapılır ve 35300 TL ile ödeme yapılır. Kasadan kaç TL geri alır?\n",
+        "responses":  [
+                          {
+                              "text":  "İndirimli ödeme hesaplanır, ardından para üstü bulunur. Önce brüt toplam 1800 × 29 = 52200 bulunur. Net oran % 67 (100 - 33) ile indirimli toplam 52200 × 67/100=34974. 35300 verildiğine göre para üstü 35300 - 34974 = 326 olur. Bu işlemden sonra 326 TL geri alır.\n\n### 326",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "İndirimli ödeme hesaplanır, ardından para üstü bulunur. Önce brüt toplam 1800 × 29 = 52200 bulunur. Net oran % 67 (100 - 33) ile indirimli toplam 52200 × 67/100=34974. 35300 verildiğine göre para üstü 35300 - 34974 = 326 olur. Bu işlemden sonra 327 TL geri alır.\n\n### 327",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "İndirimli ödeme hesaplanır, ardından para üstü bulunur. Önce brüt toplam 1800 × 29 = 52200 bulunur. Net oran % 67 (100 - 33) ile indirimli toplam 52200 × 67/100=34974. 35300 verildiğine göre para üstü 35300 - 34974 = 326 olur. Bu işlemden sonra 328 TL geri alır.\n\n### 328",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "İndirimli ödeme hesaplanır, ardından para üstü bulunur. Önce brüt toplam 1800 × 29 = 52200 bulunur. Net oran % 67 (100 - 33) ile indirimli toplam 52200 × 67/100=34974. 35300 verildiğine göre para üstü 35300 - 34974 = 326 olur. Bu işlemden sonra 29 TL geri alır.\n\n### 29",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_C_006369",
+        "prompt":  "Soru:\nİnternetten Patricia alışverişte bir yeşil biber kasası seçer. yeşil biber kasası alışverişinde birim fiyat 2475 TL ve alınan adet 28 olur. % 66 indirim uygulanır. İndirimden sonra kişi başına ödeme 2142 TL ise kişi sayısı kaçtır? Kaç kişi paylaşmıştır?\n",
+        "responses":  [
+                          {
+                              "text":  "İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Toplam (brüt) tutar 2475 × 28 ile bulunur: 2475 × 28 = 69300. İndirim oranı % 66 ise net oran % 100 − % 66 = % 34 olur. İndirimli toplam 69300 × 34 ÷ 100 = 23562 TL. Kişi başına 2142 ödendiğine göre kişi sayısı 23562 ÷ 2142 = 11 bulunur. Sonuç: 11 kişi paylaşmıştır.\n\n### 11",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Toplam (brüt) tutar 2475 × 28 ile bulunur: 2475 × 28 = 69300. İndirim oranı % 66 ise net oran % 100 − % 66 = % 34 olur. İndirimli toplam 69300 × 34 ÷ 100 = 23562 TL. Kişi başına 2142 ödendiğine göre kişi sayısı 23562 ÷ 2142 = 11 bulunur. Sonuç: 9 kişi paylaşmıştır.\n\n### 9",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Toplam (brüt) tutar 2475 × 28 ile bulunur: 2475 × 28 = 69300. İndirim oranı % 66 ise net oran % 100 − % 66 = % 34 olur. İndirimli toplam 69300 × 34 ÷ 100 = 23562 TL. Kişi başına 2142 ödendiğine göre kişi sayısı 23562 ÷ 2142 = 11 bulunur. Sonuç: 10 kişi paylaşmıştır.\n\n### 10",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Toplam (brüt) tutar 2475 × 28 ile bulunur: 2475 × 28 = 69300. İndirim oranı % 66 ise net oran % 100 − % 66 = % 34 olur. İndirimli toplam 69300 × 34 ÷ 100 = 23562 TL. Kişi başına 2142 ödendiğine göre kişi sayısı 23562 ÷ 2142 = 11 bulunur. Sonuç: 2475 kişi paylaşmıştır.\n\n### 2475",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_A_004916",
+        "prompt":  "Soru:\nDerya 27 tane tuvalet kağıdı rulosu satın alır. tuvalet kağıdı rulosu birim fiyatı 125 TL olur. Sonuçta kaç TL öder?\n",
+        "responses":  [
+                          {
+                              "text":  "Toplam 27 tane tuvalet kağıdı rulosu alınır, tanesi 125 TL olur. Sonuç: 27 × 125 = 3375 TL. Toplam ücret 3375 TL olur.\n\n### 3375",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Toplam 27 tane tuvalet kağıdı rulosu alınır, tanesi 125 TL olur. Sonuç: 27 × 125 = 3375 TL. Toplam ücret 3373 TL olur.\n\n### 3373",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Toplam 27 tane tuvalet kağıdı rulosu alınır, tanesi 125 TL olur. Sonuç: 27 × 125 = 3375 TL. Toplam ücret 3374 TL olur.\n\n### 3374",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Toplam 27 tane tuvalet kağıdı rulosu alınır, tanesi 125 TL olur. Sonuç: 27 × 125 = 3375 TL. Toplam ücret 27 TL olur.\n\n### 27",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_A_016986",
+        "prompt":  "Soru:\nSophia iki sayının değerlerini arar. Toplam 295 ve fark 23 olarak verilir. Büyük sayıyı bulunuz.\n",
+        "responses":  [
+                          {
+                              "text":  "Hesap için toplam ve fark kullanılır. Büyük sayı (toplam + fark) ÷ 2 = (295+23) ÷ 2 = 159. Bu yüzden büyük sayı 159 olur.\n\n### 159",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Hesap için toplam ve fark kullanılır. Büyük sayı (toplam + fark) ÷ 2 = (295+23) ÷ 2 = 159. Bu yüzden büyük sayı 157 olur.\n\n### 157",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Hesap için toplam ve fark kullanılır. Büyük sayı (toplam + fark) ÷ 2 = (295+23) ÷ 2 = 159. Bu yüzden büyük sayı 158 olur.\n\n### 158",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Hesap için toplam ve fark kullanılır. Büyük sayı (toplam + fark) ÷ 2 = (295+23) ÷ 2 = 159. Bu yüzden büyük sayı 295 olur.\n\n### 295",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_A_009365",
+        "prompt":  "Soru:\nDouglas 26 adet çarşaf alır. çarşaf tanesi 89 TL olur. Kaç TL tutar?\n",
+        "responses":  [
+                          {
+                              "text":  "Tanesi 89 TL fiyatı üzerinden 26 tane çarşaf alınır. Toplam ödeme: 26 × 89 = 2314 TL. Ödeme 2314 TL olur.\n\n### 2314",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Tanesi 89 TL fiyatı üzerinden 26 tane çarşaf alınır. Toplam ödeme: 26 × 89 = 2314 TL. Ödeme 2316 TL olur.\n\n### 2316",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Tanesi 89 TL fiyatı üzerinden 26 tane çarşaf alınır. Toplam ödeme: 26 × 89 = 2314 TL. Ödeme 2313 TL olur.\n\n### 2313",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Tanesi 89 TL fiyatı üzerinden 26 tane çarşaf alınır. Toplam ödeme: 26 × 89 = 2314 TL. Ödeme 26 TL olur.\n\n### 26",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_B_012907",
+        "prompt":  "Soru:\nKırtasiyede Murat tanesi 28 TL olan 9 tane bel çantası satın alır. Tanesi 103 TL olan 7 tane top alır ve kasada 1562 TL verir. Murat kaç TL para üstü alır?\n",
+        "responses":  [
+                          {
+                              "text":  "Toplam maliyet iki ürünün maliyetlerinin toplamıdır. Para üstü için de ödenen miktar ile toplam maliyet arasındaki fark bulunmalıdır. bel çantası maliyeti: 9 × 28 = 252 TL. top maliyeti: 7 × 103 = 721 TL. Toplam maliyet: 252 + 721 = 973 TL. Para üstü ise ödenen miktardan toplam maliyetin çıkarılması yoluyla elde edilir: 1562 - 973 = 589 TL. Para üstü 589 TL olur.\n\n### 589",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Toplam maliyet iki ürünün maliyetlerinin toplamıdır. Para üstü için de ödenen miktar ile toplam maliyet arasındaki fark bulunmalıdır. bel çantası maliyeti: 9 × 28 = 252 TL. top maliyeti: 7 × 103 = 721 TL. Toplam maliyet: 252 + 721 = 973 TL. Para üstü ise ödenen miktardan toplam maliyetin çıkarılması yoluyla elde edilir: 1562 - 973 = 589 TL. Para üstü 590 TL olur.\n\n### 590",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Toplam maliyet iki ürünün maliyetlerinin toplamıdır. Para üstü için de ödenen miktar ile toplam maliyet arasındaki fark bulunmalıdır. bel çantası maliyeti: 9 × 28 = 252 TL. top maliyeti: 7 × 103 = 721 TL. Toplam maliyet: 252 + 721 = 973 TL. Para üstü ise ödenen miktardan toplam maliyetin çıkarılması yoluyla elde edilir: 1562 - 973 = 589 TL. Para üstü 591 TL olur.\n\n### 591",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Toplam maliyet iki ürünün maliyetlerinin toplamıdır. Para üstü için de ödenen miktar ile toplam maliyet arasındaki fark bulunmalıdır. bel çantası maliyeti: 9 × 28 = 252 TL. top maliyeti: 7 × 103 = 721 TL. Toplam maliyet: 252 + 721 = 973 TL. Para üstü ise ödenen miktardan toplam maliyetin çıkarılması yoluyla elde edilir: 1562 - 973 = 589 TL. Para üstü 28 TL olur.\n\n### 28",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_B_015441",
+        "prompt":  "Soru:\nİnternetten Joaquin baharat kavanozu görür. Joaquin 32 adet alır. Birim fiyat 575 TL olur. Toplam tutar için % 29 indirim uygulanır. Toplam ödeme kaç TL olur?\n",
+        "responses":  [
+                          {
+                              "text":  "Net oran % 100 - % 29 = % 71 olur. Önce 575 × 32 = 18400 bulunur, sonra 18400 × 71 / 100 = 13064 bulunur. Toplam ödeme 13064 TL olur.\n\n### 13064",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Net oran % 100 - % 29 = % 71 olur. Önce 575 × 32 = 18400 bulunur, sonra 18400 × 71 / 100 = 13064 bulunur. Toplam ödeme 13065 TL olur.\n\n### 13065",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Net oran % 100 - % 29 = % 71 olur. Önce 575 × 32 = 18400 bulunur, sonra 18400 × 71 / 100 = 13064 bulunur. Toplam ödeme 13062 TL olur.\n\n### 13062",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Net oran % 100 - % 29 = % 71 olur. Önce 575 × 32 = 18400 bulunur, sonra 18400 × 71 / 100 = 13064 bulunur. Toplam ödeme 32 TL olur.\n\n### 32",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_C_003156",
+        "prompt":  "Soru:\nRamon alışverişte bir kahve paketi seçer. kahve paketi alışverişinde birim fiyat 3000 TL ve alınan adet 23 olur. % 28 indirim uygulanır. İndirimden sonra kişi başına ödeme 3312 TL ise kişi sayısı kaçtır? Bu ödeme kaç kişi arasında bölünmüştür?\n",
+        "responses":  [
+                          {
+                              "text":  "İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Toplam (brüt) tutar 3000 × 23 ile bulunur: 3000 × 23 = 69000. İndirim oranı % 28 ise net oran % 100 − % 28 = % 72 olur. İndirimli toplam 69000 × 72 ÷ 100 = 49680 TL. Kişi başına 3312 ödendiğine göre kişi sayısı 49680 ÷ 3312 = 15 bulunur. Kişi sayısı 15 bulunur.\n\n### 15",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Toplam (brüt) tutar 3000 × 23 ile bulunur: 3000 × 23 = 69000. İndirim oranı % 28 ise net oran % 100 − % 28 = % 72 olur. İndirimli toplam 69000 × 72 ÷ 100 = 49680 TL. Kişi başına 3312 ödendiğine göre kişi sayısı 49680 ÷ 3312 = 15 bulunur. Kişi sayısı 17 bulunur.\n\n### 17",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Toplam (brüt) tutar 3000 × 23 ile bulunur: 3000 × 23 = 69000. İndirim oranı % 28 ise net oran % 100 − % 28 = % 72 olur. İndirimli toplam 69000 × 72 ÷ 100 = 49680 TL. Kişi başına 3312 ödendiğine göre kişi sayısı 49680 ÷ 3312 = 15 bulunur. Kişi sayısı 16 bulunur.\n\n### 16",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Toplam (brüt) tutar 3000 × 23 ile bulunur: 3000 × 23 = 69000. İndirim oranı % 28 ise net oran % 100 − % 28 = % 72 olur. İndirimli toplam 69000 × 72 ÷ 100 = 49680 TL. Kişi başına 3312 ödendiğine göre kişi sayısı 49680 ÷ 3312 = 15 bulunur. Kişi sayısı 3000 bulunur.\n\n### 3000",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_B_015348",
+        "prompt":  "Soru:\nMason vitrine bakarken bir karpuz görür. 1900 TL olan karpuz için indirim % 44 olur. İndirim sonrası fiyat kaç TL olur?\n",
+        "responses":  [
+                          {
+                              "text":  "Ödenecek oran % 56 olur çünkü 100 - 44 = 56. Net oran % 56 olur. (100 - 44 = 56). İndirimli tutar: 1900 × 56 ÷ 100 = 1064 TL bulunur. İndirim sonrası fiyat 1064 TL olur.\n\n### 1064",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Ödenecek oran % 56 olur çünkü 100 - 44 = 56. Net oran % 56 olur. (100 - 44 = 56). İndirimli tutar: 1900 × 56 ÷ 100 = 1064 TL bulunur. İndirim sonrası fiyat 1066 TL olur.\n\n### 1066",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Ödenecek oran % 56 olur çünkü 100 - 44 = 56. Net oran % 56 olur. (100 - 44 = 56). İndirimli tutar: 1900 × 56 ÷ 100 = 1064 TL bulunur. İndirim sonrası fiyat 1062 TL olur.\n\n### 1062",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Ödenecek oran % 56 olur çünkü 100 - 44 = 56. Net oran % 56 olur. (100 - 44 = 56). İndirimli tutar: 1900 × 56 ÷ 100 = 1064 TL bulunur. İndirim sonrası fiyat 1900 TL olur.\n\n### 1900",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_A_011500",
+        "prompt":  "Soru:\nMila sonunda bir miktar olduğunu söyler. 203 tane paspas vardır, daha önce 54 tane paspas eklenmiştir. Başta kaç tane paspas bulunur?\n",
+        "responses":  [
+                          {
+                              "text":  "Tersine hesap yapılır. Çıkarma işlemi ile başlangıç 203 - 54 = 149 bulunur. Bu durumda başlangıç 149 tane paspas olur.\n\n### 149",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Tersine hesap yapılır. Çıkarma işlemi ile başlangıç 203 - 54 = 149 bulunur. Bu durumda başlangıç 151 tane paspas olur.\n\n### 151",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Tersine hesap yapılır. Çıkarma işlemi ile başlangıç 203 - 54 = 149 bulunur. Bu durumda başlangıç 148 tane paspas olur.\n\n### 148",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Tersine hesap yapılır. Çıkarma işlemi ile başlangıç 203 - 54 = 149 bulunur. Bu durumda başlangıç 203 tane paspas olur.\n\n### 203",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_A_014029",
+        "prompt":  "Soru:\nÇağla evde 37 tane ketçap şişesi bulur. Bir anda 22 tanesi kaybolur. Son durumda kaç tane ketçap şişesi kalır?\n",
+        "responses":  [
+                          {
+                              "text":  "37 tane ketçap şişesi ile başlanır. 37 - 22 işlemi 15 verir. Cevap 15 tane ketçap şişesi olur.\n\n### 15",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "37 tane ketçap şişesi ile başlanır. 37 - 22 işlemi 15 verir. Cevap 14 tane ketçap şişesi olur.\n\n### 14",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "37 tane ketçap şişesi ile başlanır. 37 - 22 işlemi 15 verir. Cevap 13 tane ketçap şişesi olur.\n\n### 13",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "37 tane ketçap şişesi ile başlanır. 37 - 22 işlemi 15 verir. Cevap 37 tane ketçap şişesi olur.\n\n### 37",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_C_003903",
+        "prompt":  "Soru:\nİndirim, kasada geçerli olan kurala göre uygulanır. İnternetten Stefan kase seti almak ister. 800 TL olan ürün için önce % 15 indirim, ardından % 10 KDV uygulanıyor. Son toplam 5984 TL olduğuna göre kaç adet alınmıştır? Kaç tane kase seti alınmıştır?\n",
+        "responses":  [
+                          {
+                              "text":  "Önce indirimli birim fiyat bulunur, sonra KDV eklenir. Önce kullanacağımız indirimli ve KDV\u0027li birim fiyatlarının önceki fiyata göre yüzdelik oranlarını belirlemeliyiz. İndirim yüzdesi % 15 olduğuna göre net yüzde % 100 − % 15 = % 85 olur, sonrasında KDV oranı % 10 olduğuna göre KDV\u0027li birim fiyatının önceki birim fiyatına yüzdelik oranı % 100 + % 10 = % 110 olarak bulunur. Birim fiyat dönüşümlerinden sonra indirimli birim fiyat: 800×85/100=680. KDV sonrası birim fiyat: 680×110/100=748 TL elde edilir. Toplam 5984 TL olduğundan alınan adet 5984 / 748 = 8 olur. 8 adet kase seti alınmış olur.\n\n### 8",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Önce indirimli birim fiyat bulunur, sonra KDV eklenir. Önce kullanacağımız indirimli ve KDV\u0027li birim fiyatlarının önceki fiyata göre yüzdelik oranlarını belirlemeliyiz. İndirim yüzdesi % 15 olduğuna göre net yüzde % 100 − % 15 = % 85 olur, sonrasında KDV oranı % 10 olduğuna göre KDV\u0027li birim fiyatının önceki birim fiyatına yüzdelik oranı % 100 + % 10 = % 110 olarak bulunur. Birim fiyat dönüşümlerinden sonra indirimli birim fiyat: 800×85/100=680. KDV sonrası birim fiyat: 680×110/100=748 TL elde edilir. Toplam 5984 TL olduğundan alınan adet 5984 / 748 = 8 olur. 7 adet kase seti alınmış olur.\n\n### 7",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce indirimli birim fiyat bulunur, sonra KDV eklenir. Önce kullanacağımız indirimli ve KDV\u0027li birim fiyatlarının önceki fiyata göre yüzdelik oranlarını belirlemeliyiz. İndirim yüzdesi % 15 olduğuna göre net yüzde % 100 − % 15 = % 85 olur, sonrasında KDV oranı % 10 olduğuna göre KDV\u0027li birim fiyatının önceki birim fiyatına yüzdelik oranı % 100 + % 10 = % 110 olarak bulunur. Birim fiyat dönüşümlerinden sonra indirimli birim fiyat: 800×85/100=680. KDV sonrası birim fiyat: 680×110/100=748 TL elde edilir. Toplam 5984 TL olduğundan alınan adet 5984 / 748 = 8 olur. 10 adet kase seti alınmış olur.\n\n### 10",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce indirimli birim fiyat bulunur, sonra KDV eklenir. Önce kullanacağımız indirimli ve KDV\u0027li birim fiyatlarının önceki fiyata göre yüzdelik oranlarını belirlemeliyiz. İndirim yüzdesi % 15 olduğuna göre net yüzde % 100 − % 15 = % 85 olur, sonrasında KDV oranı % 10 olduğuna göre KDV\u0027li birim fiyatının önceki birim fiyatına yüzdelik oranı % 100 + % 10 = % 110 olarak bulunur. Birim fiyat dönüşümlerinden sonra indirimli birim fiyat: 800×85/100=680. KDV sonrası birim fiyat: 680×110/100=748 TL elde edilir. Toplam 5984 TL olduğundan alınan adet 5984 / 748 = 8 olur. 800 adet kase seti alınmış olur.\n\n### 800",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_B_007602",
+        "prompt":  "Soru:\nOkulda Zeynep 110 tane telefon olduğunu bilir. Toplam 230 tane telefon olur. 5 kişi bunları eşit paylaşır. Paylaşınca kişi başına kaç tane telefon gelir?\n",
+        "responses":  [
+                          {
+                              "text":  "Toplam 230 tane telefon 5 kişi arasında paylaşılır. 110 + 120 = 230 olarak toplam adet sayısı bulunur. Sonra eşit paylaşım yapılır: 230 ÷ 5 = 46. Her kişiye 46 tane telefon düşer.\n\n### 46",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Toplam 230 tane telefon 5 kişi arasında paylaşılır. 110 + 120 = 230 olarak toplam adet sayısı bulunur. Sonra eşit paylaşım yapılır: 230 ÷ 5 = 46. Her kişiye 44 tane telefon düşer.\n\n### 44",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Toplam 230 tane telefon 5 kişi arasında paylaşılır. 110 + 120 = 230 olarak toplam adet sayısı bulunur. Sonra eşit paylaşım yapılır: 230 ÷ 5 = 46. Her kişiye 47 tane telefon düşer.\n\n### 47",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Toplam 230 tane telefon 5 kişi arasında paylaşılır. 110 + 120 = 230 olarak toplam adet sayısı bulunur. Sonra eşit paylaşım yapılır: 230 ÷ 5 = 46. Her kişiye 110 tane telefon düşer.\n\n### 110",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_B_014795",
+        "prompt":  "Soru:\nSergio vitrine bakarken bir çamaşır mandalı görür. çamaşır mandalı etiket fiyatı 1050 TL olur, zam oranı % 68 olur. Son fiyat kaç TL çıkar?\n",
+        "responses":  [
+                          {
+                              "text":  "Zam oranı % 68 olduğuna göre yeni oran % 100 + % 68 = % 168 olur. Son fiyat: 1050 × 168 ÷ 100 = 1764 TL olur. Son fiyat 1764 TL çıkar.\n\n### 1764",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Zam oranı % 68 olduğuna göre yeni oran % 100 + % 68 = % 168 olur. Son fiyat: 1050 × 168 ÷ 100 = 1764 TL olur. Son fiyat 1763 TL çıkar.\n\n### 1763",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Zam oranı % 68 olduğuna göre yeni oran % 100 + % 68 = % 168 olur. Son fiyat: 1050 × 168 ÷ 100 = 1764 TL olur. Son fiyat 1762 TL çıkar.\n\n### 1762",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Zam oranı % 68 olduğuna göre yeni oran % 100 + % 68 = % 168 olur. Son fiyat: 1050 × 168 ÷ 100 = 1764 TL olur. Son fiyat 1050 TL çıkar.\n\n### 1050",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_B_009201",
+        "prompt":  "Soru:\nRamon bir ürün olarak bandaj almak ister. bandaj için etiket fiyatı 800 TL olur ve % 40 zam yapılır. Son fiyat kaç TL çıkar?\n",
+        "responses":  [
+                          {
+                              "text":  "Zam oranı % 40 olduğuna göre yeni oran % 100 + % 40 = % 140 olur. Sonuç: 800 × 140 ÷ 100 = 1120 TL. Ramon zamdan sonra 1120 TL öder.\n\n### 1120",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Zam oranı % 40 olduğuna göre yeni oran % 100 + % 40 = % 140 olur. Sonuç: 800 × 140 ÷ 100 = 1120 TL. Ramon zamdan sonra 1122 TL öder.\n\n### 1122",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Zam oranı % 40 olduğuna göre yeni oran % 100 + % 40 = % 140 olur. Sonuç: 800 × 140 ÷ 100 = 1120 TL. Ramon zamdan sonra 1118 TL öder.\n\n### 1118",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Zam oranı % 40 olduğuna göre yeni oran % 100 + % 40 = % 140 olur. Sonuç: 800 × 140 ÷ 100 = 1120 TL. Ramon zamdan sonra 800 TL öder.\n\n### 800",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_B_014731",
+        "prompt":  "Soru:\nMağazada Richard 2 tane sarımsak başı alır ve tanesi 31 TL olur. Richard ayrıca tanesi 28 TL olan 9 tane salatalık alır ve 845 TL öder. Sonuçta para üstü kaç TL çıkar?\n",
+        "responses":  [
+                          {
+                              "text":  "Önce sarımsak başı maliyeti bulunur: 2 tane ve tanesi 31 TL. Sonra salatalık maliyeti bulunur: 9 tane ve tanesi 28 TL sarımsak başı maliyeti şuşekilde bulunur: 2 × 31 = 62 TL. salatalık maliyeti de şu şekilde bulunur: 9 × 28 = 252 TL. Önce toplam maliyet bulunur: 314 = 62 + 252, daha sonra para üstü 531 = 845 - 314 olarak hesaplanır. Richard kasadan 531 TL geri alır.\n\n### 531",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Önce sarımsak başı maliyeti bulunur: 2 tane ve tanesi 31 TL. Sonra salatalık maliyeti bulunur: 9 tane ve tanesi 28 TL sarımsak başı maliyeti şuşekilde bulunur: 2 × 31 = 62 TL. salatalık maliyeti de şu şekilde bulunur: 9 × 28 = 252 TL. Önce toplam maliyet bulunur: 314 = 62 + 252, daha sonra para üstü 531 = 845 - 314 olarak hesaplanır. Richard kasadan 530 TL geri alır.\n\n### 530",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce sarımsak başı maliyeti bulunur: 2 tane ve tanesi 31 TL. Sonra salatalık maliyeti bulunur: 9 tane ve tanesi 28 TL sarımsak başı maliyeti şuşekilde bulunur: 2 × 31 = 62 TL. salatalık maliyeti de şu şekilde bulunur: 9 × 28 = 252 TL. Önce toplam maliyet bulunur: 314 = 62 + 252, daha sonra para üstü 531 = 845 - 314 olarak hesaplanır. Richard kasadan 532 TL geri alır.\n\n### 532",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce sarımsak başı maliyeti bulunur: 2 tane ve tanesi 31 TL. Sonra salatalık maliyeti bulunur: 9 tane ve tanesi 28 TL sarımsak başı maliyeti şuşekilde bulunur: 2 × 31 = 62 TL. salatalık maliyeti de şu şekilde bulunur: 9 × 28 = 252 TL. Önce toplam maliyet bulunur: 314 = 62 + 252, daha sonra para üstü 531 = 845 - 314 olarak hesaplanır. Richard kasadan 2 TL geri alır.\n\n### 2",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_C_002066",
+        "prompt":  "Soru:\nİndirim, kasada geçerli olan kurala göre uygulanır. Online siparişte Selin bir kuru fasulye paketi alışverişi yapar. 1800 TL birim fiyatı üzerinden 22 adet kuru fasulye paketi satın alınır ve toplam fiyata % 33 indirim yapılır. İndirim sonrası ödeme kişi başına 6633 TL olduğuna göre toplam kaç kişi vardır? Kaç kişi paylaşmıştır?\n",
+        "responses":  [
+                          {
+                              "text":  "Önce indirimli toplam bulunur, sonra kişi sayısına bölünür. Brüt toplam: 1800 × 22 = 39600. Net yüzdeyi hesapla: % 100 − % 33 = % 67. İndirimli toplam: 39600 × 67 ÷ 100 = 26532. İndirim miktarı da kontrol edilebilir: 39600 × 33 ÷ 100 = 13068, ve 39600 − 13068 = 26532. Son olarak kişi sayısı: 26532 / 6633 = 4. Cevap: 4 kişi.\n\n### 4",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Önce indirimli toplam bulunur, sonra kişi sayısına bölünür. Brüt toplam: 1800 × 22 = 39600. Net yüzdeyi hesapla: % 100 − % 33 = % 67. İndirimli toplam: 39600 × 67 ÷ 100 = 26532. İndirim miktarı da kontrol edilebilir: 39600 × 33 ÷ 100 = 13068, ve 39600 − 13068 = 26532. Son olarak kişi sayısı: 26532 / 6633 = 4. Cevap: 3 kişi.\n\n### 3",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce indirimli toplam bulunur, sonra kişi sayısına bölünür. Brüt toplam: 1800 × 22 = 39600. Net yüzdeyi hesapla: % 100 − % 33 = % 67. İndirimli toplam: 39600 × 67 ÷ 100 = 26532. İndirim miktarı da kontrol edilebilir: 39600 × 33 ÷ 100 = 13068, ve 39600 − 13068 = 26532. Son olarak kişi sayısı: 26532 / 6633 = 4. Cevap: 2 kişi.\n\n### 2",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce indirimli toplam bulunur, sonra kişi sayısına bölünür. Brüt toplam: 1800 × 22 = 39600. Net yüzdeyi hesapla: % 100 − % 33 = % 67. İndirimli toplam: 39600 × 67 ÷ 100 = 26532. İndirim miktarı da kontrol edilebilir: 39600 × 33 ÷ 100 = 13068, ve 39600 − 13068 = 26532. Son olarak kişi sayısı: 26532 / 6633 = 4. Cevap: 1800 kişi.\n\n### 1800",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_B_002964",
+        "prompt":  "Soru:\nFiyat etikette yazdığı şekilde alınır, indirim kasada uygulanır. Bir uygulamada Daniel önce tanesi 88 TL olan 22 tane sıvı sabun şişesi alır. Daniel yanında tanesi 22 TL olan 12 tane diş macunu tüpü de alır. Ödeme toplamı kaç TL çıkar?\n",
+        "responses":  [
+                          {
+                              "text":  "Önce her ürün için toplam maliyet hesaplanır. sıvı sabun şişesi maliyeti: 22 × 88 = 1936 TL. diş macunu tüpü maliyeti: 12 × 22 = 264 TL. Son olarak bu ikisi toplanır: 1936 + 264 = 2200 olarak çıkar. Cevap 2200 TL.\n\n### 2200",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Önce her ürün için toplam maliyet hesaplanır. sıvı sabun şişesi maliyeti: 22 × 88 = 1936 TL. diş macunu tüpü maliyeti: 12 × 22 = 264 TL. Son olarak bu ikisi toplanır: 1936 + 264 = 2200 olarak çıkar. Cevap 2198 TL.\n\n### 2198",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce her ürün için toplam maliyet hesaplanır. sıvı sabun şişesi maliyeti: 22 × 88 = 1936 TL. diş macunu tüpü maliyeti: 12 × 22 = 264 TL. Son olarak bu ikisi toplanır: 1936 + 264 = 2200 olarak çıkar. Cevap 2202 TL.\n\n### 2202",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce her ürün için toplam maliyet hesaplanır. sıvı sabun şişesi maliyeti: 22 × 88 = 1936 TL. diş macunu tüpü maliyeti: 12 × 22 = 264 TL. Son olarak bu ikisi toplanır: 1936 + 264 = 2200 olarak çıkar. Cevap 88 TL.\n\n### 88",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_A_003422",
+        "prompt":  "Soru:\nPaul elinde 504 tane kaşık olduğunu söyler. 12 kişi bunları eşit şekilde paylaşır. Paylaşınca kişi başına kaç tane kaşık gelir?\n",
+        "responses":  [
+                          {
+                              "text":  "12 kişi arasında eşit paylaşım yapılır. Eşit paylaşım için 504 ÷ 12 yapılır ve 42 bulunur. 42 tane kaşık düşer.\n\n### 42",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "12 kişi arasında eşit paylaşım yapılır. Eşit paylaşım için 504 ÷ 12 yapılır ve 42 bulunur. 43 tane kaşık düşer.\n\n### 43",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "12 kişi arasında eşit paylaşım yapılır. Eşit paylaşım için 504 ÷ 12 yapılır ve 42 bulunur. 40 tane kaşık düşer.\n\n### 40",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "12 kişi arasında eşit paylaşım yapılır. Eşit paylaşım için 504 ÷ 12 yapılır ve 42 bulunur. 504 tane kaşık düşer.\n\n### 504",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_B_008435",
+        "prompt":  "Soru:\nİnternetten Andreas bir ürün olarak panjur kolu bulur. 23 adet alınır. Birim fiyat 725 TL olur. Toplam tutara % 60 indirim vardır. Son ödeme kaç TL olur?\n",
+        "responses":  [
+                          {
+                              "text":  "Önce toplam tutar bulunur, sonra indirim uygulanır. Ödenecek tutar toplamın % 100 - % 60 = % 40 kadarı olur. Toplam: 725 × 23 = 16675. Net yüzde 40 ile indirimli toplam: 16675 × 40 ÷ 100 = 6670. Toplam ödeme 6670 TL olur.\n\n### 6670",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Önce toplam tutar bulunur, sonra indirim uygulanır. Ödenecek tutar toplamın % 100 - % 60 = % 40 kadarı olur. Toplam: 725 × 23 = 16675. Net yüzde 40 ile indirimli toplam: 16675 × 40 ÷ 100 = 6670. Toplam ödeme 6671 TL olur.\n\n### 6671",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce toplam tutar bulunur, sonra indirim uygulanır. Ödenecek tutar toplamın % 100 - % 60 = % 40 kadarı olur. Toplam: 725 × 23 = 16675. Net yüzde 40 ile indirimli toplam: 16675 × 40 ÷ 100 = 6670. Toplam ödeme 6668 TL olur.\n\n### 6668",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce toplam tutar bulunur, sonra indirim uygulanır. Ödenecek tutar toplamın % 100 - % 60 = % 40 kadarı olur. Toplam: 725 × 23 = 16675. Net yüzde 40 ile indirimli toplam: 16675 × 40 ÷ 100 = 6670. Toplam ödeme 23 TL olur.\n\n### 23",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_B_004466",
+        "prompt":  "Soru:\nMarkette Richard alışveriş için mayonez şişesi seçer. Birim fiyat 1400 TL olur, KDV % 20 olur, 3 adet alınır. Toplam tutar kaç TL çıkar?\n",
+        "responses":  [
+                          {
+                              "text":  "Önce KDV dahil birim fiyat bulunur. Yeni ödenecek oran % 100 + % 20 = % 120 olur. Hesap sırası: 1680 = 1400×120/100, sonra 5040 = 1680×3. Cevap 5040 TL.\n\n### 5040",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Önce KDV dahil birim fiyat bulunur. Yeni ödenecek oran % 100 + % 20 = % 120 olur. Hesap sırası: 1680 = 1400×120/100, sonra 5040 = 1680×3. Cevap 5038 TL.\n\n### 5038",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce KDV dahil birim fiyat bulunur. Yeni ödenecek oran % 100 + % 20 = % 120 olur. Hesap sırası: 1680 = 1400×120/100, sonra 5040 = 1680×3. Cevap 5042 TL.\n\n### 5042",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce KDV dahil birim fiyat bulunur. Yeni ödenecek oran % 100 + % 20 = % 120 olur. Hesap sırası: 1680 = 1400×120/100, sonra 5040 = 1680×3. Cevap 1400 TL.\n\n### 1400",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_A_009743",
+        "prompt":  "Soru:\nJoshua dakikada 14 tane tepsi bitirir. 127 dakika boyunca yapar. Toplam kaç tane tepsi çıkar?\n",
+        "responses":  [
+                          {
+                              "text":  "14 tane ve 127 dakika kullanılır. 127 dakika için 14 × 127 = 1778. 1778 tane tepsi yapar.\n\n### 1778",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "14 tane ve 127 dakika kullanılır. 127 dakika için 14 × 127 = 1778. 1776 tane tepsi yapar.\n\n### 1776",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "14 tane ve 127 dakika kullanılır. 127 dakika için 14 × 127 = 1778. 1777 tane tepsi yapar.\n\n### 1777",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "14 tane ve 127 dakika kullanılır. 127 dakika için 14 × 127 = 1778. 14 tane tepsi yapar.\n\n### 14",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_A_016857",
+        "prompt":  "Soru:\nZoe iki sayı hakkında konuşur. Toplam 167, fark 113 olur. Büyük sayı kaçtır?\n",
+        "responses":  [
+                          {
+                              "text":  "Büyük sayı ve küçük sayı tanımlanır. Hesap: (167 + 113) / 2 = 140. Cevap 140 olur.\n\n### 140",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Büyük sayı ve küçük sayı tanımlanır. Hesap: (167 + 113) / 2 = 140. Cevap 139 olur.\n\n### 139",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Büyük sayı ve küçük sayı tanımlanır. Hesap: (167 + 113) / 2 = 140. Cevap 138 olur.\n\n### 138",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Büyük sayı ve küçük sayı tanımlanır. Hesap: (167 + 113) / 2 = 140. Cevap 167 olur.\n\n### 167",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_B_006359",
+        "prompt":  "Soru:\nİnternetten Volkan 13 tane ayna alır ve tanesi 36 TL olur. Bir de tanesi 63 TL olan 14 tane askı alır ve 1597 TL ile öder. Sonuçta para üstü kaç TL çıkar?\n",
+        "responses":  [
+                          {
+                              "text":  "askı için 14 tane ve tanesi 63 TL olur. ayna için 13 tane ve tanesi 36 TL olarak verilir. Sonuç hesabı için şu adımlar izlenir: ayna maliyeti bulunur: 13 × 36 = 468 TL. askı maliyeti bulunur: 14 × 63 = 882 TL. Sonra bu maliyetler toplanarak toplam maliyet bulunur: 1350 = 468 + 882. Para üstü de ödenen miktar ile toplam maliyetin farkı oldupuna göre: 1597 - 1350 = 1597 olarak çıkar. Para üstü 247 TL olur.\n\n### 247",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "askı için 14 tane ve tanesi 63 TL olur. ayna için 13 tane ve tanesi 36 TL olarak verilir. Sonuç hesabı için şu adımlar izlenir: ayna maliyeti bulunur: 13 × 36 = 468 TL. askı maliyeti bulunur: 14 × 63 = 882 TL. Sonra bu maliyetler toplanarak toplam maliyet bulunur: 1350 = 468 + 882. Para üstü de ödenen miktar ile toplam maliyetin farkı oldupuna göre: 1597 - 1350 = 1597 olarak çıkar. Para üstü 245 TL olur.\n\n### 245",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "askı için 14 tane ve tanesi 63 TL olur. ayna için 13 tane ve tanesi 36 TL olarak verilir. Sonuç hesabı için şu adımlar izlenir: ayna maliyeti bulunur: 13 × 36 = 468 TL. askı maliyeti bulunur: 14 × 63 = 882 TL. Sonra bu maliyetler toplanarak toplam maliyet bulunur: 1350 = 468 + 882. Para üstü de ödenen miktar ile toplam maliyetin farkı oldupuna göre: 1597 - 1350 = 1597 olarak çıkar. Para üstü 249 TL olur.\n\n### 249",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "askı için 14 tane ve tanesi 63 TL olur. ayna için 13 tane ve tanesi 36 TL olarak verilir. Sonuç hesabı için şu adımlar izlenir: ayna maliyeti bulunur: 13 × 36 = 468 TL. askı maliyeti bulunur: 14 × 63 = 882 TL. Sonra bu maliyetler toplanarak toplam maliyet bulunur: 1350 = 468 + 882. Para üstü de ödenen miktar ile toplam maliyetin farkı oldupuna göre: 1597 - 1350 = 1597 olarak çıkar. Para üstü 13 TL olur.\n\n### 13",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_A_016161",
+        "prompt":  "Soru:\nOzan bir işte dakikada 14 tane ataş kutusu yapar. 172 dakika sürer. Kaç tane ataş kutusu tamamlar?\n",
+        "responses":  [
+                          {
+                              "text":  "14 tane ve 172 dakika kullanılır. Toplam: 14 × 172 = 2408 tane ataş kutusu. Toplam 2408 tane ataş kutusu tamamlar.\n\n### 2408",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "14 tane ve 172 dakika kullanılır. Toplam: 14 × 172 = 2408 tane ataş kutusu. Toplam 2409 tane ataş kutusu tamamlar.\n\n### 2409",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "14 tane ve 172 dakika kullanılır. Toplam: 14 × 172 = 2408 tane ataş kutusu. Toplam 2410 tane ataş kutusu tamamlar.\n\n### 2410",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "14 tane ve 172 dakika kullanılır. Toplam: 14 × 172 = 2408 tane ataş kutusu. Toplam 14 tane ataş kutusu tamamlar.\n\n### 14",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_A_015569",
+        "prompt":  "Soru:\nSude evde 178 tane televizyon olduğunu bilir. Bir anda 96 tanesi kaybolur. Sude için kaç tane televizyon kalır?\n",
+        "responses":  [
+                          {
+                              "text":  "Sude için başlangıç miktarı 178 tane televizyon olur. 178 - 96 işlemi 82 verir. Kalan televizyon sayısı 82 olur.\n\n### 82",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Sude için başlangıç miktarı 178 tane televizyon olur. 178 - 96 işlemi 82 verir. Kalan televizyon sayısı 83 olur.\n\n### 83",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Sude için başlangıç miktarı 178 tane televizyon olur. 178 - 96 işlemi 82 verir. Kalan televizyon sayısı 81 olur.\n\n### 81",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Sude için başlangıç miktarı 178 tane televizyon olur. 178 - 96 işlemi 82 verir. Kalan televizyon sayısı 178 olur.\n\n### 178",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_A_010325",
+        "prompt":  "Soru:\nZachary 29 tane yumurta alır. yumurta birim fiyatı 37 TL olur. Sonuçta kaç TL öder?\n",
+        "responses":  [
+                          {
+                              "text":  "Birim fiyat 37 TL olur ve 29 tane alınır. Toplam maliyet 29 × 37 ile bulunur: 1073 TL. Cevap 1073 TL.\n\n### 1073",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Birim fiyat 37 TL olur ve 29 tane alınır. Toplam maliyet 29 × 37 ile bulunur: 1073 TL. Cevap 1075 TL.\n\n### 1075",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Birim fiyat 37 TL olur ve 29 tane alınır. Toplam maliyet 29 × 37 ile bulunur: 1073 TL. Cevap 1072 TL.\n\n### 1072",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Birim fiyat 37 TL olur ve 29 tane alınır. Toplam maliyet 29 × 37 ile bulunur: 1073 TL. Cevap 29 TL.\n\n### 29",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_A_015339",
+        "prompt":  "Soru:\nMelis her gün 50 tane tereyağı paketi sahibi olur. Melis sabah 4 tanesini kahvaltıda kullanır. Gün içinde 24 tanesini börek yapmak için kullanır. Geriye kalanları pazarda tanesi 50 TL fiyatla satar. Melis pazardaki gelir kaç TL olur?\n",
+        "responses":  [
+                          {
+                              "text":  "Melis her gün 50 tane tereyağı paketi hazırlar. Önce 4 tanesini kahvaltıda tüketir, sonra 24 tanesini börek için ayırır. Satılacak miktar: 50 - 4 - 24 = 22. Toplam gelir: 22 × 50 = 1100 TL.\n\n### 1100",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Melis her gün 50 tane tereyağı paketi hazırlar. Önce 4 tanesini kahvaltıda tüketir, sonra 24 tanesini börek için ayırır. Satılacak miktar: 50 - 4 - 24 = 22. Toplam gelir: 22 × 50 = 1101 TL.\n\n### 1101",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Melis her gün 50 tane tereyağı paketi hazırlar. Önce 4 tanesini kahvaltıda tüketir, sonra 24 tanesini börek için ayırır. Satılacak miktar: 50 - 4 - 24 = 22. Toplam gelir: 22 × 50 = 1099 TL.\n\n### 1099",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Melis her gün 50 tane tereyağı paketi hazırlar. Önce 4 tanesini kahvaltıda tüketir, sonra 24 tanesini börek için ayırır. Satılacak miktar: 50 - 4 - 24 = 22. Toplam gelir: 22 × 50 = 50 TL.\n\n### 50",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_C_001532",
+        "prompt":  "Soru:\nİnternetten Fernando ütü bezi alışverişini tamamlamak ister. ütü bezi birim fiyatı 550 olarak fiyatı verilmiştir ve 7 tane alınmıştır. Bunun üzerine % 42 indirim yapılmıştır. Kasada verilen para üstü 11340 TL olarak verilmiştir. Para üstü 11340 TL olduğuna göre kaç TL verilmiştir? Kaç TL ödemiştir?\n",
+        "responses":  [
+                          {
+                              "text":  "Önce indirimli toplam bulunur, sonra çıkarma yapılır. Önce brüt toplam bulunmalıdır: 550 × 7 = 3850 olarak bulunur. Net indirim oranı ise % 100 − % 42 = % 58 olarak elde edilir. İndirimli toplam daha önce bulunan brüt toplama net yüzde oranı uygulanarak bulunur: 3850 × 58 ÷ 100 = 2233 olarak bulunur. İndirimli toplam 2233 TL olur. Toplam tutar 2233, kalan 11340. Ödenen = 2233+11340 = 13573. Cevap: 13573 TL.\n\n### 13573",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Önce indirimli toplam bulunur, sonra çıkarma yapılır. Önce brüt toplam bulunmalıdır: 550 × 7 = 3850 olarak bulunur. Net indirim oranı ise % 100 − % 42 = % 58 olarak elde edilir. İndirimli toplam daha önce bulunan brüt toplama net yüzde oranı uygulanarak bulunur: 3850 × 58 ÷ 100 = 2233 olarak bulunur. İndirimli toplam 2233 TL olur. Toplam tutar 2233, kalan 11340. Ödenen = 2233+11340 = 13573. Cevap: 13572 TL.\n\n### 13572",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce indirimli toplam bulunur, sonra çıkarma yapılır. Önce brüt toplam bulunmalıdır: 550 × 7 = 3850 olarak bulunur. Net indirim oranı ise % 100 − % 42 = % 58 olarak elde edilir. İndirimli toplam daha önce bulunan brüt toplama net yüzde oranı uygulanarak bulunur: 3850 × 58 ÷ 100 = 2233 olarak bulunur. İndirimli toplam 2233 TL olur. Toplam tutar 2233, kalan 11340. Ödenen = 2233+11340 = 13573. Cevap: 13575 TL.\n\n### 13575",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce indirimli toplam bulunur, sonra çıkarma yapılır. Önce brüt toplam bulunmalıdır: 550 × 7 = 3850 olarak bulunur. Net indirim oranı ise % 100 − % 42 = % 58 olarak elde edilir. İndirimli toplam daha önce bulunan brüt toplama net yüzde oranı uygulanarak bulunur: 3850 × 58 ÷ 100 = 2233 olarak bulunur. İndirimli toplam 2233 TL olur. Toplam tutar 2233, kalan 11340. Ödenen = 2233+11340 = 13573. Cevap: 550 TL.\n\n### 550",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_B_007723",
+        "prompt":  "Soru:\nKırtasiyede Stephen poşet satın almayı planlar. 28 adet alınır ve birim fiyat 600 TL olur. İndirim % 58 olur. İndirimden sonra toplam ödeme kaç TL olur?\n",
+        "responses":  [
+                          {
+                              "text":  "İndirimden sonra birim fiyat düşer. Net ödenecek oran % 100 - % 58 = % 42 olur. İndirimli birim fiyat: 600 × 42 ÷ 100 = 252 TL. Toplam: 252 × 28 = 7056 TL. Toplam maliyet 7056 TL olur.\n\n### 7056",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "İndirimden sonra birim fiyat düşer. Net ödenecek oran % 100 - % 58 = % 42 olur. İndirimli birim fiyat: 600 × 42 ÷ 100 = 252 TL. Toplam: 252 × 28 = 7056 TL. Toplam maliyet 7057 TL olur.\n\n### 7057",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "İndirimden sonra birim fiyat düşer. Net ödenecek oran % 100 - % 58 = % 42 olur. İndirimli birim fiyat: 600 × 42 ÷ 100 = 252 TL. Toplam: 252 × 28 = 7056 TL. Toplam maliyet 7058 TL olur.\n\n### 7058",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "İndirimden sonra birim fiyat düşer. Net ödenecek oran % 100 - % 58 = % 42 olur. İndirimli birim fiyat: 600 × 42 ÷ 100 = 252 TL. Toplam: 252 × 28 = 7056 TL. Toplam maliyet 28 TL olur.\n\n### 28",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_C_000440",
+        "prompt":  "Soru:\nOnline siparişte Volkan pizza dilimi alışverişini tamamlamak ister. 22 tane pizza dilimi alınmıştır. Birim 200 TL olarak verilmiştir. % 19 indirimden sonra 4180 TL vererek ödeme yapar. Ödemeden sonra kaç TL para üstü alır?\n",
+        "responses":  [
+                          {
+                              "text":  "İndirimli ödeme hesaplanır, ardından para üstü bulunur. Brüt toplam: 200 × 22 = 4400 olur. Net oran % 81 olur (100 - 19). İndirimli toplam: 4400 × 81 ÷ 100 = 3564 olur. Para üstü ödenen para ile ödenmesi gereken paranın farkıdır: 4180 - 3564 = 616. Kasadan alınan para üstü 616 TL olur.\n\n### 616",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "İndirimli ödeme hesaplanır, ardından para üstü bulunur. Brüt toplam: 200 × 22 = 4400 olur. Net oran % 81 olur (100 - 19). İndirimli toplam: 4400 × 81 ÷ 100 = 3564 olur. Para üstü ödenen para ile ödenmesi gereken paranın farkıdır: 4180 - 3564 = 616. Kasadan alınan para üstü 618 TL olur.\n\n### 618",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "İndirimli ödeme hesaplanır, ardından para üstü bulunur. Brüt toplam: 200 × 22 = 4400 olur. Net oran % 81 olur (100 - 19). İndirimli toplam: 4400 × 81 ÷ 100 = 3564 olur. Para üstü ödenen para ile ödenmesi gereken paranın farkıdır: 4180 - 3564 = 616. Kasadan alınan para üstü 617 TL olur.\n\n### 617",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "İndirimli ödeme hesaplanır, ardından para üstü bulunur. Brüt toplam: 200 × 22 = 4400 olur. Net oran % 81 olur (100 - 19). İndirimli toplam: 4400 × 81 ÷ 100 = 3564 olur. Para üstü ödenen para ile ödenmesi gereken paranın farkıdır: 4180 - 3564 = 616. Kasadan alınan para üstü 22 TL olur.\n\n### 22",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_A_016370",
+        "prompt":  "Soru:\nDonald masada 64 tane fener görür. O gün 30 tanesi kaybolur. Son durumda kaç tane fener kalır?\n",
+        "responses":  [
+                          {
+                              "text":  "Donald başta 64 tane fener görür. Kalan miktar 64 - 30 = 34 olur. Gün sonunda 34 tane fener kalır.\n\n### 34",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Donald başta 64 tane fener görür. Kalan miktar 64 - 30 = 34 olur. Gün sonunda 33 tane fener kalır.\n\n### 33",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Donald başta 64 tane fener görür. Kalan miktar 64 - 30 = 34 olur. Gün sonunda 32 tane fener kalır.\n\n### 32",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Donald başta 64 tane fener görür. Kalan miktar 64 - 30 = 34 olur. Gün sonunda 64 tane fener kalır.\n\n### 64",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_A_016410",
+        "prompt":  "Soru:\nJose yerde 93 tane kayısı bulur. Sonra 57 tanesi kaybolur. Kalan miktar kaç tane kayısı olur?\n",
+        "responses":  [
+                          {
+                              "text":  "İlk durumda 93 tane kayısı vardır. Hesap: 93 - 57 = 36. Sonuç olarak 36 tane kayısı kalır.\n\n### 36",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "İlk durumda 93 tane kayısı vardır. Hesap: 93 - 57 = 36. Sonuç olarak 34 tane kayısı kalır.\n\n### 34",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "İlk durumda 93 tane kayısı vardır. Hesap: 93 - 57 = 36. Sonuç olarak 37 tane kayısı kalır.\n\n### 37",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "İlk durumda 93 tane kayısı vardır. Hesap: 93 - 57 = 36. Sonuç olarak 93 tane kayısı kalır.\n\n### 93",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_A_015151",
+        "prompt":  "Soru:\nClaudia elindeki iki tür nesneyi sayar. Sırasıyla taze fasulye paketi ve bezelye paketi adetlerinin birbirine oranı 1:9 iken toplam 610 tane vardır. bezelye paketi için kaç tane çıkar?\n",
+        "responses":  [
+                          {
+                              "text":  "İlk adım oran toplamıdır. Toplam parça 1+9 olur, birim değer 610 ÷ (1+9) = 61. bezelye paketi için parça sayısı ile birim çarpılır ve 549 bulunur.\n\n### 549",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "İlk adım oran toplamıdır. Toplam parça 1+9 olur, birim değer 610 ÷ (1+9) = 61. bezelye paketi için parça sayısı ile birim çarpılır ve 551 bulunur.\n\n### 551",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "İlk adım oran toplamıdır. Toplam parça 1+9 olur, birim değer 610 ÷ (1+9) = 61. bezelye paketi için parça sayısı ile birim çarpılır ve 550 bulunur.\n\n### 550",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "İlk adım oran toplamıdır. Toplam parça 1+9 olur, birim değer 610 ÷ (1+9) = 61. bezelye paketi için parça sayısı ile birim çarpılır ve 1 bulunur.\n\n### 1",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_B_013153",
+        "prompt":  "Soru:\nDükkanda Oscar ıspanak demeti görür. Birim fiyat 1150 TL olur ve 16 adet alınır. Kasada toplam tutara % 20 indirim uygulanır. İndirimden sonra toplam kaç TL öder?\n",
+        "responses":  [
+                          {
+                              "text":  "Önce toplam tutar bulunur, sonra indirim uygulanır. Ödenecek tutar toplamın % 100 - % 20 = % 80 kadarı olur. Hesap sırası: toplam 1150 × 16 = 18400, indirimli toplam 18400 × 80 ÷ 100 = 14720. Toplam ödeme 14720 TL olur.\n\n### 14720",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Önce toplam tutar bulunur, sonra indirim uygulanır. Ödenecek tutar toplamın % 100 - % 20 = % 80 kadarı olur. Hesap sırası: toplam 1150 × 16 = 18400, indirimli toplam 18400 × 80 ÷ 100 = 14720. Toplam ödeme 14718 TL olur.\n\n### 14718",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce toplam tutar bulunur, sonra indirim uygulanır. Ödenecek tutar toplamın % 100 - % 20 = % 80 kadarı olur. Hesap sırası: toplam 1150 × 16 = 18400, indirimli toplam 18400 × 80 ÷ 100 = 14720. Toplam ödeme 14721 TL olur.\n\n### 14721",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce toplam tutar bulunur, sonra indirim uygulanır. Ödenecek tutar toplamın % 100 - % 20 = % 80 kadarı olur. Hesap sırası: toplam 1150 × 16 = 18400, indirimli toplam 18400 × 80 ÷ 100 = 14720. Toplam ödeme 1150 TL olur.\n\n### 1150",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_B_009730",
+        "prompt":  "Soru:\nKampanya şartlarına göre ödeme tutarı bulunur. Julia bir kek dilimi beğenir. kek dilimi etiket fiyatı 200 TL olur, indirim oranı % 31 olur. Ödenecek tutar kaç TL olur?\n",
+        "responses":  [
+                          {
+                              "text":  "Net yüzde %100 - % 31 = % 69 bulunur. İndirim uygulayınca: 138 = 200 × 69 ÷ 100 = 138 TL elde edilir. Ödenecek tutar 138 TL olur.\n\n### 138",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Net yüzde %100 - % 31 = % 69 bulunur. İndirim uygulayınca: 138 = 200 × 69 ÷ 100 = 138 TL elde edilir. Ödenecek tutar 139 TL olur.\n\n### 139",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Net yüzde %100 - % 31 = % 69 bulunur. İndirim uygulayınca: 138 = 200 × 69 ÷ 100 = 138 TL elde edilir. Ödenecek tutar 136 TL olur.\n\n### 136",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Net yüzde %100 - % 31 = % 69 bulunur. İndirim uygulayınca: 138 = 200 × 69 ÷ 100 = 138 TL elde edilir. Ödenecek tutar 200 TL olur.\n\n### 200",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_A_013626",
+        "prompt":  "Soru:\nRabia dakikada 19 tane kulaklık yapar. Bu şekilde 50 dakika çalışır. Sonuçta kaç tane kulaklık olur?\n",
+        "responses":  [
+                          {
+                              "text":  "Dakikada 19 tane kulaklık ve 50 dakika vardır. 19 × 50 işlemi 950 verir. 950 tane kulaklık yapar.\n\n### 950",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Dakikada 19 tane kulaklık ve 50 dakika vardır. 19 × 50 işlemi 950 verir. 948 tane kulaklık yapar.\n\n### 948",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Dakikada 19 tane kulaklık ve 50 dakika vardır. 19 × 50 işlemi 950 verir. 949 tane kulaklık yapar.\n\n### 949",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Dakikada 19 tane kulaklık ve 50 dakika vardır. 19 × 50 işlemi 950 verir. 19 tane kulaklık yapar.\n\n### 19",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_C_000230",
+        "prompt":  "Soru:\nMarkette Bora yemek masası satın alır. Birim fiyat 5000 TL olur, 1 adet alınır. Toplam tutara % 20 indirim uygulanır. 4500 TL ile öder. Para üstü kaç TL olur?\n",
+        "responses":  [
+                          {
+                              "text":  "Önce indirimli toplam bulunur, sonra çıkarma yapılır. Brüt toplam: 5000 × 1 = 5000 olur. Net oran % 80 olur (100 - 20). İndirimli toplam: 5000 × 80 ÷ 100 = 4000 olur. Para üstü ödenen para ile ödenmesi gereken paranın farkıdır: 4500 - 4000 = 500. Sonuç 500 TL olur.\n\n### 500",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Önce indirimli toplam bulunur, sonra çıkarma yapılır. Brüt toplam: 5000 × 1 = 5000 olur. Net oran % 80 olur (100 - 20). İndirimli toplam: 5000 × 80 ÷ 100 = 4000 olur. Para üstü ödenen para ile ödenmesi gereken paranın farkıdır: 4500 - 4000 = 500. Sonuç 501 TL olur.\n\n### 501",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce indirimli toplam bulunur, sonra çıkarma yapılır. Brüt toplam: 5000 × 1 = 5000 olur. Net oran % 80 olur (100 - 20). İndirimli toplam: 5000 × 80 ÷ 100 = 4000 olur. Para üstü ödenen para ile ödenmesi gereken paranın farkıdır: 4500 - 4000 = 500. Sonuç 499 TL olur.\n\n### 499",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce indirimli toplam bulunur, sonra çıkarma yapılır. Brüt toplam: 5000 × 1 = 5000 olur. Net oran % 80 olur (100 - 20). İndirimli toplam: 5000 × 80 ÷ 100 = 4000 olur. Para üstü ödenen para ile ödenmesi gereken paranın farkıdır: 4500 - 4000 = 500. Sonuç 5000 TL olur.\n\n### 5000",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_A_012778",
+        "prompt":  "Soru:\nYasemin bir günde 54 tane kefir şişesi elde eder. Yasemin her sabah 13 tanesini kahvaltıda yer. Yasemin 6 tanesini yemek için ayırır. Kalanlarını pazarda tanesi 47 TL olarak satar. Yasemin satıştan kaç TL alır?\n",
+        "responses":  [
+                          {
+                              "text":  "Yasemin günde toplam 54 tane kefir şişesi üretir. Önce 13 tanesini kahvaltıda tüketir, sonra 6 tanesini yemek için ayırır. Kalan miktar: 54 - 13 - 6 = 35 tane. 35 tane satarsa 1645 TL kazanır.\n\n### 1645",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Yasemin günde toplam 54 tane kefir şişesi üretir. Önce 13 tanesini kahvaltıda tüketir, sonra 6 tanesini yemek için ayırır. Kalan miktar: 54 - 13 - 6 = 35 tane. 35 tane satarsa 1643 TL kazanır.\n\n### 1643",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Yasemin günde toplam 54 tane kefir şişesi üretir. Önce 13 tanesini kahvaltıda tüketir, sonra 6 tanesini yemek için ayırır. Kalan miktar: 54 - 13 - 6 = 35 tane. 35 tane satarsa 1646 TL kazanır.\n\n### 1646",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Yasemin günde toplam 54 tane kefir şişesi üretir. Önce 13 tanesini kahvaltıda tüketir, sonra 6 tanesini yemek için ayırır. Kalan miktar: 54 - 13 - 6 = 35 tane. 35 tane satarsa 54 TL kazanır.\n\n### 54",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_B_003476",
+        "prompt":  "Soru:\nDükkanda Timothy tanesi 59 TL olan 26 tane eldiven alır. Timothy ayrıca tanesi 101 TL olan 8 tane gömlek satın alır. Alışveriş toplamı kaç TL eder?\n",
+        "responses":  [
+                          {
+                              "text":  "eldiven için birim fiyat 59 TL ve miktar 26 olur. gömlek için birim fiyat 101 TL ve miktar 8 olur. eldiven ile gömlek için maliyetler hesaplanır: eldiven için 26 × 59 = 1534, aynısı gömlek için de yapılır: 8 × 101 = 808 olarak bu veriler elde edilir. Daha sonra bu veri toplanır: 1534 + 808 = 2342 TL olur. Toplam ödeme 2342 TL olur.\n\n### 2342",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "eldiven için birim fiyat 59 TL ve miktar 26 olur. gömlek için birim fiyat 101 TL ve miktar 8 olur. eldiven ile gömlek için maliyetler hesaplanır: eldiven için 26 × 59 = 1534, aynısı gömlek için de yapılır: 8 × 101 = 808 olarak bu veriler elde edilir. Daha sonra bu veri toplanır: 1534 + 808 = 2342 TL olur. Toplam ödeme 2343 TL olur.\n\n### 2343",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "eldiven için birim fiyat 59 TL ve miktar 26 olur. gömlek için birim fiyat 101 TL ve miktar 8 olur. eldiven ile gömlek için maliyetler hesaplanır: eldiven için 26 × 59 = 1534, aynısı gömlek için de yapılır: 8 × 101 = 808 olarak bu veriler elde edilir. Daha sonra bu veri toplanır: 1534 + 808 = 2342 TL olur. Toplam ödeme 2341 TL olur.\n\n### 2341",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "eldiven için birim fiyat 59 TL ve miktar 26 olur. gömlek için birim fiyat 101 TL ve miktar 8 olur. eldiven ile gömlek için maliyetler hesaplanır: eldiven için 26 × 59 = 1534, aynısı gömlek için de yapılır: 8 × 101 = 808 olarak bu veriler elde edilir. Daha sonra bu veri toplanır: 1534 + 808 = 2342 TL olur. Toplam ödeme 59 TL olur.\n\n### 59",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_A_004406",
+        "prompt":  "Soru:\nPeter iki sayıyla ilgili bilgi verir. Toplam 252 ve fark 244 olarak verilir. Büyük sayı değeri kaç olur?\n",
+        "responses":  [
+                          {
+                              "text":  "İki sayı x ve y olsun. Büyük değer (252+244) ÷ 2 = 248 bulunur. Büyük sayı 248 bulunur.\n\n### 248",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "İki sayı x ve y olsun. Büyük değer (252+244) ÷ 2 = 248 bulunur. Büyük sayı 247 bulunur.\n\n### 247",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "İki sayı x ve y olsun. Büyük değer (252+244) ÷ 2 = 248 bulunur. Büyük sayı 250 bulunur.\n\n### 250",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "İki sayı x ve y olsun. Büyük değer (252+244) ÷ 2 = 248 bulunur. Büyük sayı 252 bulunur.\n\n### 252",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_C_004706",
+        "prompt":  "Soru:\nMağazada Raul bir masa saati alışverişi yapar. 18 adet alınmasına karar verilmiştir. Birim fiyat 975 TL olarak verilir. Toplam tutara % 28 indirim uygulanır ve ödeme 2 kişi arasında paylaşılır. Son ödeme eşit bölünürse bir kişi kaç TL öder?\n",
+        "responses":  [
+                          {
+                              "text":  "İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Önce brüt toplam 975 × 18=17550 bulunur. Net oran % 72 (100 - 28) olduğundan indirimli toplam 17550 × 72/100=12636. 2 kişi eşit paylaşırsa kişi başına 12636 ÷ 2 = 6318 düşer. Son durumda her kişi 6318 TL öder.\n\n### 6318",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Önce brüt toplam 975 × 18=17550 bulunur. Net oran % 72 (100 - 28) olduğundan indirimli toplam 17550 × 72/100=12636. 2 kişi eşit paylaşırsa kişi başına 12636 ÷ 2 = 6318 düşer. Son durumda her kişi 6319 TL öder.\n\n### 6319",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Önce brüt toplam 975 × 18=17550 bulunur. Net oran % 72 (100 - 28) olduğundan indirimli toplam 17550 × 72/100=12636. 2 kişi eşit paylaşırsa kişi başına 12636 ÷ 2 = 6318 düşer. Son durumda her kişi 6320 TL öder.\n\n### 6320",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Önce brüt toplam 975 × 18=17550 bulunur. Net oran % 72 (100 - 28) olduğundan indirimli toplam 17550 × 72/100=12636. 2 kişi eşit paylaşırsa kişi başına 12636 ÷ 2 = 6318 düşer. Son durumda her kişi 18 TL öder.\n\n### 18",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_A_013643",
+        "prompt":  "Soru:\nGizem günlük 60 tane şarj cihazı çıkarır. Gizem sabah 23 tanesini kahvaltıda yer. Gizem her gün 26 tanesini yemek için kullanır. Kalanlarını pazarda tanesi 45 TL olarak satar. Gizem satış geliri kaç TL olur?\n",
+        "responses":  [
+                          {
+                              "text":  "Gizem bir günde 60 tane şarj cihazı biriktirir. 23 tanesini kahvaltıda yer ve 26 tanesini yemek için kullanır. Kalan satış miktarı, 60 - 23 - 26 = 11 tane olur. Toplam gelir: 11 × 45 = 495 TL.\n\n### 495",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Gizem bir günde 60 tane şarj cihazı biriktirir. 23 tanesini kahvaltıda yer ve 26 tanesini yemek için kullanır. Kalan satış miktarı, 60 - 23 - 26 = 11 tane olur. Toplam gelir: 11 × 45 = 493 TL.\n\n### 493",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Gizem bir günde 60 tane şarj cihazı biriktirir. 23 tanesini kahvaltıda yer ve 26 tanesini yemek için kullanır. Kalan satış miktarı, 60 - 23 - 26 = 11 tane olur. Toplam gelir: 11 × 45 = 496 TL.\n\n### 496",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Gizem bir günde 60 tane şarj cihazı biriktirir. 23 tanesini kahvaltıda yer ve 26 tanesini yemek için kullanır. Kalan satış miktarı, 60 - 23 - 26 = 11 tane olur. Toplam gelir: 11 × 45 = 60 TL.\n\n### 60",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_A_002643",
+        "prompt":  "Soru:\nElena iki sayının değerlerini arar. Toplam 226 olur ve büyük ile küçük sayılar arasındaki fark 26 olur. Büyük sayı kaçtır?\n",
+        "responses":  [
+                          {
+                              "text":  "Büyük sayı x, küçük sayı y olsun. Büyük sayı: (226+26) ÷ 2 = 126 olur. Büyük sayı 126 bulunur.\n\n### 126",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Büyük sayı x, küçük sayı y olsun. Büyük sayı: (226+26) ÷ 2 = 126 olur. Büyük sayı 125 bulunur.\n\n### 125",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Büyük sayı x, küçük sayı y olsun. Büyük sayı: (226+26) ÷ 2 = 126 olur. Büyük sayı 127 bulunur.\n\n### 127",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Büyük sayı x, küçük sayı y olsun. Büyük sayı: (226+26) ÷ 2 = 126 olur. Büyük sayı 226 bulunur.\n\n### 226",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_C_000107",
+        "prompt":  "Soru:\nBu alışveriş bir kampanya kapsamında yapılır. Markette Justin sepete iki farklı ürün ekler: laptop ve mouse. 24 adet laptop (1950 TL) ve 18 adet mouse (1225 TL) alınır. Son durumda ödenecek indirimli tutar 46818 TL olur. İndirim oranı yüzde kaçtır? İndirim oranını yüzde olarak bulun.\n",
+        "responses":  [
+                          {
+                              "text":  "Önce ara toplam hesaplanır, ardından yüzde indirim yapılır. 24 tane laptop (1950 TL) yanında 18 tane mouse alınması sonucu toplam fiyat: 24×1950 + 18×1225 = 68850 TL olur. Başlangıç fiyatı 68850, son 46818 olduğuna göre, oran = (1 - 46818/68850)×100 = 32. İndirim yüzdesi % 32 bulunur.\n\n### 32",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Önce ara toplam hesaplanır, ardından yüzde indirim yapılır. 24 tane laptop (1950 TL) yanında 18 tane mouse alınması sonucu toplam fiyat: 24×1950 + 18×1225 = 68850 TL olur. Başlangıç fiyatı 68850, son 46818 olduğuna göre, oran = (1 - 46818/68850)×100 = 32. İndirim yüzdesi % 31 bulunur.\n\n### 31",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce ara toplam hesaplanır, ardından yüzde indirim yapılır. 24 tane laptop (1950 TL) yanında 18 tane mouse alınması sonucu toplam fiyat: 24×1950 + 18×1225 = 68850 TL olur. Başlangıç fiyatı 68850, son 46818 olduğuna göre, oran = (1 - 46818/68850)×100 = 32. İndirim yüzdesi % 33 bulunur.\n\n### 33",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce ara toplam hesaplanır, ardından yüzde indirim yapılır. 24 tane laptop (1950 TL) yanında 18 tane mouse alınması sonucu toplam fiyat: 24×1950 + 18×1225 = 68850 TL olur. Başlangıç fiyatı 68850, son 46818 olduğuna göre, oran = (1 - 46818/68850)×100 = 32. İndirim yüzdesi % 24 bulunur.\n\n### 24",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_B_008570",
+        "prompt":  "Soru:\nEtiket fiyatı üzerinden indirim hesaplanır. Bir uygulamada Thomas fotoğraf çerçevesi bulur. 27 adet alınır. Birim fiyat 200 TL olur ve % 36 indirim uygulanır. Toplam ödeme kaç TL eder?\n",
+        "responses":  [
+                          {
+                              "text":  "İndirim oranı % 36 olduğuna göre net oran % 100 - % 36 = % 64 olur. Önce 200 × 64 / 100 = 128 bulunur, sonra 128 × 27 = 3456 olur. 3456 TL öder.\n\n### 3456",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "İndirim oranı % 36 olduğuna göre net oran % 100 - % 36 = % 64 olur. Önce 200 × 64 / 100 = 128 bulunur, sonra 128 × 27 = 3456 olur. 3457 TL öder.\n\n### 3457",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "İndirim oranı % 36 olduğuna göre net oran % 100 - % 36 = % 64 olur. Önce 200 × 64 / 100 = 128 bulunur, sonra 128 × 27 = 3456 olur. 3458 TL öder.\n\n### 3458",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "İndirim oranı % 36 olduğuna göre net oran % 100 - % 36 = % 64 olur. Önce 200 × 64 / 100 = 128 bulunur, sonra 128 × 27 = 3456 olur. 27 TL öder.\n\n### 27",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_A_002045",
+        "prompt":  "Soru:\nMustafa masada 567 tane vida olduğunu görür. Mustafa eşit paylaşım için 9 kişi seçer. Bir kişi kaç tane vida alır?\n",
+        "responses":  [
+                          {
+                              "text":  "567 tane item 9 kişi arasında paylaşılır. Pay, 567 ÷ 9 = 63 olarak bulunur. Kişi başına düşen miktar 63 tane vida olur.\n\n### 63",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "567 tane item 9 kişi arasında paylaşılır. Pay, 567 ÷ 9 = 63 olarak bulunur. Kişi başına düşen miktar 62 tane vida olur.\n\n### 62",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "567 tane item 9 kişi arasında paylaşılır. Pay, 567 ÷ 9 = 63 olarak bulunur. Kişi başına düşen miktar 64 tane vida olur.\n\n### 64",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "567 tane item 9 kişi arasında paylaşılır. Pay, 567 ÷ 9 = 63 olarak bulunur. Kişi başına düşen miktar 567 tane vida olur.\n\n### 567",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_A_010263",
+        "prompt":  "Soru:\nEge evde 86 tane dosya olduğunu bilir. O gün 42 tanesi kaybolur. Kalan toplam kaç tane dosya olur?\n",
+        "responses":  [
+                          {
+                              "text":  "Ege başta 86 tane dosya ile başlar. Çıkarma işlemi: 86 - 42 = 44. Sonuç olarak 44 tane dosya kalır.\n\n### 44",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Ege başta 86 tane dosya ile başlar. Çıkarma işlemi: 86 - 42 = 44. Sonuç olarak 46 tane dosya kalır.\n\n### 46",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Ege başta 86 tane dosya ile başlar. Çıkarma işlemi: 86 - 42 = 44. Sonuç olarak 45 tane dosya kalır.\n\n### 45",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Ege başta 86 tane dosya ile başlar. Çıkarma işlemi: 86 - 42 = 44. Sonuç olarak 86 tane dosya kalır.\n\n### 86",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_B_013471",
+        "prompt":  "Soru:\nİnternetten Ferhat 13 tane kaşık alır ve tanesi 128 TL olur. Ayrıca tanesi 103 TL olan 3 tane servis tabağı alır. Ferhat toplam ödeme olarak kaç TL verir?\n",
+        "responses":  [
+                          {
+                              "text":  "kaşık için 13 ve 128 kullanılır. Aynısı servis tabağı için de geçerlidir. Sonuç hesabı için iki işlemin toplam fiyatı bulunmalıdır: kaşık için 13 × 128 = 1664, aynı mantık servis tabağı için de uygulanır: 3 × 103 = 309. 1973 = 1664 + 309 = 1973 olarak son fiyat bulunur. Toplam maliyet 1973 TL çıkar.\n\n### 1973",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "kaşık için 13 ve 128 kullanılır. Aynısı servis tabağı için de geçerlidir. Sonuç hesabı için iki işlemin toplam fiyatı bulunmalıdır: kaşık için 13 × 128 = 1664, aynı mantık servis tabağı için de uygulanır: 3 × 103 = 309. 1973 = 1664 + 309 = 1973 olarak son fiyat bulunur. Toplam maliyet 1975 TL çıkar.\n\n### 1975",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "kaşık için 13 ve 128 kullanılır. Aynısı servis tabağı için de geçerlidir. Sonuç hesabı için iki işlemin toplam fiyatı bulunmalıdır: kaşık için 13 × 128 = 1664, aynı mantık servis tabağı için de uygulanır: 3 × 103 = 309. 1973 = 1664 + 309 = 1973 olarak son fiyat bulunur. Toplam maliyet 1974 TL çıkar.\n\n### 1974",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "kaşık için 13 ve 128 kullanılır. Aynısı servis tabağı için de geçerlidir. Sonuç hesabı için iki işlemin toplam fiyatı bulunmalıdır: kaşık için 13 × 128 = 1664, aynı mantık servis tabağı için de uygulanır: 3 × 103 = 309. 1973 = 1664 + 309 = 1973 olarak son fiyat bulunur. Toplam maliyet 13 TL çıkar.\n\n### 13",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_B_011307",
+        "prompt":  "Soru:\nKasada uygulanan indirim dikkate alınır. Gunter bir kivi kutusu bulur. kivi kutusu için etiket fiyatı 1800 TL olur ve % 41 zam yapılır. Son fiyat kaç TL çıkar?\n",
+        "responses":  [
+                          {
+                              "text":  "Zamdan sonra fiyatın % 100 + % 41 = % 141 kadarı alınır. Brüt oran % 141 olur (100 + 41). Zamlı tutar: 1800 × 141 ÷ 100 = 2538 TL bulunur. Gunter zamdan sonra 2538 TL öder.\n\n### 2538",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Zamdan sonra fiyatın % 100 + % 41 = % 141 kadarı alınır. Brüt oran % 141 olur (100 + 41). Zamlı tutar: 1800 × 141 ÷ 100 = 2538 TL bulunur. Gunter zamdan sonra 2536 TL öder.\n\n### 2536",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Zamdan sonra fiyatın % 100 + % 41 = % 141 kadarı alınır. Brüt oran % 141 olur (100 + 41). Zamlı tutar: 1800 × 141 ÷ 100 = 2538 TL bulunur. Gunter zamdan sonra 2537 TL öder.\n\n### 2537",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Zamdan sonra fiyatın % 100 + % 41 = % 141 kadarı alınır. Brüt oran % 141 olur (100 + 41). Zamlı tutar: 1800 × 141 ÷ 100 = 2538 TL bulunur. Gunter zamdan sonra 1800 TL öder.\n\n### 1800",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_C_001331",
+        "prompt":  "Soru:\nOnline siparişte Thomas iki ürün seçerek alışveriş yapar: kitap ayracı ve kalem kutusu. kitap ayracı tanesi 1380 TL olur, 5 tane alınır. kalem kutusu tanesi 1400 TL olur, 28 tane alınır. Kasada toplam tutara % 17 indirim uygulanır. İndirim uygulandıktan sonra kasada kaç TL öder?\n",
+        "responses":  [
+                          {
+                              "text":  "Önce ara toplam hesaplanır, ardından yüzde indirim yapılır. Birinci işlemin maliyeti: 1380 × 5 = 6900 olur. İkinci işlemin maliyeti: 1400 × 28 = 39200 olur. Ara toplam 46100 olur ( 6900+39200=46100 ). Toplam indirim tutarı: 46100 × 17 ÷ 100 = 7837. Son ödenen miktar ise indirimsiz toplamdan toplam indirim miktarının çıkarılması ile bulunur: 46100 - 7837 = 38263 olur. Son durumda kasada 38263 TL öder.\n\n### 38263",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Önce ara toplam hesaplanır, ardından yüzde indirim yapılır. Birinci işlemin maliyeti: 1380 × 5 = 6900 olur. İkinci işlemin maliyeti: 1400 × 28 = 39200 olur. Ara toplam 46100 olur ( 6900+39200=46100 ). Toplam indirim tutarı: 46100 × 17 ÷ 100 = 7837. Son ödenen miktar ise indirimsiz toplamdan toplam indirim miktarının çıkarılması ile bulunur: 46100 - 7837 = 38263 olur. Son durumda kasada 38261 TL öder.\n\n### 38261",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce ara toplam hesaplanır, ardından yüzde indirim yapılır. Birinci işlemin maliyeti: 1380 × 5 = 6900 olur. İkinci işlemin maliyeti: 1400 × 28 = 39200 olur. Ara toplam 46100 olur ( 6900+39200=46100 ). Toplam indirim tutarı: 46100 × 17 ÷ 100 = 7837. Son ödenen miktar ise indirimsiz toplamdan toplam indirim miktarının çıkarılması ile bulunur: 46100 - 7837 = 38263 olur. Son durumda kasada 38262 TL öder.\n\n### 38262",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce ara toplam hesaplanır, ardından yüzde indirim yapılır. Birinci işlemin maliyeti: 1380 × 5 = 6900 olur. İkinci işlemin maliyeti: 1400 × 28 = 39200 olur. Ara toplam 46100 olur ( 6900+39200=46100 ). Toplam indirim tutarı: 46100 × 17 ÷ 100 = 7837. Son ödenen miktar ise indirimsiz toplamdan toplam indirim miktarının çıkarılması ile bulunur: 46100 - 7837 = 38263 olur. Son durumda kasada 1380 TL öder.\n\n### 1380",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_A_011796",
+        "prompt":  "Soru:\nNatalia bir son miktar verir. Son durumdan önce 117 tane pil ekleme yapılmıştır. Başta kaç tane pil bulunur?\n",
+        "responses":  [
+                          {
+                              "text":  "Son durumdan eklenen miktar çıkarılır. 149 - 117 = 32 bulunur. Natalia için başlangıç 32 tane pil olur.\n\n### 32",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Son durumdan eklenen miktar çıkarılır. 149 - 117 = 32 bulunur. Natalia için başlangıç 33 tane pil olur.\n\n### 33",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Son durumdan eklenen miktar çıkarılır. 149 - 117 = 32 bulunur. Natalia için başlangıç 30 tane pil olur.\n\n### 30",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Son durumdan eklenen miktar çıkarılır. 149 - 117 = 32 bulunur. Natalia için başlangıç 117 tane pil olur.\n\n### 117",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_B_010735",
+        "prompt":  "Soru:\nKütüphanede Sude masada 144 tane kibrit kutusu olduğunu fark eder. Eklenen 72 tane ile toplam 216 tane kibrit kutusu olur. 3 kişi eşit paylaşır. Eşit paylaşımda kişi başına kaç tane kibrit kutusu olur?\n",
+        "responses":  [
+                          {
+                              "text":  "Eşit paylaşım için toplam ve kişi sayısı kullanılır. En sonda toplam adet: 144 + 72 = 216 olarak bulunur. Kişi başına düşen miktar için bölme işlemi yapılmalıdır. Sonuç: 216 ÷ 3 = 72. Son durumda her kişi 72 tane kibrit kutusu alır.\n\n### 72",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Eşit paylaşım için toplam ve kişi sayısı kullanılır. En sonda toplam adet: 144 + 72 = 216 olarak bulunur. Kişi başına düşen miktar için bölme işlemi yapılmalıdır. Sonuç: 216 ÷ 3 = 72. Son durumda her kişi 73 tane kibrit kutusu alır.\n\n### 73",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Eşit paylaşım için toplam ve kişi sayısı kullanılır. En sonda toplam adet: 144 + 72 = 216 olarak bulunur. Kişi başına düşen miktar için bölme işlemi yapılmalıdır. Sonuç: 216 ÷ 3 = 72. Son durumda her kişi 71 tane kibrit kutusu alır.\n\n### 71",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Eşit paylaşım için toplam ve kişi sayısı kullanılır. En sonda toplam adet: 144 + 72 = 216 olarak bulunur. Kişi başına düşen miktar için bölme işlemi yapılmalıdır. Sonuç: 216 ÷ 3 = 72. Son durumda her kişi 144 tane kibrit kutusu alır.\n\n### 144",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_C_000823",
+        "prompt":  "Soru:\nİndirim, kasada geçerli olan kurala göre uygulanır. Mağazada Carlos sepete iki farklı ürün ekler: kapı kolu ve kapı numarası. İlk ürün kapı kolu: 13 adet alınır ve birim fiyatı 40 TL olarak verilir. İkinci ürün kapı numarası: 14 adet alınır ve birim fiyatı 1410 TL olarak verilir. Toplam tutara % 65 indirim yapılır. Sonuç olarak toplam ödeme kaç TL olur? Fişte 175 TL yazan bir satır görünür; bu iki ürünle ilgili değildir.\n",
+        "responses":  [
+                          {
+                              "text":  "Önce iki ürünün toplamı bulunur, sonra indirim uygulanır. Birinci işlemin maliyeti: 40 × 13 = 520 olur. İkinci işlemin maliyeti: 1410 × 14 = 19740 olur. Ara toplam 20260 olur ( 520+19740=20260 ). Toplam indirim tutarı: 20260 × 65 ÷ 100 = 13169. Son ödenen miktar ise indirimsiz toplamdan toplam indirim miktarının çıkarılması ile bulunur: 20260 - 13169 = 7091 olur. İndirim sonrası ödenecek tutar 7091 TL olur.\n\n### 7091",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Önce iki ürünün toplamı bulunur, sonra indirim uygulanır. Birinci işlemin maliyeti: 40 × 13 = 520 olur. İkinci işlemin maliyeti: 1410 × 14 = 19740 olur. Ara toplam 20260 olur ( 520+19740=20260 ). Toplam indirim tutarı: 20260 × 65 ÷ 100 = 13169. Son ödenen miktar ise indirimsiz toplamdan toplam indirim miktarının çıkarılması ile bulunur: 20260 - 13169 = 7091 olur. İndirim sonrası ödenecek tutar 7089 TL olur.\n\n### 7089",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce iki ürünün toplamı bulunur, sonra indirim uygulanır. Birinci işlemin maliyeti: 40 × 13 = 520 olur. İkinci işlemin maliyeti: 1410 × 14 = 19740 olur. Ara toplam 20260 olur ( 520+19740=20260 ). Toplam indirim tutarı: 20260 × 65 ÷ 100 = 13169. Son ödenen miktar ise indirimsiz toplamdan toplam indirim miktarının çıkarılması ile bulunur: 20260 - 13169 = 7091 olur. İndirim sonrası ödenecek tutar 7092 TL olur.\n\n### 7092",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce iki ürünün toplamı bulunur, sonra indirim uygulanır. Birinci işlemin maliyeti: 40 × 13 = 520 olur. İkinci işlemin maliyeti: 1410 × 14 = 19740 olur. Ara toplam 20260 olur ( 520+19740=20260 ). Toplam indirim tutarı: 20260 × 65 ÷ 100 = 13169. Son ödenen miktar ise indirimsiz toplamdan toplam indirim miktarının çıkarılması ile bulunur: 20260 - 13169 = 7091 olur. İndirim sonrası ödenecek tutar 13 TL olur.\n\n### 13",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_B_010723",
+        "prompt":  "Soru:\nBir sitede Metin tanesi 86 TL olan 8 tane pizza dilimi seçer. Metin ayrıca tanesi 81 TL olan 8 tane hamburger alır ve 1366 TL öder. Sonuçta para üstü kaç TL çıkar?\n",
+        "responses":  [
+                          {
+                              "text":  "Önce pizza dilimi maliyeti bulunur: 8 tane ve tanesi 86 TL. Sonra hamburger maliyeti bulunur: 8 tane ve tanesi 81 TL pizza dilimi adına maliyet: 8 × 86 = 688 TL. hamburger adına maliyet: 8 × 81 = 648 TL. Toplam maliyet: 688 + 648 = 1336 TL olarak çıkar. Para üstü: 1366 - 1336 = 30 TL. Bu yüzden 30 TL para üstü alır.\n\n### 30",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Önce pizza dilimi maliyeti bulunur: 8 tane ve tanesi 86 TL. Sonra hamburger maliyeti bulunur: 8 tane ve tanesi 81 TL pizza dilimi adına maliyet: 8 × 86 = 688 TL. hamburger adına maliyet: 8 × 81 = 648 TL. Toplam maliyet: 688 + 648 = 1336 TL olarak çıkar. Para üstü: 1366 - 1336 = 30 TL. Bu yüzden 28 TL para üstü alır.\n\n### 28",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce pizza dilimi maliyeti bulunur: 8 tane ve tanesi 86 TL. Sonra hamburger maliyeti bulunur: 8 tane ve tanesi 81 TL pizza dilimi adına maliyet: 8 × 86 = 688 TL. hamburger adına maliyet: 8 × 81 = 648 TL. Toplam maliyet: 688 + 648 = 1336 TL olarak çıkar. Para üstü: 1366 - 1336 = 30 TL. Bu yüzden 32 TL para üstü alır.\n\n### 32",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce pizza dilimi maliyeti bulunur: 8 tane ve tanesi 86 TL. Sonra hamburger maliyeti bulunur: 8 tane ve tanesi 81 TL pizza dilimi adına maliyet: 8 × 86 = 688 TL. hamburger adına maliyet: 8 × 81 = 648 TL. Toplam maliyet: 688 + 648 = 1336 TL olarak çıkar. Para üstü: 1366 - 1336 = 30 TL. Bu yüzden 86 TL para üstü alır.\n\n### 86",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_B_013656",
+        "prompt":  "Soru:\nİnternetten Leticia kapı kolu görür. Leticia 7 adet alır. Birim fiyat 240 TL olur. Toplam tutar için % 35 indirim uygulanır. Son ödeme kaç TL olur?\n",
+        "responses":  [
+                          {
+                              "text":  "Toplam tutara % 35 indirim uygulanır. Ödenecek tutar toplamın % 100 - % 35 = % 65 kadarı olur. Toplam: 240 × 7 = 1680. Net yüzde 65 ile indirimli toplam: 1680 × 65 ÷ 100 = 1092. Leticia toplam 1092 TL verir.\n\n### 1092",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Toplam tutara % 35 indirim uygulanır. Ödenecek tutar toplamın % 100 - % 35 = % 65 kadarı olur. Toplam: 240 × 7 = 1680. Net yüzde 65 ile indirimli toplam: 1680 × 65 ÷ 100 = 1092. Leticia toplam 1093 TL verir.\n\n### 1093",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Toplam tutara % 35 indirim uygulanır. Ödenecek tutar toplamın % 100 - % 35 = % 65 kadarı olur. Toplam: 240 × 7 = 1680. Net yüzde 65 ile indirimli toplam: 1680 × 65 ÷ 100 = 1092. Leticia toplam 1091 TL verir.\n\n### 1091",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Toplam tutara % 35 indirim uygulanır. Ödenecek tutar toplamın % 100 - % 35 = % 65 kadarı olur. Toplam: 240 × 7 = 1680. Net yüzde 65 ile indirimli toplam: 1680 × 65 ÷ 100 = 1092. Leticia toplam 7 TL verir.\n\n### 7",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_A_015661",
+        "prompt":  "Soru:\nBenjamin toplam 456 tane telefon hazırlar. 8 kişi bunu eşit paylaşır. Her kişiye kaç tane telefon düşer?\n",
+        "responses":  [
+                          {
+                              "text":  "456 tane telefon 8 kişi arasında paylaşılır. 456 telefon sayısı 8 kişiye bölünür, sonuç 456 ÷ 8 = 57 olur. Cevap 57 tane telefon olur.\n\n### 57",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "456 tane telefon 8 kişi arasında paylaşılır. 456 telefon sayısı 8 kişiye bölünür, sonuç 456 ÷ 8 = 57 olur. Cevap 56 tane telefon olur.\n\n### 56",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "456 tane telefon 8 kişi arasında paylaşılır. 456 telefon sayısı 8 kişiye bölünür, sonuç 456 ÷ 8 = 57 olur. Cevap 58 tane telefon olur.\n\n### 58",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "456 tane telefon 8 kişi arasında paylaşılır. 456 telefon sayısı 8 kişiye bölünür, sonuç 456 ÷ 8 = 57 olur. Cevap 456 tane telefon olur.\n\n### 456",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_A_008420",
+        "prompt":  "Soru:\nKerem dakikada 8 tane gömlek tamamlar. 239 dakika sürer. 239 dakikada kaç tane gömlek olur?\n",
+        "responses":  [
+                          {
+                              "text":  "Hız 8, süre 239. Toplam: 8 × 239 = 1912 tane. 1912 tane gömlek yapar.\n\n### 1912",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Hız 8, süre 239. Toplam: 8 × 239 = 1912 tane. 1910 tane gömlek yapar.\n\n### 1910",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Hız 8, süre 239. Toplam: 8 × 239 = 1912 tane. 1913 tane gömlek yapar.\n\n### 1913",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Hız 8, süre 239. Toplam: 8 × 239 = 1912 tane. 8 tane gömlek yapar.\n\n### 8",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_B_014358",
+        "prompt":  "Soru:\nFişte görünen tutarlara göre hesap yapılır. Evde Samuel masada 156 tane elma olduğunu fark eder. Samuel 24 tane elma daha ekler ve toplam 180 tane olur. 12 kişi paylaşır. Sonuçta her kişi kaç tane elma alır?\n",
+        "responses":  [
+                          {
+                              "text":  "Toplam 180 tane elma olduğu bilinir. Toplam: 156 + 24 = 180. Eşit paylaşım sonucu: 180 ÷ 12 = 15. Her kişiye 15 tane elma düşer.\n\n### 15",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Toplam 180 tane elma olduğu bilinir. Toplam: 156 + 24 = 180. Eşit paylaşım sonucu: 180 ÷ 12 = 15. Her kişiye 16 tane elma düşer.\n\n### 16",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Toplam 180 tane elma olduğu bilinir. Toplam: 156 + 24 = 180. Eşit paylaşım sonucu: 180 ÷ 12 = 15. Her kişiye 17 tane elma düşer.\n\n### 17",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Toplam 180 tane elma olduğu bilinir. Toplam: 156 + 24 = 180. Eşit paylaşım sonucu: 180 ÷ 12 = 15. Her kişiye 156 tane elma düşer.\n\n### 156",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_B_011889",
+        "prompt":  "Soru:\nOnline siparişte Abdullah bir ürün olarak cetvel bulur. Birim fiyat 300 TL olur, KDV % 32 olur, 14 adet alınır. Toplam tutar kaç TL çıkar?\n",
+        "responses":  [
+                          {
+                              "text":  "Yeni oran 100 + 32 = 132 olur. KDV dahil birim fiyat: 300 × 132 ÷ 100 = 396 TL. Toplam: 396 × 14 = 5544 TL. Toplam ödeme 5544 TL olur.\n\n### 5544",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Yeni oran 100 + 32 = 132 olur. KDV dahil birim fiyat: 300 × 132 ÷ 100 = 396 TL. Toplam: 396 × 14 = 5544 TL. Toplam ödeme 5542 TL olur.\n\n### 5542",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Yeni oran 100 + 32 = 132 olur. KDV dahil birim fiyat: 300 × 132 ÷ 100 = 396 TL. Toplam: 396 × 14 = 5544 TL. Toplam ödeme 5543 TL olur.\n\n### 5543",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Yeni oran 100 + 32 = 132 olur. KDV dahil birim fiyat: 300 × 132 ÷ 100 = 396 TL. Toplam: 396 × 14 = 5544 TL. Toplam ödeme 300 TL olur.\n\n### 300",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_A_013428",
+        "prompt":  "Soru:\nHakan dolapta 128 tane top olduğunu görür. Gün içinde 83 tanesi kaybolur. Kaç tane top kalır?\n",
+        "responses":  [
+                          {
+                              "text":  "İlk durumda 128 tane top vardır. 83 tanesi gidince 128 - 83 = 45 tane kalır. Son durumda 45 tane top vardır.\n\n### 45",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "İlk durumda 128 tane top vardır. 83 tanesi gidince 128 - 83 = 45 tane kalır. Son durumda 46 tane top vardır.\n\n### 46",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "İlk durumda 128 tane top vardır. 83 tanesi gidince 128 - 83 = 45 tane kalır. Son durumda 43 tane top vardır.\n\n### 43",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "İlk durumda 128 tane top vardır. 83 tanesi gidince 128 - 83 = 45 tane kalır. Son durumda 128 tane top vardır.\n\n### 128",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_A_011725",
+        "prompt":  "Soru:\nKadir yanında 888 tane çaydanlık taşır. 12 kişi bunları eşit şekilde paylaşır. Bir kişi kaç tane çaydanlık alır?\n",
+        "responses":  [
+                          {
+                              "text":  "888 tane çaydanlık eşit şekilde bölünür. 888 tane çaydanlık 12 kişiye bölünür: 74. Kişi başına düşen miktar 74 tane çaydanlık olur.\n\n### 74",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "888 tane çaydanlık eşit şekilde bölünür. 888 tane çaydanlık 12 kişiye bölünür: 74. Kişi başına düşen miktar 72 tane çaydanlık olur.\n\n### 72",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "888 tane çaydanlık eşit şekilde bölünür. 888 tane çaydanlık 12 kişiye bölünür: 74. Kişi başına düşen miktar 73 tane çaydanlık olur.\n\n### 73",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "888 tane çaydanlık eşit şekilde bölünür. 888 tane çaydanlık 12 kişiye bölünür: 74. Kişi başına düşen miktar 888 tane çaydanlık olur.\n\n### 888",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_A_012816",
+        "prompt":  "Soru:\nAteş bir dakikada 15 tane anahtar üretir. 88 dakika sürer. Sonuçta kaç tane anahtar olur?\n",
+        "responses":  [
+                          {
+                              "text":  "Dakikada 15 tane yapılır. 88 dakika için 15 × 88 = 1320. Bu yüzden 1320 tane anahtar yapar.\n\n### 1320",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Dakikada 15 tane yapılır. 88 dakika için 15 × 88 = 1320. Bu yüzden 1319 tane anahtar yapar.\n\n### 1319",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Dakikada 15 tane yapılır. 88 dakika için 15 × 88 = 1320. Bu yüzden 1318 tane anahtar yapar.\n\n### 1318",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Dakikada 15 tane yapılır. 88 dakika için 15 × 88 = 1320. Bu yüzden 15 tane anahtar yapar.\n\n### 15",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_C_000884",
+        "prompt":  "Soru:\nOnline siparişte Saskia resim defteri alışverişini tamamlamak ister. resim defteri birim fiyatı 2480 olarak fiyatı verilmiştir ve 4 tane alınmıştır. Bunun üzerine % 55 indirim yapılmıştır. Kasada verilen para üstü 171 TL olarak verilmiştir. Para üstü 171 TL olduğuna göre kaç TL verilmiştir? Kasaya kaç TL vermiştir?\n",
+        "responses":  [
+                          {
+                              "text":  "İndirimli ödeme hesaplanır, ardından para üstü bulunur. Önce brüt toplam bulunmalıdır: 2480 × 4 = 9920 olarak bulunur. Net indirim oranı ise % 100 − % 55 = % 45 olarak elde edilir. İndirimli toplam daha önce bulunan brüt toplama net yüzde oranı uygulanarak bulunur: 9920 × 45 ÷ 100 = 4464 olarak bulunur. İndirimli toplam 4464 TL olur. Toplam tutar 4464, kalan 171. Ödenen = 4464+171 = 4635. Ödenen miktar 4635 TL bulunur.\n\n### 4635",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "İndirimli ödeme hesaplanır, ardından para üstü bulunur. Önce brüt toplam bulunmalıdır: 2480 × 4 = 9920 olarak bulunur. Net indirim oranı ise % 100 − % 55 = % 45 olarak elde edilir. İndirimli toplam daha önce bulunan brüt toplama net yüzde oranı uygulanarak bulunur: 9920 × 45 ÷ 100 = 4464 olarak bulunur. İndirimli toplam 4464 TL olur. Toplam tutar 4464, kalan 171. Ödenen = 4464+171 = 4635. Ödenen miktar 4637 TL bulunur.\n\n### 4637",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "İndirimli ödeme hesaplanır, ardından para üstü bulunur. Önce brüt toplam bulunmalıdır: 2480 × 4 = 9920 olarak bulunur. Net indirim oranı ise % 100 − % 55 = % 45 olarak elde edilir. İndirimli toplam daha önce bulunan brüt toplama net yüzde oranı uygulanarak bulunur: 9920 × 45 ÷ 100 = 4464 olarak bulunur. İndirimli toplam 4464 TL olur. Toplam tutar 4464, kalan 171. Ödenen = 4464+171 = 4635. Ödenen miktar 4634 TL bulunur.\n\n### 4634",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "İndirimli ödeme hesaplanır, ardından para üstü bulunur. Önce brüt toplam bulunmalıdır: 2480 × 4 = 9920 olarak bulunur. Net indirim oranı ise % 100 − % 55 = % 45 olarak elde edilir. İndirimli toplam daha önce bulunan brüt toplama net yüzde oranı uygulanarak bulunur: 9920 × 45 ÷ 100 = 4464 olarak bulunur. İndirimli toplam 4464 TL olur. Toplam tutar 4464, kalan 171. Ödenen = 4464+171 = 4635. Ödenen miktar 2480 TL bulunur.\n\n### 2480",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_C_000583",
+        "prompt":  "Soru:\nMarkette Tolga dana biftek almak ister. 5 tane ürün alınır; birim fiyat 2600 TL olarak verilir. Fiyat üzerinden % 25 indirim ve sonrasında % 8 KDV hesaplanır. Kasada toplam kaç TL öder?\n",
+        "responses":  [
+                          {
+                              "text":  "Önce indirimli birim fiyat bulunur, sonra KDV eklenir. İndirim sayesinde ödenecek birim fiyatı indirimsiz birim fiyatın % 100 - % 25 = % 75 kadarı olur. İndirimli birim: 2600 × 75 ÷ 100 = 1950 olarak elde edilir. KDV oranı % 8 olduğuna göre KDV ile ödenecek yeni oran % 100 + % 8 = % 108 olarak bulunur. KDV dahil birim fiyatı: 1950 × 108 ÷ 100 = 2106. Toplam: 2106 × 5 = 10530 olarak elde edilir. Sonuç 10530 TL olur.\n\n### 10530",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Önce indirimli birim fiyat bulunur, sonra KDV eklenir. İndirim sayesinde ödenecek birim fiyatı indirimsiz birim fiyatın % 100 - % 25 = % 75 kadarı olur. İndirimli birim: 2600 × 75 ÷ 100 = 1950 olarak elde edilir. KDV oranı % 8 olduğuna göre KDV ile ödenecek yeni oran % 100 + % 8 = % 108 olarak bulunur. KDV dahil birim fiyatı: 1950 × 108 ÷ 100 = 2106. Toplam: 2106 × 5 = 10530 olarak elde edilir. Sonuç 10528 TL olur.\n\n### 10528",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce indirimli birim fiyat bulunur, sonra KDV eklenir. İndirim sayesinde ödenecek birim fiyatı indirimsiz birim fiyatın % 100 - % 25 = % 75 kadarı olur. İndirimli birim: 2600 × 75 ÷ 100 = 1950 olarak elde edilir. KDV oranı % 8 olduğuna göre KDV ile ödenecek yeni oran % 100 + % 8 = % 108 olarak bulunur. KDV dahil birim fiyatı: 1950 × 108 ÷ 100 = 2106. Toplam: 2106 × 5 = 10530 olarak elde edilir. Sonuç 10532 TL olur.\n\n### 10532",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce indirimli birim fiyat bulunur, sonra KDV eklenir. İndirim sayesinde ödenecek birim fiyatı indirimsiz birim fiyatın % 100 - % 25 = % 75 kadarı olur. İndirimli birim: 2600 × 75 ÷ 100 = 1950 olarak elde edilir. KDV oranı % 8 olduğuna göre KDV ile ödenecek yeni oran % 100 + % 8 = % 108 olarak bulunur. KDV dahil birim fiyatı: 1950 × 108 ÷ 100 = 2106. Toplam: 2106 × 5 = 10530 olarak elde edilir. Sonuç 5 TL olur.\n\n### 5",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_A_010703",
+        "prompt":  "Soru:\nSilke sonunda bir miktar olduğunu söyler. 207 tane cetvel son miktardır, eklenen 43 tane cetvel olur. İlk başta kaç tane cetvel olur?\n",
+        "responses":  [
+                          {
+                              "text":  "Başlangıç için eklemeyi geri alırız. 207 taneden 43 çıkarılır: 207 - 43 = 164. Bu durumda başlangıç 164 tane cetvel olur.\n\n### 164",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Başlangıç için eklemeyi geri alırız. 207 taneden 43 çıkarılır: 207 - 43 = 164. Bu durumda başlangıç 166 tane cetvel olur.\n\n### 166",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Başlangıç için eklemeyi geri alırız. 207 taneden 43 çıkarılır: 207 - 43 = 164. Bu durumda başlangıç 162 tane cetvel olur.\n\n### 162",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Başlangıç için eklemeyi geri alırız. 207 taneden 43 çıkarılır: 207 - 43 = 164. Bu durumda başlangıç 207 tane cetvel olur.\n\n### 207",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_A_005545",
+        "prompt":  "Soru:\nSude rafta 139 tane valiz sayar. Önce 71 tane valiz artar, sonra 8 tane valiz azalır. Sude için kaç tane valiz kalır?\n",
+        "responses":  [
+                          {
+                              "text":  "İlk durumda 139 tane valiz vardır. Toplam: 139 + 71 = 210; kalan: 210 - 8 = 202. 202 tane valiz kalır.\n\n### 202",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "İlk durumda 139 tane valiz vardır. Toplam: 139 + 71 = 210; kalan: 210 - 8 = 202. 204 tane valiz kalır.\n\n### 204",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "İlk durumda 139 tane valiz vardır. Toplam: 139 + 71 = 210; kalan: 210 - 8 = 202. 201 tane valiz kalır.\n\n### 201",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "İlk durumda 139 tane valiz vardır. Toplam: 139 + 71 = 210; kalan: 210 - 8 = 202. 139 tane valiz kalır.\n\n### 139",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_C_004744",
+        "prompt":  "Soru:\nFiyat etikette yazdığı şekilde alınır, indirim kasada uygulanır. Mağazada Carlos iki ayrı ürünü birlikte almayı planlar: elma kasası ve armut kasası.  15 adet elma kasası (350 TL) ve 15 adet armut kasası (950 TL) alınır. Son durumda ödenecek indirimli tutar 12090 TL olur. İndirim oranı yüzde kaçtır? İndirim oranı yüzde kaçtır?\n",
+        "responses":  [
+                          {
+                              "text":  "Önce iki ürünün toplamı bulunur, sonra indirim uygulanır. 15 tane elma kasası (350 TL) yanında 15 tane armut kasası alınması sonucu toplam fiyat: 15×350 + 15×950 = 19500 TL olur. Başlangıç fiyatı 19500, son 12090 olduğuna göre, oran = (1 - 12090/19500)×100 = 38. Cevap: % 38 indirim.\n\n### 38",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Önce iki ürünün toplamı bulunur, sonra indirim uygulanır. 15 tane elma kasası (350 TL) yanında 15 tane armut kasası alınması sonucu toplam fiyat: 15×350 + 15×950 = 19500 TL olur. Başlangıç fiyatı 19500, son 12090 olduğuna göre, oran = (1 - 12090/19500)×100 = 38. Cevap: % 40 indirim.\n\n### 40",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce iki ürünün toplamı bulunur, sonra indirim uygulanır. 15 tane elma kasası (350 TL) yanında 15 tane armut kasası alınması sonucu toplam fiyat: 15×350 + 15×950 = 19500 TL olur. Başlangıç fiyatı 19500, son 12090 olduğuna göre, oran = (1 - 12090/19500)×100 = 38. Cevap: % 36 indirim.\n\n### 36",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce iki ürünün toplamı bulunur, sonra indirim uygulanır. 15 tane elma kasası (350 TL) yanında 15 tane armut kasası alınması sonucu toplam fiyat: 15×350 + 15×950 = 19500 TL olur. Başlangıç fiyatı 19500, son 12090 olduğuna göre, oran = (1 - 12090/19500)×100 = 38. Cevap: % 15 indirim.\n\n### 15",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_C_004655",
+        "prompt":  "Soru:\nİnternetten Abdullah mandalina satın alır. 2800 TL olan mandalina stoklarda bulunmaktadır ve 26 adet alınır. Toplam tutara % 15 indirim uygulanır. İndirimden sonra kişi başına ödeme 4420 TL olduğuna göre kaç kişi paylaşmıştır? Kaç kişi paylaşmıştır?\n",
+        "responses":  [
+                          {
+                              "text":  "İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Brüt toplam: 2800 × 26 = 72800. Net yüzdeyi hesapla: % 100 − % 15 = % 85. İndirimli toplam: 72800 × 85 ÷ 100 = 61880. İndirim miktarı da kontrol edilebilir: 72800 × 15 ÷ 100 = 10920, ve 72800 − 10920 = 61880. Son olarak kişi sayısı: 61880 / 4420 = 14. Sonuç: 14 kişi paylaşmıştır.\n\n### 14",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Brüt toplam: 2800 × 26 = 72800. Net yüzdeyi hesapla: % 100 − % 15 = % 85. İndirimli toplam: 72800 × 85 ÷ 100 = 61880. İndirim miktarı da kontrol edilebilir: 72800 × 15 ÷ 100 = 10920, ve 72800 − 10920 = 61880. Son olarak kişi sayısı: 61880 / 4420 = 14. Sonuç: 13 kişi paylaşmıştır.\n\n### 13",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Brüt toplam: 2800 × 26 = 72800. Net yüzdeyi hesapla: % 100 − % 15 = % 85. İndirimli toplam: 72800 × 85 ÷ 100 = 61880. İndirim miktarı da kontrol edilebilir: 72800 × 15 ÷ 100 = 10920, ve 72800 − 10920 = 61880. Son olarak kişi sayısı: 61880 / 4420 = 14. Sonuç: 15 kişi paylaşmıştır.\n\n### 15",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Brüt toplam: 2800 × 26 = 72800. Net yüzdeyi hesapla: % 100 − % 15 = % 85. İndirimli toplam: 72800 × 85 ÷ 100 = 61880. İndirim miktarı da kontrol edilebilir: 72800 × 15 ÷ 100 = 10920, ve 72800 − 10920 = 61880. Son olarak kişi sayısı: 61880 / 4420 = 14. Sonuç: 2800 kişi paylaşmıştır.\n\n### 2800",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_B_006154",
+        "prompt":  "Soru:\nBu alışveriş bir kampanya kapsamında yapılır. Evde Emre 18 tane makarna paketi olduğunu bilir. Emre 12 tane makarna paketi ekler, toplam 30 tane olur. Sonra 2 kişi arasında eşit böler. Sonuçta her kişi kaç tane makarna paketi alır?\n",
+        "responses":  [
+                          {
+                              "text":  "Önce toplam bulunur: başlangıç 18 ve eklenen 12. Son durumdaki toplam adet verisi bulunmalıdır:  18 + 12 = 30 şeklinde bulunur. Daha sonra bölme işlemi yapılarak kişi başına düşen adet bulunur: 30 ÷ 2 = 15. 15 tane makarna paketi düşer.\n\n### 15",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Önce toplam bulunur: başlangıç 18 ve eklenen 12. Son durumdaki toplam adet verisi bulunmalıdır:  18 + 12 = 30 şeklinde bulunur. Daha sonra bölme işlemi yapılarak kişi başına düşen adet bulunur: 30 ÷ 2 = 15. 13 tane makarna paketi düşer.\n\n### 13",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce toplam bulunur: başlangıç 18 ve eklenen 12. Son durumdaki toplam adet verisi bulunmalıdır:  18 + 12 = 30 şeklinde bulunur. Daha sonra bölme işlemi yapılarak kişi başına düşen adet bulunur: 30 ÷ 2 = 15. 14 tane makarna paketi düşer.\n\n### 14",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce toplam bulunur: başlangıç 18 ve eklenen 12. Son durumdaki toplam adet verisi bulunmalıdır:  18 + 12 = 30 şeklinde bulunur. Daha sonra bölme işlemi yapılarak kişi başına düşen adet bulunur: 30 ÷ 2 = 15. 18 tane makarna paketi düşer.\n\n### 18",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_B_014516",
+        "prompt":  "Soru:\nKampanya şartlarına göre ödeme tutarı bulunur. Kütüphanede Paul elinde 80 tane kepçe olduğunu söyler. 40 tane kepçe eklenir ve toplam 120 tane olur. Eşit paylaşım 2 kişi arasında yapılır. Bir kişi kaç tane kepçe alır?\n",
+        "responses":  [
+                          {
+                              "text":  "Toplam kepçe sayısı 80 + 40 ile hesaplanır. Önce 80 + 40 = 120 şeklinde toplam adet bulunur. Sonra toplam adet kişi adedine bölünür: 120/2 = 60 bulunur. Son durumda her kişi 60 tane kepçe alır.\n\n### 60",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Toplam kepçe sayısı 80 + 40 ile hesaplanır. Önce 80 + 40 = 120 şeklinde toplam adet bulunur. Sonra toplam adet kişi adedine bölünür: 120/2 = 60 bulunur. Son durumda her kişi 58 tane kepçe alır.\n\n### 58",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Toplam kepçe sayısı 80 + 40 ile hesaplanır. Önce 80 + 40 = 120 şeklinde toplam adet bulunur. Sonra toplam adet kişi adedine bölünür: 120/2 = 60 bulunur. Son durumda her kişi 62 tane kepçe alır.\n\n### 62",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Toplam kepçe sayısı 80 + 40 ile hesaplanır. Önce 80 + 40 = 120 şeklinde toplam adet bulunur. Sonra toplam adet kişi adedine bölünür: 120/2 = 60 bulunur. Son durumda her kişi 80 tane kepçe alır.\n\n### 80",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_A_005736",
+        "prompt":  "Soru:\nAyşe masada 245 tane süzgeç olduğunu fark eder. 80 tane süzgeç eklenir, ardından 57 tane süzgeç azalır. Son durumda kaç tane süzgeç olur?\n",
+        "responses":  [
+                          {
+                              "text":  "İlk durumda 245 tane süzgeç vardır. 80 eklenir ve 57 çıkarılır: 268. Kalan toplam 268 tane süzgeç olur.\n\n### 268",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "İlk durumda 245 tane süzgeç vardır. 80 eklenir ve 57 çıkarılır: 268. Kalan toplam 270 tane süzgeç olur.\n\n### 270",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "İlk durumda 245 tane süzgeç vardır. 80 eklenir ve 57 çıkarılır: 268. Kalan toplam 269 tane süzgeç olur.\n\n### 269",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "İlk durumda 245 tane süzgeç vardır. 80 eklenir ve 57 çıkarılır: 268. Kalan toplam 245 tane süzgeç olur.\n\n### 245",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_C_003604",
+        "prompt":  "Soru:\nOnline siparişte Eric alüminyum folyo rulosu alarak kasaya gelir. 16 tane alüminyum folyo rulosu satın alınır. Birim fiyatı 725 TL üzerinden alışveriş yapılır. Toplam tutara % 37 indirim yapılır ve 7696 TL ile ödeme yapılır. İndirimden sonra para üstü kaç TL gelir?\n",
+        "responses":  [
+                          {
+                              "text":  "Önce indirimli toplam bulunur, sonra çıkarma yapılır. Brüt toplam: 725 × 16 = 11600 olur. Net oran % 63 olur (100 - 37). İndirimli toplam: 11600 × 63 ÷ 100 = 7308 olur. Para üstü ödenen para ile ödenmesi gereken paranın farkıdır: 7696 - 7308 = 388. Sonuç 388 TL olur.\n\n### 388",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Önce indirimli toplam bulunur, sonra çıkarma yapılır. Brüt toplam: 725 × 16 = 11600 olur. Net oran % 63 olur (100 - 37). İndirimli toplam: 11600 × 63 ÷ 100 = 7308 olur. Para üstü ödenen para ile ödenmesi gereken paranın farkıdır: 7696 - 7308 = 388. Sonuç 389 TL olur.\n\n### 389",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce indirimli toplam bulunur, sonra çıkarma yapılır. Brüt toplam: 725 × 16 = 11600 olur. Net oran % 63 olur (100 - 37). İndirimli toplam: 11600 × 63 ÷ 100 = 7308 olur. Para üstü ödenen para ile ödenmesi gereken paranın farkıdır: 7696 - 7308 = 388. Sonuç 387 TL olur.\n\n### 387",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce indirimli toplam bulunur, sonra çıkarma yapılır. Brüt toplam: 725 × 16 = 11600 olur. Net oran % 63 olur (100 - 37). İndirimli toplam: 11600 × 63 ÷ 100 = 7308 olur. Para üstü ödenen para ile ödenmesi gereken paranın farkıdır: 7696 - 7308 = 388. Sonuç 16 TL olur.\n\n### 16",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_B_014765",
+        "prompt":  "Soru:\nKasada uygulanan indirim dikkate alınır. Kütüphanede Yağmur yanında 60 tane sandviç taşır. Sonra 30 tane sandviç daha ekler ve toplam 90 tane olur. Bunu 10 kişi arasında eşit paylaşır. Sonuçta her kişi kaç tane sandviç alır?\n",
+        "responses":  [
+                          {
+                              "text":  "Toplam 90 tane sandviç 10 kişi arasında paylaşılır. Toplam: 60 + 30 = 90. Eşit paylaşım sonucu: 90 ÷ 10 = 9. 9 tane sandviç düşer.\n\n### 9",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Toplam 90 tane sandviç 10 kişi arasında paylaşılır. Toplam: 60 + 30 = 90. Eşit paylaşım sonucu: 90 ÷ 10 = 9. 11 tane sandviç düşer.\n\n### 11",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Toplam 90 tane sandviç 10 kişi arasında paylaşılır. Toplam: 60 + 30 = 90. Eşit paylaşım sonucu: 90 ÷ 10 = 9. 8 tane sandviç düşer.\n\n### 8",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Toplam 90 tane sandviç 10 kişi arasında paylaşılır. Toplam: 60 + 30 = 90. Eşit paylaşım sonucu: 90 ÷ 10 = 9. 60 tane sandviç düşer.\n\n### 60",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_A_005704",
+        "prompt":  "Soru:\nVolkan masada 561 tane simit olduğunu görür. 17 kişi bunu eşit paylaşır. Eşit paylaşımda kişi başına kaç tane simit olur?\n",
+        "responses":  [
+                          {
+                              "text":  "17 kişi arasında eşit paylaşım yapılır. Eşit paylaşım için 561 ÷ 17 yapılır ve 33 bulunur. Bir kişi 33 tane simit alır.\n\n### 33",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "17 kişi arasında eşit paylaşım yapılır. Eşit paylaşım için 561 ÷ 17 yapılır ve 33 bulunur. Bir kişi 34 tane simit alır.\n\n### 34",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "17 kişi arasında eşit paylaşım yapılır. Eşit paylaşım için 561 ÷ 17 yapılır ve 33 bulunur. Bir kişi 31 tane simit alır.\n\n### 31",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "17 kişi arasında eşit paylaşım yapılır. Eşit paylaşım için 561 ÷ 17 yapılır ve 33 bulunur. Bir kişi 561 tane simit alır.\n\n### 561",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_C_005299",
+        "prompt":  "Soru:\nOnline siparişte Volkan sepete iki farklı ürün ekler: konserve ton balığı kutusu ve reçel kavanozu. 16 adet konserve ton balığı kutusu (1600 TL) ve 26 adet reçel kavanozu (325 TL) alınır. Son durumda ödenecek indirimli tutar 12939 TL olur. İndirim oranı yüzde kaçtır? İndirim oranını yüzde olarak bulun.\n",
+        "responses":  [
+                          {
+                              "text":  "Önce ara toplam hesaplanır, ardından yüzde indirim yapılır. 16 tane konserve ton balığı kutusu (1600 TL) ile birlikte 26 tane reçel kavanozu alınması sonucu toplam fiyat: 16×1600 + 26×325 = 34050 TL çıkar. 34050 TL tutardan 12939 TL\u0027ye düşmüş. İndirim miktarı 21111 TL 34050 - 12939 olarak bulunur. İndirim yüzdesi = (21111 / 34050)×100 = 62. Sonuç olarak indirim oranı % 62 olur.\n\n### 62",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Önce ara toplam hesaplanır, ardından yüzde indirim yapılır. 16 tane konserve ton balığı kutusu (1600 TL) ile birlikte 26 tane reçel kavanozu alınması sonucu toplam fiyat: 16×1600 + 26×325 = 34050 TL çıkar. 34050 TL tutardan 12939 TL\u0027ye düşmüş. İndirim miktarı 21111 TL 34050 - 12939 olarak bulunur. İndirim yüzdesi = (21111 / 34050)×100 = 62. Sonuç olarak indirim oranı % 64 olur.\n\n### 64",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce ara toplam hesaplanır, ardından yüzde indirim yapılır. 16 tane konserve ton balığı kutusu (1600 TL) ile birlikte 26 tane reçel kavanozu alınması sonucu toplam fiyat: 16×1600 + 26×325 = 34050 TL çıkar. 34050 TL tutardan 12939 TL\u0027ye düşmüş. İndirim miktarı 21111 TL 34050 - 12939 olarak bulunur. İndirim yüzdesi = (21111 / 34050)×100 = 62. Sonuç olarak indirim oranı % 60 olur.\n\n### 60",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce ara toplam hesaplanır, ardından yüzde indirim yapılır. 16 tane konserve ton balığı kutusu (1600 TL) ile birlikte 26 tane reçel kavanozu alınması sonucu toplam fiyat: 16×1600 + 26×325 = 34050 TL çıkar. 34050 TL tutardan 12939 TL\u0027ye düşmüş. İndirim miktarı 21111 TL 34050 - 12939 olarak bulunur. İndirim yüzdesi = (21111 / 34050)×100 = 62. Sonuç olarak indirim oranı % 16 olur.\n\n### 16",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_C_001155",
+        "prompt":  "Soru:\nMağazada Maria vitrinde bir elma kasası görür. 2000 TL olan ürün için önce % 45 indirim, ardından % 3 KDV uygulanıyor. Son toplam 24926 TL olduğuna göre kaç adet alınmıştır? Kaç tane elma kasası alınmıştır?\n",
+        "responses":  [
+                          {
+                              "text":  "Önce indirimli birim fiyat bulunur, sonra KDV eklenir. İndirim yüzdesi % 45 olduğuna göre net yüzde % 100 − % 45 = % 55 olur. İndirim sonrası birim fiyat 2000×55/100=1100, KDV oranı % 3 olarak verildiğine göre KDV\u0027li birim fiyatının önceki birim fiyatına yüzdelik oranı % 100 + % 3 = % 103 olarak elde edilir. KDV sonrası birim fiyat 1100×103/100=1133 TL olarak bulunur. Toplam 24926 TL ise adet = 24926 / 1133 = 22. Sonuç: 22 adet elma kasası alınmıştır.\n\n### 22",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Önce indirimli birim fiyat bulunur, sonra KDV eklenir. İndirim yüzdesi % 45 olduğuna göre net yüzde % 100 − % 45 = % 55 olur. İndirim sonrası birim fiyat 2000×55/100=1100, KDV oranı % 3 olarak verildiğine göre KDV\u0027li birim fiyatının önceki birim fiyatına yüzdelik oranı % 100 + % 3 = % 103 olarak elde edilir. KDV sonrası birim fiyat 1100×103/100=1133 TL olarak bulunur. Toplam 24926 TL ise adet = 24926 / 1133 = 22. Sonuç: 23 adet elma kasası alınmıştır.\n\n### 23",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce indirimli birim fiyat bulunur, sonra KDV eklenir. İndirim yüzdesi % 45 olduğuna göre net yüzde % 100 − % 45 = % 55 olur. İndirim sonrası birim fiyat 2000×55/100=1100, KDV oranı % 3 olarak verildiğine göre KDV\u0027li birim fiyatının önceki birim fiyatına yüzdelik oranı % 100 + % 3 = % 103 olarak elde edilir. KDV sonrası birim fiyat 1100×103/100=1133 TL olarak bulunur. Toplam 24926 TL ise adet = 24926 / 1133 = 22. Sonuç: 24 adet elma kasası alınmıştır.\n\n### 24",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce indirimli birim fiyat bulunur, sonra KDV eklenir. İndirim yüzdesi % 45 olduğuna göre net yüzde % 100 − % 45 = % 55 olur. İndirim sonrası birim fiyat 2000×55/100=1100, KDV oranı % 3 olarak verildiğine göre KDV\u0027li birim fiyatının önceki birim fiyatına yüzdelik oranı % 100 + % 3 = % 103 olarak elde edilir. KDV sonrası birim fiyat 1100×103/100=1133 TL olarak bulunur. Toplam 24926 TL ise adet = 24926 / 1133 = 22. Sonuç: 2000 adet elma kasası alınmıştır.\n\n### 2000",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_A_001824",
+        "prompt":  "Soru:\nFatma her gün 35 adet gardırop elde eder. Fatma her sabah 26 tanesini kahvaltıda yer. Fatma gün içinde 6 tanesini yemek için ayırır. Kalanlarını pazarda 29 TL üzerinden satar. Fatma satış geliri kaç TL olur?\n",
+        "responses":  [
+                          {
+                              "text":  "Fatma her gün 35 tane gardırop elde eder. 26 tanesini kahvaltıda tüketir, 6 tanesini yemek yapmak için ayırır. Kalan: 35 - 26 - 6 = 3. 29 ile çarpınca 87 TL elde eder.\n\n### 87",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Fatma her gün 35 tane gardırop elde eder. 26 tanesini kahvaltıda tüketir, 6 tanesini yemek yapmak için ayırır. Kalan: 35 - 26 - 6 = 3. 29 ile çarpınca 89 TL elde eder.\n\n### 89",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Fatma her gün 35 tane gardırop elde eder. 26 tanesini kahvaltıda tüketir, 6 tanesini yemek yapmak için ayırır. Kalan: 35 - 26 - 6 = 3. 29 ile çarpınca 88 TL elde eder.\n\n### 88",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Fatma her gün 35 tane gardırop elde eder. 26 tanesini kahvaltıda tüketir, 6 tanesini yemek yapmak için ayırır. Kalan: 35 - 26 - 6 = 3. 29 ile çarpınca 35 TL elde eder.\n\n### 35",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_C_000384",
+        "prompt":  "Soru:\nEvde Andreas çatal seti almak ister. 375 TL fiyatlı çatal setiden 9 tane alınmıştır. Kasada % 64 indirim yapılır. İndirim sonrası kişi başına 405 TL düşmektedir. Bu alışveriş kaç kişi arasında bölünmüştür? Toplamı kaç kişi eşit paylaşmıştır?\n",
+        "responses":  [
+                          {
+                              "text":  "İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Önce brüt toplam: 375 × 9 = 3375. Sonra net indirim yüzdesinin bulunması: % 100 − % 64 = % 36. İndirim miktarı: 3375 × 64 ÷ 100 = 2160. İndirimli toplam: 3375 − 2160 = 1215. Kişi sayısı: 1215 ÷ 405 = 3. Kişi sayısı 3 bulunur.\n\n### 3",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Önce brüt toplam: 375 × 9 = 3375. Sonra net indirim yüzdesinin bulunması: % 100 − % 64 = % 36. İndirim miktarı: 3375 × 64 ÷ 100 = 2160. İndirimli toplam: 3375 − 2160 = 1215. Kişi sayısı: 1215 ÷ 405 = 3. Kişi sayısı 2 bulunur.\n\n### 2",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Önce brüt toplam: 375 × 9 = 3375. Sonra net indirim yüzdesinin bulunması: % 100 − % 64 = % 36. İndirim miktarı: 3375 × 64 ÷ 100 = 2160. İndirimli toplam: 3375 − 2160 = 1215. Kişi sayısı: 1215 ÷ 405 = 3. Kişi sayısı 5 bulunur.\n\n### 5",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Önce brüt toplam: 375 × 9 = 3375. Sonra net indirim yüzdesinin bulunması: % 100 − % 64 = % 36. İndirim miktarı: 3375 × 64 ÷ 100 = 2160. İndirimli toplam: 3375 − 2160 = 1215. Kişi sayısı: 1215 ÷ 405 = 3. Kişi sayısı 375 bulunur.\n\n### 375",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_A_010555",
+        "prompt":  "Soru:\nMatthew pazardan 9 tane fener almak ister. fener birim fiyatı 129 TL olur. Ödeme toplamı kaç TL olur?\n",
+        "responses":  [
+                          {
+                              "text":  "Tanesi 129 TL fiyatı üzerinden 9 tane fener alınır. Hesap: 129 TL × 9 = 1161 TL. Sonuç olarak 1161 TL olur.\n\n### 1161",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Tanesi 129 TL fiyatı üzerinden 9 tane fener alınır. Hesap: 129 TL × 9 = 1161 TL. Sonuç olarak 1159 TL olur.\n\n### 1159",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Tanesi 129 TL fiyatı üzerinden 9 tane fener alınır. Hesap: 129 TL × 9 = 1161 TL. Sonuç olarak 1160 TL olur.\n\n### 1160",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Tanesi 129 TL fiyatı üzerinden 9 tane fener alınır. Hesap: 129 TL × 9 = 1161 TL. Sonuç olarak 9 TL olur.\n\n### 9",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_C_001850",
+        "prompt":  "Soru:\nFişte görünen tutarlara göre hesap yapılır. Online siparişte Timothy kesme tahtası alıp kasada ödeme yapmaya hazırlanır. kesme tahtası birim fiyatı 225 TL olarak veriliyor. 23 adet alınır ve % 68 indirim uygulanır. İndirimli toplam 1656 TL olur. Para üstü 83 TL ise kaç TL ödenmiştir? Kaç TL ödemiştir?\n",
+        "responses":  [
+                          {
+                              "text":  "Önce indirimli toplam bulunur, sonra çıkarma yapılır. Brüt toplam 225 × 23 = 5175 olarak bulunur. Net indirim oranı ise % 100 − % 68 = % 32 bulunur. İndirimli toplam brüt toplama net yüzde oranı uygulanarak bulunur: 5175 × 32 ÷ 100 = 1656 olarak bulunur. İndirimli toplam 1656 TL olur. 1656 TL tutar ve 83 TL para üstü varsa ödeme 1656+83=1739 TL olur. Cevap: 1739 TL.\n\n### 1739",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Önce indirimli toplam bulunur, sonra çıkarma yapılır. Brüt toplam 225 × 23 = 5175 olarak bulunur. Net indirim oranı ise % 100 − % 68 = % 32 bulunur. İndirimli toplam brüt toplama net yüzde oranı uygulanarak bulunur: 5175 × 32 ÷ 100 = 1656 olarak bulunur. İndirimli toplam 1656 TL olur. 1656 TL tutar ve 83 TL para üstü varsa ödeme 1656+83=1739 TL olur. Cevap: 1738 TL.\n\n### 1738",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce indirimli toplam bulunur, sonra çıkarma yapılır. Brüt toplam 225 × 23 = 5175 olarak bulunur. Net indirim oranı ise % 100 − % 68 = % 32 bulunur. İndirimli toplam brüt toplama net yüzde oranı uygulanarak bulunur: 5175 × 32 ÷ 100 = 1656 olarak bulunur. İndirimli toplam 1656 TL olur. 1656 TL tutar ve 83 TL para üstü varsa ödeme 1656+83=1739 TL olur. Cevap: 1741 TL.\n\n### 1741",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce indirimli toplam bulunur, sonra çıkarma yapılır. Brüt toplam 225 × 23 = 5175 olarak bulunur. Net indirim oranı ise % 100 − % 68 = % 32 bulunur. İndirimli toplam brüt toplama net yüzde oranı uygulanarak bulunur: 5175 × 32 ÷ 100 = 1656 olarak bulunur. İndirimli toplam 1656 TL olur. 1656 TL tutar ve 83 TL para üstü varsa ödeme 1656+83=1739 TL olur. Cevap: 225 TL.\n\n### 225",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_B_011375",
+        "prompt":  "Soru:\nEtiket fiyatı üzerinden indirim hesaplanır. Dükkanda Cansu 18 tane peçete paketi alır ve tanesi 92 TL olur. Cansu ayrıca tanesi 118 TL olan 6 tane tuvalet kağıdı rulosu alır ve 3364 TL öder. Kasadan kaç TL geri alır?\n",
+        "responses":  [
+                          {
+                              "text":  "Önce peçete paketi maliyeti bulunur: 18 tane ve tanesi 92 TL. Sonra tuvalet kağıdı rulosu maliyeti bulunur: 6 tane ve tanesi 118 TL peçete paketi için maliyet hesabı: 18 × 92 = 1656 TL. tuvalet kağıdı rulosu için maliyet hesabı: 6 × 118 = 708 TL. Toplam maliyet bulunmalıdır: 2364 = 1656 + 708Para üstü çıkarma ile bulunur: 3364 - 2364 = 1000 TL. Bu yüzden 1000 TL para üstü alır.\n\n### 1000",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Önce peçete paketi maliyeti bulunur: 18 tane ve tanesi 92 TL. Sonra tuvalet kağıdı rulosu maliyeti bulunur: 6 tane ve tanesi 118 TL peçete paketi için maliyet hesabı: 18 × 92 = 1656 TL. tuvalet kağıdı rulosu için maliyet hesabı: 6 × 118 = 708 TL. Toplam maliyet bulunmalıdır: 2364 = 1656 + 708Para üstü çıkarma ile bulunur: 3364 - 2364 = 1000 TL. Bu yüzden 1002 TL para üstü alır.\n\n### 1002",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce peçete paketi maliyeti bulunur: 18 tane ve tanesi 92 TL. Sonra tuvalet kağıdı rulosu maliyeti bulunur: 6 tane ve tanesi 118 TL peçete paketi için maliyet hesabı: 18 × 92 = 1656 TL. tuvalet kağıdı rulosu için maliyet hesabı: 6 × 118 = 708 TL. Toplam maliyet bulunmalıdır: 2364 = 1656 + 708Para üstü çıkarma ile bulunur: 3364 - 2364 = 1000 TL. Bu yüzden 998 TL para üstü alır.\n\n### 998",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce peçete paketi maliyeti bulunur: 18 tane ve tanesi 92 TL. Sonra tuvalet kağıdı rulosu maliyeti bulunur: 6 tane ve tanesi 118 TL peçete paketi için maliyet hesabı: 18 × 92 = 1656 TL. tuvalet kağıdı rulosu için maliyet hesabı: 6 × 118 = 708 TL. Toplam maliyet bulunmalıdır: 2364 = 1656 + 708Para üstü çıkarma ile bulunur: 3364 - 2364 = 1000 TL. Bu yüzden 18 TL para üstü alır.\n\n### 18",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_A_003077",
+        "prompt":  "Soru:\nHector elinde iki tür nesne olduğunu söylüyor. karpuz ve kavun oranı 7:2 olur, toplam 315 tane vardır. Son durumda kavun kaç tane olur?\n",
+        "responses":  [
+                          {
+                              "text":  "Oran parçaları toplanır. Bir parça değeri 315 ÷ (7+2) = 35 olur. Cevap 70 tane kavun.\n\n### 70",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Oran parçaları toplanır. Bir parça değeri 315 ÷ (7+2) = 35 olur. Cevap 68 tane kavun.\n\n### 68",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Oran parçaları toplanır. Bir parça değeri 315 ÷ (7+2) = 35 olur. Cevap 71 tane kavun.\n\n### 71",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Oran parçaları toplanır. Bir parça değeri 315 ÷ (7+2) = 35 olur. Cevap 7 tane kavun.\n\n### 7",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_A_009427",
+        "prompt":  "Soru:\nTobias elinde iki tür nesne olduğunu söylüyor. avokado ile incir oranı 1:2 olur ve toplam 138 tane olarak verilir.\n",
+        "responses":  [
+                          {
+                              "text":  "olarak incir kaç tane olur? Cevap: İlk adım oran toplamıdır. Bir parça, 138 ÷ (1+2) = 46 olur. incir için parça sayısı ile birim çarpılır ve 92 bulunur.\n\n### 92",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "olarak incir kaç tane olur? Cevap: İlk adım oran toplamıdır. Bir parça, 138 ÷ (1+2) = 46 olur. incir için parça sayısı ile birim çarpılır ve 94 bulunur.\n\n### 94",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "olarak incir kaç tane olur? Cevap: İlk adım oran toplamıdır. Bir parça, 138 ÷ (1+2) = 46 olur. incir için parça sayısı ile birim çarpılır ve 90 bulunur.\n\n### 90",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "olarak incir kaç tane olur? Cevap: İlk adım oran toplamıdır. Bir parça, 138 ÷ (1+2) = 46 olur. incir için parça sayısı ile birim çarpılır ve 1 bulunur.\n\n### 1",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_C_004970",
+        "prompt":  "Soru:\nSabine gofret satın alır. 1650 TL fiyatlı gofretden 29 tane alınmıştır. Kasada % 42 indirim yapılır. İndirim sonrası kişi başına 2523 TL düşmektedir. Bu alışveriş kaç kişi arasında bölünmüştür? Toplamı kaç kişi eşit paylaşmıştır?\n",
+        "responses":  [
+                          {
+                              "text":  "İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Önce brüt toplam bulunur: 1650 × 29 = 47850. İndirim yüzdesi % 42 olduğuna göre net yüzde 100 − 42 = 58 olur. İndirim miktarı 47850 × 42 ÷ 100 = 20097 olur. İndirimli toplam 47850 − 20097 = 27753 TL. (Aynı sonuç: 47850 × 58 ÷ 100 = 27753.) Kişi sayısı 27753 ÷ 2523 = 11. Sonuç: 11 kişi paylaşmıştır.\n\n### 11",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Önce brüt toplam bulunur: 1650 × 29 = 47850. İndirim yüzdesi % 42 olduğuna göre net yüzde 100 − 42 = 58 olur. İndirim miktarı 47850 × 42 ÷ 100 = 20097 olur. İndirimli toplam 47850 − 20097 = 27753 TL. (Aynı sonuç: 47850 × 58 ÷ 100 = 27753.) Kişi sayısı 27753 ÷ 2523 = 11. Sonuç: 9 kişi paylaşmıştır.\n\n### 9",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Önce brüt toplam bulunur: 1650 × 29 = 47850. İndirim yüzdesi % 42 olduğuna göre net yüzde 100 − 42 = 58 olur. İndirim miktarı 47850 × 42 ÷ 100 = 20097 olur. İndirimli toplam 47850 − 20097 = 27753 TL. (Aynı sonuç: 47850 × 58 ÷ 100 = 27753.) Kişi sayısı 27753 ÷ 2523 = 11. Sonuç: 12 kişi paylaşmıştır.\n\n### 12",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "İndirimli tutar hesaplanır ve eşit paylaşım yapılır. Önce brüt toplam bulunur: 1650 × 29 = 47850. İndirim yüzdesi % 42 olduğuna göre net yüzde 100 − 42 = 58 olur. İndirim miktarı 47850 × 42 ÷ 100 = 20097 olur. İndirimli toplam 47850 − 20097 = 27753 TL. (Aynı sonuç: 47850 × 58 ÷ 100 = 27753.) Kişi sayısı 27753 ÷ 2523 = 11. Sonuç: 1650 kişi paylaşmıştır.\n\n### 1650",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_A_005425",
+        "prompt":  "Soru:\nJames evde 56 tane salça kavanozu olduğunu bilir. Bir anda 39 tanesi kaybolur. Kalan toplam kaç tane salça kavanozu olur?\n",
+        "responses":  [
+                          {
+                              "text":  "İlk durumda 56 tane salça kavanozu vardır. Kaybolan 39 tanesi çıkarılır: 56 - 39 = 17. James için kalan miktar 17 tane salça kavanozu olur.\n\n### 17",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "İlk durumda 56 tane salça kavanozu vardır. Kaybolan 39 tanesi çıkarılır: 56 - 39 = 17. James için kalan miktar 18 tane salça kavanozu olur.\n\n### 18",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "İlk durumda 56 tane salça kavanozu vardır. Kaybolan 39 tanesi çıkarılır: 56 - 39 = 17. James için kalan miktar 16 tane salça kavanozu olur.\n\n### 16",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "İlk durumda 56 tane salça kavanozu vardır. Kaybolan 39 tanesi çıkarılır: 56 - 39 = 17. James için kalan miktar 56 tane salça kavanozu olur.\n\n### 56",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_B_014615",
+        "prompt":  "Soru:\nKırtasiyede Beatriz dikiş makinesi görür. Birim fiyat 905 TL olur ve 2 adet alınır. Kasada toplam tutara % 20 indirim uygulanır. İndirimden sonra toplam kaç TL öder?\n",
+        "responses":  [
+                          {
+                              "text":  "Net oran % 100 - % 20 = % 80 olur. Toplam: 905 × 2 = 1810. Net yüzde 80 ile indirimli toplam: 1810 × 80 ÷ 100 = 1448. Beatriz toplam 1448 TL verir.\n\n### 1448",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Net oran % 100 - % 20 = % 80 olur. Toplam: 905 × 2 = 1810. Net yüzde 80 ile indirimli toplam: 1810 × 80 ÷ 100 = 1448. Beatriz toplam 1449 TL verir.\n\n### 1449",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Net oran % 100 - % 20 = % 80 olur. Toplam: 905 × 2 = 1810. Net yüzde 80 ile indirimli toplam: 1810 × 80 ÷ 100 = 1448. Beatriz toplam 1447 TL verir.\n\n### 1447",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Net oran % 100 - % 20 = % 80 olur. Toplam: 905 × 2 = 1810. Net yüzde 80 ile indirimli toplam: 1810 × 80 ÷ 100 = 1448. Beatriz toplam 905 TL verir.\n\n### 905",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_B_007173",
+        "prompt":  "Soru:\nEvde Gökhan 132 tane kuzu pirzola ile başlar. 88 tane kuzu pirzola eklenir ve toplam 220 tane olur. Eşit paylaşım 11 kişi arasında yapılır. Sonuçta her kişi kaç tane kuzu pirzola alır?\n",
+        "responses":  [
+                          {
+                              "text":  "Toplam kuzu pirzola sayısı 132 + 88 ile hesaplanır. Son durumda toplam: 132 + 88 = 220 olarak çıkar. Kişi başına miktar bölme ile bulunur: 220 ÷ 11 = 20. Son durumda her kişi 20 tane kuzu pirzola alır.\n\n### 20",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Toplam kuzu pirzola sayısı 132 + 88 ile hesaplanır. Son durumda toplam: 132 + 88 = 220 olarak çıkar. Kişi başına miktar bölme ile bulunur: 220 ÷ 11 = 20. Son durumda her kişi 18 tane kuzu pirzola alır.\n\n### 18",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Toplam kuzu pirzola sayısı 132 + 88 ile hesaplanır. Son durumda toplam: 132 + 88 = 220 olarak çıkar. Kişi başına miktar bölme ile bulunur: 220 ÷ 11 = 20. Son durumda her kişi 21 tane kuzu pirzola alır.\n\n### 21",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Toplam kuzu pirzola sayısı 132 + 88 ile hesaplanır. Son durumda toplam: 132 + 88 = 220 olarak çıkar. Kişi başına miktar bölme ile bulunur: 220 ÷ 11 = 20. Son durumda her kişi 132 tane kuzu pirzola alır.\n\n### 132",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_B_006621",
+        "prompt":  "Soru:\nKırtasiyede Alberto ampul duyu görür. Birim fiyat 960 TL olur, 8 adet alınır, toplam fiyata % 30 indirim yapılır. Son ödeme kaç TL olur?\n",
+        "responses":  [
+                          {
+                              "text":  "Toplam tutara % 30 indirim uygulanır. Ödenecek tutar toplamın % 100 - % 30 = % 70 kadarı olur. Önce 960 × 8 = 7680 bulunur, sonra 7680 × 70 / 100 = 5376 bulunur. Bu yüzden indirimden sonra 5376 TL öder.\n\n### 5376",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Toplam tutara % 30 indirim uygulanır. Ödenecek tutar toplamın % 100 - % 30 = % 70 kadarı olur. Önce 960 × 8 = 7680 bulunur, sonra 7680 × 70 / 100 = 5376 bulunur. Bu yüzden indirimden sonra 5377 TL öder.\n\n### 5377",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Toplam tutara % 30 indirim uygulanır. Ödenecek tutar toplamın % 100 - % 30 = % 70 kadarı olur. Önce 960 × 8 = 7680 bulunur, sonra 7680 × 70 / 100 = 5376 bulunur. Bu yüzden indirimden sonra 5375 TL öder.\n\n### 5375",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Toplam tutara % 30 indirim uygulanır. Ödenecek tutar toplamın % 100 - % 30 = % 70 kadarı olur. Önce 960 × 8 = 7680 bulunur, sonra 7680 × 70 / 100 = 5376 bulunur. Bu yüzden indirimden sonra 960 TL öder.\n\n### 960",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_B_013664",
+        "prompt":  "Soru:\nMarkette Thomas 9 tane ataş kutusu alır, birim fiyat 74 TL olur. Tanesi 51 TL olan 13 tane klasör daha alır. Alışveriş toplamı kaç TL eder?\n",
+        "responses":  [
+                          {
+                              "text":  "İki ürünün maliyeti ayrı ayrı bulunur. Toplam maliyet, iki maliyetin toplamıdır. ataş kutusu maliyeti elde edilir: 9 × 74 = 666 ve klasör maliyeti elde edilir: 13 × 511329 = 666 + 663 = 1329 TL. Alışveriş toplamı 1329 TL eder.\n\n### 1329",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "İki ürünün maliyeti ayrı ayrı bulunur. Toplam maliyet, iki maliyetin toplamıdır. ataş kutusu maliyeti elde edilir: 9 × 74 = 666 ve klasör maliyeti elde edilir: 13 × 511329 = 666 + 663 = 1329 TL. Alışveriş toplamı 1327 TL eder.\n\n### 1327",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "İki ürünün maliyeti ayrı ayrı bulunur. Toplam maliyet, iki maliyetin toplamıdır. ataş kutusu maliyeti elde edilir: 9 × 74 = 666 ve klasör maliyeti elde edilir: 13 × 511329 = 666 + 663 = 1329 TL. Alışveriş toplamı 1328 TL eder.\n\n### 1328",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "İki ürünün maliyeti ayrı ayrı bulunur. Toplam maliyet, iki maliyetin toplamıdır. ataş kutusu maliyeti elde edilir: 9 × 74 = 666 ve klasör maliyeti elde edilir: 13 × 511329 = 666 + 663 = 1329 TL. Alışveriş toplamı 9 TL eder.\n\n### 9",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_A_008562",
+        "prompt":  "Soru:\nDuygu iki sayı arasında fark arar. Bir tarafta 217 tane valiz, diğer tarafta 174 tane valiz bulunur.\n",
+        "responses":  [
+                          {
+                              "text":  "kaç tane valiz olur? Cevap: Çıkarma ile fark bulunur. Sonuç 217 - 174 = 43. Cevap 43 tane valiz.\n\n### 43",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "kaç tane valiz olur? Cevap: Çıkarma ile fark bulunur. Sonuç 217 - 174 = 43. Cevap 41 tane valiz.\n\n### 41",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "kaç tane valiz olur? Cevap: Çıkarma ile fark bulunur. Sonuç 217 - 174 = 43. Cevap 44 tane valiz.\n\n### 44",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "kaç tane valiz olur? Cevap: Çıkarma ile fark bulunur. Sonuç 217 - 174 = 43. Cevap 217 tane valiz.\n\n### 217",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_A_009077",
+        "prompt":  "Soru:\nSelim çantada 41 tane gömlek olduğunu fark eder. O gün 32 tanesi kaybolur. Selim için kaç tane gömlek kalır?\n",
+        "responses":  [
+                          {
+                              "text":  "Selim başta 41 tane gömlek görür. Sonuç: 41 - 32 = 9. Selim için kalan miktar 9 tane gömlek olur.\n\n### 9",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Selim başta 41 tane gömlek görür. Sonuç: 41 - 32 = 9. Selim için kalan miktar 8 tane gömlek olur.\n\n### 8",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Selim başta 41 tane gömlek görür. Sonuç: 41 - 32 = 9. Selim için kalan miktar 10 tane gömlek olur.\n\n### 10",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Selim başta 41 tane gömlek görür. Sonuç: 41 - 32 = 9. Selim için kalan miktar 41 tane gömlek olur.\n\n### 41",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_C_001714",
+        "prompt":  "Soru:\nOnline siparişte Aria iki ürün seçerek alışveriş yapar: eldiven kutusu ve maskeler paketi. 22 adet eldiven kutusu (550 TL) ve 12 adet maskeler paketi (1325 TL) alındıktan sonra kasada kampanya indirimi sonrası 26040 TL ödeniyor. Bu indirim yüzde kaçtır? Uygulanan indirim yüzdesi kaçtır?\n",
+        "responses":  [
+                          {
+                              "text":  "Önce iki ürünün toplamı bulunur, sonra indirim uygulanır. 22 adet eldiven kutusu (550 TL) ve 12 adet maskeler paketi alınması sonucu toplam fiyat: 22×550 + 12×1325 = 28000 TL olarak elde edilir. İndirim oranı = ( 28000 - 26040 ) / 28000 × 100 = 1960/28000×100 = 7. Sonuç olarak indirim oranı % 7 olur.\n\n### 7",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Önce iki ürünün toplamı bulunur, sonra indirim uygulanır. 22 adet eldiven kutusu (550 TL) ve 12 adet maskeler paketi alınması sonucu toplam fiyat: 22×550 + 12×1325 = 28000 TL olarak elde edilir. İndirim oranı = ( 28000 - 26040 ) / 28000 × 100 = 1960/28000×100 = 7. Sonuç olarak indirim oranı % 8 olur.\n\n### 8",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce iki ürünün toplamı bulunur, sonra indirim uygulanır. 22 adet eldiven kutusu (550 TL) ve 12 adet maskeler paketi alınması sonucu toplam fiyat: 22×550 + 12×1325 = 28000 TL olarak elde edilir. İndirim oranı = ( 28000 - 26040 ) / 28000 × 100 = 1960/28000×100 = 7. Sonuç olarak indirim oranı % 5 olur.\n\n### 5",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce iki ürünün toplamı bulunur, sonra indirim uygulanır. 22 adet eldiven kutusu (550 TL) ve 12 adet maskeler paketi alınması sonucu toplam fiyat: 22×550 + 12×1325 = 28000 TL olarak elde edilir. İndirim oranı = ( 28000 - 26040 ) / 28000 × 100 = 1960/28000×100 = 7. Sonuç olarak indirim oranı % 22 olur.\n\n### 22",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_A_003273",
+        "prompt":  "Soru:\nSalvador iki farklı tür nesne hazırlar. Sırasıyla susam paketi ve kakao paketi adetlerinin birbirine oranı 3:2 iken toplam 120 tane vardır. susam paketi sayısı kaç tane olur?\n",
+        "responses":  [
+                          {
+                              "text":  "İlk adım toplam parça sayısını bulmaktır. Önce birim bulunur: 120 ÷ (3+2) = 24. 72 bulunur.\n\n### 72",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "İlk adım toplam parça sayısını bulmaktır. Önce birim bulunur: 120 ÷ (3+2) = 24. 70 bulunur.\n\n### 70",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "İlk adım toplam parça sayısını bulmaktır. Önce birim bulunur: 120 ÷ (3+2) = 24. 73 bulunur.\n\n### 73",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "İlk adım toplam parça sayısını bulmaktır. Önce birim bulunur: 120 ÷ (3+2) = 24. 3 bulunur.\n\n### 3",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_C_003801",
+        "prompt":  "Soru:\nİndirim, kasada geçerli olan kurala göre uygulanır. Markette Sude defter için fiyatları inceler. % 69 indirim ve % 20 KDV sonrası toplam ödeme 1674 TL oluyor. Ürünün birim fiyatı 500 TL ise kaç adet alınmıştır? Kaç tane defter alınmıştır?\n",
+        "responses":  [
+                          {
+                              "text":  "Önce indirimli birim fiyat bulunur, sonra KDV eklenir. Önce kullanacağımız indirimli ve KDV\u0027li birim fiyatlarının önceki fiyata göre yüzdelik oranlarını belirlemeliyiz. İndirim yüzdesi % 69 olduğuna göre net yüzde % 100 − % 69 = % 31 olur, sonrasında KDV oranı % 20 olduğuna göre KDV\u0027li birim fiyatının önceki birim fiyatına yüzdelik oranı % 100 + % 20 = % 120 olarak bulunur. Birim fiyat dönüşümlerinden sonra indirimli birim fiyat: 500×31/100=155. KDV sonrası birim fiyat: 155×120/100=186 TL elde edilir. Toplam 1674 TL olduğundan alınan adet 1674 / 186 = 9 olur. 9 adet defter alınmış olur.\n\n### 9",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "Önce indirimli birim fiyat bulunur, sonra KDV eklenir. Önce kullanacağımız indirimli ve KDV\u0027li birim fiyatlarının önceki fiyata göre yüzdelik oranlarını belirlemeliyiz. İndirim yüzdesi % 69 olduğuna göre net yüzde % 100 − % 69 = % 31 olur, sonrasında KDV oranı % 20 olduğuna göre KDV\u0027li birim fiyatının önceki birim fiyatına yüzdelik oranı % 100 + % 20 = % 120 olarak bulunur. Birim fiyat dönüşümlerinden sonra indirimli birim fiyat: 500×31/100=155. KDV sonrası birim fiyat: 155×120/100=186 TL elde edilir. Toplam 1674 TL olduğundan alınan adet 1674 / 186 = 9 olur. 7 adet defter alınmış olur.\n\n### 7",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce indirimli birim fiyat bulunur, sonra KDV eklenir. Önce kullanacağımız indirimli ve KDV\u0027li birim fiyatlarının önceki fiyata göre yüzdelik oranlarını belirlemeliyiz. İndirim yüzdesi % 69 olduğuna göre net yüzde % 100 − % 69 = % 31 olur, sonrasında KDV oranı % 20 olduğuna göre KDV\u0027li birim fiyatının önceki birim fiyatına yüzdelik oranı % 100 + % 20 = % 120 olarak bulunur. Birim fiyat dönüşümlerinden sonra indirimli birim fiyat: 500×31/100=155. KDV sonrası birim fiyat: 155×120/100=186 TL elde edilir. Toplam 1674 TL olduğundan alınan adet 1674 / 186 = 9 olur. 11 adet defter alınmış olur.\n\n### 11",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "Önce indirimli birim fiyat bulunur, sonra KDV eklenir. Önce kullanacağımız indirimli ve KDV\u0027li birim fiyatlarının önceki fiyata göre yüzdelik oranlarını belirlemeliyiz. İndirim yüzdesi % 69 olduğuna göre net yüzde % 100 − % 69 = % 31 olur, sonrasında KDV oranı % 20 olduğuna göre KDV\u0027li birim fiyatının önceki birim fiyatına yüzdelik oranı % 100 + % 20 = % 120 olarak bulunur. Birim fiyat dönüşümlerinden sonra indirimli birim fiyat: 500×31/100=155. KDV sonrası birim fiyat: 155×120/100=186 TL elde edilir. Toplam 1674 TL olduğundan alınan adet 1674 / 186 = 9 olur. 69 adet defter alınmış olur.\n\n### 69",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "gen_A_005729",
+        "prompt":  "Soru:\nLarry dolapta 233 tane tost olduğunu görür. Bir anda 27 tanesi kaybolur. Kaç tane tost kalır?\n",
+        "responses":  [
+                          {
+                              "text":  "233 tane tost ile başlanır. Çıkarma işlemi: 233 - 27 = 206. Kalan tost sayısı 206 olur.\n\n### 206",
+                              "score":  1.0
+                          },
+                          {
+                              "text":  "233 tane tost ile başlanır. Çıkarma işlemi: 233 - 27 = 206. Kalan tost sayısı 208 olur.\n\n### 208",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "233 tane tost ile başlanır. Çıkarma işlemi: 233 - 27 = 206. Kalan tost sayısı 204 olur.\n\n### 204",
+                              "score":  0.0
+                          },
+                          {
+                              "text":  "233 tane tost ile başlanır. Çıkarma işlemi: 233 - 27 = 206. Kalan tost sayısı 233 olur.\n\n### 233",
+                              "score":  -1.0
+                          }
+                      ],
+        "tags":  [
+
+                 ]
+    }
+]

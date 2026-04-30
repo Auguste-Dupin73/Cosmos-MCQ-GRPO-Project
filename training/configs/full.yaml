@@ -1,8 +1,8 @@
 seed: 42
 
 model:
-  name_or_path: ytu-ce-cosmos/turkish-gpt2-medium
-  tokenizer_name_or_path: ytu-ce-cosmos/turkish-gpt2-medium
+  name_or_path: Qwen/Qwen3-4B-Base
+  tokenizer_name_or_path: Qwen/Qwen3-4B-Base
   trust_remote_code: false
   local_files_only: false
   torch_dtype: float32
