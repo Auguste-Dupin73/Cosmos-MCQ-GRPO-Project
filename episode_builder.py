@@ -39,6 +39,7 @@ def build_episode_from_seed(
     main.update(mcq)
 
     probe = _build_probe(seed, phrase_bank, rng, main)
+    probe.update(build_mcq(probe, rng))
     spec = get_skill_spec(main["template_id"])
     support_pack = build_support_pack(main["skill_id"])
 
@@ -76,6 +77,9 @@ def build_episode_from_seed(
         },
         "probe": {
             "question_text": probe["question_text"],
+            "mcq_stem": probe["mcq_stem"],
+            "options": probe["options"],
+            "gold_option": probe["gold_option"],
             "gold_final_answer": probe["gold_final_answer"],
             "gold_solution_text": probe["gold_solution_text"],
             "expected_intermediates": probe["expected_intermediates"],
@@ -87,6 +91,7 @@ def build_episode_from_seed(
         "reward_spec": {
             "require_main_option_correct": True,
             "require_main_reasoning_consistent": True,
+            "require_probe_option_correct": True,
             "require_probe_correct": True,
             "allow_retry_with_support_pack": True,
             "scoring_mode": "gated",

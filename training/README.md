@@ -33,7 +33,7 @@ Best training input:
 
 - source episode JSONL such as `outputs/200_sample/episodes.jsonl`
 - this keeps full `main`, `probe`, `support_pack`, and reasoning targets available to the reward function
-- current Qwen configs use `split_main_probe: true`, so each source episode becomes two prompt-level training rows: one main MCQ prompt and one separate probe prompt
+- current Qwen configs use `split_main_probe: true`, so each source episode becomes two prompt-level training rows: one main MCQ prompt and one separate probe MCQ prompt
 
 Also supported:
 
@@ -92,7 +92,7 @@ python training/eval_grpo.py `
   --predictions_out outputs/training/eval_test500_predictions.jsonl
 ```
 
-The test file has 500 source episodes and evaluates as 1000 prompt-level tasks because main and probe are tested separately.
+The test file has 500 source episodes and evaluates as 1000 prompt-level tasks because main and probe are tested separately. Both task types are MCQ tasks and evaluation reports task-level `option_accuracy`, plus `main_option_accuracy` and `probe_option_accuracy`.
 
 Evaluate a checkpoint from the pilot run:
 
@@ -118,6 +118,7 @@ python training/eval_grpo.py `
 - `train_grpo.py` uses `trl.GRPOTrainer` directly
 - `data.max_train_samples` controls how many prompt-level rows are loaded after splitting; if it is `8`, the run prints `train_examples: 8`
 - `colab_qwen4b.yaml` and `full.yaml` now set `max_train_samples: null`, so the 200-episode training artifact loads as 400 prompt-level rows
+- source episodes now store `probe.options` and `probe.gold_option`, so probe-only rows require both the selected option and numeric probe answer
 - reward logic stays in `reward_fn.py`
 - the trainer registers one real optimization reward and several zero-weight diagnostic rewards so training logs still expose:
   - reward mean/std

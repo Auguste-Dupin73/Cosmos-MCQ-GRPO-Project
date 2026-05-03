@@ -79,7 +79,7 @@ The important training pieces are:
 
 ```text
 main: main MCQ question, options, gold option, gold final answer, solution, intermediates
-probe: same-skill follow-up question and gold answer
+probe: same-skill follow-up MCQ question, options, gold option, gold answer
 support_pack: skill hints and mini example
 reward_spec: gated reward requirements
 adversarial_candidates: wrong or partially correct candidate responses
@@ -286,6 +286,21 @@ Main and probe are separate prompt rows. This is the preferred export shape for 
 }
 ```
 
+Probe split rows use the same MCQ response shape:
+
+```json
+{
+  "id": "...::probe",
+  "episode_id": "...",
+  "task_type": "probe",
+  "prompt": "Matematik sorusunu coz...\nSecenekler:\nA) ...\nB) ...\nC) ...\nD) ...\n<final>\noption:\nprobe:\n</final>",
+  "gold": {
+    "probe_gold_option": "C",
+    "probe_gold_final_answer": "162"
+  }
+}
+```
+
 The source `episodes.jsonl` remains the recommended training input because the trainer can split it dynamically while retaining all reward metadata.
 
 ## Legacy Single-Sample Pipeline
@@ -427,7 +442,7 @@ With `split_main_probe: true`, each source episode becomes:
 
 ```text
 1 main MCQ prompt
-1 separate probe prompt
+1 separate probe MCQ prompt
 ```
 
 So `outputs/200_sample/episodes.jsonl` has 200 source episodes, but the trainer sees 400 prompt-level examples when `max_train_samples: null`.
@@ -464,3 +479,5 @@ training/test_500/episodes.jsonl
 ```
 
 It contains 500 source episodes with a 50% A, 30% B, 20% C tier mix and no exact main/probe question-text overlap with `outputs/200_sample/episodes.jsonl`. With split eval enabled, it becomes 1000 prompt-level eval tasks.
+
+The eval report includes overall `option_accuracy`, plus separate `main_option_accuracy` and `probe_option_accuracy`.

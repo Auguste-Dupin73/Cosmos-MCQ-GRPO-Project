@@ -19,10 +19,11 @@ MAIN_REASONING_LABEL = r"(?:Ana\s+(?:\u00e7\u00f6z\u00fcm|cozum)|Ana\s+cevap)"
 MAIN_FINAL_LABEL = r"(?:Ana\s+nihai\s+cevap|Nihai\s+cevap|Son\s+cevap)"
 PROBE_REASONING_LABEL = r"(?:Probe\s+(?:\u00e7\u00f6z\u00fcm|cozum)|Probe\s+cevap)"
 PROBE_FINAL_LABEL = r"(?:Probe\s+nihai\s+cevap|Probe\s+son\s+cevap)"
+PROBE_OPTION_LABEL = r"(?:Probe\s+soru\s+se(?:\u00e7|c)imi|Probe\s+se(?:\u00e7|c)imi|Probe\s+do(?:\u011f|g)ru\s+cevap)"
 ANY_RESPONSE_LABEL_RE = re.compile(
     rf"(?im)^\s*{MARKDOWN_LABEL_PREFIX}"
     rf"(?:{MAIN_OPTION_LABEL}|{MAIN_REASONING_LABEL}|{MAIN_FINAL_LABEL}|"
-    rf"{PROBE_REASONING_LABEL}|{PROBE_FINAL_LABEL}|Probe\s+soru(?:\s+se(?:\u00e7|c)imi)?)"
+    rf"{PROBE_OPTION_LABEL}|{PROBE_REASONING_LABEL}|{PROBE_FINAL_LABEL}|Probe\s+soru(?:\s+se(?:\u00e7|c)imi)?)"
     rf"{MARKDOWN_LABEL_END}"
 )
 OPTION_PLACEHOLDER_RE = re.compile(r"<?\s*A\s*/\s*B\s*/\s*C\s*/\s*D\s*>?", re.IGNORECASE)
@@ -87,6 +88,7 @@ PROBE_RESPONSE_FORMAT_BLOCK = "\n".join(
         "<reasoning>",
         "</reasoning>",
         "<final>",
+        "option:",
         "probe:",
         "</final>",
     ]
@@ -164,8 +166,10 @@ def build_probe_prompt(
     lines = [
         "Matematik sorusunu coz.",
         "Soru:",
-        episode["probe"]["question_text"],
+        episode["probe"].get("mcq_stem") or episode["probe"]["question_text"],
     ]
+    if episode["probe"].get("options"):
+        lines.extend(["Secenekler:", *render_option_lines(episode["probe"]["options"])])
     if include_support_pack:
         lines.extend(_render_support_pack(episode["support_pack"]))
     prompt = "\n".join(lines)
@@ -362,6 +366,9 @@ def parse_episode_completion(text: str) -> dict[str, Any]:
         _extract_xml_final_field(raw_text, "option", "secenek", "seçenek")
         or _extract_labeled_section(raw_text, MAIN_OPTION_LABEL)
     )
+    probe_option = _extract_option_value(
+        _extract_labeled_section(raw_text, PROBE_OPTION_LABEL)
+    ) or main_option
     main_reasoning = _extract_labeled_section(raw_text, MAIN_REASONING_LABEL) or xml_reasoning or ""
     main_final = _clean_final_answer(
         _extract_xml_final_field(raw_text, "main", "ana")
@@ -378,6 +385,7 @@ def parse_episode_completion(text: str) -> dict[str, Any]:
     return {
         "raw_text": raw_text,
         "main_selected_option": main_option,
+        "probe_selected_option": probe_option,
         "main_reasoning_text": main_reasoning,
         "main_final_answer": main_final,
         "main_numbers": _extract_numbers(main_reasoning),

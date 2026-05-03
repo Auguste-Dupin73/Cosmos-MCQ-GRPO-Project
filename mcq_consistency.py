@@ -9,6 +9,8 @@ from typing import Any, Dict, Mapping, Sequence
 
 MAIN_SELECTED_OPTION_RE = re.compile(r"^Ana soru seçimi:\s*([A-Z])\s*$", re.MULTILINE)
 MAIN_FINAL_ANSWER_RE = re.compile(r"^Ana nihai cevap:\s*(.+?)\s*$", re.MULTILINE)
+PROBE_SELECTED_OPTION_RE = re.compile(r"^Probe soru seÃ§imi:\s*([A-Z])\s*$", re.MULTILINE)
+PROBE_FINAL_ANSWER_RE = re.compile(r"^Probe nihai cevap:\s*(.+?)\s*$", re.MULTILINE)
 
 FULLY_CORRECT_FAMILIES = {"gold", "fully_correct"}
 CORRECT_MAIN_FAMILIES = FULLY_CORRECT_FAMILIES | {
@@ -89,6 +91,22 @@ def extract_main_final_answer(text: str) -> str | None:
     return match.group(1).strip()
 
 
+def extract_probe_selected_option(text: str) -> str | None:
+    """Extract the selected probe MCQ option from serialized candidate text."""
+    match = PROBE_SELECTED_OPTION_RE.search(text)
+    if not match:
+        return None
+    return match.group(1).strip()
+
+
+def extract_probe_final_answer(text: str) -> str | None:
+    """Extract the selected probe final answer from serialized candidate text."""
+    match = PROBE_FINAL_ANSWER_RE.search(text)
+    if not match:
+        return None
+    return match.group(1).strip()
+
+
 def compose_episode_candidate_text(
     main_response: Mapping[str, Any],
     probe_response: Mapping[str, Any] | None = None,
@@ -100,6 +118,8 @@ def compose_episode_candidate_text(
         f"Ana nihai cevap: {main_response['final_answer']}",
     ]
     if probe_response is not None:
+        if probe_response.get("selected_option") is not None:
+            lines.append(f"Probe soru seÃ§imi: {probe_response['selected_option']}")
         lines.extend(
             [
                 f"Probe çözüm: {probe_response['reasoning_text']}",
@@ -323,6 +343,39 @@ def validate_candidate_mcq_consistency(
             )
 
 
+def validate_probe_response_mcq_consistency(
+    probe_response: Mapping[str, Any],
+    probe_item: Mapping[str, Any],
+    candidate_type: str,
+) -> None:
+    """Assert a probe response option maps to its probe final answer."""
+    if "options" not in probe_item or "gold_option" not in probe_item:
+        return
+    options = probe_item["options"]
+    validate_mcq_options(options)
+    selected_option = str(probe_response.get("selected_option", "")).strip()
+    final_answer = normalize_mcq_value(probe_response.get("final_answer", ""))
+    if not selected_option:
+        raise MCQConsistencyError("Probe response is missing a selected option")
+    if not final_answer:
+        raise MCQConsistencyError("Probe response is missing a final answer")
+    resolved_option = resolve_option_for_value(options, final_answer)
+    if selected_option != resolved_option:
+        raise MCQConsistencyError(
+            f"Probe selected option {selected_option!r} does not match final answer {final_answer!r}"
+        )
+    if candidate_type in FULLY_CORRECT_FAMILIES:
+        if selected_option != str(probe_item["gold_option"]).strip() or final_answer != normalize_mcq_value(
+            probe_item["gold_final_answer"]
+        ):
+            raise MCQConsistencyError("Gold probe response must keep the probe gold option and answer")
+    if candidate_type == "correct_main_wrong_probe":
+        if selected_option == str(probe_item["gold_option"]).strip() or final_answer == normalize_mcq_value(
+            probe_item["gold_final_answer"]
+        ):
+            raise MCQConsistencyError("correct_main_wrong_probe must use a non-gold probe answer")
+
+
 def normalize_episode_adversarial_candidates(episode: Mapping[str, Any]) -> list[Dict[str, Any]]:
     """Normalize every stored adversarial candidate against one episode's live MCQ."""
     main = episode["main"]
@@ -345,12 +398,19 @@ def normalize_episode_adversarial_candidates(episode: Mapping[str, Any]) -> list
 def validate_episode_adversarial_candidates(episode: Mapping[str, Any]) -> None:
     """Validate the stored adversarial candidates inside one episode record."""
     main = episode["main"]
+    probe = episode.get("probe", {})
     validate_mcq_options(main["options"])
+    if isinstance(probe, Mapping) and "options" in probe:
+        validate_mcq_options(probe["options"])
     for candidate in episode.get("adversarial_candidates", []):
+        family = str(candidate.get("family", "wrong_final"))
         validate_candidate_mcq_consistency(
             candidate,
             main["options"],
             main["gold_option"],
             main["gold_final_answer"],
-            str(candidate.get("family", "wrong_final")),
+            family,
         )
+        probe_response = candidate.get("probe_response")
+        if isinstance(probe_response, Mapping):
+            validate_probe_response_mcq_consistency(probe_response, probe, family)

@@ -79,18 +79,22 @@ def score_completion_against_episode(
     reward_conf = reward_config if isinstance(reward_config, RewardConfig) else normalize_reward_config(reward_config)
     task_type = (task_type or "episode").strip().lower()
     main_item, probe_item = _coerce_episode_targets(prompt=prompt, main=main, probe=probe, gold=gold)
+    if task_type == "probe" and not probe_item.get("options"):
+        probe_item["options"] = extract_prompt_options(prompt or "")
     parsed = parse_episode_completion(completion)
 
     selected_option = parsed["main_selected_option"]
+    probe_selected_option = parsed.get("probe_selected_option") or selected_option
     main_reasoning = parsed["main_reasoning_text"]
     main_final = parsed["main_final_answer"]
     probe_reasoning = parsed["probe_reasoning_text"]
     probe_final = parsed["probe_final_answer"]
     gold_option = main_item.get("gold_option")
+    gold_probe_option = probe_item.get("gold_option")
     gold_main_final = main_item.get("gold_final_answer")
     gold_probe_final = probe_item.get("gold_final_answer")
 
-    option_present = bool(selected_option)
+    option_present = bool(probe_selected_option if task_type == "probe" else selected_option)
     main_final_present = bool(main_final)
     probe_final_present = bool(probe_final)
     reasoning_present = bool(main_reasoning.strip() or probe_reasoning.strip())
@@ -121,6 +125,12 @@ def score_completion_against_episode(
     )
 
     option_accuracy = bool(selected_option) and bool(gold_option) and selected_option == gold_option
+    probe_option_accuracy = (
+        bool(probe_selected_option)
+        and bool(gold_probe_option)
+        and str(probe_selected_option).strip() == str(gold_probe_option).strip()
+    )
+    task_option_accuracy = probe_option_accuracy if task_type == "probe" else option_accuracy
     main_accuracy = bool(main_final) and bool(gold_main_final) and final_answer_correct(main_final, gold_main_final)
     probe_accuracy = bool(probe_final) and bool(gold_probe_final) and final_answer_correct(probe_final, gold_probe_final)
 
@@ -177,14 +187,17 @@ def score_completion_against_episode(
     correct_option_wrong_reasoning = option_accuracy and main_accuracy and reasoning_invalid
     joint_success = _joint_success(
         option_accuracy=option_accuracy,
+        probe_option_accuracy=probe_option_accuracy,
         main_accuracy=main_accuracy,
         reasoning_consistent=reasoning_consistent,
         probe_accuracy=probe_accuracy,
         reward_spec=reward_spec,
         task_type=task_type,
+        probe_option_required=bool(gold_probe_option),
     )
     reward = _compute_reward(
         option_accuracy=option_accuracy,
+        probe_option_accuracy=probe_option_accuracy,
         main_accuracy=main_accuracy,
         reasoning_consistent=reasoning_consistent,
         reasoning_invalid=reasoning_invalid,
@@ -194,6 +207,7 @@ def score_completion_against_episode(
         reward_config=reward_conf,
         shaping_reward=shaping_reward,
         task_type=task_type,
+        probe_option_required=bool(gold_probe_option),
     )
 
     return {
@@ -207,7 +221,9 @@ def score_completion_against_episode(
         "numeric_work_present": float(numeric_work_present),
         "gold_answer_mentioned": float(gold_answer_mentioned),
         "main_accuracy": float(main_accuracy),
-        "option_accuracy": float(option_accuracy),
+        "option_accuracy": float(task_option_accuracy),
+        "main_option_accuracy": float(option_accuracy),
+        "probe_option_accuracy": float(probe_option_accuracy),
         "probe_accuracy": float(probe_accuracy),
         "reasoning_consistent": float(reasoning_consistent),
         "joint_success": float(joint_success),
@@ -232,6 +248,12 @@ def build_reward_functions(
 
     def option_accuracy_reward(**kwargs) -> list[float]:
         return _batched_metric("option_accuracy", reward_conf=reward_conf, **kwargs)
+
+    def main_option_accuracy_reward(**kwargs) -> list[float]:
+        return _batched_metric("main_option_accuracy", reward_conf=reward_conf, **kwargs)
+
+    def probe_option_accuracy_reward(**kwargs) -> list[float]:
+        return _batched_metric("probe_option_accuracy", reward_conf=reward_conf, **kwargs)
 
     def reasoning_consistency_reward(**kwargs) -> list[float]:
         return _batched_metric("reasoning_consistent", reward_conf=reward_conf, **kwargs)
@@ -269,6 +291,8 @@ def build_reward_functions(
     total_reward.__name__ = "episode_reward"
     main_accuracy_reward.__name__ = "main_accuracy"
     option_accuracy_reward.__name__ = "option_accuracy"
+    main_option_accuracy_reward.__name__ = "main_option_accuracy"
+    probe_option_accuracy_reward.__name__ = "probe_option_accuracy"
     reasoning_consistency_reward.__name__ = "reasoning_consistency"
     probe_accuracy_reward.__name__ = "probe_accuracy"
     joint_success_reward.__name__ = "joint_success"
@@ -285,6 +309,8 @@ def build_reward_functions(
         total_reward,
         main_accuracy_reward,
         option_accuracy_reward,
+        main_option_accuracy_reward,
+        probe_option_accuracy_reward,
         reasoning_consistency_reward,
         probe_accuracy_reward,
         joint_success_reward,
@@ -297,7 +323,7 @@ def build_reward_functions(
         numeric_work_reward,
         gold_answer_mentioned_reward,
     ]
-    reward_weights = [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    reward_weights = [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
     return reward_funcs, reward_weights
 
 
@@ -341,27 +367,35 @@ def _batched_metric(
 def _joint_success(
     *,
     option_accuracy: bool,
+    probe_option_accuracy: bool,
     main_accuracy: bool,
     reasoning_consistent: bool,
     probe_accuracy: bool,
     reward_spec: Mapping[str, Any] | None,
     task_type: str,
+    probe_option_required: bool,
 ) -> bool:
     if task_type == "main":
         return bool(main_accuracy and option_accuracy and reasoning_consistent)
     if task_type == "probe":
-        return bool(probe_accuracy and reasoning_consistent)
+        return bool(probe_accuracy and (probe_option_accuracy or not probe_option_required) and reasoning_consistent)
 
     reward_spec = dict(reward_spec or {})
     option_ok = option_accuracy if reward_spec.get("require_main_option_correct", True) else True
     reasoning_ok = reasoning_consistent if reward_spec.get("require_main_reasoning_consistent", True) else True
     probe_ok = probe_accuracy if reward_spec.get("require_probe_correct", True) else True
-    return bool(main_accuracy and option_ok and reasoning_ok and probe_ok)
+    probe_option_ok = (
+        probe_option_accuracy
+        if reward_spec.get("require_probe_option_correct", probe_option_required)
+        else True
+    )
+    return bool(main_accuracy and option_ok and reasoning_ok and probe_ok and probe_option_ok)
 
 
 def _compute_reward(
     *,
     option_accuracy: bool,
+    probe_option_accuracy: bool,
     main_accuracy: bool,
     reasoning_consistent: bool,
     reasoning_invalid: bool,
@@ -371,11 +405,12 @@ def _compute_reward(
     reward_config: RewardConfig,
     shaping_reward: float,
     task_type: str,
+    probe_option_required: bool,
 ) -> float:
     if joint_success:
         return reward_config.full_credit
     if task_type == "probe":
-        if probe_accuracy:
+        if probe_accuracy and (probe_option_accuracy or not probe_option_required):
             return _cap_non_joint_reward(reward_config.main_only_credit + shaping_reward, reward_config)
         return _cap_non_joint_reward(reward_config.failure_credit + shaping_reward, reward_config)
 
@@ -441,6 +476,8 @@ def _coerce_episode_targets(
         main_item["gold_final_answer"] = gold["main_gold_final_answer"]
     if "gold_final_answer" not in probe_item and "probe_gold_final_answer" in gold:
         probe_item["gold_final_answer"] = gold["probe_gold_final_answer"]
+    if not probe_item.get("gold_option") and "probe_gold_option" in gold:
+        probe_item["gold_option"] = gold["probe_gold_option"]
     if "options" not in main_item:
         main_item["options"] = extract_prompt_options(prompt or "")
     if "expected_intermediates" not in main_item:

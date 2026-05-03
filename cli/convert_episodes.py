@@ -49,7 +49,15 @@ def build_episode_prompt(episode: Dict[str, Any], include_support_pack: bool = F
 def _score_candidate(candidate: Dict[str, Any], episode: Dict[str, Any]) -> float:
     checks = evaluate_main_response(candidate["main_response"], episode["main"])
     probe = candidate.get("probe_response")
-    probe_correct = bool(probe) and str(probe.get("final_answer")) == episode["probe"]["gold_final_answer"]
+    probe_option_correct = bool(probe) and (
+        not episode["probe"].get("gold_option")
+        or str(probe.get("selected_option", "")).strip() == str(episode["probe"].get("gold_option", "")).strip()
+    )
+    probe_correct = (
+        bool(probe)
+        and probe_option_correct
+        and str(probe.get("final_answer")) == episode["probe"]["gold_final_answer"]
+    )
 
     if (
         checks["selected_option_correct"]
@@ -98,6 +106,7 @@ def _probe_response_text(response: Dict[str, Any]) -> str:
             str(response.get("reasoning_text", "")),
             "</reasoning>",
             "<final>",
+            f"option: {response.get('selected_option', '')}",
             f"probe: {response.get('final_answer', '')}",
             "</final>",
         ]
@@ -125,7 +134,11 @@ def _score_probe_candidate(candidate: Dict[str, Any], episode: Dict[str, Any]) -
     response = candidate.get("probe_response")
     if not response:
         return 0.0
-    return 1.0 if str(response.get("final_answer")) == str(episode["probe"]["gold_final_answer"]) else 0.0
+    option_ok = not episode["probe"].get("gold_option") or str(response.get("selected_option", "")).strip() == str(
+        episode["probe"].get("gold_option", "")
+    ).strip()
+    answer_ok = str(response.get("final_answer")) == str(episode["probe"]["gold_final_answer"])
+    return 1.0 if option_ok and answer_ok else 0.0
 
 
 def _split_offline_candidates(
@@ -251,6 +264,7 @@ def convert_episode_rows(episodes: Iterable[Dict[str, Any]], out_dir: Path) -> N
                     "gold": {
                         "main_gold_option": episode["main"]["gold_option"],
                         "main_gold_final_answer": episode["main"]["gold_final_answer"],
+                        "probe_gold_option": episode["probe"].get("gold_option"),
                         "probe_gold_final_answer": episode["probe"]["gold_final_answer"],
                     },
                     "reward_spec": episode["reward_spec"],
@@ -264,6 +278,7 @@ def convert_episode_rows(episodes: Iterable[Dict[str, Any]], out_dir: Path) -> N
                     "gold": {
                         "main_gold_option": episode["main"]["gold_option"],
                         "main_gold_final_answer": episode["main"]["gold_final_answer"],
+                        "probe_gold_option": episode["probe"].get("gold_option"),
                         "probe_gold_final_answer": episode["probe"]["gold_final_answer"],
                     },
                     "reward_spec": episode["reward_spec"],
@@ -278,6 +293,7 @@ def convert_episode_rows(episodes: Iterable[Dict[str, Any]], out_dir: Path) -> N
                 "gold": {
                     "main_gold_option": episode["main"]["gold_option"],
                     "main_gold_final_answer": episode["main"]["gold_final_answer"],
+                    "probe_gold_option": episode["probe"].get("gold_option"),
                     "probe_gold_final_answer": episode["probe"]["gold_final_answer"],
                 },
                 "reward_spec": episode["reward_spec"],

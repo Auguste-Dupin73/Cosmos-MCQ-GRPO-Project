@@ -131,6 +131,7 @@ def _convert_source_episode_row(
             "gold": {
                 "main_gold_option": row["main"]["gold_option"],
                 "main_gold_final_answer": row["main"]["gold_final_answer"],
+                "probe_gold_option": row["probe"].get("gold_option"),
                 "probe_gold_final_answer": row["probe"]["gold_final_answer"],
             },
             "dataset_format": SOURCE_EPISODE,
@@ -168,6 +169,7 @@ def _convert_source_episode_split_rows(
                 "gold": {
                     "main_gold_option": row["main"]["gold_option"],
                     "main_gold_final_answer": row["main"]["gold_final_answer"],
+                    "probe_gold_option": row["probe"].get("gold_option"),
                     "probe_gold_final_answer": row["probe"]["gold_final_answer"],
                 },
                 "dataset_format": SOURCE_EPISODE_SPLIT,
@@ -209,25 +211,28 @@ def _convert_online_row(row: Mapping[str, Any], *, path: str) -> dict[str, Any]:
     record = build_common_metadata(row, path)
     options = extract_prompt_options(str(row["prompt"]))
     gold = dict(row.get("gold", {}))
+    task_type = row.get("task_type", "episode")
     record.update(
         {
             "prompt": str(row["prompt"]),
             "reward_spec": dict(row.get("reward_spec", {})),
             "main": {
-                "options": options,
+                "options": [] if task_type == "probe" else options,
                 "gold_option": gold.get("main_gold_option"),
                 "gold_final_answer": gold.get("main_gold_final_answer"),
                 "expected_intermediates": [],
                 "operation_chain": [],
             },
             "probe": {
+                "options": options if task_type == "probe" else gold.get("probe_options", []),
+                "gold_option": gold.get("probe_gold_option"),
                 "gold_final_answer": gold.get("probe_gold_final_answer"),
                 "expected_intermediates": [],
                 "operation_chain": [],
             },
             "gold": gold,
             "dataset_format": EPISODE_GRPO_ONLINE,
-            "task_type": row.get("task_type", "episode"),
+            "task_type": task_type,
         }
     )
     return record

@@ -252,6 +252,8 @@ def build_debug_row(
         "format_compliance": score.get("format_compliance"),
         "main_accuracy": score["main_accuracy"],
         "option_accuracy": score["option_accuracy"],
+        "main_option_accuracy": score.get("main_option_accuracy"),
+        "probe_option_accuracy": score.get("probe_option_accuracy"),
         "probe_accuracy": score["probe_accuracy"],
         "joint_success": score["joint_success"],
         "option_present": score.get("option_present"),

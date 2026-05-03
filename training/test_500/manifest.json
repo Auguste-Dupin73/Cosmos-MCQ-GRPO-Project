@@ -26,30 +26,31 @@
       "path": "training\\test_500\\selected_seeds\\tierA_selected_250.jsonl",
       "count": 250,
       "template_counts": {
-        "multi_step_add_sub": 29,
+        "multi_step_add_sub": 30,
         "unit_price_quantity": 38,
-        "compare_difference": 39,
+        "compare_difference": 38,
         "sell_leftover": 44,
         "reverse_operation": 23,
-        "remainder_after_loss": 36,
-        "rate_time": 26,
+        "remainder_after_loss": 35,
+        "rate_time": 27,
         "ratio_scaling": 10,
-        "equal_sharing": 3,
-        "sum_and_difference": 2
+        "equal_sharing": 2,
+        "sum_and_difference": 2,
+        "produce_consume_sell": 1
       }
     },
     "B": {
       "path": "training\\test_500\\selected_seeds\\tierB_selected_150.jsonl",
       "count": 150,
       "template_counts": {
-        "buy_two_items_total_cost": 22,
+        "buy_two_items_total_cost": 23,
         "percentage_discount_final_price": 21,
+        "discounted_unit_total_cost": 8,
         "add_then_share": 18,
-        "vat_total_cost": 18,
-        "bundle_discount_total_cost": 20,
+        "vat_total_cost": 17,
+        "bundle_discount_total_cost": 19,
         "percentage_increase_final_price": 20,
-        "change_from_payment": 24,
-        "discounted_unit_total_cost": 7
+        "change_from_payment": 24
       }
     },
     "C": {
@@ -57,8 +58,8 @@
       "count": 100,
       "template_counts": {
         "transform_then_share": 25,
-        "discounted_total_then_change": 27,
-        "two_items_then_bundle_discount_total_cost": 21,
+        "discounted_total_then_change": 28,
+        "two_items_then_bundle_discount_total_cost": 20,
         "discount_then_vat_total_cost": 27
       }
     }
@@ -80,14 +81,14 @@
   "skipped_candidate_counts": {
     "A": {
       "build_error:ValueError": 84,
-      "excluded_training_seed": 5
+      "excluded_training_seed": 3
     },
     "B": {
-      "excluded_training_seed": 4
+      "excluded_training_seed": 2
     },
     "C": {
-      "build_error:ValueError": 5,
-      "excluded_training_seed": 2
+      "excluded_training_seed": 2,
+      "build_error:ValueError": 5
     }
   },
   "combined_episode_file": {

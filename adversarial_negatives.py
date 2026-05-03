@@ -8,6 +8,7 @@ from mcq_consistency import (
     choose_preferred_wrong_option,
     compose_episode_candidate_text,
     normalize_candidate_against_mcq,
+    normalize_mcq_value,
     resolve_value_for_option,
 )
 
@@ -32,6 +33,7 @@ def build_gold_episode_response(episode: Dict[str, Any]) -> Dict[str, Any]:
             "operation_chain": list(main["operation_chain"]),
         },
         "probe_response": {
+            **({"selected_option": probe["gold_option"]} if probe.get("gold_option") else {}),
             "final_answer": probe["gold_final_answer"],
             "reasoning_text": probe["gold_solution_text"],
             "mentioned_intermediates": [item["value"] for item in probe["expected_intermediates"]],
@@ -62,6 +64,12 @@ def build_adversarial_candidates(episode: Dict[str, Any]) -> List[Dict[str, Any]
     near_miss_option, near_miss_value = _candidate_label_and_value(main, "near_miss")
     copied_operand_option, copied_operand_value = _candidate_label_and_value(main, "copied_operand")
     wrong_order_option, wrong_order_value = _candidate_label_and_value(main, "wrong_operation_order")
+    if probe.get("options") and probe.get("gold_option"):
+        wrong_probe_option = choose_preferred_wrong_option(probe, "near_miss")
+        wrong_probe_value = resolve_value_for_option(probe["options"], wrong_probe_option)
+    else:
+        wrong_probe_option = None
+        wrong_probe_value = str(int(probe["gold_final_answer"]) + 1)
 
     candidates = [
         {
@@ -135,9 +143,10 @@ def build_adversarial_candidates(episode: Dict[str, Any]) -> List[Dict[str, Any]
                 "operation_chain": list(main["operation_chain"]),
             },
             "probe_response": {
-                "final_answer": str(int(probe["gold_final_answer"]) + 1),
+                **({"selected_option": wrong_probe_option} if wrong_probe_option else {}),
+                "final_answer": normalize_mcq_value(wrong_probe_value),
                 "reasoning_text": "Probe sorusunda son adımda hata yaptım.",
-                "mentioned_intermediates": probe_intermediates[:-1] + [int(probe["gold_final_answer"]) + 1],
+                "mentioned_intermediates": probe_intermediates[:-1] + [wrong_probe_value],
                 "operation_chain": list(probe["operation_chain"]),
             },
         },

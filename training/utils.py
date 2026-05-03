@@ -192,6 +192,8 @@ DEFAULT_METRIC_FIELDS = (
     "reward",
     "main_accuracy",
     "option_accuracy",
+    "main_option_accuracy",
+    "probe_option_accuracy",
     "probe_accuracy",
     "joint_success",
     "correct_option_wrong_reasoning",

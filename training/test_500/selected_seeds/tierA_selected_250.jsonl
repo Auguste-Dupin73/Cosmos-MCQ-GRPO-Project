@@ -41,6 +41,7 @@
 {"template": "remainder_after_loss", "name": "Daniel", "item": "şarj cihazı", "start": [28, 62, 181], "lost": [17, 7]}
 {"template": "remainder_after_loss", "name": "Rabia", "item": "çekmece", "start": [229, 373, 107], "lost": [78, 21]}
 {"template": "sell_leftover", "name": "Serkan", "item": "ekmek somunu", "produce": [123, 128, 131], "use1": [1, 7], "use2": [66, 70], "price": [35, 43], "currency": "TL"}
+{"template": "compare_difference", "name": ["Aylin", "Buse"], "item": ["kabak", "patlıcan"], "a": [201, 229], "b": [193, 199]}
 {"template": "rate_time", "name": "Kadir", "item": "çaydanlık", "rate": [22, 24], "time": [67, 69, 88]}
 {"template": "multi_step_add_sub", "name": "Dennis", "item": "bulaşık süngeri", "start": [169, 182], "add": [3, 8, 12], "sub": [64, 67, 91]}
 {"template": "compare_difference", "name": ["Edward", "Ronald"], "item": ["mandalina", "çilek"], "a": [288, 289], "b": [83, 102, 117]}
@@ -69,7 +70,6 @@
 {"template": "sell_leftover", "name": "Steven", "item": "bıçak", "produce": [53, 55], "use1": [21, 23], "use2": [9, 11], "price": [12, 15], "currency": "TL"}
 {"template": "remainder_after_loss", "name": "James", "item": "mum", "start": [47, 149, 128], "lost": [28, 29]}
 {"template": "remainder_after_loss", "name": "Volkan", "item": "etek", "start": [61, 73], "lost": [28, 29]}
-{"template": "equal_sharing", "name": "Amca", "item": "bayramlık", "total": [200, 400], "people": [2, 4, 5]}
 {"template": "compare_difference", "name": ["Jose", "Adam"], "item": ["top", "oyuncak araba"], "a": [173, 176, 186], "b": [117, 165]}
 {"template": "rate_time", "name": "Nihat", "item": "halı", "rate": [9, 13], "time": [14, 28]}
 {"template": "sell_leftover", "name": "Kerem", "item": "havuç", "produce": [19, 21], "use1": [10, 12], "use2": [1, 2], "price": [31, 34], "currency": "TL"}
@@ -95,12 +95,10 @@
 {"template": "unit_price_quantity", "name": "Robert", "item": "cüzdan", "price": [114, 123], "qty": [27, 29], "currency": "TL"}
 {"template": "sell_leftover", "name": "Hakan", "item": "salatalık", "produce": [77, 78, 85], "use1": [22, 23], "use2": [26, 32], "price": [137, 144], "currency": "TL"}
 {"template": "reverse_operation", "name": ["Markus", "Lukas"], "item": ["laptop çantası", "bel çantası"], "end": [261, 278], "add": [41, 76]}
-{"template": "remainder_after_loss", "name": "Thomas", "item": "krem peynir kutusu", "start": [281, 241], "lost": [34, 179, 57]}
 {"template": "remainder_after_loss", "name": "Pınar", "item": "bebek", "start": [289, 149], "lost": [94, 49]}
 {"template": "sell_leftover", "name": "Ece", "item": "silgi", "produce": [58, 62], "use1": [23, 27], "use2": [13, 16], "price": [12, 17], "currency": "TL"}
 {"template": "unit_price_quantity", "name": "Daniel", "item": "yoğurt kabı", "price": [69, 82], "qty": [21, 24], "currency": "TL"}
 {"template": "sell_leftover", "name": "George", "item": "demlik", "produce": [330, 332, 335], "use1": [17, 19], "use2": [47, 54], "price": [113, 114], "currency": "TL"}
-{"template": "compare_difference", "name": ["Douglas", "Zachary"], "item": ["kase", "çatal"], "a": [226, 246, 254], "b": [52, 108]}
 {"template": "unit_price_quantity", "name": "Peter", "item": "şişe", "price": [129, 136], "qty": [27, 29, 30], "currency": "TL"}
 {"template": "sell_leftover", "name": "Volkan", "item": "kilit", "produce": [185, 195], "use1": [64, 71], "use2": [100, 102], "price": [121, 125], "currency": "TL"}
 {"template": "compare_difference", "name": ["Gregory", "Alexander"], "item": ["şarj cihazı", "kulaklık"], "a": [183, 184], "b": [171, 173, 182]}
@@ -186,6 +184,7 @@
 {"template": "ratio_scaling", "name": ["Tobias", "Werner"], "item_a": "avokado", "item_b": "incir", "ratio_a": [1], "ratio_b": [2], "total": [138, 195], "ask_side": "b"}
 {"template": "ratio_scaling", "item_a": "gri araba", "item_b": "beyaz araba", "ratio_a": [2, 3], "ratio_b": [7], "total": [90, 180], "ask_side": "b"}
 {"template": "equal_sharing", "name": "Fahri", "item": "sünger", "total": [20, 120, 160], "people": [5, 10]}
+{"template": "remainder_after_loss", "name": "Robert", "item": "demlik", "start": [389, 249], "lost": [167, 222]}
 {"template": "sell_leftover", "name": "Serkan", "item": "anahtar", "produce": [27, 29], "use1": [2, 4], "use2": [13, 14], "price": [9, 13], "currency": "TL"}
 {"template": "unit_price_quantity", "name": "Serkan", "item": "anahtar", "price": [143, 146, 150], "qty": [26, 28], "currency": "TL"}
 {"template": "rate_time", "name": "Can", "item": "şapka", "rate": [9, 13], "time": [129, 151]}
@@ -205,6 +204,7 @@
 {"template": "reverse_operation", "name": ["Jorge", "Paula"], "item": ["yağlı kağıt rulosu", "çöp poşeti rulosu"], "end": [136, 195, 199], "add": [107, 116]}
 {"template": "remainder_after_loss", "name": "Gregory", "item": "sehpa", "start": [316, 394, 371], "lost": [299, 124, 47]}
 {"template": "reverse_operation", "name": ["Raul", "Camila"], "item": ["sabun kalıbı", "sıvı sabun şişesi"], "end": [116, 146], "add": [50, 59]}
+{"template": "multi_step_add_sub", "name": "Deniz", "item": "sarımsak başı", "start": [247, 248], "add": [36, 39], "sub": [63, 65]}
 {"template": "remainder_after_loss", "name": "Edward", "item": "peçete paketi", "start": [141, 380], "lost": [73, 44, 102]}
 {"template": "reverse_operation", "name": ["Alejandro", "Carolina"], "item": ["poğaça", "börek dilimi"], "end": [237, 273], "add": [88, 94, 106]}
 {"template": "remainder_after_loss", "name": "Gökhan", "item": "çarşaf", "start": [169, 313, 148], "lost": [97, 65, 133]}
@@ -223,6 +223,7 @@
 {"template": "remainder_after_loss", "name": "Christopher", "item": "tabak", "start": [273, 158], "lost": [35, 29, 91]}
 {"template": "rate_time", "name": "Fatma", "item": "gardırop", "rate": [22, 24], "time": [18, 19, 68]}
 {"template": "compare_difference", "name": ["Edward", "Ronald"], "item": ["süzgeç", "rende"], "a": [213, 234], "b": [178, 193, 196]}
+{"template": "produce_consume_sell", "name": ["Pastane"], "item": "kurabiye", "produce": [40, 50, 75, 100], "use1": [10, 15, 20], "use2": [4, 6, 9], "price": [3, 5, 7], "currency": "TL"}
 {"template": "unit_price_quantity", "name": "Simge", "item": "klasör", "price": [13, 32], "qty": [6, 13], "currency": "TL"}
 {"template": "reverse_operation", "name": ["Joerg", "Gunter"], "item": ["pizza dilimi", "hamburger"], "end": [187, 202], "add": [112, 115]}
 {"template": "remainder_after_loss", "name": "Kerem", "item": "silgi", "start": [61, 136, 322], "lost": [12, 54, 56]}
@@ -238,6 +239,7 @@
 {"template": "rate_time", "name": "Turgut", "item": "tur", "rate": [4, 8, 11], "time": [10, 42, 50]}
 {"template": "multi_step_add_sub", "name": "Sibel", "item": "çekmece", "start": [39, 61], "add": [56, 76], "sub": [84, 93]}
 {"template": "compare_difference", "name": ["Selim", "Cem"], "item": ["kuru fasulye paketi", "yulaf paketi"], "a": [196, 241], "b": [137, 164]}
+{"template": "rate_time", "name": "James", "item": "sabun kalıbı", "rate": [9, 11], "time": [29, 44, 56]}
 {"template": "compare_difference", "name": ["Nicholas", "Eric"], "item": ["streç film rulosu", "alüminyum folyo rulosu"], "a": [273, 282, 293], "b": [191, 198]}
 {"template": "multi_step_add_sub", "name": "Tolga", "item": "balık fileto", "start": [55, 81], "add": [27, 36], "sub": [34, 64]}
 {"template": "compare_difference", "name": ["Sude", "Duygu"], "item": ["pirinç paketi", "bulgur paketi"], "a": [296, 297], "b": [188, 191]}
@@ -246,5 +248,3 @@
 {"template": "sell_leftover", "name": "Joseph", "item": "el çantası", "produce": [115, 116], "use1": [22, 23], "use2": [69, 70], "price": [100, 106], "currency": "TL"}
 {"template": "compare_difference", "name": ["Mustafa", "Abdullah"], "item": ["vida", "çivi"], "a": [202, 262], "b": [105, 119]}
 {"template": "ratio_scaling", "name": ["Levent", "İnci"], "item_a": "çilek reçeli", "item_b": "vişne reçeli", "ratio_a": [3, 5], "ratio_b": [1, 3], "total": [216, 312], "ask_side": "a"}
-{"template": "remainder_after_loss", "name": "Onur", "item": "salatalık", "start": [89, 31, 356], "lost": [23, 24]}
-{"template": "compare_difference", "name": ["Benjamin", "Samuel"], "item": ["telefon", "telefon kılıfı"], "a": [206, 213, 217], "b": [197, 199]}
