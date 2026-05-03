@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+import time
 from pathlib import Path
 from typing import Any
 
@@ -59,6 +60,9 @@ def main() -> None:
 
     batch_size = int(eval_cfg.get("batch_size", 1))
     max_new_tokens = int(eval_cfg.get("max_new_tokens", 192))
+    progress_interval = int(eval_cfg.get("progress_interval", 10))
+    flush_interval = int(eval_cfg.get("flush_interval", 25))
+    predictions_path = resolve_output_path(args.predictions_out) if args.predictions_out else None
     generation_kwargs = build_generation_kwargs(eval_cfg, tokenizer)
 
     rows = evaluate_records(
@@ -70,6 +74,9 @@ def main() -> None:
         max_new_tokens=max_new_tokens,
         reward_cfg=reward_cfg,
         generation_kwargs=generation_kwargs,
+        predictions_path=predictions_path,
+        progress_interval=progress_interval,
+        flush_interval=flush_interval,
     )
     report = {
         "model_name_or_path": str(model_name_or_path),
@@ -87,8 +94,8 @@ def main() -> None:
         output_path = resolve_output_path(args.output)
         output_path.parent.mkdir(parents=True, exist_ok=True)
         output_path.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
-    if args.predictions_out:
-        write_jsonl(resolve_output_path(args.predictions_out), rows)
+    if predictions_path:
+        write_jsonl(predictions_path, rows)
 
 
 def load_eval_records(data_cfg: dict[str, Any], *, override_paths: list[str] | None) -> list[dict[str, Any]]:
@@ -191,8 +198,20 @@ def evaluate_records(
     max_new_tokens: int,
     reward_cfg: dict[str, Any],
     generation_kwargs: dict[str, Any],
+    predictions_path: Path | None = None,
+    progress_interval: int = 10,
+    flush_interval: int = 25,
 ) -> list[dict[str, Any]]:
     rows: list[dict[str, Any]] = []
+    total = len(records)
+    started_at = time.monotonic()
+    next_progress_at = progress_interval if progress_interval > 0 else total
+    last_flush_count = 0
+    print(
+        f"[eval] Starting {total} records with batch_size={batch_size}, max_new_tokens={max_new_tokens}",
+        file=sys.stderr,
+        flush=True,
+    )
     with torch.no_grad():
         for start in range(0, len(records), batch_size):
             batch = records[start : start + batch_size]
@@ -236,7 +255,49 @@ def evaluate_records(
                         "parsed_prediction": score["parsed"],
                     }
                 )
+            completed = len(rows)
+            if completed >= next_progress_at or completed == total:
+                _print_progress(completed, total, started_at)
+                while progress_interval > 0 and next_progress_at <= completed:
+                    next_progress_at += progress_interval
+            if predictions_path and flush_interval > 0 and completed - last_flush_count >= flush_interval:
+                write_jsonl(predictions_path, rows)
+                last_flush_count = completed
+                print(
+                    f"[eval] Flushed {completed}/{total} predictions to {predictions_path}",
+                    file=sys.stderr,
+                    flush=True,
+                )
     return rows
+
+
+def _print_progress(completed: int, total: int, started_at: float) -> None:
+    elapsed = time.monotonic() - started_at
+    rate = completed / elapsed if elapsed > 0 else 0.0
+    remaining = (total - completed) / rate if rate > 0 else None
+    percent = (completed / total * 100.0) if total else 100.0
+    print(
+        "[eval] "
+        f"{completed}/{total} ({percent:.1f}%) "
+        f"elapsed={_format_duration(elapsed)} "
+        f"eta={_format_duration(remaining)} "
+        f"rate={rate:.3f} examples/s",
+        file=sys.stderr,
+        flush=True,
+    )
+
+
+def _format_duration(seconds: float | None) -> str:
+    if seconds is None:
+        return "unknown"
+    total_seconds = max(0, int(seconds))
+    hours, remainder = divmod(total_seconds, 3600)
+    minutes, secs = divmod(remainder, 60)
+    if hours:
+        return f"{hours}h{minutes:02d}m{secs:02d}s"
+    if minutes:
+        return f"{minutes}m{secs:02d}s"
+    return f"{secs}s"
 
 
 if __name__ == "__main__":

@@ -44,3 +44,5 @@ eval:
   max_new_tokens: 128
   do_sample: false
   force_cpu: false
+  progress_interval: 10
+  flush_interval: 25
