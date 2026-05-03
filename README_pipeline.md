@@ -26,9 +26,12 @@ It contains:
 ```text
 outputs/200_sample/episodes.jsonl
 outputs/200_sample/episode_sft.jsonl
+outputs/200_sample/episode_sft_split.jsonl
 outputs/200_sample/episode_dpo.jsonl
 outputs/200_sample/episode_grpo_offline.jsonl
+outputs/200_sample/episode_grpo_offline_split.jsonl
 outputs/200_sample/episode_grpo_online.jsonl
+outputs/200_sample/episode_grpo_online_split.jsonl
 outputs/200_sample/manifest.json
 outputs/200_sample/selected_seeds/tierA_selected_50.jsonl
 outputs/200_sample/selected_seeds/tierB_selected_30.jsonl
@@ -265,6 +268,26 @@ One prompt with gold metadata for online reward computation.
 }
 ```
 
+`episode_grpo_online_split.jsonl`
+
+Main and probe are separate prompt rows. This is the preferred export shape for Qwen debugging and eval:
+
+```json
+{
+  "id": "...::main",
+  "episode_id": "...",
+  "task_type": "main",
+  "prompt": "Matematik sorusunu coz...\n<final>\noption:\nmain:\n</final>",
+  "gold": {
+    "main_gold_option": "A",
+    "main_gold_final_answer": "108",
+    "probe_gold_final_answer": "162"
+  }
+}
+```
+
+The source `episodes.jsonl` remains the recommended training input because the trainer can split it dynamically while retaining all reward metadata.
+
 ## Legacy Single-Sample Pipeline
 
 The legacy pipeline creates plain math questions first, then converts them into older SFT/DPO/GRPO files.
@@ -395,9 +418,28 @@ For GRPO training, point the training config at the source episode file:
 ```yaml
 data:
   dataset_format: source_episode
+  split_main_probe: true
   train_paths:
     - outputs/200_sample/episodes.jsonl
 ```
+
+With `split_main_probe: true`, each source episode becomes:
+
+```text
+1 main MCQ prompt
+1 separate probe prompt
+```
+
+So `outputs/200_sample/episodes.jsonl` has 200 source episodes, but the trainer sees 400 prompt-level examples when `max_train_samples: null`.
+
+If you see `train_examples: 8`, the cause is not the dataset size. It means the active YAML has:
+
+```yaml
+data:
+  max_train_samples: 8
+```
+
+Remove the cap or set it to `null` to load all split prompt rows.
 
 Then run:
 
@@ -409,7 +451,16 @@ For standalone evaluation:
 
 ```powershell
 python training/eval_grpo.py `
-  --config training/configs/colab_qwen4b.yaml `
+  --config training/configs/eval_qwen4b_test500.yaml `
   --checkpoint outputs/training/grpo_pilot/checkpoint-20 `
-  --data outputs/200_sample/episodes.jsonl
+  --output outputs/training/eval_test500_report.json `
+  --predictions_out outputs/training/eval_test500_predictions.jsonl
 ```
+
+The held-out test dataset is:
+
+```text
+training/test_500/episodes.jsonl
+```
+
+It contains 500 source episodes with a 50% A, 30% B, 20% C tier mix and no exact main/probe question-text overlap with `outputs/200_sample/episodes.jsonl`. With split eval enabled, it becomes 1000 prompt-level eval tasks.

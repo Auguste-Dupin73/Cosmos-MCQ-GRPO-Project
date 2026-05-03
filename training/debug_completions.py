@@ -92,6 +92,7 @@ def main() -> None:
                     probe=record.get("probe"),
                     gold=record.get("gold"),
                     reward_spec=record.get("reward_spec"),
+                    task_type=record.get("task_type"),
                     reward_config=reward_cfg,
                 )
                 row = build_debug_row(
@@ -129,6 +130,7 @@ def load_debug_records(
         dataset_format=data_cfg.get("dataset_format", "auto"),
         include_support_pack=bool(data_cfg.get("include_support_pack", True)),
         append_response_format=bool(data_cfg.get("append_response_format", False)),
+        split_main_probe=bool(data_cfg.get("split_main_probe", False)),
         max_samples=None,
         shuffle=bool(data_cfg.get("shuffle_train", False)),
         seed=seed,
@@ -236,6 +238,8 @@ def build_debug_row(
         "prompt_index": prompt_index,
         "generation_index": generation_index,
         "id": record.get("id"),
+        "episode_id": record.get("episode_id"),
+        "task_type": record.get("task_type"),
         "skill_id": record.get("skill_id"),
         "template_id": record.get("template_id"),
         "tier": record.get("tier"),
@@ -262,7 +266,7 @@ def print_prompt_header(record: Mapping[str, Any], prompt_index: int, *, show_pr
     print("\n" + "=" * 88)
     print(
         f"Prompt {prompt_index}: id={record.get('id')} tier={record.get('tier')} "
-        f"skill={record.get('skill_id')} template={record.get('template_id')}"
+        f"skill={record.get('skill_id')} template={record.get('template_id')} task={record.get('task_type')}"
     )
     if show_prompt:
         print("-" * 88)

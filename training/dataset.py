@@ -5,11 +5,12 @@ from typing import Any, Mapping, Sequence
 
 from datasets import Dataset
 
-from training.formatting import build_episode_prompt, derive_episode_targets_from_text, extract_prompt_options
+from training.formatting import build_episode_prompt, build_task_prompt, derive_episode_targets_from_text, extract_prompt_options
 from training.utils import build_common_metadata, read_jsonl, resolve_input_path, take_limit
 
 
 SOURCE_EPISODE = "source_episode"
+SOURCE_EPISODE_SPLIT = "source_episode_split"
 EPISODE_GRPO_OFFLINE = "episode_grpo_offline"
 EPISODE_GRPO_ONLINE = "episode_grpo_online"
 
@@ -30,6 +31,7 @@ def load_episode_records(
     dataset_format: str = "auto",
     include_support_pack: bool = True,
     append_response_format: bool = False,
+    split_main_probe: bool = False,
     max_samples: int | None = None,
     shuffle: bool = False,
     seed: int = 42,
@@ -45,14 +47,17 @@ def load_episode_records(
             continue
         current_format = detect_dataset_format(rows[0]) if dataset_format == "auto" else dataset_format
         seen_formats.add(current_format)
+        source_split = split_main_probe or current_format == SOURCE_EPISODE_SPLIT
+        row_format = SOURCE_EPISODE if current_format == SOURCE_EPISODE_SPLIT else current_format
         for row in rows:
-            records.append(
-                _convert_row(
+            records.extend(
+                _convert_rows(
                     row,
                     path=str(path),
-                    dataset_format=current_format,
+                    dataset_format=row_format,
                     include_support_pack=include_support_pack,
                     append_response_format=append_response_format,
+                    split_main_probe=source_split,
                 )
             )
 
@@ -71,25 +76,35 @@ def to_hf_dataset(records: Sequence[Mapping[str, Any]]) -> Dataset:
     return Dataset.from_list([dict(record) for record in records])
 
 
-def _convert_row(
+def _convert_rows(
     row: Mapping[str, Any],
     *,
     path: str,
     dataset_format: str,
     include_support_pack: bool,
     append_response_format: bool,
-) -> dict[str, Any]:
+    split_main_probe: bool,
+) -> list[dict[str, Any]]:
     if dataset_format == SOURCE_EPISODE:
-        return _convert_source_episode_row(
-            row,
-            path=path,
-            include_support_pack=include_support_pack,
-            append_response_format=append_response_format,
-        )
+        if split_main_probe:
+            return _convert_source_episode_split_rows(
+                row,
+                path=path,
+                include_support_pack=include_support_pack,
+                append_response_format=append_response_format,
+            )
+        return [
+            _convert_source_episode_row(
+                row,
+                path=path,
+                include_support_pack=include_support_pack,
+                append_response_format=append_response_format,
+            )
+        ]
     if dataset_format == EPISODE_GRPO_OFFLINE:
-        return _convert_offline_row(row, path=path)
+        return [_convert_offline_row(row, path=path)]
     if dataset_format == EPISODE_GRPO_ONLINE:
-        return _convert_online_row(row, path=path)
+        return [_convert_online_row(row, path=path)]
     raise ValueError(f"Unsupported dataset format: {dataset_format}")
 
 
@@ -119,9 +134,47 @@ def _convert_source_episode_row(
                 "probe_gold_final_answer": row["probe"]["gold_final_answer"],
             },
             "dataset_format": SOURCE_EPISODE,
+            "task_type": "episode",
         }
     )
     return record
+
+
+def _convert_source_episode_split_rows(
+    row: Mapping[str, Any],
+    *,
+    path: str,
+    include_support_pack: bool,
+    append_response_format: bool,
+) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
+    for task_type in ("main", "probe"):
+        record = build_common_metadata(row, path)
+        record.update(
+            {
+                "id": f"{row['episode_id']}::{task_type}",
+                "episode_id": row["episode_id"],
+                "task_type": task_type,
+                "prompt": build_task_prompt(
+                    row,
+                    task_type=task_type,
+                    include_support_pack=include_support_pack,
+                    append_response_format=append_response_format,
+                ),
+                "main": dict(row["main"]),
+                "probe": dict(row["probe"]),
+                "support_pack": dict(row["support_pack"]),
+                "reward_spec": dict(row.get("reward_spec", {})),
+                "gold": {
+                    "main_gold_option": row["main"]["gold_option"],
+                    "main_gold_final_answer": row["main"]["gold_final_answer"],
+                    "probe_gold_final_answer": row["probe"]["gold_final_answer"],
+                },
+                "dataset_format": SOURCE_EPISODE_SPLIT,
+            }
+        )
+        rows.append(record)
+    return rows
 
 
 def _convert_offline_row(row: Mapping[str, Any], *, path: str) -> dict[str, Any]:
@@ -146,6 +199,7 @@ def _convert_offline_row(row: Mapping[str, Any], *, path: str) -> dict[str, Any]
                 "probe_gold_final_answer": targets["probe"]["gold_final_answer"],
             },
             "dataset_format": EPISODE_GRPO_OFFLINE,
+            "task_type": row.get("task_type", "episode"),
         }
     )
     return record
@@ -173,6 +227,7 @@ def _convert_online_row(row: Mapping[str, Any], *, path: str) -> dict[str, Any]:
             },
             "gold": gold,
             "dataset_format": EPISODE_GRPO_ONLINE,
+            "task_type": row.get("task_type", "episode"),
         }
     )
     return record

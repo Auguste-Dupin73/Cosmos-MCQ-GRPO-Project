@@ -33,6 +33,7 @@ Best training input:
 
 - source episode JSONL such as `outputs/200_sample/episodes.jsonl`
 - this keeps full `main`, `probe`, `support_pack`, and reasoning targets available to the reward function
+- current Qwen configs use `split_main_probe: true`, so each source episode becomes two prompt-level training rows: one main MCQ prompt and one separate probe prompt
 
 Also supported:
 
@@ -43,6 +44,7 @@ Notes:
 
 - source episode files give the strongest reasoning-aware reward shaping
 - `train_grpo.py` should normally point to `episodes.jsonl`, not `episode_grpo_online.jsonl`
+- `episode_grpo_online_split.jsonl` is available for inspection/export, but the trainer gets the richest reward metadata from source `episodes.jsonl`
 - offline files are still useful because the loader can recover gold targets from the best candidate response
 - online files work, but reasoning checks are necessarily weaker because they do not store the full intermediate-step structure
 
@@ -80,6 +82,18 @@ python training/train_grpo.py --config training/configs/full.yaml
 
 ## Evaluation
 
+Evaluate a checkpoint on the held-out 500-episode test set:
+
+```powershell
+python training/eval_grpo.py `
+  --config training/configs/eval_qwen4b_test500.yaml `
+  --checkpoint path\to\checkpoint-or-model `
+  --output outputs/training/eval_test500_report.json `
+  --predictions_out outputs/training/eval_test500_predictions.jsonl
+```
+
+The test file has 500 source episodes and evaluates as 1000 prompt-level tasks because main and probe are tested separately.
+
 Evaluate a checkpoint from the pilot run:
 
 ```powershell
@@ -102,6 +116,8 @@ python training/eval_grpo.py `
 ## Training Behavior
 
 - `train_grpo.py` uses `trl.GRPOTrainer` directly
+- `data.max_train_samples` controls how many prompt-level rows are loaded after splitting; if it is `8`, the run prints `train_examples: 8`
+- `colab_qwen4b.yaml` and `full.yaml` now set `max_train_samples: null`, so the 200-episode training artifact loads as 400 prompt-level rows
 - reward logic stays in `reward_fn.py`
 - the trainer registers one real optimization reward and several zero-weight diagnostic rewards so training logs still expose:
   - reward mean/std

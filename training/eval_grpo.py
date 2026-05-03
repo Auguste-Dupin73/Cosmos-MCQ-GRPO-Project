@@ -7,7 +7,7 @@ from pathlib import Path
 from typing import Any
 
 import torch
-from transformers import AutoModelForCausalLM, AutoTokenizer
+from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 
 if __package__ in (None, ""):
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
@@ -53,7 +53,8 @@ def main() -> None:
     tokenizer = load_tokenizer(model_cfg, model_name_or_path)
     model = load_model(model_cfg, model_name_or_path)
     device = torch.device("cuda" if torch.cuda.is_available() and not eval_cfg.get("force_cpu", False) else "cpu")
-    model.to(device)
+    if not getattr(model, "is_loaded_in_4bit", False) and not getattr(model, "hf_device_map", None):
+        model.to(device)
     model.eval()
 
     batch_size = int(eval_cfg.get("batch_size", 1))
@@ -77,6 +78,7 @@ def main() -> None:
         "by_skill": summarize_metric_groups(rows, "skill_id"),
         "by_tier": summarize_metric_groups(rows, "tier"),
         "by_template": summarize_metric_groups(rows, "template_id"),
+        "by_task_type": summarize_metric_groups(rows, "task_type"),
     }
 
     print(json.dumps(report, ensure_ascii=False, indent=2))
@@ -93,6 +95,7 @@ def load_eval_records(data_cfg: dict[str, Any], *, override_paths: list[str] | N
     dataset_format = data_cfg.get("dataset_format", "auto")
     include_support_pack = bool(data_cfg.get("include_support_pack", True))
     append_response_format = bool(data_cfg.get("append_response_format", False))
+    split_main_probe = bool(data_cfg.get("split_main_probe", False))
 
     if override_paths:
         paths = override_paths
@@ -106,6 +109,7 @@ def load_eval_records(data_cfg: dict[str, Any], *, override_paths: list[str] | N
         dataset_format=dataset_format,
         include_support_pack=include_support_pack,
         append_response_format=append_response_format,
+        split_main_probe=split_main_probe,
         max_samples=None,
         shuffle=False,
         seed=int(data_cfg.get("seed", 42) or 42),
@@ -137,7 +141,30 @@ def load_model(model_cfg: dict[str, Any], model_name_or_path: str):
         model_kwargs["trust_remote_code"] = bool(model_cfg["trust_remote_code"])
     if "local_files_only" in model_cfg:
         model_kwargs["local_files_only"] = bool(model_cfg["local_files_only"])
+    if "quantization" in model_cfg:
+        model_kwargs["quantization_config"] = build_quantization_config(dict(model_cfg["quantization"]))
+        if torch.cuda.is_available():
+            model_kwargs.setdefault("device_map", "auto")
+
+    adapter_path = Path(model_name_or_path)
+    if adapter_path.exists() and (adapter_path / "adapter_config.json").exists():
+        base = AutoModelForCausalLM.from_pretrained(model_cfg["name_or_path"], **model_kwargs)
+        try:
+            from peft import PeftModel
+        except ImportError as exc:  # pragma: no cover
+            raise RuntimeError("PEFT is required to evaluate a LoRA adapter checkpoint. Install with: pip install peft") from exc
+        return PeftModel.from_pretrained(base, str(adapter_path))
     return AutoModelForCausalLM.from_pretrained(model_name_or_path, **model_kwargs)
+
+
+def build_quantization_config(raw_config: dict[str, Any]) -> BitsAndBytesConfig:
+    for key in ("bnb_4bit_compute_dtype", "bnb_4bit_quant_storage"):
+        if key in raw_config:
+            raw_config[key] = coerce_torch_dtype(raw_config[key])
+    try:
+        return BitsAndBytesConfig(**raw_config)
+    except Exception as exc:  # pragma: no cover
+        raise RuntimeError("bitsandbytes is required for model.quantization. Install with: pip install bitsandbytes") from exc
 
 
 def build_generation_kwargs(eval_cfg: dict[str, Any], tokenizer) -> dict[str, Any]:
@@ -184,18 +211,22 @@ def evaluate_records(
                     probe=record.get("probe"),
                     gold=record.get("gold"),
                     reward_spec=record.get("reward_spec"),
+                    task_type=record.get("task_type"),
                     reward_config=reward_cfg,
                 )
+                task_type = record.get("task_type", "episode")
                 rows.append(
                     {
                         "id": record["id"],
+                        "episode_id": record.get("episode_id"),
+                        "task_type": task_type,
                         "skill_id": record.get("skill_id"),
                         "template_id": record.get("template_id"),
                         "tier": record.get("tier"),
                         "reward": score["reward"],
-                        "main_accuracy": score["main_accuracy"],
-                        "option_accuracy": score["option_accuracy"],
-                        "probe_accuracy": score["probe_accuracy"],
+                        "main_accuracy": score["main_accuracy"] if task_type != "probe" else None,
+                        "option_accuracy": score["option_accuracy"] if task_type != "probe" else None,
+                        "probe_accuracy": score["probe_accuracy"] if task_type != "main" else None,
                         "joint_success": score["joint_success"],
                         "reasoning_consistent": score["reasoning_consistent"],
                         "correct_option_wrong_reasoning": score["correct_option_wrong_reasoning"],

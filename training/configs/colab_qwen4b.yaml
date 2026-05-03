@@ -36,10 +36,11 @@ data:
     - outputs/200_sample/episodes.jsonl
   include_support_pack: false
   append_response_format: true
+  split_main_probe: true
   shuffle_train: true
   eval_split: 0
-  max_train_samples: 8
-  max_eval_samples: 0
+  max_train_samples: null
+  max_eval_samples: null
 
 training:
   output_dir: /content/drive/MyDrive/cosmos-grpo/qwen4b-pilot
@@ -47,12 +48,13 @@ training:
   per_device_eval_batch_size: 1
   gradient_accumulation_steps: 1
   learning_rate: 2.0e-6
-  warmup_steps: 1
-  max_steps: 5
-  logging_steps: 1
+  warmup_steps: 10
+  max_steps: -1
+  num_train_epochs: 1
+  logging_steps: 5
   eval_strategy: "no"
   save_strategy: steps
-  save_steps: 5
+  save_steps: 100
   save_total_limit: 2
   optim: paged_adamw_8bit
   report_to: []

@@ -1,0 +1,46 @@
+seed: 42
+
+model:
+  name_or_path: Qwen/Qwen3-4B-Base
+  tokenizer_name_or_path: Qwen/Qwen3-4B-Base
+  trust_remote_code: true
+  local_files_only: false
+  torch_dtype: bfloat16
+  model_init_kwargs:
+    attn_implementation: sdpa
+  quantization:
+    load_in_4bit: true
+    bnb_4bit_quant_type: nf4
+    bnb_4bit_compute_dtype: bfloat16
+    bnb_4bit_use_double_quant: true
+
+data:
+  dataset_format: source_episode
+  eval_paths:
+    - training/test_500/episodes.jsonl
+  include_support_pack: false
+  append_response_format: true
+  split_main_probe: true
+  max_eval_samples: null
+
+reward:
+  full_credit: 1.0
+  main_and_probe_credit: 0.7
+  main_only_credit: 0.4
+  correct_option_wrong_reasoning_credit: 0.25
+  failure_credit: 0.0
+  format_credit: 0.10
+  option_present_credit: 0.03
+  main_final_present_credit: 0.03
+  probe_final_present_credit: 0.03
+  reasoning_present_credit: 0.03
+  numeric_work_credit: 0.02
+  gold_answer_mentioned_credit: 0.04
+  max_shaping_credit: 0.25
+  non_joint_reward_cap: 0.95
+
+eval:
+  batch_size: 1
+  max_new_tokens: 128
+  do_sample: false
+  force_cpu: false

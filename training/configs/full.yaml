@@ -36,10 +36,11 @@ data:
     - outputs/200_sample/episodes.jsonl
   include_support_pack: false
   append_response_format: true
+  split_main_probe: true
   shuffle_train: true
   eval_split: 0
   max_train_samples: null
-  max_eval_samples: 0
+  max_eval_samples: null
 
 training:
   output_dir: outputs/training/qwen4b_l4_full
@@ -47,9 +48,9 @@ training:
   per_device_eval_batch_size: 1
   gradient_accumulation_steps: 2
   learning_rate: 2.0e-6
-  warmup_steps: 5
-  max_steps: 40
-  num_train_epochs: 3
+  warmup_steps: 10
+  max_steps: -1
+  num_train_epochs: 1
   logging_strategy: steps
   logging_steps: 2
   logging_first_step: true
@@ -60,7 +61,7 @@ training:
   lr_scheduler_type: cosine
   optim: paged_adamw_8bit
   report_to: []
-  max_completion_length: 96
+  max_completion_length: 128
   num_generations: 2
   num_generations_eval: 1
   steps_per_generation: 2
@@ -97,7 +98,7 @@ reward:
 
 eval:
   batch_size: 1
-  max_new_tokens: 96
+  max_new_tokens: 128
   do_sample: false
   temperature: 0.8
   top_p: 1.0

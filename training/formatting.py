@@ -53,18 +53,48 @@ COPIED_INSTRUCTION_CUES = (
 )
 
 
-RESPONSE_FORMAT_BLOCK = "\n".join(
+EPISODE_RESPONSE_FORMAT_BLOCK = "\n".join(
     [
         "",
-        "Asagidaki bos etiketleri aynen kopyala ve her etiketten sonra kendi cevabini yaz.",
-        "Soru metni, secenek listesi, Markdown, ###, kalin yazi veya sablon aciklamasi yazma.",
-        "Ana soru secimi:",
-        "Ana cozum:",
-        "Ana nihai cevap:",
-        "Probe cozum:",
-        "Probe nihai cevap:",
+        "Cevabini asagidaki bos alanlarla ver:",
+        "<reasoning>",
+        "</reasoning>",
+        "<final>",
+        "option:",
+        "main:",
+        "probe:",
+        "</final>",
     ]
 )
+
+MAIN_RESPONSE_FORMAT_BLOCK = "\n".join(
+    [
+        "",
+        "Cevabini asagidaki bos alanlarla ver:",
+        "<reasoning>",
+        "</reasoning>",
+        "<final>",
+        "option:",
+        "main:",
+        "</final>",
+    ]
+)
+
+PROBE_RESPONSE_FORMAT_BLOCK = "\n".join(
+    [
+        "",
+        "Cevabini asagidaki bos alanlarla ver:",
+        "<reasoning>",
+        "</reasoning>",
+        "<final>",
+        "probe:",
+        "</final>",
+    ]
+)
+
+RESPONSE_FORMAT_BLOCK = EPISODE_RESPONSE_FORMAT_BLOCK
+XML_REASONING_RE = re.compile(r"(?is)<reasoning>\s*(.*?)\s*</reasoning>")
+XML_FINAL_RE = re.compile(r"(?is)<final>\s*(.*?)\s*</final>")
 
 
 def render_option_lines(options: Sequence[Mapping[str, Any]]) -> list[str]:
@@ -80,11 +110,11 @@ def build_episode_prompt(
     main = episode["main"]
     probe = episode["probe"]
     lines = [
-        "Ana \u00e7oktan se\u00e7meli matematik sorusunu \u00e7\u00f6z.",
+        "Ana coktan secmeli matematik sorusunu coz.",
         main["mcq_stem"],
         *render_option_lines(main["options"]),
-        "Do\u011fru se\u00e7ene\u011fi belirt, \u00e7\u00f6z\u00fcm\u00fcn\u00fc a\u00e7\u0131kla ve nihai cevab\u0131 yaz.",
-        "Ana soru do\u011fruysa ayn\u0131 beceriyi \u00f6l\u00e7en probe sorusunu da \u00e7\u00f6z.",
+        "Dogru secenegi, kisa cozumu ve nihai cevabi yaz.",
+        "Ardindan probe sorusunu coz.",
         f"Probe soru: {probe['question_text']}",
     ]
     if include_support_pack:
@@ -99,8 +129,80 @@ def build_episode_prompt(
         )
     prompt = "\n".join(lines)
     if append_response_format:
-        prompt = f"{prompt}\n{RESPONSE_FORMAT_BLOCK}"
+        prompt = f"{prompt}\n{EPISODE_RESPONSE_FORMAT_BLOCK}"
     return prompt
+
+
+def build_main_prompt(
+    episode: Mapping[str, Any],
+    *,
+    include_support_pack: bool = False,
+    append_response_format: bool = False,
+) -> str:
+    main = episode["main"]
+    lines = [
+        "Matematik sorusunu coz.",
+        "Soru:",
+        main["mcq_stem"],
+        "Secenekler:",
+        *render_option_lines(main["options"]),
+    ]
+    if include_support_pack:
+        lines.extend(_render_support_pack(episode["support_pack"]))
+    prompt = "\n".join(lines)
+    if append_response_format:
+        prompt = f"{prompt}\n{MAIN_RESPONSE_FORMAT_BLOCK}"
+    return prompt
+
+
+def build_probe_prompt(
+    episode: Mapping[str, Any],
+    *,
+    include_support_pack: bool = False,
+    append_response_format: bool = False,
+) -> str:
+    lines = [
+        "Matematik sorusunu coz.",
+        "Soru:",
+        episode["probe"]["question_text"],
+    ]
+    if include_support_pack:
+        lines.extend(_render_support_pack(episode["support_pack"]))
+    prompt = "\n".join(lines)
+    if append_response_format:
+        prompt = f"{prompt}\n{PROBE_RESPONSE_FORMAT_BLOCK}"
+    return prompt
+
+
+def build_task_prompt(
+    episode: Mapping[str, Any],
+    *,
+    task_type: str,
+    include_support_pack: bool = False,
+    append_response_format: bool = False,
+) -> str:
+    if task_type == "main":
+        return build_main_prompt(
+            episode,
+            include_support_pack=include_support_pack,
+            append_response_format=append_response_format,
+        )
+    if task_type == "probe":
+        return build_probe_prompt(
+            episode,
+            include_support_pack=include_support_pack,
+            append_response_format=append_response_format,
+        )
+    raise ValueError(f"Unsupported task_type: {task_type}")
+
+
+def _render_support_pack(pack: Mapping[str, Any]) -> list[str]:
+    return [
+        "Ipucu:",
+        f"- Ozet: {pack['skill_summary']}",
+        *[f"- Kural: {hint}" for hint in pack["formula_hints"]],
+        f"- Mini ornek: {pack['mini_example']}",
+    ]
 
 
 def build_prompt_from_record(
@@ -116,8 +218,8 @@ def build_prompt_from_record(
             append_response_format=append_response_format,
         )
     prompt = str(row["prompt"])
-    if append_response_format and RESPONSE_FORMAT_BLOCK not in prompt:
-        return f"{prompt}\n{RESPONSE_FORMAT_BLOCK}"
+    if append_response_format and EPISODE_RESPONSE_FORMAT_BLOCK not in prompt:
+        return f"{prompt}\n{EPISODE_RESPONSE_FORMAT_BLOCK}"
     return prompt
 
 
@@ -171,6 +273,34 @@ def _extract_labeled_section(text: str, label_pattern: str) -> str | None:
     if _looks_like_copied_instruction(section):
         return None
     return section
+
+
+def _extract_xml_reasoning(text: str) -> str | None:
+    match = XML_REASONING_RE.search(text)
+    if not match:
+        return None
+    section = _clean_scalar(match.group(1))
+    if _looks_like_copied_instruction(section):
+        return None
+    return section
+
+
+def _extract_xml_final_field(text: str, *field_names: str) -> str | None:
+    match = XML_FINAL_RE.search(text)
+    if not match:
+        return None
+    final_block = match.group(1)
+    escaped_names = [re.escape(name) for name in field_names]
+    field_re = re.compile(
+        rf"(?im)^\s*(?:{'|'.join(escaped_names)})\s*:\s*(.*?)\s*$"
+    )
+    field_match = field_re.search(final_block)
+    if not field_match:
+        return None
+    value = _clean_scalar(field_match.group(1))
+    if _looks_like_copied_instruction(value):
+        return None
+    return value
 
 
 def _extract_option_value(value: str | None) -> str | None:
@@ -227,11 +357,21 @@ def _infer_operation_chain(text: str) -> list[str]:
 
 def parse_episode_completion(text: str) -> dict[str, Any]:
     raw_text = text.strip()
-    main_option = _extract_option_value(_extract_labeled_section(raw_text, MAIN_OPTION_LABEL))
-    main_reasoning = _extract_labeled_section(raw_text, MAIN_REASONING_LABEL) or ""
-    main_final = _clean_final_answer(_extract_labeled_section(raw_text, MAIN_FINAL_LABEL))
-    probe_reasoning = _extract_labeled_section(raw_text, PROBE_REASONING_LABEL) or ""
-    probe_final = _clean_final_answer(_extract_labeled_section(raw_text, PROBE_FINAL_LABEL))
+    xml_reasoning = _extract_xml_reasoning(raw_text)
+    main_option = _extract_option_value(
+        _extract_xml_final_field(raw_text, "option", "secenek", "seçenek")
+        or _extract_labeled_section(raw_text, MAIN_OPTION_LABEL)
+    )
+    main_reasoning = _extract_labeled_section(raw_text, MAIN_REASONING_LABEL) or xml_reasoning or ""
+    main_final = _clean_final_answer(
+        _extract_xml_final_field(raw_text, "main", "ana")
+        or _extract_labeled_section(raw_text, MAIN_FINAL_LABEL)
+    )
+    probe_reasoning = _extract_labeled_section(raw_text, PROBE_REASONING_LABEL) or xml_reasoning or ""
+    probe_final = _clean_final_answer(
+        _extract_xml_final_field(raw_text, "probe")
+        or _extract_labeled_section(raw_text, PROBE_FINAL_LABEL)
+    )
     main_results = _extract_equation_results(main_reasoning)
     probe_results = _extract_equation_results(probe_reasoning)
 

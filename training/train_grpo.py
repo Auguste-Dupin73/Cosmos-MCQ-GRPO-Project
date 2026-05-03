@@ -112,6 +112,7 @@ def prepare_datasets(data_cfg: dict[str, Any], *, seed: int) -> tuple[list[dict[
     dataset_format = data_cfg.get("dataset_format", "auto")
     include_support_pack = bool(data_cfg.get("include_support_pack", True))
     append_response_format = bool(data_cfg.get("append_response_format", False))
+    split_main_probe = bool(data_cfg.get("split_main_probe", False))
 
     train_paths = coerce_path_list(data_cfg.get("train_paths") or data_cfg.get("train_path"))
     if not train_paths:
@@ -122,6 +123,7 @@ def prepare_datasets(data_cfg: dict[str, Any], *, seed: int) -> tuple[list[dict[
         dataset_format=dataset_format,
         include_support_pack=include_support_pack,
         append_response_format=append_response_format,
+        split_main_probe=split_main_probe,
         max_samples=None,
         shuffle=bool(data_cfg.get("shuffle_train", True)),
         seed=seed,
@@ -135,6 +137,7 @@ def prepare_datasets(data_cfg: dict[str, Any], *, seed: int) -> tuple[list[dict[
             dataset_format=dataset_format,
             include_support_pack=include_support_pack,
             append_response_format=append_response_format,
+            split_main_probe=split_main_probe,
             max_samples=data_cfg.get("max_eval_samples"),
             shuffle=False,
             seed=seed,

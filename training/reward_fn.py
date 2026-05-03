@@ -73,9 +73,11 @@ def score_completion_against_episode(
     probe: Mapping[str, Any] | None = None,
     gold: Mapping[str, Any] | None = None,
     reward_spec: Mapping[str, Any] | None = None,
+    task_type: str | None = None,
     reward_config: Mapping[str, Any] | RewardConfig | None = None,
 ) -> dict[str, Any]:
     reward_conf = reward_config if isinstance(reward_config, RewardConfig) else normalize_reward_config(reward_config)
+    task_type = (task_type or "episode").strip().lower()
     main_item, probe_item = _coerce_episode_targets(prompt=prompt, main=main, probe=probe, gold=gold)
     parsed = parse_episode_completion(completion)
 
@@ -94,13 +96,18 @@ def score_completion_against_episode(
     reasoning_present = bool(main_reasoning.strip() or probe_reasoning.strip())
     numeric_work_present = bool(parsed["main_numbers"] or parsed["probe_numbers"] or NUMBER_TOKEN_RE.search(completion))
     gold_answer_mentioned = _gold_answer_mentioned(completion, gold_main_final, gold_probe_final)
-    format_flags = [
-        option_present,
-        bool(main_reasoning.strip()),
-        main_final_present,
-        bool(probe_reasoning.strip()),
-        probe_final_present,
-    ]
+    if task_type == "main":
+        format_flags = [option_present, bool(main_reasoning.strip()), main_final_present]
+    elif task_type == "probe":
+        format_flags = [bool(probe_reasoning.strip()), probe_final_present]
+    else:
+        format_flags = [
+            option_present,
+            bool(main_reasoning.strip()),
+            main_final_present,
+            bool(probe_reasoning.strip()),
+            probe_final_present,
+        ]
     format_compliance = sum(float(flag) for flag in format_flags) / len(format_flags)
     shaping_reward = _compute_shaping_reward(
         format_compliance=format_compliance,
@@ -137,13 +144,35 @@ def score_completion_against_episode(
     observed_ops = parsed["main_operation_chain"]
     operation_match = _operation_match(observed_ops, expected_ops)
 
+    probe_expected_intermediates = [
+        normalize_mcq_value(item["value"]) for item in probe_item.get("expected_intermediates", [])
+    ]
+    probe_observed_intermediates = parsed["probe_equation_results"] or parsed["probe_numbers"]
+    probe_intermediates_match = _intermediate_match(
+        probe_observed_intermediates,
+        probe_expected_intermediates,
+        probe_reasoning,
+    )
+    probe_expected_ops = list(probe_item.get("operation_chain", []))
+    probe_observed_ops = parsed["probe_operation_chain"]
+    probe_operation_match = _operation_match(probe_observed_ops, probe_expected_ops)
+
     reasoning_invalid = contradiction or _has_negative_reasoning_cue(main_reasoning)
-    if observed_intermediates and expected_intermediates and not _contains_subsequence(observed_intermediates, expected_intermediates):
+    if observed_intermediates and expected_intermediates and not _intermediate_match(
+        observed_intermediates,
+        expected_intermediates,
+        main_reasoning,
+    ):
         reasoning_invalid = True
-    if observed_ops and expected_ops and not _contains_subsequence(observed_ops, expected_ops):
+    if observed_ops and expected_ops and not _operation_match(observed_ops, expected_ops):
         reasoning_invalid = True
 
-    reasoning_consistent = bool(main_reasoning.strip()) and intermediates_match and operation_match and not contradiction
+    main_reasoning_consistent = bool(main_reasoning.strip()) and intermediates_match and operation_match and not contradiction
+    probe_reasoning_consistent = bool(probe_reasoning.strip()) and probe_intermediates_match and probe_operation_match
+    if task_type == "probe":
+        reasoning_consistent = probe_reasoning_consistent
+    else:
+        reasoning_consistent = main_reasoning_consistent
 
     correct_option_wrong_reasoning = option_accuracy and main_accuracy and reasoning_invalid
     joint_success = _joint_success(
@@ -152,6 +181,7 @@ def score_completion_against_episode(
         reasoning_consistent=reasoning_consistent,
         probe_accuracy=probe_accuracy,
         reward_spec=reward_spec,
+        task_type=task_type,
     )
     reward = _compute_reward(
         option_accuracy=option_accuracy,
@@ -163,6 +193,7 @@ def score_completion_against_episode(
         reward_spec=reward_spec,
         reward_config=reward_conf,
         shaping_reward=shaping_reward,
+        task_type=task_type,
     )
 
     return {
@@ -183,6 +214,7 @@ def score_completion_against_episode(
         "correct_option_wrong_reasoning": float(correct_option_wrong_reasoning),
         "parsed": parsed,
         "reasoning_invalid": bool(reasoning_invalid),
+        "task_type": task_type,
         "reward_config": asdict(reward_conf),
     }
 
@@ -278,6 +310,7 @@ def _batched_metric(
     probe: Sequence[Mapping[str, Any]] | None = None,
     gold: Sequence[Mapping[str, Any]] | None = None,
     reward_spec: Sequence[Mapping[str, Any]] | None = None,
+    task_type: Sequence[str] | None = None,
     reward_conf: RewardConfig,
     **_: Any,
 ) -> list[float]:
@@ -286,9 +319,10 @@ def _batched_metric(
     probe = list(probe or [None] * len(completions))
     gold = list(gold or [None] * len(completions))
     reward_spec = list(reward_spec or [{}] * len(completions))
+    task_type = list(task_type or ["episode"] * len(completions))
 
-    for prompt, completion, main_item, probe_item, gold_item, reward_item in zip(
-        prompts, completions, main, probe, gold, reward_spec, strict=True
+    for prompt, completion, main_item, probe_item, gold_item, reward_item, task_item in zip(
+        prompts, completions, main, probe, gold, reward_spec, task_type, strict=True
     ):
         score = score_completion_against_episode(
             completion,
@@ -297,6 +331,7 @@ def _batched_metric(
             probe=probe_item,
             gold=gold_item,
             reward_spec=reward_item,
+            task_type=task_item,
             reward_config=reward_conf,
         )
         results.append(float(score[metric_name]))
@@ -310,7 +345,13 @@ def _joint_success(
     reasoning_consistent: bool,
     probe_accuracy: bool,
     reward_spec: Mapping[str, Any] | None,
+    task_type: str,
 ) -> bool:
+    if task_type == "main":
+        return bool(main_accuracy and option_accuracy and reasoning_consistent)
+    if task_type == "probe":
+        return bool(probe_accuracy and reasoning_consistent)
+
     reward_spec = dict(reward_spec or {})
     option_ok = option_accuracy if reward_spec.get("require_main_option_correct", True) else True
     reasoning_ok = reasoning_consistent if reward_spec.get("require_main_reasoning_consistent", True) else True
@@ -329,9 +370,15 @@ def _compute_reward(
     reward_spec: Mapping[str, Any] | None,
     reward_config: RewardConfig,
     shaping_reward: float,
+    task_type: str,
 ) -> float:
     if joint_success:
         return reward_config.full_credit
+    if task_type == "probe":
+        if probe_accuracy:
+            return _cap_non_joint_reward(reward_config.main_only_credit + shaping_reward, reward_config)
+        return _cap_non_joint_reward(reward_config.failure_credit + shaping_reward, reward_config)
+
     if option_accuracy and main_accuracy and reasoning_invalid:
         return _cap_non_joint_reward(reward_config.correct_option_wrong_reasoning_credit + shaping_reward, reward_config)
 
@@ -413,13 +460,13 @@ def _intermediate_match(
     reasoning_text: str,
 ) -> bool:
     if expected:
-        return _contains_subsequence(observed, expected)
+        return _contains_subsequence(observed, expected) or bool(set(observed).intersection(expected))
     return bool(reasoning_text.strip())
 
 
 def _operation_match(observed: Sequence[str], expected: Sequence[str]) -> bool:
     if expected and observed:
-        return _contains_subsequence(observed, expected)
+        return _contains_subsequence(expected, observed)
     if expected and not observed:
         return False
     return True
