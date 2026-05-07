@@ -41,7 +41,7 @@ reward:
 
 eval:
   batch_size: 1
-  max_new_tokens: 128
+  max_new_tokens: 256
   do_sample: false
   force_cpu: false
   progress_interval: 10
