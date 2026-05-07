@@ -62,6 +62,7 @@ def main() -> None:
     max_new_tokens = int(eval_cfg.get("max_new_tokens", 192))
     progress_interval = int(eval_cfg.get("progress_interval", 10))
     flush_interval = int(eval_cfg.get("flush_interval", 25))
+    use_chat_template = bool(model_cfg.get("use_chat_template", False))
     predictions_path = resolve_output_path(args.predictions_out) if args.predictions_out else None
     generation_kwargs = build_generation_kwargs(eval_cfg, tokenizer)
 
@@ -77,9 +78,11 @@ def main() -> None:
         predictions_path=predictions_path,
         progress_interval=progress_interval,
         flush_interval=flush_interval,
+        use_chat_template=use_chat_template,
     )
     report = {
         "model_name_or_path": str(model_name_or_path),
+        "model_input_format": "chat_template" if use_chat_template else "raw_prompt",
         "num_examples": len(rows),
         "overall": summarize_metric_rows(rows),
         "by_skill": summarize_metric_groups(rows, "skill_id"),
@@ -201,6 +204,7 @@ def evaluate_records(
     predictions_path: Path | None = None,
     progress_interval: int = 10,
     flush_interval: int = 25,
+    use_chat_template: bool = False,
 ) -> list[dict[str, Any]]:
     rows: list[dict[str, Any]] = []
     total = len(records)
@@ -208,7 +212,9 @@ def evaluate_records(
     next_progress_at = progress_interval if progress_interval > 0 else total
     last_flush_count = 0
     print(
-        f"[eval] Starting {total} records with batch_size={batch_size}, max_new_tokens={max_new_tokens}",
+        f"[eval] Starting {total} records with batch_size={batch_size}, "
+        f"max_new_tokens={max_new_tokens}, "
+        f"input_format={'chat_template' if use_chat_template else 'raw_prompt'}",
         file=sys.stderr,
         flush=True,
     )
@@ -216,7 +222,8 @@ def evaluate_records(
         for start in range(0, len(records), batch_size):
             batch = records[start : start + batch_size]
             prompts = [record["prompt"] for record in batch]
-            encoded = tokenizer(prompts, padding=True, return_tensors="pt")
+            model_prompts = apply_chat_template(tokenizer, prompts) if use_chat_template else prompts
+            encoded = tokenizer(model_prompts, padding=True, return_tensors="pt")
             encoded = {key: value.to(device) for key, value in encoded.items()}
             generated = model.generate(**encoded, max_new_tokens=max_new_tokens, **generation_kwargs)
             prompt_length = encoded["input_ids"].shape[1]
@@ -269,6 +276,22 @@ def evaluate_records(
                     flush=True,
                 )
     return rows
+
+
+def apply_chat_template(tokenizer, prompts: list[str]) -> list[str]:
+    try:
+        return [
+            tokenizer.apply_chat_template(
+                [{"role": "user", "content": prompt}],
+                tokenize=False,
+                add_generation_prompt=True,
+            )
+            for prompt in prompts
+        ]
+    except Exception as exc:
+        raise RuntimeError(
+            "model.use_chat_template=true requires a tokenizer with a valid chat_template."
+        ) from exc
 
 
 def _print_progress(completed: int, total: int, started_at: float) -> None:

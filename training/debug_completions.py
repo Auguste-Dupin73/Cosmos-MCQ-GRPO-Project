@@ -54,6 +54,7 @@ def main() -> None:
     model.eval()
 
     generation_cfg = build_generation_config(args, training_cfg, tokenizer)
+    use_chat_template = bool(model_cfg.get("use_chat_template", False))
     device = infer_input_device(model)
     rows: list[dict[str, Any]] = []
 
@@ -65,6 +66,7 @@ def main() -> None:
                 "num_generations": generation_cfg["num_return_sequences"],
                 "max_new_tokens": generation_cfg["max_new_tokens"],
                 "do_sample": generation_cfg["do_sample"],
+                "input_format": "chat_template" if use_chat_template else "raw_prompt",
                 "temperature": generation_cfg.get("temperature"),
                 "top_p": generation_cfg.get("top_p"),
                 "top_k": generation_cfg.get("top_k"),
@@ -77,7 +79,8 @@ def main() -> None:
     with torch.no_grad():
         for prompt_index, record in enumerate(records, start=1):
             print_prompt_header(record, prompt_index, show_prompt=args.show_prompt)
-            encoded = tokenizer(record["prompt"], return_tensors="pt")
+            model_prompt = apply_chat_template(tokenizer, record["prompt"]) if use_chat_template else record["prompt"]
+            encoded = tokenizer(model_prompt, return_tensors="pt")
             encoded = {key: value.to(device) for key, value in encoded.items()}
             generated = model.generate(**encoded, **generation_cfg)
             prompt_len = encoded["input_ids"].shape[1]
@@ -218,6 +221,19 @@ def infer_input_device(model) -> torch.device:
         return next(model.parameters()).device
     except StopIteration:  # pragma: no cover
         return torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+
+def apply_chat_template(tokenizer, prompt: str) -> str:
+    try:
+        return tokenizer.apply_chat_template(
+            [{"role": "user", "content": prompt}],
+            tokenize=False,
+            add_generation_prompt=True,
+        )
+    except Exception as exc:
+        raise RuntimeError(
+            "model.use_chat_template=true requires a tokenizer with a valid chat_template."
+        ) from exc
 
 
 def build_debug_row(
